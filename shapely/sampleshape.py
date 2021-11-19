@@ -2,6 +2,7 @@ from osgeo import gdal,osr,ogr
 import shapely
 from shapely.geometry import Polygon
 from shapely import wkt
+from shapely import geometry
 #打开文件
 fn1=r"E:\shptest\DWFL_2018.shp"
 fn2=r"E:\shptest\DWFL_2016.shp"
@@ -66,49 +67,75 @@ if numFe>0:
 #输出前50个点的属性
 list=[]
 listbefor=[]
+listFieldOut=[]
 listout=[]
 for feature_element in layer:
     #获取空间数据(获取x、y坐标)
     spatial_data=feature_element.geometry()
-    geocurrent=wkt.loads(spatial_data.ExportToWkt())
     fieldnum=feature_element.GetFieldCount()
-    listCurrent=[]
-    for feature_elementbefor in layer_before:
-        spatial_databefore = feature_elementbefor.geometry()
-        geobefore = spatial_databefore.ExportToWkt()
-        geoi=wkt.loads(geobefore)
-        geointersection=geocurrent.intersection(geoi)
-        listCurrent.append(geointersection.wkt)
-    getFeatureNumber=len(listCurrent)
-    geoFirt = wkt.loads(listCurrent[0])
-    if getFeatureNumber>1:
-        for te in range(1,getFeatureNumber):
-            georemine=wkt.loads(listCurrent[te])
-            geoFirt=geoFirt.union(georemine)
+    list.append(spatial_data.ExportToWkt())
+    listonefeature=[]
+    for ite in range(fieldnum):
+        currenfielddefn=oSRCDefn.GetFieldDefn(ite)
+        fieldname = currenfielddefn.GetNameRef()
+        fiedlValue=feature_element.GetField(ite)
+        listonefeature.append(fieldname)
+        listonefeature.append(fiedlValue)
+    listFieldOut.append(listonefeature)
 
-
-
+for feature_elementbefor in layer_before:
+    spatial_databefore = feature_elementbefor.geometry()
+    geobefore = spatial_databefore.ExportToWkt()
+    listbefor.append(geobefore)
 #转换成shapely格式输出两个矢量面然后做裁剪工作；
 elementsnumber=layer.GetFeatureCount()
 elementsnumberberfore=layer_before.GetFeatureCount()
 for i in range(elementsnumber):
     #构造shapely类型几何文件
+    listinset = []
     geoi=wkt.loads(list[i])
     for j in range(elementsnumberberfore):
         geoj=wkt.loads(listbefor[j])
         geoinset=geoi.intersection(geoj)
-        #geodiffer=geoi.difference(geoj)
-        listout.append(geoinset.wkt)
-        #listout.append(geodiffer.wkt)
-        # if geoinset!=None
-        #     listout.append(geoinset.wkt)
-        # if geodiffer!=None
-        #     listout.append(geodiffer.wkt)
+        geotype=geoinset.type
 
+        if not geoinset.is_empty:
+            if geoinset.type=="Polygon":
+               listinset.append(geoinset.wkt)
+    numberout=len(listinset)
+    if numberout==0:
+        del listFieldOut[i]
+    elif numberout>1:
+        geoi1=wkt.loads(listinset[0])
+        tyn1=geoi1.type
+
+        for itr in range(1,numberout):
+            geoi2=wkt.loads(listinset[itr])
+            typn2=geoi2.type
+
+            if typn2=="GeometryCollection":
+                #geoi2=geoi2.simplify()
+                geometry.multipolygon
+                typn4=geoi2.type
+                geoi2.normalize()
+
+            geoi1=geoi1.union(geoi2)
+            typn3=geoi1.type
+
+        listout.append(geoi1.wkt)
+    else:
+        listout.append(listinset[0])
 # 输出裁剪矢量
 outNum=len(listout)
 for it in range(outNum):
     oFet=ogr.Feature(oDefn)
+    numbergeo=len(listout)
+    numberField=len(listFieldOut)
+    if not numbergeo==numberField:
+        print("拓扑错误！\n")
+    fieldsubNumber=len(listFieldOut[it])
+    for iu in range(0,fieldsubNumber,2):
+        oFet.SetField(listFieldOut[it][iu],listFieldOut[it][iu+1])
     gemetrytt=ogr.CreateGeometryFromWkt(listout[it])
     oFet.SetGeometry(gemetrytt)
     oLayer.CreateFeature(oFet)
