@@ -23,45 +23,6 @@ print("Elements number:",layer.GetFeatureCount())
 print ("SpatialReference before: ",spatial_refBefore)
 print ("LayerCount before: ",layer_numbefor)
 print("Elements number before:",layer_before.GetFeatureCount())
-#输出前50个点的属性
-list=[]
-listbefor=[]
-listout=[]
-for feature_element in layer:
-    #获取空间数据(获取x、y坐标)
-    spatial_data=feature_element.geometry()
-    gemwkt=spatial_data.ExportToWkt()
-    #print(gemwkt)
-    list.append(gemwkt)
-for feature_elementbefor in layer_before:
-    spatial_data=feature_elementbefor.geometry()
-    genwkt=spatial_data.ExportToWkt()
-    listbefor.append(genwkt)
-
-#转换成shapely格式输出两个矢量面然后做裁剪工作；
-elementsnumber=layer.GetFeatureCount()
-elementsnumberberfore=layer_before.GetFeatureCount()
-for i in range(elementsnumber):
-    #构造shapely类型几何文件
-    geoi=wkt.loads(list[i])
-    for j in range(elementsnumberberfore):
-        geoj=wkt.loads(listbefor[j])
-        geoinset=geoi.intersection(geoj)
-        #geodiffer=geoi.difference(geoj)
-        listout.append(geoinset.wkt)
-        #listout.append(geodiffer.wkt)
-        # if geoinset!=None
-        #     listout.append(geoinset.wkt)
-        # if geodiffer!=None
-        #     listout.append(geodiffer.wkt)
-# geo1=wkt.loads(list[0])
-# geo2=wkt.loads(list[1])
-# geoin=geo1.intersection(geo2)
-# geodiff=geo1.difference(geo2)
-# geounion=geo1.union(geo2)
-# print(geoin)
-# print(geodiff)
-# print(geounion)
 #计算裁剪后的矢量
 #写入矢量文件
 gdal.SetConfigOption("GDAL_FILENAME_IS_UTF8", "NO")  # 为了支持中文路径
@@ -87,19 +48,63 @@ if oLayer == None:
     print("图层创建失败！\n")
 
 oDefn = oLayer.GetLayerDefn()  # 定义要素
+#获取字段信息
+oSRCDefn = layer.GetLayerDefn()
+numFe=layer.GetFeatureCount()
+#创建字段
+if numFe>0:
+    firstFeatur=layer.GetFeature(0)
+    FieldNumber=firstFeatur.GetFieldCount()
+    for itr in range(FieldNumber):
+        curFiedDefn=oSRCDefn.GetFieldDefn(itr)
+        fieldname=curFiedDefn.GetNameRef()
+        #fiedTypeName=curFiedDefn.GetFieldTypeName(curFiedDefn.GetType())
+        fieldtype=curFiedDefn.GetType()
+        creatFieldN=ogr.FieldDefn(fieldname,fieldtype)
+        creatFieldN.SetWidth(100)
+        oLayer.CreateField(creatFieldN)
+#输出前50个点的属性
+list=[]
+listbefor=[]
+listout=[]
+for feature_element in layer:
+    #获取空间数据(获取x、y坐标)
+    spatial_data=feature_element.geometry()
+    geocurrent=wkt.loads(spatial_data.ExportToWkt())
+    fieldnum=feature_element.GetFieldCount()
+    listCurrent=[]
+    for feature_elementbefor in layer_before:
+        spatial_databefore = feature_elementbefor.geometry()
+        geobefore = spatial_databefore.ExportToWkt()
+        geoi=wkt.loads(geobefore)
+        geointersection=geocurrent.intersection(geoi)
+        listCurrent.append(geointersection.wkt)
+    getFeatureNumber=len(listCurrent)
+    geoFirt = wkt.loads(listCurrent[0])
+    if getFeatureNumber>1:
+        for te in range(1,getFeatureNumber):
+            georemine=wkt.loads(listCurrent[te])
+            geoFirt=geoFirt.union(georemine)
 
-# # 创建单个面
-# outwkt1=geoin.wkt
-# outwkt2=geodiff.wkt
-# print("ceshi",outwkt1)
-# oFeatureTriangle = ogr.Feature(oDefn)
-# oFeatureTTriangle=ogr.Feature(oDefn)
-# geometrout1=ogr.CreateGeometryFromWkt(outwkt1)
-# geometrout2=ogr.CreateGeometryFromWkt(outwkt2)
-# oFeatureTriangle.SetGeometry(geometrout1)
-# oFeatureTTriangle.SetGeometry(geometrout2)
-# oLayer.CreateFeature(oFeatureTriangle)
-# oLayer.CreateFeature(oFeatureTTriangle)
+
+
+#转换成shapely格式输出两个矢量面然后做裁剪工作；
+elementsnumber=layer.GetFeatureCount()
+elementsnumberberfore=layer_before.GetFeatureCount()
+for i in range(elementsnumber):
+    #构造shapely类型几何文件
+    geoi=wkt.loads(list[i])
+    for j in range(elementsnumberberfore):
+        geoj=wkt.loads(listbefor[j])
+        geoinset=geoi.intersection(geoj)
+        #geodiffer=geoi.difference(geoj)
+        listout.append(geoinset.wkt)
+        #listout.append(geodiffer.wkt)
+        # if geoinset!=None
+        #     listout.append(geoinset.wkt)
+        # if geodiffer!=None
+        #     listout.append(geodiffer.wkt)
+
 # 输出裁剪矢量
 outNum=len(listout)
 for it in range(outNum):
