@@ -1,8 +1,8 @@
 from osgeo import gdal,osr,ogr
-import shapely
+from shapely import geometry
+from shapely.geometry import MultiPolygon
 from shapely.geometry import Polygon
 from shapely import wkt
-from shapely import geometry
 #打开文件
 fn1=r"E:\shptest\DWFL_2018.shp"
 fn2=r"E:\shptest\DWFL_2016.shp"
@@ -44,7 +44,7 @@ srsout=spatial_ref.ExportToWkt()
 srs.ImportFromWkt(srsout) # 定义地理坐标系WGS1984
 papszLCO = []
 # 创建图层，创建一个多边形图层,"TestPolygon"->属性表名
-oLayer = oDS.CreateLayer("TestPolygon", srs, ogr.wkbPolygon, papszLCO)
+oLayer = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPolygon, papszLCO)
 if oLayer == None:
     print("图层创建失败！\n")
 
@@ -88,8 +88,13 @@ for feature_elementbefor in layer_before:
     geobefore = spatial_databefore.ExportToWkt()
     listbefor.append(geobefore)
 #转换成shapely格式输出两个矢量面然后做裁剪工作；
+#TODO：将polygon转成multipolygon
 elementsnumber=layer.GetFeatureCount()
 elementsnumberberfore=layer_before.GetFeatureCount()
+fnm=len(listFieldOut)
+print("fnm is :",fnm)
+print("elementnumber is :",elementsnumber)
+listReserve=[]
 for i in range(elementsnumber):
     #构造shapely类型几何文件
     listinset = []
@@ -104,38 +109,32 @@ for i in range(elementsnumber):
                listinset.append(geoinset.wkt)
     numberout=len(listinset)
     if numberout==0:
-        del listFieldOut[i]
+        print("移除空polygon")
     elif numberout>1:
         geoi1=wkt.loads(listinset[0])
-        tyn1=geoi1.type
-
+        mp1=MultiPolygon([geoi1])
         for itr in range(1,numberout):
             geoi2=wkt.loads(listinset[itr])
-            typn2=geoi2.type
-
-            if typn2=="GeometryCollection":
-                #geoi2=geoi2.simplify()
-                geometry.multipolygon
-                typn4=geoi2.type
-                geoi2.normalize()
-
-            geoi1=geoi1.union(geoi2)
-            typn3=geoi1.type
-
-        listout.append(geoi1.wkt)
+            mp2=MultiPolygon([geoi2])
+            mp1.union(mp2)
+        listout.append(mp1.wkt)
+        listReserve.append(listFieldOut[i])
     else:
-        listout.append(listinset[0])
+        pol=wkt.loads(listinset[0])
+        mpol=MultiPolygon([pol])
+        listout.append(mpol.wkt)
+        listReserve.append(listFieldOut[i])
+#移除
 # 输出裁剪矢量
 outNum=len(listout)
+numberreserve=len(listReserve)
+if not outNum== numberreserve:
+    print("拓扑错误！\n")
 for it in range(outNum):
     oFet=ogr.Feature(oDefn)
-    numbergeo=len(listout)
-    numberField=len(listFieldOut)
-    if not numbergeo==numberField:
-        print("拓扑错误！\n")
     fieldsubNumber=len(listFieldOut[it])
     for iu in range(0,fieldsubNumber,2):
-        oFet.SetField(listFieldOut[it][iu],listFieldOut[it][iu+1])
+        oFet.SetField(listReserve[it][iu],listReserve[it][iu+1])
     gemetrytt=ogr.CreateGeometryFromWkt(listout[it])
     oFet.SetGeometry(gemetrytt)
     oLayer.CreateFeature(oFet)
