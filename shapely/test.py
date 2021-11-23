@@ -26,7 +26,13 @@
 # print(list[1])
 # print(list[0][0])
 # print(list[1][1])
+from tqdm import tqdm
 
+pbar = tqdm(range(300))  # 进度条
+
+for i in pbar:
+    err = 'abc'
+    pbar.set_description("Reconstruction loss: %s" % (err))
 
 
 
