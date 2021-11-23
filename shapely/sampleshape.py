@@ -65,7 +65,7 @@ if numFe>0:
         creatFieldN.SetWidth(100)
         oLayer.CreateField(creatFieldN)
 #输出前50个点的属性
-list=[]
+listnow=[]
 listbefor=[]
 listFieldOut=[]
 listout=[]
@@ -73,7 +73,7 @@ for feature_element in layer:
     #获取空间数据(获取x、y坐标)
     spatial_data=feature_element.geometry()
     fieldnum=feature_element.GetFieldCount()
-    list.append(spatial_data.ExportToWkt())
+    listnow.append(spatial_data.ExportToWkt())
     listonefeature=[]
     for ite in range(fieldnum):
         currenfielddefn=oSRCDefn.GetFieldDefn(ite)
@@ -98,7 +98,7 @@ listReserve=[]
 for i in range(elementsnumber):
     #构造shapely类型几何文件
     listinset = []
-    geoi=wkt.loads(list[i])
+    geoi=wkt.loads(listnow[i])
     for j in range(elementsnumberberfore):
         geoj=wkt.loads(listbefor[j])
         geoinset=geoi.intersection(geoj)
@@ -106,17 +106,45 @@ for i in range(elementsnumber):
 
         if not geoinset.is_empty:
             if geoinset.type=="Polygon":
-               listinset.append(geoinset.wkt)
+                if geoinset.is_valid:
+                   listinset.append(geoinset.wkt)
+            if geoinset.type=="MultiPolygon":
+               for g in geoinset:
+                   if g.is_valid:
+                      listinset.append(g.wkt)
+               print("mul")
+            if geoinset.type=="GeometryCollection":
+                for g in geoinset:
+                    if g.type=="Polygon":
+                        if g.is_valid:
+                           listinset.append(g.wkt)
+                    if g.type=="MultiPolygon":
+                        for tg in g:
+                            if tg.is_valid:
+                               listinset.append(tg.wkt)
+
+
+                print("geocll")
+            if geoinset.type=="LinearRing":
+                print("linestring")
+            if geoinset.type=="MultiPoint":
+                print("multipoint")
+            if geoinset.type=="MultiLineString":
+                print("multinglinestrng")
+
     numberout=len(listinset)
     if numberout==0:
         print("移除空polygon")
     elif numberout>1:
         geoi1=wkt.loads(listinset[0])
         mp1=MultiPolygon([geoi1])
+        if not mp1.is_valid:
+            print("多边形拓扑错误")
         for itr in range(1,numberout):
             geoi2=wkt.loads(listinset[itr])
             mp2=MultiPolygon([geoi2])
-            mp1.union(mp2)
+            if mp2.is_valid:
+               mp1=mp1.union(mp2)
         listout.append(mp1.wkt)
         listReserve.append(listFieldOut[i])
     else:

@@ -47,8 +47,9 @@ print("mlt2 type is :",mlt2.type)
 print(mlt2)
 print("mlt3 type is :",mlt3.type)
 print(mlt3)
-newmt=mlt1.union(mlt2)
-print(newmt)
+mlt1=mlt1.union(mlt2)
+print(mlt1)
+#print(newmt)
 
 
 
