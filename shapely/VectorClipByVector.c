@@ -1280,6 +1280,7 @@ int __pyx_module_is_main_VectorClipByVector = 0;
 
 /* Implementation of 'VectorClipByVector' */
 static PyObject *__pyx_builtin_range;
+static const char __pyx_k_1[] = "1_";
 static const char __pyx_k_g[] = "g";
 static const char __pyx_k_i[] = "i";
 static const char __pyx_k_j[] = "j";
@@ -1317,6 +1318,8 @@ static const char __pyx_k_oFet[] = "oFet";
 static const char __pyx_k_test[] = "__test__";
 static const char __pyx_k_type[] = "type";
 static const char __pyx_k_CP936[] = "CP936";
+static const char __pyx_k_POINT[] = "POINT";
+static const char __pyx_k_Point[] = "Point";
 static const char __pyx_k_geoi1[] = "geoi1";
 static const char __pyx_k_geoi2[] = "geoi2";
 static const char __pyx_k_layer[] = "layer";
@@ -1327,6 +1330,7 @@ static const char __pyx_k_osgeo[] = "osgeo";
 static const char __pyx_k_print[] = "print";
 static const char __pyx_k_range[] = "range";
 static const char __pyx_k_union[] = "union";
+static const char __pyx_k_Remove[] = "Remove";
 static const char __pyx_k_fnm_is[] = "fnm is :";
 static const char __pyx_k_import[] = "__import__";
 static const char __pyx_k_oLayer[] = "oLayer";
@@ -1335,10 +1339,12 @@ static const char __pyx_k_srsout[] = "srsout";
 static const char __pyx_k_Destroy[] = "Destroy";
 static const char __pyx_k_Feature[] = "Feature";
 static const char __pyx_k_GetType[] = "GetType";
+static const char __pyx_k_POLYGON[] = "POLYGON";
 static const char __pyx_k_Polygon[] = "Polygon";
 static const char __pyx_k_listnow[] = "listnow";
 static const char __pyx_k_listout[] = "listout";
 static const char __pyx_k_oDriver[] = "oDriver";
+static const char __pyx_k_oLayer1[] = "oLayer1";
 static const char __pyx_k_polygon[] = "\347\247\273\351\231\244\347\251\272polygon";
 static const char __pyx_k_shapely[] = "shapely";
 static const char __pyx_k_GetField[] = "GetField";
@@ -1363,9 +1369,16 @@ static const char __pyx_k_numberout[] = "numberout";
 static const char __pyx_k_stroutput[] = "stroutput";
 static const char __pyx_k_GetFeature[] = "GetFeature";
 static const char __pyx_k_GetNameRef[] = "GetNameRef";
+static const char __pyx_k_LINESTRING[] = "LINESTRING";
 static const char __pyx_k_LayerCount[] = "LayerCount: ";
+static const char __pyx_k_LineString[] = "LineString";
+static const char __pyx_k_LinearRing[] = "LinearRing";
+static const char __pyx_k_MULTIPOINT[] = "MULTIPOINT";
+static const char __pyx_k_MultiPoint[] = "MultiPoint";
 static const char __pyx_k_datasource[] = "datasource";
 static const char __pyx_k_fiedlValue[] = "fiedlValue";
+static const char __pyx_k_firstFeGeo[] = "firstFeGeo";
+static const char __pyx_k_numFeBefor[] = "numFeBefor";
 static const char __pyx_k_CreateField[] = "CreateField";
 static const char __pyx_k_CreateLayer[] = "CreateLayer";
 static const char __pyx_k_ExportToWkt[] = "ExportToWkt";
@@ -1377,23 +1390,30 @@ static const char __pyx_k_creatFieldN[] = "creatFieldN";
 static const char __pyx_k_curFiedDefn[] = "curFiedDefn";
 static const char __pyx_k_firstFeatur[] = "firstFeatur";
 static const char __pyx_k_listReserve[] = "listReserve";
+static const char __pyx_k_listoutType[] = "listoutType";
 static const char __pyx_k_spatial_ref[] = "spatial_ref";
 static const char __pyx_k_GetFieldDefn[] = "GetFieldDefn";
 static const char __pyx_k_GetLayerDefn[] = "GetLayerDefn";
+static const char __pyx_k_MULTIPOLYGON[] = "MULTIPOLYGON";
 static const char __pyx_k_MultiPolygon[] = "MultiPolygon";
 static const char __pyx_k_intersection[] = "intersection";
 static const char __pyx_k_layer_before[] = "layer_before";
 static const char __pyx_k_listFieldOut[] = "listFieldOut";
+static const char __pyx_k_listOutLayer[] = "listOutLayer";
 static const char __pyx_k_spatial_data[] = "spatial_data";
 static const char __pyx_k_strinputbase[] = "strinputbase";
 static const char __pyx_k_strinputclip[] = "strinputclip";
+static const char __pyx_k_Baselayertype[] = "Baselayertype";
 static const char __pyx_k_CreateFeature[] = "CreateFeature";
 static const char __pyx_k_GetFieldCount[] = "GetFieldCount";
 static const char __pyx_k_GetLayerCount[] = "GetLayerCount";
 static const char __pyx_k_GetSpatialRef[] = "GetSpatialRef";
 static const char __pyx_k_ImportFromWkt[] = "ImportFromWkt";
+static const char __pyx_k_Topo_is_Wrong[] = "Topo is Wrong\357\274\201\n";
 static const char __pyx_k_numberreserve[] = "numberreserve";
+static const char __pyx_k_oSRCDefnBefor[] = "oSRCDefnBefor";
 static const char __pyx_k_strDriverName[] = "strDriverName";
+static const char __pyx_k_wkbMultiPoint[] = "wkbMultiPoint";
 static const char __pyx_k_ESRI_Shapefile[] = "ESRI Shapefile";
 static const char __pyx_k_SHAPE_ENCODING[] = "SHAPE_ENCODING";
 static const char __pyx_k_elementsnumber[] = "elementsnumber";
@@ -1403,17 +1423,23 @@ static const char __pyx_k_listonefeature[] = "listonefeature";
 static const char __pyx_k_Elements_number[] = "Elements number:";
 static const char __pyx_k_GetDriverByName[] = "GetDriverByName";
 static const char __pyx_k_GetFeatureCount[] = "GetFeatureCount";
+static const char __pyx_k_GetGeometryName[] = "GetGeometryName";
 static const char __pyx_k_GetLayerByIndex[] = "GetLayerByIndex";
+static const char __pyx_k_MULTILINESTRING[] = "MULTILINESTRING";
+static const char __pyx_k_MultiLineString[] = "MultiLineString";
 static const char __pyx_k_SetConfigOption[] = "SetConfigOption";
+static const char __pyx_k_VectorInterSect[] = "VectorInterSect";
 static const char __pyx_k_currenfielddefn[] = "currenfielddefn";
 static const char __pyx_k_datasourcebefor[] = "datasourcebefor";
 static const char __pyx_k_feature_element[] = "feature_element";
+static const char __pyx_k_listFieldBefore[] = "listFieldBefore";
 static const char __pyx_k_wkbMultiPolygon[] = "wkbMultiPolygon";
 static const char __pyx_k_CreateDataSource[] = "CreateDataSource";
 static const char __pyx_k_SpatialReference[] = "SpatialReference: ";
 static const char __pyx_k_elementnumber_is[] = "elementnumber is :";
 static const char __pyx_k_shapely_geometry[] = "shapely.geometry";
 static const char __pyx_k_LayerCount_before[] = "LayerCount before: ";
+static const char __pyx_k_listReserveBefore[] = "listReserveBefore";
 static const char __pyx_k_spatial_refBefore[] = "spatial_refBefore";
 static const char __pyx_k_GeometryCollection[] = "GeometryCollection";
 static const char __pyx_k_SpatialReference_2[] = "SpatialReference";
@@ -1421,13 +1447,19 @@ static const char __pyx_k_VectorClipByVector[] = "VectorClipByVector";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_spatial_databefore[] = "spatial_databefore";
 static const char __pyx_k_vectorclipbyvector[] = "vectorclipbyvector";
+static const char __pyx_k_wkbMultiLineString[] = "wkbMultiLineString";
+static const char __pyx_k_Geometry_is_Invalid[] = "Geometry is Invalid";
 static const char __pyx_k_feature_elementbefor[] = "feature_elementbefor";
+static const char __pyx_k_fieldsubNumberBefore[] = "fieldsubNumberBefore";
 static const char __pyx_k_CreateGeometryFromWkt[] = "CreateGeometryFromWkt";
 static const char __pyx_k_GDAL_FILENAME_IS_UTF8[] = "GDAL_FILENAME_IS_UTF8";
+static const char __pyx_k_VectorClipByVectorNew[] = "VectorClipByVectorNew";
 static const char __pyx_k_VectorClipByVector_py[] = "VectorClipByVector.py";
 static const char __pyx_k_elementsnumberberfore[] = "elementsnumberberfore";
 static const char __pyx_k_Elements_number_before[] = "Elements number before:";
 static const char __pyx_k_SpatialReference_before[] = "SpatialReference before: ";
+static PyObject *__pyx_kp_s_1;
+static PyObject *__pyx_n_s_Baselayertype;
 static PyObject *__pyx_n_s_CP936;
 static PyObject *__pyx_n_s_CreateDataSource;
 static PyObject *__pyx_n_s_CreateFeature;
@@ -1444,12 +1476,14 @@ static PyObject *__pyx_n_s_FieldDefn;
 static PyObject *__pyx_n_s_FieldNumber;
 static PyObject *__pyx_n_s_GDAL_FILENAME_IS_UTF8;
 static PyObject *__pyx_n_s_GeometryCollection;
+static PyObject *__pyx_kp_s_Geometry_is_Invalid;
 static PyObject *__pyx_n_s_GetDriverByName;
 static PyObject *__pyx_n_s_GetFeature;
 static PyObject *__pyx_n_s_GetFeatureCount;
 static PyObject *__pyx_n_s_GetField;
 static PyObject *__pyx_n_s_GetFieldCount;
 static PyObject *__pyx_n_s_GetFieldDefn;
+static PyObject *__pyx_n_s_GetGeometryName;
 static PyObject *__pyx_n_s_GetLayerByIndex;
 static PyObject *__pyx_n_s_GetLayerCount;
 static PyObject *__pyx_n_s_GetLayerDefn;
@@ -1457,13 +1491,25 @@ static PyObject *__pyx_n_s_GetNameRef;
 static PyObject *__pyx_n_s_GetSpatialRef;
 static PyObject *__pyx_n_s_GetType;
 static PyObject *__pyx_n_s_ImportFromWkt;
+static PyObject *__pyx_n_s_LINESTRING;
 static PyObject *__pyx_kp_s_LayerCount;
 static PyObject *__pyx_kp_s_LayerCount_before;
+static PyObject *__pyx_n_s_LineString;
+static PyObject *__pyx_n_s_LinearRing;
+static PyObject *__pyx_n_s_MULTILINESTRING;
+static PyObject *__pyx_n_s_MULTIPOINT;
+static PyObject *__pyx_n_s_MULTIPOLYGON;
+static PyObject *__pyx_n_s_MultiLineString;
+static PyObject *__pyx_n_s_MultiPoint;
 static PyObject *__pyx_n_s_MultiPolygon;
 static PyObject *__pyx_n_s_NO;
 static PyObject *__pyx_n_s_Open;
+static PyObject *__pyx_n_s_POINT;
+static PyObject *__pyx_n_s_POLYGON;
+static PyObject *__pyx_n_s_Point;
 static PyObject *__pyx_n_s_Polygon;
 static PyObject *__pyx_n_s_RegisterAll;
+static PyObject *__pyx_n_s_Remove;
 static PyObject *__pyx_n_s_SHAPE_ENCODING;
 static PyObject *__pyx_n_s_SetConfigOption;
 static PyObject *__pyx_n_s_SetField;
@@ -1473,8 +1519,11 @@ static PyObject *__pyx_kp_s_SpatialReference;
 static PyObject *__pyx_n_s_SpatialReference_2;
 static PyObject *__pyx_kp_s_SpatialReference_before;
 static PyObject *__pyx_n_s_TestPolygon;
+static PyObject *__pyx_kp_s_Topo_is_Wrong;
 static PyObject *__pyx_n_s_VectorClipByVector;
+static PyObject *__pyx_n_s_VectorClipByVectorNew;
 static PyObject *__pyx_kp_s_VectorClipByVector_py;
+static PyObject *__pyx_n_s_VectorInterSect;
 static PyObject *__pyx_kp_s__3;
 static PyObject *__pyx_kp_s__4;
 static PyObject *__pyx_kp_s__5;
@@ -1495,8 +1544,10 @@ static PyObject *__pyx_n_s_fiedlValue;
 static PyObject *__pyx_n_s_fieldname;
 static PyObject *__pyx_n_s_fieldnum;
 static PyObject *__pyx_n_s_fieldsubNumber;
+static PyObject *__pyx_n_s_fieldsubNumberBefore;
 static PyObject *__pyx_n_s_fieldtype;
 static PyObject *__pyx_n_s_file;
+static PyObject *__pyx_n_s_firstFeGeo;
 static PyObject *__pyx_n_s_firstFeatur;
 static PyObject *__pyx_n_s_fnm;
 static PyObject *__pyx_kp_s_fnm_is;
@@ -1524,13 +1575,17 @@ static PyObject *__pyx_n_s_layer;
 static PyObject *__pyx_n_s_layer_before;
 static PyObject *__pyx_n_s_layer_num;
 static PyObject *__pyx_n_s_layer_numbefor;
+static PyObject *__pyx_n_s_listFieldBefore;
 static PyObject *__pyx_n_s_listFieldOut;
+static PyObject *__pyx_n_s_listOutLayer;
 static PyObject *__pyx_n_s_listReserve;
+static PyObject *__pyx_n_s_listReserveBefore;
 static PyObject *__pyx_n_s_listbefor;
 static PyObject *__pyx_n_s_listinset;
 static PyObject *__pyx_n_s_listnow;
 static PyObject *__pyx_n_s_listonefeature;
 static PyObject *__pyx_n_s_listout;
+static PyObject *__pyx_n_s_listoutType;
 static PyObject *__pyx_n_s_loads;
 static PyObject *__pyx_n_s_main;
 static PyObject *__pyx_n_s_mp1;
@@ -1538,6 +1593,7 @@ static PyObject *__pyx_n_s_mp2;
 static PyObject *__pyx_n_s_mpol;
 static PyObject *__pyx_n_s_name;
 static PyObject *__pyx_n_s_numFe;
+static PyObject *__pyx_n_s_numFeBefor;
 static PyObject *__pyx_n_s_numberout;
 static PyObject *__pyx_n_s_numberreserve;
 static PyObject *__pyx_n_s_oDS;
@@ -1545,7 +1601,9 @@ static PyObject *__pyx_n_s_oDefn;
 static PyObject *__pyx_n_s_oDriver;
 static PyObject *__pyx_n_s_oFet;
 static PyObject *__pyx_n_s_oLayer;
+static PyObject *__pyx_n_s_oLayer1;
 static PyObject *__pyx_n_s_oSRCDefn;
+static PyObject *__pyx_n_s_oSRCDefnBefor;
 static PyObject *__pyx_n_s_ogr;
 static PyObject *__pyx_n_s_osgeo;
 static PyObject *__pyx_n_s_osr;
@@ -1574,9 +1632,13 @@ static PyObject *__pyx_n_s_tg;
 static PyObject *__pyx_n_s_type;
 static PyObject *__pyx_n_s_union;
 static PyObject *__pyx_n_s_vectorclipbyvector;
+static PyObject *__pyx_n_s_wkbMultiLineString;
+static PyObject *__pyx_n_s_wkbMultiPoint;
 static PyObject *__pyx_n_s_wkbMultiPolygon;
 static PyObject *__pyx_n_s_wkt;
 static PyObject *__pyx_pf_18VectorClipByVector_vectorclipbyvector(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_strinputbase, PyObject *__pyx_v_strinputclip, PyObject *__pyx_v_stroutput); /* proto */
+static PyObject *__pyx_pf_18VectorClipByVector_2VectorClipByVectorNew(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_strinputbase, PyObject *__pyx_v_strinputclip, PyObject *__pyx_v_stroutput); /* proto */
+static PyObject *__pyx_pf_18VectorClipByVector_4VectorInterSect(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_strinputbase, PyObject *__pyx_v_strinputclip, PyObject *__pyx_v_stroutput); /* proto */
 static PyObject *__pyx_int_0;
 static PyObject *__pyx_int_1;
 static PyObject *__pyx_int_2;
@@ -1584,7 +1646,11 @@ static PyObject *__pyx_int_100;
 static PyObject *__pyx_tuple_;
 static PyObject *__pyx_tuple__2;
 static PyObject *__pyx_tuple__7;
+static PyObject *__pyx_tuple__9;
+static PyObject *__pyx_tuple__11;
 static PyObject *__pyx_codeobj__8;
+static PyObject *__pyx_codeobj__10;
+static PyObject *__pyx_codeobj__12;
 /* Late includes */
 
 /* "VectorClipByVector.py":9
@@ -5087,6 +5153,7 @@ static PyObject *__pyx_pf_18VectorClipByVector_vectorclipbyvector(CYTHON_UNUSED 
  *         oLayer.CreateFeature(oFet)
  *     oDS.Destroy()             # <<<<<<<<<<<<<<
  *     print("\n")
+ * 
  */
   __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_oDS, __pyx_n_s_Destroy); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -5111,6 +5178,8 @@ static PyObject *__pyx_pf_18VectorClipByVector_vectorclipbyvector(CYTHON_UNUSED 
  *         oLayer.CreateFeature(oFet)
  *     oDS.Destroy()
  *     print("\n")             # <<<<<<<<<<<<<<
+ * 
+ * 
  */
   if (__Pyx_PrintOne(0, __pyx_kp_s__6) < 0) __PYX_ERR(0, 163, __pyx_L1_error)
 
@@ -5200,6 +5269,12529 @@ static PyObject *__pyx_pf_18VectorClipByVector_vectorclipbyvector(CYTHON_UNUSED 
   return __pyx_r;
 }
 
+/* "VectorClipByVector.py":166
+ * 
+ * 
+ * def VectorClipByVectorNew(strinputbase, strinputclip, stroutput):             # <<<<<<<<<<<<<<
+ *     # fn1=r"E:\shptest\DWFL_2018.shp"
+ *     # fn2=r"E:\shptest\DWFL_2016.shp"
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_18VectorClipByVector_3VectorClipByVectorNew(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_18VectorClipByVector_3VectorClipByVectorNew = {"VectorClipByVectorNew", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_18VectorClipByVector_3VectorClipByVectorNew, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_18VectorClipByVector_3VectorClipByVectorNew(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  PyObject *__pyx_v_strinputbase = 0;
+  PyObject *__pyx_v_strinputclip = 0;
+  PyObject *__pyx_v_stroutput = 0;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("VectorClipByVectorNew (wrapper)", 0);
+  {
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_strinputbase,&__pyx_n_s_strinputclip,&__pyx_n_s_stroutput,0};
+    PyObject* values[3] = {0,0,0};
+    if (unlikely(__pyx_kwds)) {
+      Py_ssize_t kw_args;
+      const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
+      switch (pos_args) {
+        case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+        CYTHON_FALLTHROUGH;
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        CYTHON_FALLTHROUGH;
+        case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = PyDict_Size(__pyx_kwds);
+      switch (pos_args) {
+        case  0:
+        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_strinputbase)) != 0)) kw_args--;
+        else goto __pyx_L5_argtuple_error;
+        CYTHON_FALLTHROUGH;
+        case  1:
+        if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_strinputclip)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("VectorClipByVectorNew", 1, 3, 3, 1); __PYX_ERR(0, 166, __pyx_L3_error)
+        }
+        CYTHON_FALLTHROUGH;
+        case  2:
+        if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_stroutput)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("VectorClipByVectorNew", 1, 3, 3, 2); __PYX_ERR(0, 166, __pyx_L3_error)
+        }
+      }
+      if (unlikely(kw_args > 0)) {
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "VectorClipByVectorNew") < 0)) __PYX_ERR(0, 166, __pyx_L3_error)
+      }
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
+      goto __pyx_L5_argtuple_error;
+    } else {
+      values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+      values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+      values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+    }
+    __pyx_v_strinputbase = values[0];
+    __pyx_v_strinputclip = values[1];
+    __pyx_v_stroutput = values[2];
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("VectorClipByVectorNew", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 166, __pyx_L3_error)
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("VectorClipByVector.VectorClipByVectorNew", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_18VectorClipByVector_2VectorClipByVectorNew(__pyx_self, __pyx_v_strinputbase, __pyx_v_strinputclip, __pyx_v_stroutput);
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_18VectorClipByVector_2VectorClipByVectorNew(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_strinputbase, PyObject *__pyx_v_strinputclip, PyObject *__pyx_v_stroutput) {
+  PyObject *__pyx_v_datasource = NULL;
+  PyObject *__pyx_v_datasourcebefor = NULL;
+  PyObject *__pyx_v_layer_num = NULL;
+  PyObject *__pyx_v_layer_numbefor = NULL;
+  PyObject *__pyx_v_layer = NULL;
+  PyObject *__pyx_v_layer_before = NULL;
+  PyObject *__pyx_v_spatial_ref = NULL;
+  PyObject *__pyx_v_spatial_refBefore = NULL;
+  PyObject *__pyx_v_strDriverName = NULL;
+  PyObject *__pyx_v_oDriver = NULL;
+  PyObject *__pyx_v_oDS = NULL;
+  PyObject *__pyx_v_srs = NULL;
+  PyObject *__pyx_v_srsout = NULL;
+  PyObject *__pyx_v_papszLCO = NULL;
+  PyObject *__pyx_v_oSRCDefn = NULL;
+  PyObject *__pyx_v_numFe = NULL;
+  PyObject *__pyx_v_listoutType = NULL;
+  PyObject *__pyx_v_listOutLayer = NULL;
+  PyObject *__pyx_v_firstFeatur = NULL;
+  PyObject *__pyx_v_FieldNumber = NULL;
+  PyObject *__pyx_v_firstFeGeo = NULL;
+  PyObject *__pyx_v_Baselayertype = NULL;
+  PyObject *__pyx_v_oLayer1 = NULL;
+  PyObject *__pyx_v_itr = NULL;
+  PyObject *__pyx_v_curFiedDefn = NULL;
+  PyObject *__pyx_v_fieldname = NULL;
+  PyObject *__pyx_v_fieldtype = NULL;
+  PyObject *__pyx_v_creatFieldN = NULL;
+  PyObject *__pyx_v_listnow = NULL;
+  PyObject *__pyx_v_listbefor = NULL;
+  PyObject *__pyx_v_listFieldOut = NULL;
+  PyObject *__pyx_v_listout = NULL;
+  PyObject *__pyx_v_feature_element = NULL;
+  PyObject *__pyx_v_spatial_data = NULL;
+  PyObject *__pyx_v_fieldnum = NULL;
+  PyObject *__pyx_v_listonefeature = NULL;
+  PyObject *__pyx_v_ite = NULL;
+  PyObject *__pyx_v_currenfielddefn = NULL;
+  PyObject *__pyx_v_fiedlValue = NULL;
+  PyObject *__pyx_v_feature_elementbefor = NULL;
+  PyObject *__pyx_v_spatial_databefore = NULL;
+  PyObject *__pyx_v_geobefore = NULL;
+  PyObject *__pyx_v_elementsnumber = NULL;
+  PyObject *__pyx_v_elementsnumberberfore = NULL;
+  Py_ssize_t __pyx_v_fnm;
+  PyObject *__pyx_v_listReserve = NULL;
+  PyObject *__pyx_v_i = NULL;
+  PyObject *__pyx_v_listinset = NULL;
+  PyObject *__pyx_v_geoi = NULL;
+  PyObject *__pyx_v_j = NULL;
+  PyObject *__pyx_v_geoj = NULL;
+  PyObject *__pyx_v_geoinset = NULL;
+  PyObject *__pyx_v_g = NULL;
+  PyObject *__pyx_v_tg = NULL;
+  Py_ssize_t __pyx_v_numberout;
+  PyObject *__pyx_v_geoi1 = NULL;
+  PyObject *__pyx_v_mp1 = NULL;
+  PyObject *__pyx_v_geoi2 = NULL;
+  PyObject *__pyx_v_mp2 = NULL;
+  PyObject *__pyx_v_pol = NULL;
+  PyObject *__pyx_v_mpol = NULL;
+  Py_ssize_t __pyx_v_outNum;
+  Py_ssize_t __pyx_v_numberreserve;
+  PyObject *__pyx_v_oLayer = NULL;
+  PyObject *__pyx_v_oDefn = NULL;
+  Py_ssize_t __pyx_v_it;
+  PyObject *__pyx_v_oFet = NULL;
+  Py_ssize_t __pyx_v_fieldsubNumber;
+  PyObject *__pyx_v_iu = NULL;
+  PyObject *__pyx_v_gemetrytt = NULL;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  PyObject *__pyx_t_2 = NULL;
+  PyObject *__pyx_t_3 = NULL;
+  int __pyx_t_4;
+  PyObject *__pyx_t_5 = NULL;
+  int __pyx_t_6;
+  int __pyx_t_7;
+  int __pyx_t_8;
+  PyObject *__pyx_t_9 = NULL;
+  Py_ssize_t __pyx_t_10;
+  PyObject *(*__pyx_t_11)(PyObject *);
+  Py_ssize_t __pyx_t_12;
+  PyObject *(*__pyx_t_13)(PyObject *);
+  PyObject *__pyx_t_14 = NULL;
+  Py_ssize_t __pyx_t_15;
+  PyObject *(*__pyx_t_16)(PyObject *);
+  Py_ssize_t __pyx_t_17;
+  PyObject *(*__pyx_t_18)(PyObject *);
+  PyObject *__pyx_t_19 = NULL;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("VectorClipByVectorNew", 0);
+
+  /* "VectorClipByVector.py":169
+ *     # fn1=r"E:\shptest\DWFL_2018.shp"
+ *     # fn2=r"E:\shptest\DWFL_2016.shp"
+ *     datasource = ogr.Open(strinputbase, False)             # <<<<<<<<<<<<<<
+ *     datasourcebefor = ogr.Open(strinputclip, False)
+ *     # ,shp
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_ogr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 169, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Open); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 169, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = NULL;
+  __pyx_t_4 = 0;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_3, function);
+      __pyx_t_4 = 1;
+    }
+  }
+  #if CYTHON_FAST_PYCALL
+  if (PyFunction_Check(__pyx_t_3)) {
+    PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_strinputbase, Py_False};
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 169, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __Pyx_GOTREF(__pyx_t_1);
+  } else
+  #endif
+  #if CYTHON_FAST_PYCCALL
+  if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
+    PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_strinputbase, Py_False};
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 169, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __Pyx_GOTREF(__pyx_t_1);
+  } else
+  #endif
+  {
+    __pyx_t_5 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 169, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    if (__pyx_t_2) {
+      __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_2); __pyx_t_2 = NULL;
+    }
+    __Pyx_INCREF(__pyx_v_strinputbase);
+    __Pyx_GIVEREF(__pyx_v_strinputbase);
+    PyTuple_SET_ITEM(__pyx_t_5, 0+__pyx_t_4, __pyx_v_strinputbase);
+    __Pyx_INCREF(Py_False);
+    __Pyx_GIVEREF(Py_False);
+    PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_4, Py_False);
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 169, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  }
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_datasource = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":170
+ *     # fn2=r"E:\shptest\DWFL_2016.shp"
+ *     datasource = ogr.Open(strinputbase, False)
+ *     datasourcebefor = ogr.Open(strinputclip, False)             # <<<<<<<<<<<<<<
+ *     # ,shp
+ *     layer_num = datasource.GetLayerCount()
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_ogr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_Open); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_t_3 = NULL;
+  __pyx_t_4 = 0;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_3)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_3);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+      __pyx_t_4 = 1;
+    }
+  }
+  #if CYTHON_FAST_PYCALL
+  if (PyFunction_Check(__pyx_t_5)) {
+    PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_v_strinputclip, Py_False};
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 170, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_GOTREF(__pyx_t_1);
+  } else
+  #endif
+  #if CYTHON_FAST_PYCCALL
+  if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
+    PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_v_strinputclip, Py_False};
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 170, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_GOTREF(__pyx_t_1);
+  } else
+  #endif
+  {
+    __pyx_t_2 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 170, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    if (__pyx_t_3) {
+      __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_3); __pyx_t_3 = NULL;
+    }
+    __Pyx_INCREF(__pyx_v_strinputclip);
+    __Pyx_GIVEREF(__pyx_v_strinputclip);
+    PyTuple_SET_ITEM(__pyx_t_2, 0+__pyx_t_4, __pyx_v_strinputclip);
+    __Pyx_INCREF(Py_False);
+    __Pyx_GIVEREF(Py_False);
+    PyTuple_SET_ITEM(__pyx_t_2, 1+__pyx_t_4, Py_False);
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 170, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  }
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_datasourcebefor = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":172
+ *     datasourcebefor = ogr.Open(strinputclip, False)
+ *     # ,shp
+ *     layer_num = datasource.GetLayerCount()             # <<<<<<<<<<<<<<
+ *     layer_numbefor = datasourcebefor.GetLayerCount()
+ *     #
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_datasource, __pyx_n_s_GetLayerCount); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 172, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_layer_num = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":173
+ *     # ,shp
+ *     layer_num = datasource.GetLayerCount()
+ *     layer_numbefor = datasourcebefor.GetLayerCount()             # <<<<<<<<<<<<<<
+ *     #
+ *     layer = datasource.GetLayerByIndex(0)  # 01
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_datasourcebefor, __pyx_n_s_GetLayerCount); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 173, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 173, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_layer_numbefor = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":175
+ *     layer_numbefor = datasourcebefor.GetLayerCount()
+ *     #
+ *     layer = datasource.GetLayerByIndex(0)  # 01             # <<<<<<<<<<<<<<
+ *     layer_before = datasourcebefor.GetLayerByIndex(0)
+ *     #
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_datasource, __pyx_n_s_GetLayerByIndex); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 175, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_2, __pyx_int_0) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_int_0);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 175, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_layer = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":176
+ *     #
+ *     layer = datasource.GetLayerByIndex(0)  # 01
+ *     layer_before = datasourcebefor.GetLayerByIndex(0)             # <<<<<<<<<<<<<<
+ *     #
+ *     spatial_ref = layer.GetSpatialRef()
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_datasourcebefor, __pyx_n_s_GetLayerByIndex); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_2, __pyx_int_0) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_int_0);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_layer_before = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":178
+ *     layer_before = datasourcebefor.GetLayerByIndex(0)
+ *     #
+ *     spatial_ref = layer.GetSpatialRef()             # <<<<<<<<<<<<<<
+ *     spatial_refBefore = layer_before.GetSpatialRef()
+ *     #
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer, __pyx_n_s_GetSpatialRef); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 178, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 178, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_spatial_ref = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":179
+ *     #
+ *     spatial_ref = layer.GetSpatialRef()
+ *     spatial_refBefore = layer_before.GetSpatialRef()             # <<<<<<<<<<<<<<
+ *     #
+ *     print("SpatialReference: ", spatial_ref)
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer_before, __pyx_n_s_GetSpatialRef); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 179, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 179, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_spatial_refBefore = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":181
+ *     spatial_refBefore = layer_before.GetSpatialRef()
+ *     #
+ *     print("SpatialReference: ", spatial_ref)             # <<<<<<<<<<<<<<
+ *     print("LayerCount: ", layer_num)
+ *     print("Elements number:", layer.GetFeatureCount())
+ */
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 181, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_INCREF(__pyx_kp_s_SpatialReference);
+  __Pyx_GIVEREF(__pyx_kp_s_SpatialReference);
+  PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_s_SpatialReference);
+  __Pyx_INCREF(__pyx_v_spatial_ref);
+  __Pyx_GIVEREF(__pyx_v_spatial_ref);
+  PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_spatial_ref);
+  if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 181, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":182
+ *     #
+ *     print("SpatialReference: ", spatial_ref)
+ *     print("LayerCount: ", layer_num)             # <<<<<<<<<<<<<<
+ *     print("Elements number:", layer.GetFeatureCount())
+ *     print("SpatialReference before: ", spatial_refBefore)
+ */
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_INCREF(__pyx_kp_s_LayerCount);
+  __Pyx_GIVEREF(__pyx_kp_s_LayerCount);
+  PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_s_LayerCount);
+  __Pyx_INCREF(__pyx_v_layer_num);
+  __Pyx_GIVEREF(__pyx_v_layer_num);
+  PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_layer_num);
+  if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 182, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":183
+ *     print("SpatialReference: ", spatial_ref)
+ *     print("LayerCount: ", layer_num)
+ *     print("Elements number:", layer.GetFeatureCount())             # <<<<<<<<<<<<<<
+ *     print("SpatialReference before: ", spatial_refBefore)
+ *     print("LayerCount before: ", layer_numbefor)
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer, __pyx_n_s_GetFeatureCount); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 183, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 183, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 183, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_INCREF(__pyx_kp_s_Elements_number);
+  __Pyx_GIVEREF(__pyx_kp_s_Elements_number);
+  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_kp_s_Elements_number);
+  __Pyx_GIVEREF(__pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_1);
+  __pyx_t_1 = 0;
+  if (__Pyx_PrintOne(0, __pyx_t_5) < 0) __PYX_ERR(0, 183, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":184
+ *     print("LayerCount: ", layer_num)
+ *     print("Elements number:", layer.GetFeatureCount())
+ *     print("SpatialReference before: ", spatial_refBefore)             # <<<<<<<<<<<<<<
+ *     print("LayerCount before: ", layer_numbefor)
+ *     print("Elements number before:", layer_before.GetFeatureCount())
+ */
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 184, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_INCREF(__pyx_kp_s_SpatialReference_before);
+  __Pyx_GIVEREF(__pyx_kp_s_SpatialReference_before);
+  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_kp_s_SpatialReference_before);
+  __Pyx_INCREF(__pyx_v_spatial_refBefore);
+  __Pyx_GIVEREF(__pyx_v_spatial_refBefore);
+  PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_v_spatial_refBefore);
+  if (__Pyx_PrintOne(0, __pyx_t_5) < 0) __PYX_ERR(0, 184, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":185
+ *     print("Elements number:", layer.GetFeatureCount())
+ *     print("SpatialReference before: ", spatial_refBefore)
+ *     print("LayerCount before: ", layer_numbefor)             # <<<<<<<<<<<<<<
+ *     print("Elements number before:", layer_before.GetFeatureCount())
+ *     #
+ */
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 185, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_INCREF(__pyx_kp_s_LayerCount_before);
+  __Pyx_GIVEREF(__pyx_kp_s_LayerCount_before);
+  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_kp_s_LayerCount_before);
+  __Pyx_INCREF(__pyx_v_layer_numbefor);
+  __Pyx_GIVEREF(__pyx_v_layer_numbefor);
+  PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_v_layer_numbefor);
+  if (__Pyx_PrintOne(0, __pyx_t_5) < 0) __PYX_ERR(0, 185, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":186
+ *     print("SpatialReference before: ", spatial_refBefore)
+ *     print("LayerCount before: ", layer_numbefor)
+ *     print("Elements number before:", layer_before.GetFeatureCount())             # <<<<<<<<<<<<<<
+ *     #
+ *     #
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer_before, __pyx_n_s_GetFeatureCount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_1);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_1, function);
+    }
+  }
+  __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 186, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_INCREF(__pyx_kp_s_Elements_number_before);
+  __Pyx_GIVEREF(__pyx_kp_s_Elements_number_before);
+  PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_s_Elements_number_before);
+  __Pyx_GIVEREF(__pyx_t_5);
+  PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_5);
+  __pyx_t_5 = 0;
+  if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 186, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":189
+ *     #
+ *     #
+ *     gdal.SetConfigOption("GDAL_FILENAME_IS_UTF8", "NO")  #             # <<<<<<<<<<<<<<
+ *     gdal.SetConfigOption("SHAPE_ENCODING", "CP936")  #
+ *     # stroutput = "E:\shptest\DWFL_2017.shp" #
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_gdal); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 189, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_SetConfigOption); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 189, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple_, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 189, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":190
+ *     #
+ *     gdal.SetConfigOption("GDAL_FILENAME_IS_UTF8", "NO")  #
+ *     gdal.SetConfigOption("SHAPE_ENCODING", "CP936")  #             # <<<<<<<<<<<<<<
+ *     # stroutput = "E:\shptest\DWFL_2017.shp" #
+ *     ogr.RegisterAll()  #
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_gdal); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 190, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_SetConfigOption); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 190, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 190, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":192
+ *     gdal.SetConfigOption("SHAPE_ENCODING", "CP936")  #
+ *     # stroutput = "E:\shptest\DWFL_2017.shp" #
+ *     ogr.RegisterAll()  #             # <<<<<<<<<<<<<<
+ *     strDriverName = "ESRI Shapefile"  # ESRIshp
+ *     oDriver = ogr.GetDriverByName(strDriverName)
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_ogr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 192, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_RegisterAll); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 192, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_t_5 = NULL;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_5);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 192, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":193
+ *     # stroutput = "E:\shptest\DWFL_2017.shp" #
+ *     ogr.RegisterAll()  #
+ *     strDriverName = "ESRI Shapefile"  # ESRIshp             # <<<<<<<<<<<<<<
+ *     oDriver = ogr.GetDriverByName(strDriverName)
+ *     if oDriver == None:
+ */
+  __Pyx_INCREF(__pyx_kp_s_ESRI_Shapefile);
+  __pyx_v_strDriverName = __pyx_kp_s_ESRI_Shapefile;
+
+  /* "VectorClipByVector.py":194
+ *     ogr.RegisterAll()  #
+ *     strDriverName = "ESRI Shapefile"  # ESRIshp
+ *     oDriver = ogr.GetDriverByName(strDriverName)             # <<<<<<<<<<<<<<
+ *     if oDriver == None:
+ *         print("%s \n", strDriverName)
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_ogr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 194, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_GetDriverByName); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 194, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_2, __pyx_v_strDriverName) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_strDriverName);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 194, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_oDriver = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":195
+ *     strDriverName = "ESRI Shapefile"  # ESRIshp
+ *     oDriver = ogr.GetDriverByName(strDriverName)
+ *     if oDriver == None:             # <<<<<<<<<<<<<<
+ *         print("%s \n", strDriverName)
+ * 
+ */
+  __pyx_t_1 = PyObject_RichCompare(__pyx_v_oDriver, Py_None, Py_EQ); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 195, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 195, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  if (__pyx_t_6) {
+
+    /* "VectorClipByVector.py":196
+ *     oDriver = ogr.GetDriverByName(strDriverName)
+ *     if oDriver == None:
+ *         print("%s \n", strDriverName)             # <<<<<<<<<<<<<<
+ * 
+ *     oDS = oDriver.CreateDataSource(stroutput)  #
+ */
+    __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 196, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_INCREF(__pyx_kp_s_s);
+    __Pyx_GIVEREF(__pyx_kp_s_s);
+    PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_s_s);
+    __Pyx_INCREF(__pyx_v_strDriverName);
+    __Pyx_GIVEREF(__pyx_v_strDriverName);
+    PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_strDriverName);
+    if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 196, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":195
+ *     strDriverName = "ESRI Shapefile"  # ESRIshp
+ *     oDriver = ogr.GetDriverByName(strDriverName)
+ *     if oDriver == None:             # <<<<<<<<<<<<<<
+ *         print("%s \n", strDriverName)
+ * 
+ */
+  }
+
+  /* "VectorClipByVector.py":198
+ *         print("%s \n", strDriverName)
+ * 
+ *     oDS = oDriver.CreateDataSource(stroutput)  #             # <<<<<<<<<<<<<<
+ *     if oDS == None:
+ *         print("%s", stroutput)
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_oDriver, __pyx_n_s_CreateDataSource); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 198, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_2, __pyx_v_stroutput) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_stroutput);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 198, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_oDS = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":199
+ * 
+ *     oDS = oDriver.CreateDataSource(stroutput)  #
+ *     if oDS == None:             # <<<<<<<<<<<<<<
+ *         print("%s", stroutput)
+ * 
+ */
+  __pyx_t_1 = PyObject_RichCompare(__pyx_v_oDS, Py_None, Py_EQ); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 199, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  if (__pyx_t_6) {
+
+    /* "VectorClipByVector.py":200
+ *     oDS = oDriver.CreateDataSource(stroutput)  #
+ *     if oDS == None:
+ *         print("%s", stroutput)             # <<<<<<<<<<<<<<
+ * 
+ *     srs = osr.SpatialReference()  #
+ */
+    __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 200, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_INCREF(__pyx_kp_s_s_2);
+    __Pyx_GIVEREF(__pyx_kp_s_s_2);
+    PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_s_s_2);
+    __Pyx_INCREF(__pyx_v_stroutput);
+    __Pyx_GIVEREF(__pyx_v_stroutput);
+    PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_stroutput);
+    if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 200, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":199
+ * 
+ *     oDS = oDriver.CreateDataSource(stroutput)  #
+ *     if oDS == None:             # <<<<<<<<<<<<<<
+ *         print("%s", stroutput)
+ * 
+ */
+  }
+
+  /* "VectorClipByVector.py":202
+ *         print("%s", stroutput)
+ * 
+ *     srs = osr.SpatialReference()  #             # <<<<<<<<<<<<<<
+ *     srsout = spatial_ref.ExportToWkt()
+ *     srs.ImportFromWkt(srsout)  # WGS1984
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_osr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 202, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_SpatialReference_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 202, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_t_5 = NULL;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_5);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 202, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_srs = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":203
+ * 
+ *     srs = osr.SpatialReference()  #
+ *     srsout = spatial_ref.ExportToWkt()             # <<<<<<<<<<<<<<
+ *     srs.ImportFromWkt(srsout)  # WGS1984
+ *     papszLCO = []
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_spatial_ref, __pyx_n_s_ExportToWkt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 203, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_5);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 203, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_srsout = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":204
+ *     srs = osr.SpatialReference()  #
+ *     srsout = spatial_ref.ExportToWkt()
+ *     srs.ImportFromWkt(srsout)  # WGS1984             # <<<<<<<<<<<<<<
+ *     papszLCO = []
+ *     # ,"TestPolygon"->
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_srs, __pyx_n_s_ImportFromWkt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 204, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_5);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_5, __pyx_v_srsout) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_srsout);
+  __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 204, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":205
+ *     srsout = spatial_ref.ExportToWkt()
+ *     srs.ImportFromWkt(srsout)  # WGS1984
+ *     papszLCO = []             # <<<<<<<<<<<<<<
+ *     # ,"TestPolygon"->
+ * 
+ */
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_v_papszLCO = ((PyObject*)__pyx_t_1);
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":209
+ * 
+ *     #
+ *     oSRCDefn = layer.GetLayerDefn()             # <<<<<<<<<<<<<<
+ *     numFe = layer.GetFeatureCount()
+ * 
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer, __pyx_n_s_GetLayerDefn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 209, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_5);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_oSRCDefn = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":210
+ *     #
+ *     oSRCDefn = layer.GetLayerDefn()
+ *     numFe = layer.GetFeatureCount()             # <<<<<<<<<<<<<<
+ * 
+ *     #
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer, __pyx_n_s_GetFeatureCount); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 210, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_5);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 210, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_numFe = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":213
+ * 
+ *     #
+ *     listoutType=[]             # <<<<<<<<<<<<<<
+ *     listOutLayer=[]
+ *     #
+ */
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 213, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_v_listoutType = ((PyObject*)__pyx_t_1);
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":214
+ *     #
+ *     listoutType=[]
+ *     listOutLayer=[]             # <<<<<<<<<<<<<<
+ *     #
+ *     if numFe > 0:
+ */
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_v_listOutLayer = ((PyObject*)__pyx_t_1);
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":216
+ *     listOutLayer=[]
+ *     #
+ *     if numFe > 0:             # <<<<<<<<<<<<<<
+ *         firstFeatur = layer.GetFeature(0)
+ *         FieldNumber = firstFeatur.GetFieldCount()
+ */
+  __pyx_t_1 = PyObject_RichCompare(__pyx_v_numFe, __pyx_int_0, Py_GT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 216, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 216, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  if (__pyx_t_6) {
+
+    /* "VectorClipByVector.py":217
+ *     #
+ *     if numFe > 0:
+ *         firstFeatur = layer.GetFeature(0)             # <<<<<<<<<<<<<<
+ *         FieldNumber = firstFeatur.GetFieldCount()
+ *         firstFeGeo=firstFeatur.geometry()
+ */
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer, __pyx_n_s_GetFeature); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_5 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+      }
+    }
+    __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_5, __pyx_int_0) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_int_0);
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_v_firstFeatur = __pyx_t_1;
+    __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":218
+ *     if numFe > 0:
+ *         firstFeatur = layer.GetFeature(0)
+ *         FieldNumber = firstFeatur.GetFieldCount()             # <<<<<<<<<<<<<<
+ *         firstFeGeo=firstFeatur.geometry()
+ *         Baselayertype=firstFeGeo.GetGeometryName()
+ */
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_firstFeatur, __pyx_n_s_GetFieldCount); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 218, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_5 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+      }
+    }
+    __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 218, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_v_FieldNumber = __pyx_t_1;
+    __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":219
+ *         firstFeatur = layer.GetFeature(0)
+ *         FieldNumber = firstFeatur.GetFieldCount()
+ *         firstFeGeo=firstFeatur.geometry()             # <<<<<<<<<<<<<<
+ *         Baselayertype=firstFeGeo.GetGeometryName()
+ *         listoutType.append(Baselayertype)
+ */
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_firstFeatur, __pyx_n_s_geometry); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 219, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_5 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+      }
+    }
+    __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 219, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_v_firstFeGeo = __pyx_t_1;
+    __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":220
+ *         FieldNumber = firstFeatur.GetFieldCount()
+ *         firstFeGeo=firstFeatur.geometry()
+ *         Baselayertype=firstFeGeo.GetGeometryName()             # <<<<<<<<<<<<<<
+ *         listoutType.append(Baselayertype)
+ *         if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":
+ */
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_firstFeGeo, __pyx_n_s_GetGeometryName); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 220, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_5 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+      }
+    }
+    __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 220, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_v_Baselayertype = __pyx_t_1;
+    __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":221
+ *         firstFeGeo=firstFeatur.geometry()
+ *         Baselayertype=firstFeGeo.GetGeometryName()
+ *         listoutType.append(Baselayertype)             # <<<<<<<<<<<<<<
+ *         if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":
+ *            oLayer1= oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPolygon, papszLCO)
+ */
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listoutType, __pyx_v_Baselayertype); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 221, __pyx_L1_error)
+
+    /* "VectorClipByVector.py":222
+ *         Baselayertype=firstFeGeo.GetGeometryName()
+ *         listoutType.append(Baselayertype)
+ *         if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":             # <<<<<<<<<<<<<<
+ *            oLayer1= oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPolygon, papszLCO)
+ *            if oLayer1 == None:
+ */
+    __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_POLYGON, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 222, __pyx_L1_error)
+    if (!__pyx_t_8) {
+    } else {
+      __pyx_t_6 = __pyx_t_8;
+      goto __pyx_L7_bool_binop_done;
+    }
+    __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_MULTIPOLYGON, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 222, __pyx_L1_error)
+    __pyx_t_6 = __pyx_t_8;
+    __pyx_L7_bool_binop_done:;
+    if (__pyx_t_6) {
+
+      /* "VectorClipByVector.py":223
+ *         listoutType.append(Baselayertype)
+ *         if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":
+ *            oLayer1= oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPolygon, papszLCO)             # <<<<<<<<<<<<<<
+ *            if oLayer1 == None:
+ *                print("\n")
+ */
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_oDS, __pyx_n_s_CreateLayer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 223, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_ogr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 223, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_wkbMultiPolygon); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 223, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __pyx_t_5 = NULL;
+      __pyx_t_4 = 0;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+        __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+        if (likely(__pyx_t_5)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+          __Pyx_INCREF(__pyx_t_5);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_2, function);
+          __pyx_t_4 = 1;
+        }
+      }
+      #if CYTHON_FAST_PYCALL
+      if (PyFunction_Check(__pyx_t_2)) {
+        PyObject *__pyx_temp[5] = {__pyx_t_5, __pyx_n_s_TestPolygon, __pyx_v_srs, __pyx_t_3, __pyx_v_papszLCO};
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 4+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 223, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      } else
+      #endif
+      #if CYTHON_FAST_PYCCALL
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
+        PyObject *__pyx_temp[5] = {__pyx_t_5, __pyx_n_s_TestPolygon, __pyx_v_srs, __pyx_t_3, __pyx_v_papszLCO};
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 4+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 223, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      } else
+      #endif
+      {
+        __pyx_t_9 = PyTuple_New(4+__pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 223, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        if (__pyx_t_5) {
+          __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_5); __pyx_t_5 = NULL;
+        }
+        __Pyx_INCREF(__pyx_n_s_TestPolygon);
+        __Pyx_GIVEREF(__pyx_n_s_TestPolygon);
+        PyTuple_SET_ITEM(__pyx_t_9, 0+__pyx_t_4, __pyx_n_s_TestPolygon);
+        __Pyx_INCREF(__pyx_v_srs);
+        __Pyx_GIVEREF(__pyx_v_srs);
+        PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_4, __pyx_v_srs);
+        __Pyx_GIVEREF(__pyx_t_3);
+        PyTuple_SET_ITEM(__pyx_t_9, 2+__pyx_t_4, __pyx_t_3);
+        __Pyx_INCREF(__pyx_v_papszLCO);
+        __Pyx_GIVEREF(__pyx_v_papszLCO);
+        PyTuple_SET_ITEM(__pyx_t_9, 3+__pyx_t_4, __pyx_v_papszLCO);
+        __pyx_t_3 = 0;
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 223, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_v_oLayer1 = __pyx_t_1;
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":224
+ *         if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":
+ *            oLayer1= oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPolygon, papszLCO)
+ *            if oLayer1 == None:             # <<<<<<<<<<<<<<
+ *                print("\n")
+ *            else:
+ */
+      __pyx_t_1 = PyObject_RichCompare(__pyx_v_oLayer1, Py_None, Py_EQ); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 224, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 224, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      if (__pyx_t_6) {
+
+        /* "VectorClipByVector.py":225
+ *            oLayer1= oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPolygon, papszLCO)
+ *            if oLayer1 == None:
+ *                print("\n")             # <<<<<<<<<<<<<<
+ *            else:
+ *                listOutLayer.append(oLayer1)
+ */
+        if (__Pyx_PrintOne(0, __pyx_kp_s__3) < 0) __PYX_ERR(0, 225, __pyx_L1_error)
+
+        /* "VectorClipByVector.py":224
+ *         if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":
+ *            oLayer1= oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPolygon, papszLCO)
+ *            if oLayer1 == None:             # <<<<<<<<<<<<<<
+ *                print("\n")
+ *            else:
+ */
+        goto __pyx_L9;
+      }
+
+      /* "VectorClipByVector.py":227
+ *                print("\n")
+ *            else:
+ *                listOutLayer.append(oLayer1)             # <<<<<<<<<<<<<<
+ *         elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":
+ *            oLayer1= oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiLineString, papszLCO)
+ */
+      /*else*/ {
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listOutLayer, __pyx_v_oLayer1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 227, __pyx_L1_error)
+      }
+      __pyx_L9:;
+
+      /* "VectorClipByVector.py":222
+ *         Baselayertype=firstFeGeo.GetGeometryName()
+ *         listoutType.append(Baselayertype)
+ *         if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":             # <<<<<<<<<<<<<<
+ *            oLayer1= oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPolygon, papszLCO)
+ *            if oLayer1 == None:
+ */
+      goto __pyx_L6;
+    }
+
+    /* "VectorClipByVector.py":228
+ *            else:
+ *                listOutLayer.append(oLayer1)
+ *         elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":             # <<<<<<<<<<<<<<
+ *            oLayer1= oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiLineString, papszLCO)
+ *            if oLayer1== None:
+ */
+    __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_LINESTRING, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 228, __pyx_L1_error)
+    if (!__pyx_t_8) {
+    } else {
+      __pyx_t_6 = __pyx_t_8;
+      goto __pyx_L10_bool_binop_done;
+    }
+    __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_MULTILINESTRING, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 228, __pyx_L1_error)
+    __pyx_t_6 = __pyx_t_8;
+    __pyx_L10_bool_binop_done:;
+    if (__pyx_t_6) {
+
+      /* "VectorClipByVector.py":229
+ *                listOutLayer.append(oLayer1)
+ *         elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":
+ *            oLayer1= oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiLineString, papszLCO)             # <<<<<<<<<<<<<<
+ *            if oLayer1== None:
+ *                print("\n")
+ */
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_oDS, __pyx_n_s_CreateLayer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 229, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_ogr); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 229, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_wkbMultiLineString); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 229, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __pyx_t_9 = NULL;
+      __pyx_t_4 = 0;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+        __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_2);
+        if (likely(__pyx_t_9)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+          __Pyx_INCREF(__pyx_t_9);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_2, function);
+          __pyx_t_4 = 1;
+        }
+      }
+      #if CYTHON_FAST_PYCALL
+      if (PyFunction_Check(__pyx_t_2)) {
+        PyObject *__pyx_temp[5] = {__pyx_t_9, __pyx_n_s_TestPolygon, __pyx_v_srs, __pyx_t_3, __pyx_v_papszLCO};
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 4+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 229, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      } else
+      #endif
+      #if CYTHON_FAST_PYCCALL
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
+        PyObject *__pyx_temp[5] = {__pyx_t_9, __pyx_n_s_TestPolygon, __pyx_v_srs, __pyx_t_3, __pyx_v_papszLCO};
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 4+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 229, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      } else
+      #endif
+      {
+        __pyx_t_5 = PyTuple_New(4+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 229, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        if (__pyx_t_9) {
+          __Pyx_GIVEREF(__pyx_t_9); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_9); __pyx_t_9 = NULL;
+        }
+        __Pyx_INCREF(__pyx_n_s_TestPolygon);
+        __Pyx_GIVEREF(__pyx_n_s_TestPolygon);
+        PyTuple_SET_ITEM(__pyx_t_5, 0+__pyx_t_4, __pyx_n_s_TestPolygon);
+        __Pyx_INCREF(__pyx_v_srs);
+        __Pyx_GIVEREF(__pyx_v_srs);
+        PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_4, __pyx_v_srs);
+        __Pyx_GIVEREF(__pyx_t_3);
+        PyTuple_SET_ITEM(__pyx_t_5, 2+__pyx_t_4, __pyx_t_3);
+        __Pyx_INCREF(__pyx_v_papszLCO);
+        __Pyx_GIVEREF(__pyx_v_papszLCO);
+        PyTuple_SET_ITEM(__pyx_t_5, 3+__pyx_t_4, __pyx_v_papszLCO);
+        __pyx_t_3 = 0;
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 229, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_v_oLayer1 = __pyx_t_1;
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":230
+ *         elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":
+ *            oLayer1= oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiLineString, papszLCO)
+ *            if oLayer1== None:             # <<<<<<<<<<<<<<
+ *                print("\n")
+ *            else:
+ */
+      __pyx_t_1 = PyObject_RichCompare(__pyx_v_oLayer1, Py_None, Py_EQ); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 230, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 230, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      if (__pyx_t_6) {
+
+        /* "VectorClipByVector.py":231
+ *            oLayer1= oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiLineString, papszLCO)
+ *            if oLayer1== None:
+ *                print("\n")             # <<<<<<<<<<<<<<
+ *            else:
+ *                listOutLayer.append(oLayer1)
+ */
+        if (__Pyx_PrintOne(0, __pyx_kp_s__3) < 0) __PYX_ERR(0, 231, __pyx_L1_error)
+
+        /* "VectorClipByVector.py":230
+ *         elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":
+ *            oLayer1= oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiLineString, papszLCO)
+ *            if oLayer1== None:             # <<<<<<<<<<<<<<
+ *                print("\n")
+ *            else:
+ */
+        goto __pyx_L12;
+      }
+
+      /* "VectorClipByVector.py":233
+ *                print("\n")
+ *            else:
+ *                listOutLayer.append(oLayer1)             # <<<<<<<<<<<<<<
+ *         if Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":
+ *            oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPoint, papszLCO)
+ */
+      /*else*/ {
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listOutLayer, __pyx_v_oLayer1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 233, __pyx_L1_error)
+      }
+      __pyx_L12:;
+
+      /* "VectorClipByVector.py":228
+ *            else:
+ *                listOutLayer.append(oLayer1)
+ *         elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":             # <<<<<<<<<<<<<<
+ *            oLayer1= oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiLineString, papszLCO)
+ *            if oLayer1== None:
+ */
+    }
+    __pyx_L6:;
+
+    /* "VectorClipByVector.py":234
+ *            else:
+ *                listOutLayer.append(oLayer1)
+ *         if Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":             # <<<<<<<<<<<<<<
+ *            oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPoint, papszLCO)
+ *            if oLayer1 == None:
+ */
+    __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_POINT, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 234, __pyx_L1_error)
+    if (!__pyx_t_8) {
+    } else {
+      __pyx_t_6 = __pyx_t_8;
+      goto __pyx_L14_bool_binop_done;
+    }
+    __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_MULTIPOINT, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 234, __pyx_L1_error)
+    __pyx_t_6 = __pyx_t_8;
+    __pyx_L14_bool_binop_done:;
+    if (__pyx_t_6) {
+
+      /* "VectorClipByVector.py":235
+ *                listOutLayer.append(oLayer1)
+ *         if Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":
+ *            oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPoint, papszLCO)             # <<<<<<<<<<<<<<
+ *            if oLayer1 == None:
+ *                print("\n")
+ */
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_oDS, __pyx_n_s_CreateLayer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 235, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_ogr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 235, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_wkbMultiPoint); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 235, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __pyx_t_5 = NULL;
+      __pyx_t_4 = 0;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+        __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+        if (likely(__pyx_t_5)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+          __Pyx_INCREF(__pyx_t_5);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_2, function);
+          __pyx_t_4 = 1;
+        }
+      }
+      #if CYTHON_FAST_PYCALL
+      if (PyFunction_Check(__pyx_t_2)) {
+        PyObject *__pyx_temp[5] = {__pyx_t_5, __pyx_n_s_TestPolygon, __pyx_v_srs, __pyx_t_3, __pyx_v_papszLCO};
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 4+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 235, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      } else
+      #endif
+      #if CYTHON_FAST_PYCCALL
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
+        PyObject *__pyx_temp[5] = {__pyx_t_5, __pyx_n_s_TestPolygon, __pyx_v_srs, __pyx_t_3, __pyx_v_papszLCO};
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 4+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 235, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      } else
+      #endif
+      {
+        __pyx_t_9 = PyTuple_New(4+__pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 235, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        if (__pyx_t_5) {
+          __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_5); __pyx_t_5 = NULL;
+        }
+        __Pyx_INCREF(__pyx_n_s_TestPolygon);
+        __Pyx_GIVEREF(__pyx_n_s_TestPolygon);
+        PyTuple_SET_ITEM(__pyx_t_9, 0+__pyx_t_4, __pyx_n_s_TestPolygon);
+        __Pyx_INCREF(__pyx_v_srs);
+        __Pyx_GIVEREF(__pyx_v_srs);
+        PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_4, __pyx_v_srs);
+        __Pyx_GIVEREF(__pyx_t_3);
+        PyTuple_SET_ITEM(__pyx_t_9, 2+__pyx_t_4, __pyx_t_3);
+        __Pyx_INCREF(__pyx_v_papszLCO);
+        __Pyx_GIVEREF(__pyx_v_papszLCO);
+        PyTuple_SET_ITEM(__pyx_t_9, 3+__pyx_t_4, __pyx_v_papszLCO);
+        __pyx_t_3 = 0;
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 235, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_oLayer1, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":236
+ *         if Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":
+ *            oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPoint, papszLCO)
+ *            if oLayer1 == None:             # <<<<<<<<<<<<<<
+ *                print("\n")
+ *            else:
+ */
+      __pyx_t_1 = PyObject_RichCompare(__pyx_v_oLayer1, Py_None, Py_EQ); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 236, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 236, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      if (__pyx_t_6) {
+
+        /* "VectorClipByVector.py":237
+ *            oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPoint, papszLCO)
+ *            if oLayer1 == None:
+ *                print("\n")             # <<<<<<<<<<<<<<
+ *            else:
+ *                listOutLayer.append(oLayer1)
+ */
+        if (__Pyx_PrintOne(0, __pyx_kp_s__3) < 0) __PYX_ERR(0, 237, __pyx_L1_error)
+
+        /* "VectorClipByVector.py":236
+ *         if Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":
+ *            oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPoint, papszLCO)
+ *            if oLayer1 == None:             # <<<<<<<<<<<<<<
+ *                print("\n")
+ *            else:
+ */
+        goto __pyx_L16;
+      }
+
+      /* "VectorClipByVector.py":239
+ *                print("\n")
+ *            else:
+ *                listOutLayer.append(oLayer1)             # <<<<<<<<<<<<<<
+ *         for itr in range(FieldNumber):
+ *             curFiedDefn = oSRCDefn.GetFieldDefn(itr)
+ */
+      /*else*/ {
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listOutLayer, __pyx_v_oLayer1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 239, __pyx_L1_error)
+      }
+      __pyx_L16:;
+
+      /* "VectorClipByVector.py":234
+ *            else:
+ *                listOutLayer.append(oLayer1)
+ *         if Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":             # <<<<<<<<<<<<<<
+ *            oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPoint, papszLCO)
+ *            if oLayer1 == None:
+ */
+    }
+
+    /* "VectorClipByVector.py":240
+ *            else:
+ *                listOutLayer.append(oLayer1)
+ *         for itr in range(FieldNumber):             # <<<<<<<<<<<<<<
+ *             curFiedDefn = oSRCDefn.GetFieldDefn(itr)
+ *             fieldname = curFiedDefn.GetNameRef()
+ */
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_FieldNumber); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 240, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
+      __pyx_t_2 = __pyx_t_1; __Pyx_INCREF(__pyx_t_2); __pyx_t_10 = 0;
+      __pyx_t_11 = NULL;
+    } else {
+      __pyx_t_10 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 240, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_11 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 240, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_11)) {
+        if (likely(PyList_CheckExact(__pyx_t_2))) {
+          if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_2)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_10); __Pyx_INCREF(__pyx_t_1); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 240, __pyx_L1_error)
+          #else
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 240, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          #endif
+        } else {
+          if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_10); __Pyx_INCREF(__pyx_t_1); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 240, __pyx_L1_error)
+          #else
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 240, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          #endif
+        }
+      } else {
+        __pyx_t_1 = __pyx_t_11(__pyx_t_2);
+        if (unlikely(!__pyx_t_1)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 240, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_1);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_itr, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":241
+ *                listOutLayer.append(oLayer1)
+ *         for itr in range(FieldNumber):
+ *             curFiedDefn = oSRCDefn.GetFieldDefn(itr)             # <<<<<<<<<<<<<<
+ *             fieldname = curFiedDefn.GetNameRef()
+ *             # fiedTypeName=curFiedDefn.GetFieldTypeName(curFiedDefn.GetType())
+ */
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_oSRCDefn, __pyx_n_s_GetFieldDefn); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 241, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_3 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_9))) {
+        __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_9);
+        if (likely(__pyx_t_3)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+          __Pyx_INCREF(__pyx_t_3);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_9, function);
+        }
+      }
+      __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_3, __pyx_v_itr) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_v_itr);
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 241, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_curFiedDefn, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":242
+ *         for itr in range(FieldNumber):
+ *             curFiedDefn = oSRCDefn.GetFieldDefn(itr)
+ *             fieldname = curFiedDefn.GetNameRef()             # <<<<<<<<<<<<<<
+ *             # fiedTypeName=curFiedDefn.GetFieldTypeName(curFiedDefn.GetType())
+ *             fieldtype = curFiedDefn.GetType()
+ */
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_curFiedDefn, __pyx_n_s_GetNameRef); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 242, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_3 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_9))) {
+        __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_9);
+        if (likely(__pyx_t_3)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+          __Pyx_INCREF(__pyx_t_3);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_9, function);
+        }
+      }
+      __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_9);
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 242, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_fieldname, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":244
+ *             fieldname = curFiedDefn.GetNameRef()
+ *             # fiedTypeName=curFiedDefn.GetFieldTypeName(curFiedDefn.GetType())
+ *             fieldtype = curFiedDefn.GetType()             # <<<<<<<<<<<<<<
+ *             creatFieldN = ogr.FieldDefn(fieldname, fieldtype)
+ *             creatFieldN.SetWidth(100)
+ */
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_curFiedDefn, __pyx_n_s_GetType); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 244, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_3 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_9))) {
+        __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_9);
+        if (likely(__pyx_t_3)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+          __Pyx_INCREF(__pyx_t_3);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_9, function);
+        }
+      }
+      __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_9);
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 244, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_fieldtype, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":245
+ *             # fiedTypeName=curFiedDefn.GetFieldTypeName(curFiedDefn.GetType())
+ *             fieldtype = curFiedDefn.GetType()
+ *             creatFieldN = ogr.FieldDefn(fieldname, fieldtype)             # <<<<<<<<<<<<<<
+ *             creatFieldN.SetWidth(100)
+ *             listOutLayer[0].CreateField(creatFieldN)
+ */
+      __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_ogr); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 245, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_FieldDefn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 245, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __pyx_t_9 = NULL;
+      __pyx_t_4 = 0;
+      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_9)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_9);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+          __pyx_t_4 = 1;
+        }
+      }
+      #if CYTHON_FAST_PYCALL
+      if (PyFunction_Check(__pyx_t_3)) {
+        PyObject *__pyx_temp[3] = {__pyx_t_9, __pyx_v_fieldname, __pyx_v_fieldtype};
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 245, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+      } else
+      #endif
+      #if CYTHON_FAST_PYCCALL
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
+        PyObject *__pyx_temp[3] = {__pyx_t_9, __pyx_v_fieldname, __pyx_v_fieldtype};
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 245, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+      } else
+      #endif
+      {
+        __pyx_t_5 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 245, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        if (__pyx_t_9) {
+          __Pyx_GIVEREF(__pyx_t_9); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_9); __pyx_t_9 = NULL;
+        }
+        __Pyx_INCREF(__pyx_v_fieldname);
+        __Pyx_GIVEREF(__pyx_v_fieldname);
+        PyTuple_SET_ITEM(__pyx_t_5, 0+__pyx_t_4, __pyx_v_fieldname);
+        __Pyx_INCREF(__pyx_v_fieldtype);
+        __Pyx_GIVEREF(__pyx_v_fieldtype);
+        PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_4, __pyx_v_fieldtype);
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 245, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_creatFieldN, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":246
+ *             fieldtype = curFiedDefn.GetType()
+ *             creatFieldN = ogr.FieldDefn(fieldname, fieldtype)
+ *             creatFieldN.SetWidth(100)             # <<<<<<<<<<<<<<
+ *             listOutLayer[0].CreateField(creatFieldN)
+ *     # 50
+ */
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_creatFieldN, __pyx_n_s_SetWidth); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 246, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_5 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_5)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_5);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+        }
+      }
+      __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_5, __pyx_int_100) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_int_100);
+      __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 246, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":247
+ *             creatFieldN = ogr.FieldDefn(fieldname, fieldtype)
+ *             creatFieldN.SetWidth(100)
+ *             listOutLayer[0].CreateField(creatFieldN)             # <<<<<<<<<<<<<<
+ *     # 50
+ *     listnow = []
+ */
+      __pyx_t_3 = __Pyx_GetItemInt_List(__pyx_v_listOutLayer, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 247, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_CreateField); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 247, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __pyx_t_3 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+        __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_5);
+        if (likely(__pyx_t_3)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+          __Pyx_INCREF(__pyx_t_3);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_5, function);
+        }
+      }
+      __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_3, __pyx_v_creatFieldN) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_creatFieldN);
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 247, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":240
+ *            else:
+ *                listOutLayer.append(oLayer1)
+ *         for itr in range(FieldNumber):             # <<<<<<<<<<<<<<
+ *             curFiedDefn = oSRCDefn.GetFieldDefn(itr)
+ *             fieldname = curFiedDefn.GetNameRef()
+ */
+    }
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+    /* "VectorClipByVector.py":216
+ *     listOutLayer=[]
+ *     #
+ *     if numFe > 0:             # <<<<<<<<<<<<<<
+ *         firstFeatur = layer.GetFeature(0)
+ *         FieldNumber = firstFeatur.GetFieldCount()
+ */
+  }
+
+  /* "VectorClipByVector.py":249
+ *             listOutLayer[0].CreateField(creatFieldN)
+ *     # 50
+ *     listnow = []             # <<<<<<<<<<<<<<
+ *     listbefor = []
+ *     listFieldOut = []
+ */
+  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 249, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_v_listnow = ((PyObject*)__pyx_t_2);
+  __pyx_t_2 = 0;
+
+  /* "VectorClipByVector.py":250
+ *     # 50
+ *     listnow = []
+ *     listbefor = []             # <<<<<<<<<<<<<<
+ *     listFieldOut = []
+ *     listout = []
+ */
+  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 250, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_v_listbefor = ((PyObject*)__pyx_t_2);
+  __pyx_t_2 = 0;
+
+  /* "VectorClipByVector.py":251
+ *     listnow = []
+ *     listbefor = []
+ *     listFieldOut = []             # <<<<<<<<<<<<<<
+ *     listout = []
+ *     for feature_element in layer:
+ */
+  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 251, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_v_listFieldOut = ((PyObject*)__pyx_t_2);
+  __pyx_t_2 = 0;
+
+  /* "VectorClipByVector.py":252
+ *     listbefor = []
+ *     listFieldOut = []
+ *     listout = []             # <<<<<<<<<<<<<<
+ *     for feature_element in layer:
+ *         # (xy)
+ */
+  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 252, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_v_listout = ((PyObject*)__pyx_t_2);
+  __pyx_t_2 = 0;
+
+  /* "VectorClipByVector.py":253
+ *     listFieldOut = []
+ *     listout = []
+ *     for feature_element in layer:             # <<<<<<<<<<<<<<
+ *         # (xy)
+ *         spatial_data = feature_element.geometry()
+ */
+  if (likely(PyList_CheckExact(__pyx_v_layer)) || PyTuple_CheckExact(__pyx_v_layer)) {
+    __pyx_t_2 = __pyx_v_layer; __Pyx_INCREF(__pyx_t_2); __pyx_t_10 = 0;
+    __pyx_t_11 = NULL;
+  } else {
+    __pyx_t_10 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_layer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 253, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_11 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 253, __pyx_L1_error)
+  }
+  for (;;) {
+    if (likely(!__pyx_t_11)) {
+      if (likely(PyList_CheckExact(__pyx_t_2))) {
+        if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_2)) break;
+        #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_10); __Pyx_INCREF(__pyx_t_1); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 253, __pyx_L1_error)
+        #else
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 253, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        #endif
+      } else {
+        if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
+        #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_10); __Pyx_INCREF(__pyx_t_1); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 253, __pyx_L1_error)
+        #else
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 253, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        #endif
+      }
+    } else {
+      __pyx_t_1 = __pyx_t_11(__pyx_t_2);
+      if (unlikely(!__pyx_t_1)) {
+        PyObject* exc_type = PyErr_Occurred();
+        if (exc_type) {
+          if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+          else __PYX_ERR(0, 253, __pyx_L1_error)
+        }
+        break;
+      }
+      __Pyx_GOTREF(__pyx_t_1);
+    }
+    __Pyx_XDECREF_SET(__pyx_v_feature_element, __pyx_t_1);
+    __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":255
+ *     for feature_element in layer:
+ *         # (xy)
+ *         spatial_data = feature_element.geometry()             # <<<<<<<<<<<<<<
+ *         fieldnum = feature_element.GetFieldCount()
+ *         listnow.append(spatial_data.ExportToWkt())
+ */
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_feature_element, __pyx_n_s_geometry); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 255, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_3 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_5);
+      if (likely(__pyx_t_3)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+        __Pyx_INCREF(__pyx_t_3);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_5, function);
+      }
+    }
+    __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 255, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_spatial_data, __pyx_t_1);
+    __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":256
+ *         # (xy)
+ *         spatial_data = feature_element.geometry()
+ *         fieldnum = feature_element.GetFieldCount()             # <<<<<<<<<<<<<<
+ *         listnow.append(spatial_data.ExportToWkt())
+ *         listonefeature = []
+ */
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_feature_element, __pyx_n_s_GetFieldCount); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 256, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_3 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_5);
+      if (likely(__pyx_t_3)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+        __Pyx_INCREF(__pyx_t_3);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_5, function);
+      }
+    }
+    __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 256, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_fieldnum, __pyx_t_1);
+    __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":257
+ *         spatial_data = feature_element.geometry()
+ *         fieldnum = feature_element.GetFieldCount()
+ *         listnow.append(spatial_data.ExportToWkt())             # <<<<<<<<<<<<<<
+ *         listonefeature = []
+ *         for ite in range(fieldnum):
+ */
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_spatial_data, __pyx_n_s_ExportToWkt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 257, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_3 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_5);
+      if (likely(__pyx_t_3)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+        __Pyx_INCREF(__pyx_t_3);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_5, function);
+      }
+    }
+    __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 257, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listnow, __pyx_t_1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 257, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":258
+ *         fieldnum = feature_element.GetFieldCount()
+ *         listnow.append(spatial_data.ExportToWkt())
+ *         listonefeature = []             # <<<<<<<<<<<<<<
+ *         for ite in range(fieldnum):
+ *             currenfielddefn = oSRCDefn.GetFieldDefn(ite)
+ */
+    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 258, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_XDECREF_SET(__pyx_v_listonefeature, ((PyObject*)__pyx_t_1));
+    __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":259
+ *         listnow.append(spatial_data.ExportToWkt())
+ *         listonefeature = []
+ *         for ite in range(fieldnum):             # <<<<<<<<<<<<<<
+ *             currenfielddefn = oSRCDefn.GetFieldDefn(ite)
+ *             fieldname = currenfielddefn.GetNameRef()
+ */
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_fieldnum); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 259, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
+      __pyx_t_5 = __pyx_t_1; __Pyx_INCREF(__pyx_t_5); __pyx_t_12 = 0;
+      __pyx_t_13 = NULL;
+    } else {
+      __pyx_t_12 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 259, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_13 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 259, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_13)) {
+        if (likely(PyList_CheckExact(__pyx_t_5))) {
+          if (__pyx_t_12 >= PyList_GET_SIZE(__pyx_t_5)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_1 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_12); __Pyx_INCREF(__pyx_t_1); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 259, __pyx_L1_error)
+          #else
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 259, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          #endif
+        } else {
+          if (__pyx_t_12 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_12); __Pyx_INCREF(__pyx_t_1); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 259, __pyx_L1_error)
+          #else
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 259, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          #endif
+        }
+      } else {
+        __pyx_t_1 = __pyx_t_13(__pyx_t_5);
+        if (unlikely(!__pyx_t_1)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 259, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_1);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_ite, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":260
+ *         listonefeature = []
+ *         for ite in range(fieldnum):
+ *             currenfielddefn = oSRCDefn.GetFieldDefn(ite)             # <<<<<<<<<<<<<<
+ *             fieldname = currenfielddefn.GetNameRef()
+ *             fiedlValue = feature_element.GetField(ite)
+ */
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_oSRCDefn, __pyx_n_s_GetFieldDefn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 260, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_9 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_9)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_9);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+        }
+      }
+      __pyx_t_1 = (__pyx_t_9) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_9, __pyx_v_ite) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_ite);
+      __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 260, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_currenfielddefn, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":261
+ *         for ite in range(fieldnum):
+ *             currenfielddefn = oSRCDefn.GetFieldDefn(ite)
+ *             fieldname = currenfielddefn.GetNameRef()             # <<<<<<<<<<<<<<
+ *             fiedlValue = feature_element.GetField(ite)
+ *             listonefeature.append(fieldname)
+ */
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_currenfielddefn, __pyx_n_s_GetNameRef); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 261, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_9 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_9)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_9);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+        }
+      }
+      __pyx_t_1 = (__pyx_t_9) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_9) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
+      __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 261, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_fieldname, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":262
+ *             currenfielddefn = oSRCDefn.GetFieldDefn(ite)
+ *             fieldname = currenfielddefn.GetNameRef()
+ *             fiedlValue = feature_element.GetField(ite)             # <<<<<<<<<<<<<<
+ *             listonefeature.append(fieldname)
+ *             listonefeature.append(fiedlValue)
+ */
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_feature_element, __pyx_n_s_GetField); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 262, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_9 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_9)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_9);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+        }
+      }
+      __pyx_t_1 = (__pyx_t_9) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_9, __pyx_v_ite) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_ite);
+      __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 262, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_fiedlValue, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":263
+ *             fieldname = currenfielddefn.GetNameRef()
+ *             fiedlValue = feature_element.GetField(ite)
+ *             listonefeature.append(fieldname)             # <<<<<<<<<<<<<<
+ *             listonefeature.append(fiedlValue)
+ *         listFieldOut.append(listonefeature)
+ */
+      __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listonefeature, __pyx_v_fieldname); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 263, __pyx_L1_error)
+
+      /* "VectorClipByVector.py":264
+ *             fiedlValue = feature_element.GetField(ite)
+ *             listonefeature.append(fieldname)
+ *             listonefeature.append(fiedlValue)             # <<<<<<<<<<<<<<
+ *         listFieldOut.append(listonefeature)
+ * 
+ */
+      __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listonefeature, __pyx_v_fiedlValue); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 264, __pyx_L1_error)
+
+      /* "VectorClipByVector.py":259
+ *         listnow.append(spatial_data.ExportToWkt())
+ *         listonefeature = []
+ *         for ite in range(fieldnum):             # <<<<<<<<<<<<<<
+ *             currenfielddefn = oSRCDefn.GetFieldDefn(ite)
+ *             fieldname = currenfielddefn.GetNameRef()
+ */
+    }
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+    /* "VectorClipByVector.py":265
+ *             listonefeature.append(fieldname)
+ *             listonefeature.append(fiedlValue)
+ *         listFieldOut.append(listonefeature)             # <<<<<<<<<<<<<<
+ * 
+ *     for feature_elementbefor in layer_before:
+ */
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listFieldOut, __pyx_v_listonefeature); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 265, __pyx_L1_error)
+
+    /* "VectorClipByVector.py":253
+ *     listFieldOut = []
+ *     listout = []
+ *     for feature_element in layer:             # <<<<<<<<<<<<<<
+ *         # (xy)
+ *         spatial_data = feature_element.geometry()
+ */
+  }
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "VectorClipByVector.py":267
+ *         listFieldOut.append(listonefeature)
+ * 
+ *     for feature_elementbefor in layer_before:             # <<<<<<<<<<<<<<
+ *         spatial_databefore = feature_elementbefor.geometry()
+ *         geobefore = spatial_databefore.ExportToWkt()
+ */
+  if (likely(PyList_CheckExact(__pyx_v_layer_before)) || PyTuple_CheckExact(__pyx_v_layer_before)) {
+    __pyx_t_2 = __pyx_v_layer_before; __Pyx_INCREF(__pyx_t_2); __pyx_t_10 = 0;
+    __pyx_t_11 = NULL;
+  } else {
+    __pyx_t_10 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_layer_before); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 267, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_11 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 267, __pyx_L1_error)
+  }
+  for (;;) {
+    if (likely(!__pyx_t_11)) {
+      if (likely(PyList_CheckExact(__pyx_t_2))) {
+        if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_2)) break;
+        #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+        __pyx_t_5 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_10); __Pyx_INCREF(__pyx_t_5); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 267, __pyx_L1_error)
+        #else
+        __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 267, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        #endif
+      } else {
+        if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
+        #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+        __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_10); __Pyx_INCREF(__pyx_t_5); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 267, __pyx_L1_error)
+        #else
+        __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 267, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        #endif
+      }
+    } else {
+      __pyx_t_5 = __pyx_t_11(__pyx_t_2);
+      if (unlikely(!__pyx_t_5)) {
+        PyObject* exc_type = PyErr_Occurred();
+        if (exc_type) {
+          if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+          else __PYX_ERR(0, 267, __pyx_L1_error)
+        }
+        break;
+      }
+      __Pyx_GOTREF(__pyx_t_5);
+    }
+    __Pyx_XDECREF_SET(__pyx_v_feature_elementbefor, __pyx_t_5);
+    __pyx_t_5 = 0;
+
+    /* "VectorClipByVector.py":268
+ * 
+ *     for feature_elementbefor in layer_before:
+ *         spatial_databefore = feature_elementbefor.geometry()             # <<<<<<<<<<<<<<
+ *         geobefore = spatial_databefore.ExportToWkt()
+ *         listbefor.append(geobefore)
+ */
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_feature_elementbefor, __pyx_n_s_geometry); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 268, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __pyx_t_3 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
+      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_1);
+      if (likely(__pyx_t_3)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+        __Pyx_INCREF(__pyx_t_3);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_1, function);
+      }
+    }
+    __pyx_t_5 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 268, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_spatial_databefore, __pyx_t_5);
+    __pyx_t_5 = 0;
+
+    /* "VectorClipByVector.py":269
+ *     for feature_elementbefor in layer_before:
+ *         spatial_databefore = feature_elementbefor.geometry()
+ *         geobefore = spatial_databefore.ExportToWkt()             # <<<<<<<<<<<<<<
+ *         listbefor.append(geobefore)
+ *     # shapely
+ */
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_spatial_databefore, __pyx_n_s_ExportToWkt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 269, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __pyx_t_3 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
+      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_1);
+      if (likely(__pyx_t_3)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+        __Pyx_INCREF(__pyx_t_3);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_1, function);
+      }
+    }
+    __pyx_t_5 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 269, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_geobefore, __pyx_t_5);
+    __pyx_t_5 = 0;
+
+    /* "VectorClipByVector.py":270
+ *         spatial_databefore = feature_elementbefor.geometry()
+ *         geobefore = spatial_databefore.ExportToWkt()
+ *         listbefor.append(geobefore)             # <<<<<<<<<<<<<<
+ *     # shapely
+ *     # TODOpolygonmultipolygon
+ */
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listbefor, __pyx_v_geobefore); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 270, __pyx_L1_error)
+
+    /* "VectorClipByVector.py":267
+ *         listFieldOut.append(listonefeature)
+ * 
+ *     for feature_elementbefor in layer_before:             # <<<<<<<<<<<<<<
+ *         spatial_databefore = feature_elementbefor.geometry()
+ *         geobefore = spatial_databefore.ExportToWkt()
+ */
+  }
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "VectorClipByVector.py":273
+ *     # shapely
+ *     # TODOpolygonmultipolygon
+ *     elementsnumber = layer.GetFeatureCount()             # <<<<<<<<<<<<<<
+ *     elementsnumberberfore = layer_before.GetFeatureCount()
+ *     fnm = len(listFieldOut)
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer, __pyx_n_s_GetFeatureCount); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 273, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_1 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_1)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_1);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_2 = (__pyx_t_1) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_1) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 273, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_elementsnumber = __pyx_t_2;
+  __pyx_t_2 = 0;
+
+  /* "VectorClipByVector.py":274
+ *     # TODOpolygonmultipolygon
+ *     elementsnumber = layer.GetFeatureCount()
+ *     elementsnumberberfore = layer_before.GetFeatureCount()             # <<<<<<<<<<<<<<
+ *     fnm = len(listFieldOut)
+ *     print("fnm is :", fnm)
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer_before, __pyx_n_s_GetFeatureCount); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 274, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_1 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_1)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_1);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_2 = (__pyx_t_1) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_1) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 274, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_elementsnumberberfore = __pyx_t_2;
+  __pyx_t_2 = 0;
+
+  /* "VectorClipByVector.py":275
+ *     elementsnumber = layer.GetFeatureCount()
+ *     elementsnumberberfore = layer_before.GetFeatureCount()
+ *     fnm = len(listFieldOut)             # <<<<<<<<<<<<<<
+ *     print("fnm is :", fnm)
+ *     print("elementnumber is :", elementsnumber)
+ */
+  __pyx_t_10 = PyList_GET_SIZE(__pyx_v_listFieldOut); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 275, __pyx_L1_error)
+  __pyx_v_fnm = __pyx_t_10;
+
+  /* "VectorClipByVector.py":276
+ *     elementsnumberberfore = layer_before.GetFeatureCount()
+ *     fnm = len(listFieldOut)
+ *     print("fnm is :", fnm)             # <<<<<<<<<<<<<<
+ *     print("elementnumber is :", elementsnumber)
+ *     listReserve = []
+ */
+  __pyx_t_2 = PyInt_FromSsize_t(__pyx_v_fnm); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 276, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 276, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_INCREF(__pyx_kp_s_fnm_is);
+  __Pyx_GIVEREF(__pyx_kp_s_fnm_is);
+  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_kp_s_fnm_is);
+  __Pyx_GIVEREF(__pyx_t_2);
+  PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_2);
+  __pyx_t_2 = 0;
+  if (__Pyx_PrintOne(0, __pyx_t_5) < 0) __PYX_ERR(0, 276, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":277
+ *     fnm = len(listFieldOut)
+ *     print("fnm is :", fnm)
+ *     print("elementnumber is :", elementsnumber)             # <<<<<<<<<<<<<<
+ *     listReserve = []
+ *     #Polygon
+ */
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 277, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_INCREF(__pyx_kp_s_elementnumber_is);
+  __Pyx_GIVEREF(__pyx_kp_s_elementnumber_is);
+  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_kp_s_elementnumber_is);
+  __Pyx_INCREF(__pyx_v_elementsnumber);
+  __Pyx_GIVEREF(__pyx_v_elementsnumber);
+  PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_v_elementsnumber);
+  if (__Pyx_PrintOne(0, __pyx_t_5) < 0) __PYX_ERR(0, 277, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":278
+ *     print("fnm is :", fnm)
+ *     print("elementnumber is :", elementsnumber)
+ *     listReserve = []             # <<<<<<<<<<<<<<
+ *     #Polygon
+ *     Baselayertype=listoutType[0]
+ */
+  __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 278, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_v_listReserve = ((PyObject*)__pyx_t_5);
+  __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":280
+ *     listReserve = []
+ *     #Polygon
+ *     Baselayertype=listoutType[0]             # <<<<<<<<<<<<<<
+ *     if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":
+ *         for i in range(elementsnumber):
+ */
+  __pyx_t_5 = __Pyx_GetItemInt_List(__pyx_v_listoutType, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 280, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_XDECREF_SET(__pyx_v_Baselayertype, __pyx_t_5);
+  __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":281
+ *     #Polygon
+ *     Baselayertype=listoutType[0]
+ *     if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":             # <<<<<<<<<<<<<<
+ *         for i in range(elementsnumber):
+ *             # shapely
+ */
+  __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_POLYGON, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 281, __pyx_L1_error)
+  if (!__pyx_t_8) {
+  } else {
+    __pyx_t_6 = __pyx_t_8;
+    goto __pyx_L26_bool_binop_done;
+  }
+  __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_MULTIPOLYGON, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 281, __pyx_L1_error)
+  __pyx_t_6 = __pyx_t_8;
+  __pyx_L26_bool_binop_done:;
+  if (__pyx_t_6) {
+
+    /* "VectorClipByVector.py":282
+ *     Baselayertype=listoutType[0]
+ *     if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":
+ *         for i in range(elementsnumber):             # <<<<<<<<<<<<<<
+ *             # shapely
+ *             listinset = []
+ */
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_elementsnumber); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 282, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    if (likely(PyList_CheckExact(__pyx_t_5)) || PyTuple_CheckExact(__pyx_t_5)) {
+      __pyx_t_2 = __pyx_t_5; __Pyx_INCREF(__pyx_t_2); __pyx_t_10 = 0;
+      __pyx_t_11 = NULL;
+    } else {
+      __pyx_t_10 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 282, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_11 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 282, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_11)) {
+        if (likely(PyList_CheckExact(__pyx_t_2))) {
+          if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_2)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_5 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_10); __Pyx_INCREF(__pyx_t_5); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 282, __pyx_L1_error)
+          #else
+          __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 282, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          #endif
+        } else {
+          if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_10); __Pyx_INCREF(__pyx_t_5); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 282, __pyx_L1_error)
+          #else
+          __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 282, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          #endif
+        }
+      } else {
+        __pyx_t_5 = __pyx_t_11(__pyx_t_2);
+        if (unlikely(!__pyx_t_5)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 282, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_5);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_5);
+      __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":284
+ *         for i in range(elementsnumber):
+ *             # shapely
+ *             listinset = []             # <<<<<<<<<<<<<<
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):
+ */
+      __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 284, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_XDECREF_SET(__pyx_v_listinset, ((PyObject*)__pyx_t_5));
+      __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":285
+ *             # shapely
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])             # <<<<<<<<<<<<<<
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])
+ */
+      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_wkt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 285, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_loads); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 285, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_listnow, __pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 285, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __pyx_t_9 = NULL;
+      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_9)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_9);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+        }
+      }
+      __pyx_t_5 = (__pyx_t_9) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_9, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_1);
+      __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 285, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_geoi, __pyx_t_5);
+      __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":286
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):             # <<<<<<<<<<<<<<
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ */
+      __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_elementsnumberberfore); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 286, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      if (likely(PyList_CheckExact(__pyx_t_5)) || PyTuple_CheckExact(__pyx_t_5)) {
+        __pyx_t_3 = __pyx_t_5; __Pyx_INCREF(__pyx_t_3); __pyx_t_12 = 0;
+        __pyx_t_13 = NULL;
+      } else {
+        __pyx_t_12 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 286, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_13 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 286, __pyx_L1_error)
+      }
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      for (;;) {
+        if (likely(!__pyx_t_13)) {
+          if (likely(PyList_CheckExact(__pyx_t_3))) {
+            if (__pyx_t_12 >= PyList_GET_SIZE(__pyx_t_3)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_5 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_12); __Pyx_INCREF(__pyx_t_5); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 286, __pyx_L1_error)
+            #else
+            __pyx_t_5 = PySequence_ITEM(__pyx_t_3, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 286, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_5);
+            #endif
+          } else {
+            if (__pyx_t_12 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_12); __Pyx_INCREF(__pyx_t_5); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 286, __pyx_L1_error)
+            #else
+            __pyx_t_5 = PySequence_ITEM(__pyx_t_3, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 286, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_5);
+            #endif
+          }
+        } else {
+          __pyx_t_5 = __pyx_t_13(__pyx_t_3);
+          if (unlikely(!__pyx_t_5)) {
+            PyObject* exc_type = PyErr_Occurred();
+            if (exc_type) {
+              if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+              else __PYX_ERR(0, 286, __pyx_L1_error)
+            }
+            break;
+          }
+          __Pyx_GOTREF(__pyx_t_5);
+        }
+        __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_5);
+        __pyx_t_5 = 0;
+
+        /* "VectorClipByVector.py":287
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])             # <<<<<<<<<<<<<<
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ */
+        __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_wkt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 287, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_loads); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 287, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_listbefor, __pyx_v_j); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 287, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_14 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_9))) {
+          __pyx_t_14 = PyMethod_GET_SELF(__pyx_t_9);
+          if (likely(__pyx_t_14)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+            __Pyx_INCREF(__pyx_t_14);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_9, function);
+          }
+        }
+        __pyx_t_5 = (__pyx_t_14) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_14, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_1);
+        __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 287, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_geoj, __pyx_t_5);
+        __pyx_t_5 = 0;
+
+        /* "VectorClipByVector.py":288
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)             # <<<<<<<<<<<<<<
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Polygon":
+ */
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoi, __pyx_n_s_intersection); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 288, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __pyx_t_1 = NULL;
+        if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_9))) {
+          __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_9);
+          if (likely(__pyx_t_1)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+            __Pyx_INCREF(__pyx_t_1);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_9, function);
+          }
+        }
+        __pyx_t_5 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_1, __pyx_v_geoj) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_v_geoj);
+        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+        if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 288, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_geoinset, __pyx_t_5);
+        __pyx_t_5 = 0;
+
+        /* "VectorClipByVector.py":289
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "Polygon":
+ *                         if geoinset.is_valid:
+ */
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_is_empty); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 289, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 289, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __pyx_t_8 = ((!__pyx_t_6) != 0);
+        if (__pyx_t_8) {
+
+          /* "VectorClipByVector.py":290
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Polygon":             # <<<<<<<<<<<<<<
+ *                         if geoinset.is_valid:
+ *                             listinset.append(geoinset.wkt)
+ */
+          __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 290, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_5, __pyx_n_s_Polygon, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 290, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          if (__pyx_t_8) {
+
+            /* "VectorClipByVector.py":291
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Polygon":
+ *                         if geoinset.is_valid:             # <<<<<<<<<<<<<<
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiPolygon":
+ */
+            __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 291, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_5);
+            __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 291, __pyx_L1_error)
+            __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+            if (__pyx_t_8) {
+
+              /* "VectorClipByVector.py":292
+ *                     if geoinset.type == "Polygon":
+ *                         if geoinset.is_valid:
+ *                             listinset.append(geoinset.wkt)             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "MultiPolygon":
+ *                         for g in geoinset:
+ */
+              __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_wkt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 292, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_5);
+              __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listinset, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 292, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+              /* "VectorClipByVector.py":291
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Polygon":
+ *                         if geoinset.is_valid:             # <<<<<<<<<<<<<<
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiPolygon":
+ */
+            }
+
+            /* "VectorClipByVector.py":290
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Polygon":             # <<<<<<<<<<<<<<
+ *                         if geoinset.is_valid:
+ *                             listinset.append(geoinset.wkt)
+ */
+          }
+
+          /* "VectorClipByVector.py":293
+ *                         if geoinset.is_valid:
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiPolygon":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ */
+          __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 293, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_5, __pyx_n_s_MultiPolygon, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 293, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          if (__pyx_t_8) {
+
+            /* "VectorClipByVector.py":294
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiPolygon":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.is_valid:
+ *                                 listinset.append(g.wkt)
+ */
+            if (likely(PyList_CheckExact(__pyx_v_geoinset)) || PyTuple_CheckExact(__pyx_v_geoinset)) {
+              __pyx_t_5 = __pyx_v_geoinset; __Pyx_INCREF(__pyx_t_5); __pyx_t_15 = 0;
+              __pyx_t_16 = NULL;
+            } else {
+              __pyx_t_15 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_v_geoinset); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 294, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_5);
+              __pyx_t_16 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 294, __pyx_L1_error)
+            }
+            for (;;) {
+              if (likely(!__pyx_t_16)) {
+                if (likely(PyList_CheckExact(__pyx_t_5))) {
+                  if (__pyx_t_15 >= PyList_GET_SIZE(__pyx_t_5)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_9 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_15); __Pyx_INCREF(__pyx_t_9); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 294, __pyx_L1_error)
+                  #else
+                  __pyx_t_9 = PySequence_ITEM(__pyx_t_5, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 294, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_9);
+                  #endif
+                } else {
+                  if (__pyx_t_15 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_9 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_15); __Pyx_INCREF(__pyx_t_9); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 294, __pyx_L1_error)
+                  #else
+                  __pyx_t_9 = PySequence_ITEM(__pyx_t_5, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 294, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_9);
+                  #endif
+                }
+              } else {
+                __pyx_t_9 = __pyx_t_16(__pyx_t_5);
+                if (unlikely(!__pyx_t_9)) {
+                  PyObject* exc_type = PyErr_Occurred();
+                  if (exc_type) {
+                    if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                    else __PYX_ERR(0, 294, __pyx_L1_error)
+                  }
+                  break;
+                }
+                __Pyx_GOTREF(__pyx_t_9);
+              }
+              __Pyx_XDECREF_SET(__pyx_v_g, __pyx_t_9);
+              __pyx_t_9 = 0;
+
+              /* "VectorClipByVector.py":295
+ *                     if geoinset.type == "MultiPolygon":
+ *                         for g in geoinset:
+ *                             if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":
+ */
+              __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 295, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_9);
+              __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 295, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+              if (__pyx_t_8) {
+
+                /* "VectorClipByVector.py":296
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ *                                 listinset.append(g.wkt)             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ */
+                __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_wkt); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 296, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_9);
+                __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listinset, __pyx_t_9); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 296, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+                /* "VectorClipByVector.py":295
+ *                     if geoinset.type == "MultiPolygon":
+ *                         for g in geoinset:
+ *                             if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":
+ */
+              }
+
+              /* "VectorClipByVector.py":294
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiPolygon":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.is_valid:
+ *                                 listinset.append(g.wkt)
+ */
+            }
+            __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+            /* "VectorClipByVector.py":293
+ *                         if geoinset.is_valid:
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiPolygon":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ */
+          }
+
+          /* "VectorClipByVector.py":297
+ *                             if g.is_valid:
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.type == "Polygon":
+ */
+          __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 297, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_5, __pyx_n_s_GeometryCollection, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 297, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          if (__pyx_t_8) {
+
+            /* "VectorClipByVector.py":298
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.type == "Polygon":
+ *                                 if g.is_valid:
+ */
+            if (likely(PyList_CheckExact(__pyx_v_geoinset)) || PyTuple_CheckExact(__pyx_v_geoinset)) {
+              __pyx_t_5 = __pyx_v_geoinset; __Pyx_INCREF(__pyx_t_5); __pyx_t_15 = 0;
+              __pyx_t_16 = NULL;
+            } else {
+              __pyx_t_15 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_v_geoinset); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 298, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_5);
+              __pyx_t_16 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 298, __pyx_L1_error)
+            }
+            for (;;) {
+              if (likely(!__pyx_t_16)) {
+                if (likely(PyList_CheckExact(__pyx_t_5))) {
+                  if (__pyx_t_15 >= PyList_GET_SIZE(__pyx_t_5)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_9 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_15); __Pyx_INCREF(__pyx_t_9); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 298, __pyx_L1_error)
+                  #else
+                  __pyx_t_9 = PySequence_ITEM(__pyx_t_5, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 298, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_9);
+                  #endif
+                } else {
+                  if (__pyx_t_15 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_9 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_15); __Pyx_INCREF(__pyx_t_9); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 298, __pyx_L1_error)
+                  #else
+                  __pyx_t_9 = PySequence_ITEM(__pyx_t_5, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 298, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_9);
+                  #endif
+                }
+              } else {
+                __pyx_t_9 = __pyx_t_16(__pyx_t_5);
+                if (unlikely(!__pyx_t_9)) {
+                  PyObject* exc_type = PyErr_Occurred();
+                  if (exc_type) {
+                    if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                    else __PYX_ERR(0, 298, __pyx_L1_error)
+                  }
+                  break;
+                }
+                __Pyx_GOTREF(__pyx_t_9);
+              }
+              __Pyx_XDECREF_SET(__pyx_v_g, __pyx_t_9);
+              __pyx_t_9 = 0;
+
+              /* "VectorClipByVector.py":299
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ *                             if g.type == "Polygon":             # <<<<<<<<<<<<<<
+ *                                 if g.is_valid:
+ *                                     listinset.append(g.wkt)
+ */
+              __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_type); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 299, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_9);
+              __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_9, __pyx_n_s_Polygon, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 299, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+              if (__pyx_t_8) {
+
+                /* "VectorClipByVector.py":300
+ *                         for g in geoinset:
+ *                             if g.type == "Polygon":
+ *                                 if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiPolygon":
+ */
+                __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 300, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_9);
+                __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+                if (__pyx_t_8) {
+
+                  /* "VectorClipByVector.py":301
+ *                             if g.type == "Polygon":
+ *                                 if g.is_valid:
+ *                                     listinset.append(g.wkt)             # <<<<<<<<<<<<<<
+ *                             if g.type == "MultiPolygon":
+ *                                 for tg in g:
+ */
+                  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_wkt); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 301, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_9);
+                  __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listinset, __pyx_t_9); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 301, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+                  /* "VectorClipByVector.py":300
+ *                         for g in geoinset:
+ *                             if g.type == "Polygon":
+ *                                 if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiPolygon":
+ */
+                }
+
+                /* "VectorClipByVector.py":299
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ *                             if g.type == "Polygon":             # <<<<<<<<<<<<<<
+ *                                 if g.is_valid:
+ *                                     listinset.append(g.wkt)
+ */
+              }
+
+              /* "VectorClipByVector.py":302
+ *                                 if g.is_valid:
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiPolygon":             # <<<<<<<<<<<<<<
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ */
+              __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_type); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 302, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_9);
+              __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_9, __pyx_n_s_MultiPolygon, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 302, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+              if (__pyx_t_8) {
+
+                /* "VectorClipByVector.py":303
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiPolygon":
+ *                                 for tg in g:             # <<<<<<<<<<<<<<
+ *                                     if tg.is_valid:
+ *                                         listinset.append(tg.wkt)
+ */
+                if (likely(PyList_CheckExact(__pyx_v_g)) || PyTuple_CheckExact(__pyx_v_g)) {
+                  __pyx_t_9 = __pyx_v_g; __Pyx_INCREF(__pyx_t_9); __pyx_t_17 = 0;
+                  __pyx_t_18 = NULL;
+                } else {
+                  __pyx_t_17 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_v_g); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 303, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_9);
+                  __pyx_t_18 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 303, __pyx_L1_error)
+                }
+                for (;;) {
+                  if (likely(!__pyx_t_18)) {
+                    if (likely(PyList_CheckExact(__pyx_t_9))) {
+                      if (__pyx_t_17 >= PyList_GET_SIZE(__pyx_t_9)) break;
+                      #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                      __pyx_t_1 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_17); __Pyx_INCREF(__pyx_t_1); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 303, __pyx_L1_error)
+                      #else
+                      __pyx_t_1 = PySequence_ITEM(__pyx_t_9, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 303, __pyx_L1_error)
+                      __Pyx_GOTREF(__pyx_t_1);
+                      #endif
+                    } else {
+                      if (__pyx_t_17 >= PyTuple_GET_SIZE(__pyx_t_9)) break;
+                      #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                      __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_17); __Pyx_INCREF(__pyx_t_1); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 303, __pyx_L1_error)
+                      #else
+                      __pyx_t_1 = PySequence_ITEM(__pyx_t_9, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 303, __pyx_L1_error)
+                      __Pyx_GOTREF(__pyx_t_1);
+                      #endif
+                    }
+                  } else {
+                    __pyx_t_1 = __pyx_t_18(__pyx_t_9);
+                    if (unlikely(!__pyx_t_1)) {
+                      PyObject* exc_type = PyErr_Occurred();
+                      if (exc_type) {
+                        if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                        else __PYX_ERR(0, 303, __pyx_L1_error)
+                      }
+                      break;
+                    }
+                    __Pyx_GOTREF(__pyx_t_1);
+                  }
+                  __Pyx_XDECREF_SET(__pyx_v_tg, __pyx_t_1);
+                  __pyx_t_1 = 0;
+
+                  /* "VectorClipByVector.py":304
+ *                             if g.type == "MultiPolygon":
+ *                                 for tg in g:
+ *                                     if tg.is_valid:             # <<<<<<<<<<<<<<
+ *                                         listinset.append(tg.wkt)
+ *                     # if geoinset.type=="LinearRing":
+ */
+                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_tg, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 304, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_1);
+                  __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 304, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+                  if (__pyx_t_8) {
+
+                    /* "VectorClipByVector.py":305
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ *                                         listinset.append(tg.wkt)             # <<<<<<<<<<<<<<
+ *                     # if geoinset.type=="LinearRing":
+ *                     # if geoinset.type=="MultiPoint":
+ */
+                    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_tg, __pyx_n_s_wkt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 305, __pyx_L1_error)
+                    __Pyx_GOTREF(__pyx_t_1);
+                    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listinset, __pyx_t_1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 305, __pyx_L1_error)
+                    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+                    /* "VectorClipByVector.py":304
+ *                             if g.type == "MultiPolygon":
+ *                                 for tg in g:
+ *                                     if tg.is_valid:             # <<<<<<<<<<<<<<
+ *                                         listinset.append(tg.wkt)
+ *                     # if geoinset.type=="LinearRing":
+ */
+                  }
+
+                  /* "VectorClipByVector.py":303
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiPolygon":
+ *                                 for tg in g:             # <<<<<<<<<<<<<<
+ *                                     if tg.is_valid:
+ *                                         listinset.append(tg.wkt)
+ */
+                }
+                __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+                /* "VectorClipByVector.py":302
+ *                                 if g.is_valid:
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiPolygon":             # <<<<<<<<<<<<<<
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ */
+              }
+
+              /* "VectorClipByVector.py":298
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.type == "Polygon":
+ *                                 if g.is_valid:
+ */
+            }
+            __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+            /* "VectorClipByVector.py":297
+ *                             if g.is_valid:
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.type == "Polygon":
+ */
+          }
+
+          /* "VectorClipByVector.py":289
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "Polygon":
+ *                         if geoinset.is_valid:
+ */
+        }
+
+        /* "VectorClipByVector.py":286
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):             # <<<<<<<<<<<<<<
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ */
+      }
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+      /* "VectorClipByVector.py":309
+ *                     # if geoinset.type=="MultiPoint":
+ *                     # if geoinset.type=="MultiLineString":
+ *             numberout = len(listinset)             # <<<<<<<<<<<<<<
+ *             if numberout == 0:
+ *                 print("polygon")
+ */
+      __pyx_t_12 = PyList_GET_SIZE(__pyx_v_listinset); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(0, 309, __pyx_L1_error)
+      __pyx_v_numberout = __pyx_t_12;
+
+      /* "VectorClipByVector.py":310
+ *                     # if geoinset.type=="MultiLineString":
+ *             numberout = len(listinset)
+ *             if numberout == 0:             # <<<<<<<<<<<<<<
+ *                 print("polygon")
+ *             elif numberout > 1:
+ */
+      __pyx_t_8 = ((__pyx_v_numberout == 0) != 0);
+      if (__pyx_t_8) {
+
+        /* "VectorClipByVector.py":311
+ *             numberout = len(listinset)
+ *             if numberout == 0:
+ *                 print("polygon")             # <<<<<<<<<<<<<<
+ *             elif numberout > 1:
+ *                 geoi1 = wkt.loads(listinset[0])
+ */
+        if (__Pyx_PrintOne(0, __pyx_kp_s_polygon) < 0) __PYX_ERR(0, 311, __pyx_L1_error)
+
+        /* "VectorClipByVector.py":310
+ *                     # if geoinset.type=="MultiLineString":
+ *             numberout = len(listinset)
+ *             if numberout == 0:             # <<<<<<<<<<<<<<
+ *                 print("polygon")
+ *             elif numberout > 1:
+ */
+        goto __pyx_L48;
+      }
+
+      /* "VectorClipByVector.py":312
+ *             if numberout == 0:
+ *                 print("polygon")
+ *             elif numberout > 1:             # <<<<<<<<<<<<<<
+ *                 geoi1 = wkt.loads(listinset[0])
+ *                 mp1 = MultiPolygon([geoi1])
+ */
+      __pyx_t_8 = ((__pyx_v_numberout > 1) != 0);
+      if (__pyx_t_8) {
+
+        /* "VectorClipByVector.py":313
+ *                 print("polygon")
+ *             elif numberout > 1:
+ *                 geoi1 = wkt.loads(listinset[0])             # <<<<<<<<<<<<<<
+ *                 mp1 = MultiPolygon([geoi1])
+ *                 if not mp1.is_valid:
+ */
+        __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_wkt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 313, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_loads); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 313, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __pyx_t_5 = __Pyx_GetItemInt_List(__pyx_v_listinset, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 313, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_1 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_9))) {
+          __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_9);
+          if (likely(__pyx_t_1)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+            __Pyx_INCREF(__pyx_t_1);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_9, function);
+          }
+        }
+        __pyx_t_3 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_1, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_5);
+        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 313, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_geoi1, __pyx_t_3);
+        __pyx_t_3 = 0;
+
+        /* "VectorClipByVector.py":314
+ *             elif numberout > 1:
+ *                 geoi1 = wkt.loads(listinset[0])
+ *                 mp1 = MultiPolygon([geoi1])             # <<<<<<<<<<<<<<
+ *                 if not mp1.is_valid:
+ *                     print("")
+ */
+        __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_MultiPolygon); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 314, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __pyx_t_5 = PyList_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 314, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_INCREF(__pyx_v_geoi1);
+        __Pyx_GIVEREF(__pyx_v_geoi1);
+        PyList_SET_ITEM(__pyx_t_5, 0, __pyx_v_geoi1);
+        __pyx_t_1 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_9))) {
+          __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_9);
+          if (likely(__pyx_t_1)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+            __Pyx_INCREF(__pyx_t_1);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_9, function);
+          }
+        }
+        __pyx_t_3 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_1, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_5);
+        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 314, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_mp1, __pyx_t_3);
+        __pyx_t_3 = 0;
+
+        /* "VectorClipByVector.py":315
+ *                 geoi1 = wkt.loads(listinset[0])
+ *                 mp1 = MultiPolygon([geoi1])
+ *                 if not mp1.is_valid:             # <<<<<<<<<<<<<<
+ *                     print("")
+ *                 for itr in range(1, numberout):
+ */
+        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_mp1, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 315, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 315, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __pyx_t_6 = ((!__pyx_t_8) != 0);
+        if (__pyx_t_6) {
+
+          /* "VectorClipByVector.py":316
+ *                 mp1 = MultiPolygon([geoi1])
+ *                 if not mp1.is_valid:
+ *                     print("")             # <<<<<<<<<<<<<<
+ *                 for itr in range(1, numberout):
+ *                     geoi2 = wkt.loads(listinset[itr])
+ */
+          if (__Pyx_PrintOne(0, __pyx_kp_s__4) < 0) __PYX_ERR(0, 316, __pyx_L1_error)
+
+          /* "VectorClipByVector.py":315
+ *                 geoi1 = wkt.loads(listinset[0])
+ *                 mp1 = MultiPolygon([geoi1])
+ *                 if not mp1.is_valid:             # <<<<<<<<<<<<<<
+ *                     print("")
+ *                 for itr in range(1, numberout):
+ */
+        }
+
+        /* "VectorClipByVector.py":317
+ *                 if not mp1.is_valid:
+ *                     print("")
+ *                 for itr in range(1, numberout):             # <<<<<<<<<<<<<<
+ *                     geoi2 = wkt.loads(listinset[itr])
+ *                     mp2 = MultiPolygon([geoi2])
+ */
+        __pyx_t_3 = PyInt_FromSsize_t(__pyx_v_numberout); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 317, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 317, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __Pyx_INCREF(__pyx_int_1);
+        __Pyx_GIVEREF(__pyx_int_1);
+        PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_int_1);
+        __Pyx_GIVEREF(__pyx_t_3);
+        PyTuple_SET_ITEM(__pyx_t_9, 1, __pyx_t_3);
+        __pyx_t_3 = 0;
+        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_9, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 317, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+        if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
+          __pyx_t_9 = __pyx_t_3; __Pyx_INCREF(__pyx_t_9); __pyx_t_12 = 0;
+          __pyx_t_13 = NULL;
+        } else {
+          __pyx_t_12 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 317, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          __pyx_t_13 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 317, __pyx_L1_error)
+        }
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        for (;;) {
+          if (likely(!__pyx_t_13)) {
+            if (likely(PyList_CheckExact(__pyx_t_9))) {
+              if (__pyx_t_12 >= PyList_GET_SIZE(__pyx_t_9)) break;
+              #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+              __pyx_t_3 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_12); __Pyx_INCREF(__pyx_t_3); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 317, __pyx_L1_error)
+              #else
+              __pyx_t_3 = PySequence_ITEM(__pyx_t_9, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 317, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              #endif
+            } else {
+              if (__pyx_t_12 >= PyTuple_GET_SIZE(__pyx_t_9)) break;
+              #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+              __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_12); __Pyx_INCREF(__pyx_t_3); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 317, __pyx_L1_error)
+              #else
+              __pyx_t_3 = PySequence_ITEM(__pyx_t_9, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 317, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              #endif
+            }
+          } else {
+            __pyx_t_3 = __pyx_t_13(__pyx_t_9);
+            if (unlikely(!__pyx_t_3)) {
+              PyObject* exc_type = PyErr_Occurred();
+              if (exc_type) {
+                if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                else __PYX_ERR(0, 317, __pyx_L1_error)
+              }
+              break;
+            }
+            __Pyx_GOTREF(__pyx_t_3);
+          }
+          __Pyx_XDECREF_SET(__pyx_v_itr, __pyx_t_3);
+          __pyx_t_3 = 0;
+
+          /* "VectorClipByVector.py":318
+ *                     print("")
+ *                 for itr in range(1, numberout):
+ *                     geoi2 = wkt.loads(listinset[itr])             # <<<<<<<<<<<<<<
+ *                     mp2 = MultiPolygon([geoi2])
+ *                     if mp2.is_valid:
+ */
+          __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_wkt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 318, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_loads); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 318, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_listinset, __pyx_v_itr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 318, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          __pyx_t_14 = NULL;
+          if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+            __pyx_t_14 = PyMethod_GET_SELF(__pyx_t_1);
+            if (likely(__pyx_t_14)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+              __Pyx_INCREF(__pyx_t_14);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_1, function);
+            }
+          }
+          __pyx_t_3 = (__pyx_t_14) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_14, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_5);
+          __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 318, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_3);
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_XDECREF_SET(__pyx_v_geoi2, __pyx_t_3);
+          __pyx_t_3 = 0;
+
+          /* "VectorClipByVector.py":319
+ *                 for itr in range(1, numberout):
+ *                     geoi2 = wkt.loads(listinset[itr])
+ *                     mp2 = MultiPolygon([geoi2])             # <<<<<<<<<<<<<<
+ *                     if mp2.is_valid:
+ *                         mp1 = mp1.union(mp2)
+ */
+          __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_MultiPolygon); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 319, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_5 = PyList_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 319, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          __Pyx_INCREF(__pyx_v_geoi2);
+          __Pyx_GIVEREF(__pyx_v_geoi2);
+          PyList_SET_ITEM(__pyx_t_5, 0, __pyx_v_geoi2);
+          __pyx_t_14 = NULL;
+          if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+            __pyx_t_14 = PyMethod_GET_SELF(__pyx_t_1);
+            if (likely(__pyx_t_14)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+              __Pyx_INCREF(__pyx_t_14);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_1, function);
+            }
+          }
+          __pyx_t_3 = (__pyx_t_14) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_14, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_5);
+          __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 319, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_3);
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_XDECREF_SET(__pyx_v_mp2, __pyx_t_3);
+          __pyx_t_3 = 0;
+
+          /* "VectorClipByVector.py":320
+ *                     geoi2 = wkt.loads(listinset[itr])
+ *                     mp2 = MultiPolygon([geoi2])
+ *                     if mp2.is_valid:             # <<<<<<<<<<<<<<
+ *                         mp1 = mp1.union(mp2)
+ *                 listout.append(mp1.wkt)
+ */
+          __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_mp2, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 320, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_3);
+          __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 320, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+          if (__pyx_t_6) {
+
+            /* "VectorClipByVector.py":321
+ *                     mp2 = MultiPolygon([geoi2])
+ *                     if mp2.is_valid:
+ *                         mp1 = mp1.union(mp2)             # <<<<<<<<<<<<<<
+ *                 listout.append(mp1.wkt)
+ *                 listReserve.append(listFieldOut[i])
+ */
+            __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_mp1, __pyx_n_s_union); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 321, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_1);
+            __pyx_t_5 = NULL;
+            if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
+              __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_1);
+              if (likely(__pyx_t_5)) {
+                PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+                __Pyx_INCREF(__pyx_t_5);
+                __Pyx_INCREF(function);
+                __Pyx_DECREF_SET(__pyx_t_1, function);
+              }
+            }
+            __pyx_t_3 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_5, __pyx_v_mp2) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_mp2);
+            __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+            if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 321, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_3);
+            __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+            __Pyx_DECREF_SET(__pyx_v_mp1, __pyx_t_3);
+            __pyx_t_3 = 0;
+
+            /* "VectorClipByVector.py":320
+ *                     geoi2 = wkt.loads(listinset[itr])
+ *                     mp2 = MultiPolygon([geoi2])
+ *                     if mp2.is_valid:             # <<<<<<<<<<<<<<
+ *                         mp1 = mp1.union(mp2)
+ *                 listout.append(mp1.wkt)
+ */
+          }
+
+          /* "VectorClipByVector.py":317
+ *                 if not mp1.is_valid:
+ *                     print("")
+ *                 for itr in range(1, numberout):             # <<<<<<<<<<<<<<
+ *                     geoi2 = wkt.loads(listinset[itr])
+ *                     mp2 = MultiPolygon([geoi2])
+ */
+        }
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+        /* "VectorClipByVector.py":322
+ *                     if mp2.is_valid:
+ *                         mp1 = mp1.union(mp2)
+ *                 listout.append(mp1.wkt)             # <<<<<<<<<<<<<<
+ *                 listReserve.append(listFieldOut[i])
+ *             else:
+ */
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_mp1, __pyx_n_s_wkt); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 322, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_9); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 322, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+        /* "VectorClipByVector.py":323
+ *                         mp1 = mp1.union(mp2)
+ *                 listout.append(mp1.wkt)
+ *                 listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *             else:
+ *                 pol = wkt.loads(listinset[0])
+ */
+        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 323, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_9); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 323, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+        /* "VectorClipByVector.py":312
+ *             if numberout == 0:
+ *                 print("polygon")
+ *             elif numberout > 1:             # <<<<<<<<<<<<<<
+ *                 geoi1 = wkt.loads(listinset[0])
+ *                 mp1 = MultiPolygon([geoi1])
+ */
+        goto __pyx_L48;
+      }
+
+      /* "VectorClipByVector.py":325
+ *                 listReserve.append(listFieldOut[i])
+ *             else:
+ *                 pol = wkt.loads(listinset[0])             # <<<<<<<<<<<<<<
+ *                 mpol = MultiPolygon([pol])
+ *                 listout.append(mpol.wkt)
+ */
+      /*else*/ {
+        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_wkt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 325, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_loads); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 325, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __pyx_t_3 = __Pyx_GetItemInt_List(__pyx_v_listinset, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 325, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_5 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+          __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_1);
+          if (likely(__pyx_t_5)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+            __Pyx_INCREF(__pyx_t_5);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_1, function);
+          }
+        }
+        __pyx_t_9 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3);
+        __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 325, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_pol, __pyx_t_9);
+        __pyx_t_9 = 0;
+
+        /* "VectorClipByVector.py":326
+ *             else:
+ *                 pol = wkt.loads(listinset[0])
+ *                 mpol = MultiPolygon([pol])             # <<<<<<<<<<<<<<
+ *                 listout.append(mpol.wkt)
+ *                 listReserve.append(listFieldOut[i])
+ */
+        __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_MultiPolygon); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 326, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 326, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_INCREF(__pyx_v_pol);
+        __Pyx_GIVEREF(__pyx_v_pol);
+        PyList_SET_ITEM(__pyx_t_3, 0, __pyx_v_pol);
+        __pyx_t_5 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+          __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_1);
+          if (likely(__pyx_t_5)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+            __Pyx_INCREF(__pyx_t_5);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_1, function);
+          }
+        }
+        __pyx_t_9 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3);
+        __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 326, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_mpol, __pyx_t_9);
+        __pyx_t_9 = 0;
+
+        /* "VectorClipByVector.py":327
+ *                 pol = wkt.loads(listinset[0])
+ *                 mpol = MultiPolygon([pol])
+ *                 listout.append(mpol.wkt)             # <<<<<<<<<<<<<<
+ *                 listReserve.append(listFieldOut[i])
+ *     elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":
+ */
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_mpol, __pyx_n_s_wkt); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 327, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_9); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 327, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+        /* "VectorClipByVector.py":328
+ *                 mpol = MultiPolygon([pol])
+ *                 listout.append(mpol.wkt)
+ *                 listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *     elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":
+ *         for i in range(elementsnumber):
+ */
+        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 328, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_9); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 328, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      }
+      __pyx_L48:;
+
+      /* "VectorClipByVector.py":282
+ *     Baselayertype=listoutType[0]
+ *     if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":
+ *         for i in range(elementsnumber):             # <<<<<<<<<<<<<<
+ *             # shapely
+ *             listinset = []
+ */
+    }
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+    /* "VectorClipByVector.py":281
+ *     #Polygon
+ *     Baselayertype=listoutType[0]
+ *     if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":             # <<<<<<<<<<<<<<
+ *         for i in range(elementsnumber):
+ *             # shapely
+ */
+    goto __pyx_L25;
+  }
+
+  /* "VectorClipByVector.py":329
+ *                 listout.append(mpol.wkt)
+ *                 listReserve.append(listFieldOut[i])
+ *     elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":             # <<<<<<<<<<<<<<
+ *         for i in range(elementsnumber):
+ *             # shapely
+ */
+  __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_LINESTRING, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 329, __pyx_L1_error)
+  if (!__pyx_t_8) {
+  } else {
+    __pyx_t_6 = __pyx_t_8;
+    goto __pyx_L53_bool_binop_done;
+  }
+  __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_MULTILINESTRING, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 329, __pyx_L1_error)
+  __pyx_t_6 = __pyx_t_8;
+  __pyx_L53_bool_binop_done:;
+  if (__pyx_t_6) {
+
+    /* "VectorClipByVector.py":330
+ *                 listReserve.append(listFieldOut[i])
+ *     elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":
+ *         for i in range(elementsnumber):             # <<<<<<<<<<<<<<
+ *             # shapely
+ *             listinset = []
+ */
+    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_elementsnumber); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 330, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    if (likely(PyList_CheckExact(__pyx_t_2)) || PyTuple_CheckExact(__pyx_t_2)) {
+      __pyx_t_9 = __pyx_t_2; __Pyx_INCREF(__pyx_t_9); __pyx_t_10 = 0;
+      __pyx_t_11 = NULL;
+    } else {
+      __pyx_t_10 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 330, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_11 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 330, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_11)) {
+        if (likely(PyList_CheckExact(__pyx_t_9))) {
+          if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_9)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_2 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_10); __Pyx_INCREF(__pyx_t_2); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 330, __pyx_L1_error)
+          #else
+          __pyx_t_2 = PySequence_ITEM(__pyx_t_9, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 330, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          #endif
+        } else {
+          if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_9)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_10); __Pyx_INCREF(__pyx_t_2); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 330, __pyx_L1_error)
+          #else
+          __pyx_t_2 = PySequence_ITEM(__pyx_t_9, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 330, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          #endif
+        }
+      } else {
+        __pyx_t_2 = __pyx_t_11(__pyx_t_9);
+        if (unlikely(!__pyx_t_2)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 330, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_2);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_2);
+      __pyx_t_2 = 0;
+
+      /* "VectorClipByVector.py":332
+ *         for i in range(elementsnumber):
+ *             # shapely
+ *             listinset = []             # <<<<<<<<<<<<<<
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):
+ */
+      __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 332, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_XDECREF_SET(__pyx_v_listinset, ((PyObject*)__pyx_t_2));
+      __pyx_t_2 = 0;
+
+      /* "VectorClipByVector.py":333
+ *             # shapely
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])             # <<<<<<<<<<<<<<
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])
+ */
+      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_wkt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 333, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_loads); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 333, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_listnow, __pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 333, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __pyx_t_5 = NULL;
+      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_5)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_5);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+        }
+      }
+      __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_5, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_1);
+      __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 333, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_geoi, __pyx_t_2);
+      __pyx_t_2 = 0;
+
+      /* "VectorClipByVector.py":334
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):             # <<<<<<<<<<<<<<
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ */
+      __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_elementsnumberberfore); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 334, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      if (likely(PyList_CheckExact(__pyx_t_2)) || PyTuple_CheckExact(__pyx_t_2)) {
+        __pyx_t_3 = __pyx_t_2; __Pyx_INCREF(__pyx_t_3); __pyx_t_12 = 0;
+        __pyx_t_13 = NULL;
+      } else {
+        __pyx_t_12 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 334, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_13 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 334, __pyx_L1_error)
+      }
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      for (;;) {
+        if (likely(!__pyx_t_13)) {
+          if (likely(PyList_CheckExact(__pyx_t_3))) {
+            if (__pyx_t_12 >= PyList_GET_SIZE(__pyx_t_3)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_2 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_12); __Pyx_INCREF(__pyx_t_2); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 334, __pyx_L1_error)
+            #else
+            __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 334, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_2);
+            #endif
+          } else {
+            if (__pyx_t_12 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_12); __Pyx_INCREF(__pyx_t_2); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 334, __pyx_L1_error)
+            #else
+            __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 334, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_2);
+            #endif
+          }
+        } else {
+          __pyx_t_2 = __pyx_t_13(__pyx_t_3);
+          if (unlikely(!__pyx_t_2)) {
+            PyObject* exc_type = PyErr_Occurred();
+            if (exc_type) {
+              if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+              else __PYX_ERR(0, 334, __pyx_L1_error)
+            }
+            break;
+          }
+          __Pyx_GOTREF(__pyx_t_2);
+        }
+        __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_2);
+        __pyx_t_2 = 0;
+
+        /* "VectorClipByVector.py":335
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])             # <<<<<<<<<<<<<<
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ */
+        __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_wkt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 335, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_loads); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 335, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_listbefor, __pyx_v_j); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 335, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_14 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
+          __pyx_t_14 = PyMethod_GET_SELF(__pyx_t_5);
+          if (likely(__pyx_t_14)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+            __Pyx_INCREF(__pyx_t_14);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_5, function);
+          }
+        }
+        __pyx_t_2 = (__pyx_t_14) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_14, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_1);
+        __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 335, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_geoj, __pyx_t_2);
+        __pyx_t_2 = 0;
+
+        /* "VectorClipByVector.py":336
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)             # <<<<<<<<<<<<<<
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "LineString":
+ */
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoi, __pyx_n_s_intersection); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 336, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_1 = NULL;
+        if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+          __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_5);
+          if (likely(__pyx_t_1)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+            __Pyx_INCREF(__pyx_t_1);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_5, function);
+          }
+        }
+        __pyx_t_2 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_1, __pyx_v_geoj) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_geoj);
+        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 336, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_geoinset, __pyx_t_2);
+        __pyx_t_2 = 0;
+
+        /* "VectorClipByVector.py":337
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "LineString":
+ *                         if geoinset.is_valid:
+ */
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_is_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 337, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 337, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __pyx_t_8 = ((!__pyx_t_6) != 0);
+        if (__pyx_t_8) {
+
+          /* "VectorClipByVector.py":338
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "LineString":             # <<<<<<<<<<<<<<
+ *                         if geoinset.is_valid:
+ *                             listinset.append(geoinset.wkt)
+ */
+          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 338, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_2, __pyx_n_s_LineString, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 338, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          if (__pyx_t_8) {
+
+            /* "VectorClipByVector.py":339
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "LineString":
+ *                         if geoinset.is_valid:             # <<<<<<<<<<<<<<
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiLineString":
+ */
+            __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 339, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_2);
+            __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 339, __pyx_L1_error)
+            __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+            if (__pyx_t_8) {
+
+              /* "VectorClipByVector.py":340
+ *                     if geoinset.type == "LineString":
+ *                         if geoinset.is_valid:
+ *                             listinset.append(geoinset.wkt)             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "MultiLineString":
+ *                         for g in geoinset:
+ */
+              __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_wkt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 340, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_2);
+              __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listinset, __pyx_t_2); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 340, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+              /* "VectorClipByVector.py":339
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "LineString":
+ *                         if geoinset.is_valid:             # <<<<<<<<<<<<<<
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiLineString":
+ */
+            }
+
+            /* "VectorClipByVector.py":338
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "LineString":             # <<<<<<<<<<<<<<
+ *                         if geoinset.is_valid:
+ *                             listinset.append(geoinset.wkt)
+ */
+          }
+
+          /* "VectorClipByVector.py":341
+ *                         if geoinset.is_valid:
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiLineString":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ */
+          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 341, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_2, __pyx_n_s_MultiLineString, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 341, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          if (__pyx_t_8) {
+
+            /* "VectorClipByVector.py":342
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiLineString":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.is_valid:
+ *                                 listinset.append(g.wkt)
+ */
+            if (likely(PyList_CheckExact(__pyx_v_geoinset)) || PyTuple_CheckExact(__pyx_v_geoinset)) {
+              __pyx_t_2 = __pyx_v_geoinset; __Pyx_INCREF(__pyx_t_2); __pyx_t_15 = 0;
+              __pyx_t_16 = NULL;
+            } else {
+              __pyx_t_15 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_geoinset); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 342, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_2);
+              __pyx_t_16 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 342, __pyx_L1_error)
+            }
+            for (;;) {
+              if (likely(!__pyx_t_16)) {
+                if (likely(PyList_CheckExact(__pyx_t_2))) {
+                  if (__pyx_t_15 >= PyList_GET_SIZE(__pyx_t_2)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_5 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_15); __Pyx_INCREF(__pyx_t_5); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 342, __pyx_L1_error)
+                  #else
+                  __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 342, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_5);
+                  #endif
+                } else {
+                  if (__pyx_t_15 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_15); __Pyx_INCREF(__pyx_t_5); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 342, __pyx_L1_error)
+                  #else
+                  __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 342, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_5);
+                  #endif
+                }
+              } else {
+                __pyx_t_5 = __pyx_t_16(__pyx_t_2);
+                if (unlikely(!__pyx_t_5)) {
+                  PyObject* exc_type = PyErr_Occurred();
+                  if (exc_type) {
+                    if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                    else __PYX_ERR(0, 342, __pyx_L1_error)
+                  }
+                  break;
+                }
+                __Pyx_GOTREF(__pyx_t_5);
+              }
+              __Pyx_XDECREF_SET(__pyx_v_g, __pyx_t_5);
+              __pyx_t_5 = 0;
+
+              /* "VectorClipByVector.py":343
+ *                     if geoinset.type == "MultiLineString":
+ *                         for g in geoinset:
+ *                             if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":
+ */
+              __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 343, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_5);
+              __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 343, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+              if (__pyx_t_8) {
+
+                /* "VectorClipByVector.py":344
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ *                                 listinset.append(g.wkt)             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ */
+                __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_wkt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 344, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_5);
+                __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listinset, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 344, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+                /* "VectorClipByVector.py":343
+ *                     if geoinset.type == "MultiLineString":
+ *                         for g in geoinset:
+ *                             if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":
+ */
+              }
+
+              /* "VectorClipByVector.py":342
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiLineString":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.is_valid:
+ *                                 listinset.append(g.wkt)
+ */
+            }
+            __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+            /* "VectorClipByVector.py":341
+ *                         if geoinset.is_valid:
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiLineString":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ */
+          }
+
+          /* "VectorClipByVector.py":345
+ *                             if g.is_valid:
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.type == "LineString":
+ */
+          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 345, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_2, __pyx_n_s_GeometryCollection, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 345, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          if (__pyx_t_8) {
+
+            /* "VectorClipByVector.py":346
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.type == "LineString":
+ *                                 if g.is_valid:
+ */
+            if (likely(PyList_CheckExact(__pyx_v_geoinset)) || PyTuple_CheckExact(__pyx_v_geoinset)) {
+              __pyx_t_2 = __pyx_v_geoinset; __Pyx_INCREF(__pyx_t_2); __pyx_t_15 = 0;
+              __pyx_t_16 = NULL;
+            } else {
+              __pyx_t_15 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_geoinset); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 346, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_2);
+              __pyx_t_16 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 346, __pyx_L1_error)
+            }
+            for (;;) {
+              if (likely(!__pyx_t_16)) {
+                if (likely(PyList_CheckExact(__pyx_t_2))) {
+                  if (__pyx_t_15 >= PyList_GET_SIZE(__pyx_t_2)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_5 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_15); __Pyx_INCREF(__pyx_t_5); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 346, __pyx_L1_error)
+                  #else
+                  __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 346, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_5);
+                  #endif
+                } else {
+                  if (__pyx_t_15 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_15); __Pyx_INCREF(__pyx_t_5); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 346, __pyx_L1_error)
+                  #else
+                  __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 346, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_5);
+                  #endif
+                }
+              } else {
+                __pyx_t_5 = __pyx_t_16(__pyx_t_2);
+                if (unlikely(!__pyx_t_5)) {
+                  PyObject* exc_type = PyErr_Occurred();
+                  if (exc_type) {
+                    if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                    else __PYX_ERR(0, 346, __pyx_L1_error)
+                  }
+                  break;
+                }
+                __Pyx_GOTREF(__pyx_t_5);
+              }
+              __Pyx_XDECREF_SET(__pyx_v_g, __pyx_t_5);
+              __pyx_t_5 = 0;
+
+              /* "VectorClipByVector.py":347
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ *                             if g.type == "LineString":             # <<<<<<<<<<<<<<
+ *                                 if g.is_valid:
+ *                                     listinset.append(g.wkt)
+ */
+              __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_type); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 347, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_5);
+              __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_5, __pyx_n_s_LineString, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 347, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+              if (__pyx_t_8) {
+
+                /* "VectorClipByVector.py":348
+ *                         for g in geoinset:
+ *                             if g.type == "LineString":
+ *                                 if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiLineString":
+ */
+                __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 348, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_5);
+                __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 348, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+                if (__pyx_t_8) {
+
+                  /* "VectorClipByVector.py":349
+ *                             if g.type == "LineString":
+ *                                 if g.is_valid:
+ *                                     listinset.append(g.wkt)             # <<<<<<<<<<<<<<
+ *                             if g.type == "MultiLineString":
+ *                                 for tg in g:
+ */
+                  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_wkt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 349, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_5);
+                  __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listinset, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 349, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+                  /* "VectorClipByVector.py":348
+ *                         for g in geoinset:
+ *                             if g.type == "LineString":
+ *                                 if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiLineString":
+ */
+                }
+
+                /* "VectorClipByVector.py":347
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ *                             if g.type == "LineString":             # <<<<<<<<<<<<<<
+ *                                 if g.is_valid:
+ *                                     listinset.append(g.wkt)
+ */
+              }
+
+              /* "VectorClipByVector.py":350
+ *                                 if g.is_valid:
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiLineString":             # <<<<<<<<<<<<<<
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ */
+              __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_type); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 350, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_5);
+              __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_5, __pyx_n_s_MultiLineString, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 350, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+              if (__pyx_t_8) {
+
+                /* "VectorClipByVector.py":351
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiLineString":
+ *                                 for tg in g:             # <<<<<<<<<<<<<<
+ *                                     if tg.is_valid:
+ *                                         listinset.append(tg.wkt)
+ */
+                if (likely(PyList_CheckExact(__pyx_v_g)) || PyTuple_CheckExact(__pyx_v_g)) {
+                  __pyx_t_5 = __pyx_v_g; __Pyx_INCREF(__pyx_t_5); __pyx_t_17 = 0;
+                  __pyx_t_18 = NULL;
+                } else {
+                  __pyx_t_17 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_v_g); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 351, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_5);
+                  __pyx_t_18 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 351, __pyx_L1_error)
+                }
+                for (;;) {
+                  if (likely(!__pyx_t_18)) {
+                    if (likely(PyList_CheckExact(__pyx_t_5))) {
+                      if (__pyx_t_17 >= PyList_GET_SIZE(__pyx_t_5)) break;
+                      #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                      __pyx_t_1 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_17); __Pyx_INCREF(__pyx_t_1); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 351, __pyx_L1_error)
+                      #else
+                      __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 351, __pyx_L1_error)
+                      __Pyx_GOTREF(__pyx_t_1);
+                      #endif
+                    } else {
+                      if (__pyx_t_17 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
+                      #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                      __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_17); __Pyx_INCREF(__pyx_t_1); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 351, __pyx_L1_error)
+                      #else
+                      __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 351, __pyx_L1_error)
+                      __Pyx_GOTREF(__pyx_t_1);
+                      #endif
+                    }
+                  } else {
+                    __pyx_t_1 = __pyx_t_18(__pyx_t_5);
+                    if (unlikely(!__pyx_t_1)) {
+                      PyObject* exc_type = PyErr_Occurred();
+                      if (exc_type) {
+                        if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                        else __PYX_ERR(0, 351, __pyx_L1_error)
+                      }
+                      break;
+                    }
+                    __Pyx_GOTREF(__pyx_t_1);
+                  }
+                  __Pyx_XDECREF_SET(__pyx_v_tg, __pyx_t_1);
+                  __pyx_t_1 = 0;
+
+                  /* "VectorClipByVector.py":352
+ *                             if g.type == "MultiLineString":
+ *                                 for tg in g:
+ *                                     if tg.is_valid:             # <<<<<<<<<<<<<<
+ *                                         listinset.append(tg.wkt)
+ *                     # if geoinset.type=="LinearRing":
+ */
+                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_tg, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 352, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_1);
+                  __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 352, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+                  if (__pyx_t_8) {
+
+                    /* "VectorClipByVector.py":353
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ *                                         listinset.append(tg.wkt)             # <<<<<<<<<<<<<<
+ *                     # if geoinset.type=="LinearRing":
+ *                     # if geoinset.type=="MultiPoint":
+ */
+                    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_tg, __pyx_n_s_wkt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 353, __pyx_L1_error)
+                    __Pyx_GOTREF(__pyx_t_1);
+                    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listinset, __pyx_t_1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 353, __pyx_L1_error)
+                    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+                    /* "VectorClipByVector.py":352
+ *                             if g.type == "MultiLineString":
+ *                                 for tg in g:
+ *                                     if tg.is_valid:             # <<<<<<<<<<<<<<
+ *                                         listinset.append(tg.wkt)
+ *                     # if geoinset.type=="LinearRing":
+ */
+                  }
+
+                  /* "VectorClipByVector.py":351
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiLineString":
+ *                                 for tg in g:             # <<<<<<<<<<<<<<
+ *                                     if tg.is_valid:
+ *                                         listinset.append(tg.wkt)
+ */
+                }
+                __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+                /* "VectorClipByVector.py":350
+ *                                 if g.is_valid:
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiLineString":             # <<<<<<<<<<<<<<
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ */
+              }
+
+              /* "VectorClipByVector.py":346
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.type == "LineString":
+ *                                 if g.is_valid:
+ */
+            }
+            __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+            /* "VectorClipByVector.py":345
+ *                             if g.is_valid:
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.type == "LineString":
+ */
+          }
+
+          /* "VectorClipByVector.py":337
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "LineString":
+ *                         if geoinset.is_valid:
+ */
+        }
+
+        /* "VectorClipByVector.py":334
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):             # <<<<<<<<<<<<<<
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ */
+      }
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+      /* "VectorClipByVector.py":357
+ *                     # if geoinset.type=="MultiPoint":
+ *                     # if geoinset.type=="MultiLineString":
+ *             numberout = len(listinset)             # <<<<<<<<<<<<<<
+ *             if numberout == 0:
+ *                 print("polygon")
+ */
+      __pyx_t_12 = PyList_GET_SIZE(__pyx_v_listinset); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(0, 357, __pyx_L1_error)
+      __pyx_v_numberout = __pyx_t_12;
+
+      /* "VectorClipByVector.py":358
+ *                     # if geoinset.type=="MultiLineString":
+ *             numberout = len(listinset)
+ *             if numberout == 0:             # <<<<<<<<<<<<<<
+ *                 print("polygon")
+ *             elif numberout > 1:
+ */
+      __pyx_t_8 = ((__pyx_v_numberout == 0) != 0);
+      if (__pyx_t_8) {
+
+        /* "VectorClipByVector.py":359
+ *             numberout = len(listinset)
+ *             if numberout == 0:
+ *                 print("polygon")             # <<<<<<<<<<<<<<
+ *             elif numberout > 1:
+ *                 geoi1 = wkt.loads(listinset[0])
+ */
+        if (__Pyx_PrintOne(0, __pyx_kp_s_polygon) < 0) __PYX_ERR(0, 359, __pyx_L1_error)
+
+        /* "VectorClipByVector.py":358
+ *                     # if geoinset.type=="MultiLineString":
+ *             numberout = len(listinset)
+ *             if numberout == 0:             # <<<<<<<<<<<<<<
+ *                 print("polygon")
+ *             elif numberout > 1:
+ */
+        goto __pyx_L75;
+      }
+
+      /* "VectorClipByVector.py":360
+ *             if numberout == 0:
+ *                 print("polygon")
+ *             elif numberout > 1:             # <<<<<<<<<<<<<<
+ *                 geoi1 = wkt.loads(listinset[0])
+ *                 mp1 = MultiPolygon([geoi1])
+ */
+      __pyx_t_8 = ((__pyx_v_numberout > 1) != 0);
+      if (__pyx_t_8) {
+
+        /* "VectorClipByVector.py":361
+ *                 print("polygon")
+ *             elif numberout > 1:
+ *                 geoi1 = wkt.loads(listinset[0])             # <<<<<<<<<<<<<<
+ *                 mp1 = MultiPolygon([geoi1])
+ *                 if not mp1.is_valid:
+ */
+        __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_wkt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 361, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_loads); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 361, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_listinset, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 361, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __pyx_t_1 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
+          __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_5);
+          if (likely(__pyx_t_1)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+            __Pyx_INCREF(__pyx_t_1);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_5, function);
+          }
+        }
+        __pyx_t_3 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_1, __pyx_t_2) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2);
+        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 361, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_geoi1, __pyx_t_3);
+        __pyx_t_3 = 0;
+
+        /* "VectorClipByVector.py":362
+ *             elif numberout > 1:
+ *                 geoi1 = wkt.loads(listinset[0])
+ *                 mp1 = MultiPolygon([geoi1])             # <<<<<<<<<<<<<<
+ *                 if not mp1.is_valid:
+ *                     print("")
+ */
+        __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_MultiPolygon); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 362, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 362, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __Pyx_INCREF(__pyx_v_geoi1);
+        __Pyx_GIVEREF(__pyx_v_geoi1);
+        PyList_SET_ITEM(__pyx_t_2, 0, __pyx_v_geoi1);
+        __pyx_t_1 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
+          __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_5);
+          if (likely(__pyx_t_1)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+            __Pyx_INCREF(__pyx_t_1);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_5, function);
+          }
+        }
+        __pyx_t_3 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_1, __pyx_t_2) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2);
+        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 362, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_mp1, __pyx_t_3);
+        __pyx_t_3 = 0;
+
+        /* "VectorClipByVector.py":363
+ *                 geoi1 = wkt.loads(listinset[0])
+ *                 mp1 = MultiPolygon([geoi1])
+ *                 if not mp1.is_valid:             # <<<<<<<<<<<<<<
+ *                     print("")
+ *                 for itr in range(1, numberout):
+ */
+        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_mp1, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 363, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 363, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __pyx_t_6 = ((!__pyx_t_8) != 0);
+        if (__pyx_t_6) {
+
+          /* "VectorClipByVector.py":364
+ *                 mp1 = MultiPolygon([geoi1])
+ *                 if not mp1.is_valid:
+ *                     print("")             # <<<<<<<<<<<<<<
+ *                 for itr in range(1, numberout):
+ *                     geoi2 = wkt.loads(listinset[itr])
+ */
+          if (__Pyx_PrintOne(0, __pyx_kp_s__4) < 0) __PYX_ERR(0, 364, __pyx_L1_error)
+
+          /* "VectorClipByVector.py":363
+ *                 geoi1 = wkt.loads(listinset[0])
+ *                 mp1 = MultiPolygon([geoi1])
+ *                 if not mp1.is_valid:             # <<<<<<<<<<<<<<
+ *                     print("")
+ *                 for itr in range(1, numberout):
+ */
+        }
+
+        /* "VectorClipByVector.py":365
+ *                 if not mp1.is_valid:
+ *                     print("")
+ *                 for itr in range(1, numberout):             # <<<<<<<<<<<<<<
+ *                     geoi2 = wkt.loads(listinset[itr])
+ *                     mp2 = MultiPolygon([geoi2])
+ */
+        __pyx_t_3 = PyInt_FromSsize_t(__pyx_v_numberout); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 365, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 365, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_INCREF(__pyx_int_1);
+        __Pyx_GIVEREF(__pyx_int_1);
+        PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_int_1);
+        __Pyx_GIVEREF(__pyx_t_3);
+        PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_3);
+        __pyx_t_3 = 0;
+        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 365, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
+          __pyx_t_5 = __pyx_t_3; __Pyx_INCREF(__pyx_t_5); __pyx_t_12 = 0;
+          __pyx_t_13 = NULL;
+        } else {
+          __pyx_t_12 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 365, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          __pyx_t_13 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 365, __pyx_L1_error)
+        }
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        for (;;) {
+          if (likely(!__pyx_t_13)) {
+            if (likely(PyList_CheckExact(__pyx_t_5))) {
+              if (__pyx_t_12 >= PyList_GET_SIZE(__pyx_t_5)) break;
+              #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+              __pyx_t_3 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_12); __Pyx_INCREF(__pyx_t_3); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 365, __pyx_L1_error)
+              #else
+              __pyx_t_3 = PySequence_ITEM(__pyx_t_5, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 365, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              #endif
+            } else {
+              if (__pyx_t_12 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
+              #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+              __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_12); __Pyx_INCREF(__pyx_t_3); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 365, __pyx_L1_error)
+              #else
+              __pyx_t_3 = PySequence_ITEM(__pyx_t_5, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 365, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              #endif
+            }
+          } else {
+            __pyx_t_3 = __pyx_t_13(__pyx_t_5);
+            if (unlikely(!__pyx_t_3)) {
+              PyObject* exc_type = PyErr_Occurred();
+              if (exc_type) {
+                if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                else __PYX_ERR(0, 365, __pyx_L1_error)
+              }
+              break;
+            }
+            __Pyx_GOTREF(__pyx_t_3);
+          }
+          __Pyx_XDECREF_SET(__pyx_v_itr, __pyx_t_3);
+          __pyx_t_3 = 0;
+
+          /* "VectorClipByVector.py":366
+ *                     print("")
+ *                 for itr in range(1, numberout):
+ *                     geoi2 = wkt.loads(listinset[itr])             # <<<<<<<<<<<<<<
+ *                     mp2 = MultiPolygon([geoi2])
+ *                     if mp2.is_valid:
+ */
+          __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_wkt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 366, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_loads); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 366, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_listinset, __pyx_v_itr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 366, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_14 = NULL;
+          if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+            __pyx_t_14 = PyMethod_GET_SELF(__pyx_t_1);
+            if (likely(__pyx_t_14)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+              __Pyx_INCREF(__pyx_t_14);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_1, function);
+            }
+          }
+          __pyx_t_3 = (__pyx_t_14) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_14, __pyx_t_2) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2);
+          __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 366, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_3);
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_XDECREF_SET(__pyx_v_geoi2, __pyx_t_3);
+          __pyx_t_3 = 0;
+
+          /* "VectorClipByVector.py":367
+ *                 for itr in range(1, numberout):
+ *                     geoi2 = wkt.loads(listinset[itr])
+ *                     mp2 = MultiPolygon([geoi2])             # <<<<<<<<<<<<<<
+ *                     if mp2.is_valid:
+ *                         mp1 = mp1.union(mp2)
+ */
+          __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_MultiPolygon); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 367, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 367, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          __Pyx_INCREF(__pyx_v_geoi2);
+          __Pyx_GIVEREF(__pyx_v_geoi2);
+          PyList_SET_ITEM(__pyx_t_2, 0, __pyx_v_geoi2);
+          __pyx_t_14 = NULL;
+          if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+            __pyx_t_14 = PyMethod_GET_SELF(__pyx_t_1);
+            if (likely(__pyx_t_14)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+              __Pyx_INCREF(__pyx_t_14);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_1, function);
+            }
+          }
+          __pyx_t_3 = (__pyx_t_14) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_14, __pyx_t_2) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2);
+          __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 367, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_3);
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_XDECREF_SET(__pyx_v_mp2, __pyx_t_3);
+          __pyx_t_3 = 0;
+
+          /* "VectorClipByVector.py":368
+ *                     geoi2 = wkt.loads(listinset[itr])
+ *                     mp2 = MultiPolygon([geoi2])
+ *                     if mp2.is_valid:             # <<<<<<<<<<<<<<
+ *                         mp1 = mp1.union(mp2)
+ *                 listout.append(mp1.wkt)
+ */
+          __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_mp2, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 368, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_3);
+          __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 368, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+          if (__pyx_t_6) {
+
+            /* "VectorClipByVector.py":369
+ *                     mp2 = MultiPolygon([geoi2])
+ *                     if mp2.is_valid:
+ *                         mp1 = mp1.union(mp2)             # <<<<<<<<<<<<<<
+ *                 listout.append(mp1.wkt)
+ *                 listReserve.append(listFieldOut[i])
+ */
+            __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_mp1, __pyx_n_s_union); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 369, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_1);
+            __pyx_t_2 = NULL;
+            if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
+              __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_1);
+              if (likely(__pyx_t_2)) {
+                PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+                __Pyx_INCREF(__pyx_t_2);
+                __Pyx_INCREF(function);
+                __Pyx_DECREF_SET(__pyx_t_1, function);
+              }
+            }
+            __pyx_t_3 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_2, __pyx_v_mp2) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_mp2);
+            __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+            if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 369, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_3);
+            __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+            __Pyx_DECREF_SET(__pyx_v_mp1, __pyx_t_3);
+            __pyx_t_3 = 0;
+
+            /* "VectorClipByVector.py":368
+ *                     geoi2 = wkt.loads(listinset[itr])
+ *                     mp2 = MultiPolygon([geoi2])
+ *                     if mp2.is_valid:             # <<<<<<<<<<<<<<
+ *                         mp1 = mp1.union(mp2)
+ *                 listout.append(mp1.wkt)
+ */
+          }
+
+          /* "VectorClipByVector.py":365
+ *                 if not mp1.is_valid:
+ *                     print("")
+ *                 for itr in range(1, numberout):             # <<<<<<<<<<<<<<
+ *                     geoi2 = wkt.loads(listinset[itr])
+ *                     mp2 = MultiPolygon([geoi2])
+ */
+        }
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+        /* "VectorClipByVector.py":370
+ *                     if mp2.is_valid:
+ *                         mp1 = mp1.union(mp2)
+ *                 listout.append(mp1.wkt)             # <<<<<<<<<<<<<<
+ *                 listReserve.append(listFieldOut[i])
+ *             else:
+ */
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_mp1, __pyx_n_s_wkt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 370, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 370, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+        /* "VectorClipByVector.py":371
+ *                         mp1 = mp1.union(mp2)
+ *                 listout.append(mp1.wkt)
+ *                 listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *             else:
+ *                 pol = wkt.loads(listinset[0])
+ */
+        __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 371, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 371, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+        /* "VectorClipByVector.py":360
+ *             if numberout == 0:
+ *                 print("polygon")
+ *             elif numberout > 1:             # <<<<<<<<<<<<<<
+ *                 geoi1 = wkt.loads(listinset[0])
+ *                 mp1 = MultiPolygon([geoi1])
+ */
+        goto __pyx_L75;
+      }
+
+      /* "VectorClipByVector.py":373
+ *                 listReserve.append(listFieldOut[i])
+ *             else:
+ *                 pol = wkt.loads(listinset[0])             # <<<<<<<<<<<<<<
+ *                 mpol = MultiPolygon([pol])
+ *                 listout.append(mpol.wkt)
+ */
+      /*else*/ {
+        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_wkt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 373, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_loads); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 373, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __pyx_t_3 = __Pyx_GetItemInt_List(__pyx_v_listinset, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 373, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_2 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+          __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_1);
+          if (likely(__pyx_t_2)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+            __Pyx_INCREF(__pyx_t_2);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_1, function);
+          }
+        }
+        __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_2, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3);
+        __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 373, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_pol, __pyx_t_5);
+        __pyx_t_5 = 0;
+
+        /* "VectorClipByVector.py":374
+ *             else:
+ *                 pol = wkt.loads(listinset[0])
+ *                 mpol = MultiPolygon([pol])             # <<<<<<<<<<<<<<
+ *                 listout.append(mpol.wkt)
+ *                 listReserve.append(listFieldOut[i])
+ */
+        __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_MultiPolygon); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 374, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 374, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_INCREF(__pyx_v_pol);
+        __Pyx_GIVEREF(__pyx_v_pol);
+        PyList_SET_ITEM(__pyx_t_3, 0, __pyx_v_pol);
+        __pyx_t_2 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+          __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_1);
+          if (likely(__pyx_t_2)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+            __Pyx_INCREF(__pyx_t_2);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_1, function);
+          }
+        }
+        __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_2, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3);
+        __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 374, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_mpol, __pyx_t_5);
+        __pyx_t_5 = 0;
+
+        /* "VectorClipByVector.py":375
+ *                 pol = wkt.loads(listinset[0])
+ *                 mpol = MultiPolygon([pol])
+ *                 listout.append(mpol.wkt)             # <<<<<<<<<<<<<<
+ *                 listReserve.append(listFieldOut[i])
+ *     elif Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":
+ */
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_mpol, __pyx_n_s_wkt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 375, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 375, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+        /* "VectorClipByVector.py":376
+ *                 mpol = MultiPolygon([pol])
+ *                 listout.append(mpol.wkt)
+ *                 listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *     elif Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":
+ *         for i in range(elementsnumber):
+ */
+        __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 376, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 376, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      }
+      __pyx_L75:;
+
+      /* "VectorClipByVector.py":330
+ *                 listReserve.append(listFieldOut[i])
+ *     elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":
+ *         for i in range(elementsnumber):             # <<<<<<<<<<<<<<
+ *             # shapely
+ *             listinset = []
+ */
+    }
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+    /* "VectorClipByVector.py":329
+ *                 listout.append(mpol.wkt)
+ *                 listReserve.append(listFieldOut[i])
+ *     elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":             # <<<<<<<<<<<<<<
+ *         for i in range(elementsnumber):
+ *             # shapely
+ */
+    goto __pyx_L25;
+  }
+
+  /* "VectorClipByVector.py":377
+ *                 listout.append(mpol.wkt)
+ *                 listReserve.append(listFieldOut[i])
+ *     elif Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":             # <<<<<<<<<<<<<<
+ *         for i in range(elementsnumber):
+ *             # shapely
+ */
+  __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_POINT, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 377, __pyx_L1_error)
+  if (!__pyx_t_8) {
+  } else {
+    __pyx_t_6 = __pyx_t_8;
+    goto __pyx_L80_bool_binop_done;
+  }
+  __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_MULTIPOINT, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 377, __pyx_L1_error)
+  __pyx_t_6 = __pyx_t_8;
+  __pyx_L80_bool_binop_done:;
+  if (__pyx_t_6) {
+
+    /* "VectorClipByVector.py":378
+ *                 listReserve.append(listFieldOut[i])
+ *     elif Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":
+ *         for i in range(elementsnumber):             # <<<<<<<<<<<<<<
+ *             # shapely
+ *             listinset = []
+ */
+    __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_elementsnumber); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 378, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    if (likely(PyList_CheckExact(__pyx_t_9)) || PyTuple_CheckExact(__pyx_t_9)) {
+      __pyx_t_5 = __pyx_t_9; __Pyx_INCREF(__pyx_t_5); __pyx_t_10 = 0;
+      __pyx_t_11 = NULL;
+    } else {
+      __pyx_t_10 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 378, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_11 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 378, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_11)) {
+        if (likely(PyList_CheckExact(__pyx_t_5))) {
+          if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_5)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_9 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_10); __Pyx_INCREF(__pyx_t_9); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 378, __pyx_L1_error)
+          #else
+          __pyx_t_9 = PySequence_ITEM(__pyx_t_5, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 378, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          #endif
+        } else {
+          if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_9 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_10); __Pyx_INCREF(__pyx_t_9); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 378, __pyx_L1_error)
+          #else
+          __pyx_t_9 = PySequence_ITEM(__pyx_t_5, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 378, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          #endif
+        }
+      } else {
+        __pyx_t_9 = __pyx_t_11(__pyx_t_5);
+        if (unlikely(!__pyx_t_9)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 378, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_9);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_9);
+      __pyx_t_9 = 0;
+
+      /* "VectorClipByVector.py":380
+ *         for i in range(elementsnumber):
+ *             # shapely
+ *             listinset = []             # <<<<<<<<<<<<<<
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):
+ */
+      __pyx_t_9 = PyList_New(0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 380, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __Pyx_XDECREF_SET(__pyx_v_listinset, ((PyObject*)__pyx_t_9));
+      __pyx_t_9 = 0;
+
+      /* "VectorClipByVector.py":381
+ *             # shapely
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])             # <<<<<<<<<<<<<<
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])
+ */
+      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_wkt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 381, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_loads); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 381, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_listnow, __pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 381, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __pyx_t_2 = NULL;
+      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_2)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_2);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+        }
+      }
+      __pyx_t_9 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_1);
+      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 381, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_geoi, __pyx_t_9);
+      __pyx_t_9 = 0;
+
+      /* "VectorClipByVector.py":382
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):             # <<<<<<<<<<<<<<
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ */
+      __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_elementsnumberberfore); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 382, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      if (likely(PyList_CheckExact(__pyx_t_9)) || PyTuple_CheckExact(__pyx_t_9)) {
+        __pyx_t_3 = __pyx_t_9; __Pyx_INCREF(__pyx_t_3); __pyx_t_12 = 0;
+        __pyx_t_13 = NULL;
+      } else {
+        __pyx_t_12 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 382, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_13 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 382, __pyx_L1_error)
+      }
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      for (;;) {
+        if (likely(!__pyx_t_13)) {
+          if (likely(PyList_CheckExact(__pyx_t_3))) {
+            if (__pyx_t_12 >= PyList_GET_SIZE(__pyx_t_3)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_9 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_12); __Pyx_INCREF(__pyx_t_9); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 382, __pyx_L1_error)
+            #else
+            __pyx_t_9 = PySequence_ITEM(__pyx_t_3, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 382, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_9);
+            #endif
+          } else {
+            if (__pyx_t_12 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_9 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_12); __Pyx_INCREF(__pyx_t_9); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 382, __pyx_L1_error)
+            #else
+            __pyx_t_9 = PySequence_ITEM(__pyx_t_3, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 382, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_9);
+            #endif
+          }
+        } else {
+          __pyx_t_9 = __pyx_t_13(__pyx_t_3);
+          if (unlikely(!__pyx_t_9)) {
+            PyObject* exc_type = PyErr_Occurred();
+            if (exc_type) {
+              if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+              else __PYX_ERR(0, 382, __pyx_L1_error)
+            }
+            break;
+          }
+          __Pyx_GOTREF(__pyx_t_9);
+        }
+        __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_9);
+        __pyx_t_9 = 0;
+
+        /* "VectorClipByVector.py":383
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])             # <<<<<<<<<<<<<<
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ */
+        __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_wkt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 383, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_loads); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 383, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_listbefor, __pyx_v_j); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 383, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_14 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
+          __pyx_t_14 = PyMethod_GET_SELF(__pyx_t_2);
+          if (likely(__pyx_t_14)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+            __Pyx_INCREF(__pyx_t_14);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_2, function);
+          }
+        }
+        __pyx_t_9 = (__pyx_t_14) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_14, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_1);
+        __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 383, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_geoj, __pyx_t_9);
+        __pyx_t_9 = 0;
+
+        /* "VectorClipByVector.py":384
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)             # <<<<<<<<<<<<<<
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Point":
+ */
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoi, __pyx_n_s_intersection); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 384, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __pyx_t_1 = NULL;
+        if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+          __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_2);
+          if (likely(__pyx_t_1)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+            __Pyx_INCREF(__pyx_t_1);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_2, function);
+          }
+        }
+        __pyx_t_9 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_1, __pyx_v_geoj) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_geoj);
+        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+        if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 384, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_geoinset, __pyx_t_9);
+        __pyx_t_9 = 0;
+
+        /* "VectorClipByVector.py":385
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "Point":
+ *                         if geoinset.is_valid:
+ */
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_is_empty); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 385, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 385, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __pyx_t_8 = ((!__pyx_t_6) != 0);
+        if (__pyx_t_8) {
+
+          /* "VectorClipByVector.py":386
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Point":             # <<<<<<<<<<<<<<
+ *                         if geoinset.is_valid:
+ *                             listinset.append(geoinset.wkt)
+ */
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 386, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_9, __pyx_n_s_Point, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 386, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+          if (__pyx_t_8) {
+
+            /* "VectorClipByVector.py":387
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Point":
+ *                         if geoinset.is_valid:             # <<<<<<<<<<<<<<
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiPoint":
+ */
+            __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 387, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_9);
+            __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 387, __pyx_L1_error)
+            __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+            if (__pyx_t_8) {
+
+              /* "VectorClipByVector.py":388
+ *                     if geoinset.type == "Point":
+ *                         if geoinset.is_valid:
+ *                             listinset.append(geoinset.wkt)             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "MultiPoint":
+ *                         for g in geoinset:
+ */
+              __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_wkt); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 388, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_9);
+              __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listinset, __pyx_t_9); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 388, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+              /* "VectorClipByVector.py":387
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Point":
+ *                         if geoinset.is_valid:             # <<<<<<<<<<<<<<
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiPoint":
+ */
+            }
+
+            /* "VectorClipByVector.py":386
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Point":             # <<<<<<<<<<<<<<
+ *                         if geoinset.is_valid:
+ *                             listinset.append(geoinset.wkt)
+ */
+          }
+
+          /* "VectorClipByVector.py":389
+ *                         if geoinset.is_valid:
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiPoint":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ */
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 389, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_9, __pyx_n_s_MultiPoint, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 389, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+          if (__pyx_t_8) {
+
+            /* "VectorClipByVector.py":390
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiPoint":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.is_valid:
+ *                                 listinset.append(g.wkt)
+ */
+            if (likely(PyList_CheckExact(__pyx_v_geoinset)) || PyTuple_CheckExact(__pyx_v_geoinset)) {
+              __pyx_t_9 = __pyx_v_geoinset; __Pyx_INCREF(__pyx_t_9); __pyx_t_15 = 0;
+              __pyx_t_16 = NULL;
+            } else {
+              __pyx_t_15 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_v_geoinset); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 390, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_9);
+              __pyx_t_16 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 390, __pyx_L1_error)
+            }
+            for (;;) {
+              if (likely(!__pyx_t_16)) {
+                if (likely(PyList_CheckExact(__pyx_t_9))) {
+                  if (__pyx_t_15 >= PyList_GET_SIZE(__pyx_t_9)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_2 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_15); __Pyx_INCREF(__pyx_t_2); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 390, __pyx_L1_error)
+                  #else
+                  __pyx_t_2 = PySequence_ITEM(__pyx_t_9, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 390, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_2);
+                  #endif
+                } else {
+                  if (__pyx_t_15 >= PyTuple_GET_SIZE(__pyx_t_9)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_15); __Pyx_INCREF(__pyx_t_2); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 390, __pyx_L1_error)
+                  #else
+                  __pyx_t_2 = PySequence_ITEM(__pyx_t_9, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 390, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_2);
+                  #endif
+                }
+              } else {
+                __pyx_t_2 = __pyx_t_16(__pyx_t_9);
+                if (unlikely(!__pyx_t_2)) {
+                  PyObject* exc_type = PyErr_Occurred();
+                  if (exc_type) {
+                    if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                    else __PYX_ERR(0, 390, __pyx_L1_error)
+                  }
+                  break;
+                }
+                __Pyx_GOTREF(__pyx_t_2);
+              }
+              __Pyx_XDECREF_SET(__pyx_v_g, __pyx_t_2);
+              __pyx_t_2 = 0;
+
+              /* "VectorClipByVector.py":391
+ *                     if geoinset.type == "MultiPoint":
+ *                         for g in geoinset:
+ *                             if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":
+ */
+              __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 391, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_2);
+              __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 391, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+              if (__pyx_t_8) {
+
+                /* "VectorClipByVector.py":392
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ *                                 listinset.append(g.wkt)             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ */
+                __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_wkt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 392, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_2);
+                __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listinset, __pyx_t_2); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 392, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+                /* "VectorClipByVector.py":391
+ *                     if geoinset.type == "MultiPoint":
+ *                         for g in geoinset:
+ *                             if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":
+ */
+              }
+
+              /* "VectorClipByVector.py":390
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiPoint":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.is_valid:
+ *                                 listinset.append(g.wkt)
+ */
+            }
+            __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+            /* "VectorClipByVector.py":389
+ *                         if geoinset.is_valid:
+ *                             listinset.append(geoinset.wkt)
+ *                     if geoinset.type == "MultiPoint":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ */
+          }
+
+          /* "VectorClipByVector.py":393
+ *                             if g.is_valid:
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.type == "Point":
+ */
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 393, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_9, __pyx_n_s_GeometryCollection, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 393, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+          if (__pyx_t_8) {
+
+            /* "VectorClipByVector.py":394
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.type == "Point":
+ *                                 if g.is_valid:
+ */
+            if (likely(PyList_CheckExact(__pyx_v_geoinset)) || PyTuple_CheckExact(__pyx_v_geoinset)) {
+              __pyx_t_9 = __pyx_v_geoinset; __Pyx_INCREF(__pyx_t_9); __pyx_t_15 = 0;
+              __pyx_t_16 = NULL;
+            } else {
+              __pyx_t_15 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_v_geoinset); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 394, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_9);
+              __pyx_t_16 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 394, __pyx_L1_error)
+            }
+            for (;;) {
+              if (likely(!__pyx_t_16)) {
+                if (likely(PyList_CheckExact(__pyx_t_9))) {
+                  if (__pyx_t_15 >= PyList_GET_SIZE(__pyx_t_9)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_2 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_15); __Pyx_INCREF(__pyx_t_2); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 394, __pyx_L1_error)
+                  #else
+                  __pyx_t_2 = PySequence_ITEM(__pyx_t_9, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 394, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_2);
+                  #endif
+                } else {
+                  if (__pyx_t_15 >= PyTuple_GET_SIZE(__pyx_t_9)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_15); __Pyx_INCREF(__pyx_t_2); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 394, __pyx_L1_error)
+                  #else
+                  __pyx_t_2 = PySequence_ITEM(__pyx_t_9, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 394, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_2);
+                  #endif
+                }
+              } else {
+                __pyx_t_2 = __pyx_t_16(__pyx_t_9);
+                if (unlikely(!__pyx_t_2)) {
+                  PyObject* exc_type = PyErr_Occurred();
+                  if (exc_type) {
+                    if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                    else __PYX_ERR(0, 394, __pyx_L1_error)
+                  }
+                  break;
+                }
+                __Pyx_GOTREF(__pyx_t_2);
+              }
+              __Pyx_XDECREF_SET(__pyx_v_g, __pyx_t_2);
+              __pyx_t_2 = 0;
+
+              /* "VectorClipByVector.py":395
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ *                             if g.type == "Point":             # <<<<<<<<<<<<<<
+ *                                 if g.is_valid:
+ *                                     listinset.append(g.wkt)
+ */
+              __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_type); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 395, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_2);
+              __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_2, __pyx_n_s_Point, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 395, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+              if (__pyx_t_8) {
+
+                /* "VectorClipByVector.py":396
+ *                         for g in geoinset:
+ *                             if g.type == "Point":
+ *                                 if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiPoint":
+ */
+                __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 396, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_2);
+                __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 396, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+                if (__pyx_t_8) {
+
+                  /* "VectorClipByVector.py":397
+ *                             if g.type == "Point":
+ *                                 if g.is_valid:
+ *                                     listinset.append(g.wkt)             # <<<<<<<<<<<<<<
+ *                             if g.type == "MultiPoint":
+ *                                 for tg in g:
+ */
+                  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_wkt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 397, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_2);
+                  __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listinset, __pyx_t_2); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 397, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+                  /* "VectorClipByVector.py":396
+ *                         for g in geoinset:
+ *                             if g.type == "Point":
+ *                                 if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiPoint":
+ */
+                }
+
+                /* "VectorClipByVector.py":395
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ *                             if g.type == "Point":             # <<<<<<<<<<<<<<
+ *                                 if g.is_valid:
+ *                                     listinset.append(g.wkt)
+ */
+              }
+
+              /* "VectorClipByVector.py":398
+ *                                 if g.is_valid:
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiPoint":             # <<<<<<<<<<<<<<
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ */
+              __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_type); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 398, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_2);
+              __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_2, __pyx_n_s_MultiPoint, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 398, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+              if (__pyx_t_8) {
+
+                /* "VectorClipByVector.py":399
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiPoint":
+ *                                 for tg in g:             # <<<<<<<<<<<<<<
+ *                                     if tg.is_valid:
+ *                                         listinset.append(tg.wkt)
+ */
+                if (likely(PyList_CheckExact(__pyx_v_g)) || PyTuple_CheckExact(__pyx_v_g)) {
+                  __pyx_t_2 = __pyx_v_g; __Pyx_INCREF(__pyx_t_2); __pyx_t_17 = 0;
+                  __pyx_t_18 = NULL;
+                } else {
+                  __pyx_t_17 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_g); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 399, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_2);
+                  __pyx_t_18 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 399, __pyx_L1_error)
+                }
+                for (;;) {
+                  if (likely(!__pyx_t_18)) {
+                    if (likely(PyList_CheckExact(__pyx_t_2))) {
+                      if (__pyx_t_17 >= PyList_GET_SIZE(__pyx_t_2)) break;
+                      #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                      __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_17); __Pyx_INCREF(__pyx_t_1); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 399, __pyx_L1_error)
+                      #else
+                      __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 399, __pyx_L1_error)
+                      __Pyx_GOTREF(__pyx_t_1);
+                      #endif
+                    } else {
+                      if (__pyx_t_17 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
+                      #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                      __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_17); __Pyx_INCREF(__pyx_t_1); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 399, __pyx_L1_error)
+                      #else
+                      __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 399, __pyx_L1_error)
+                      __Pyx_GOTREF(__pyx_t_1);
+                      #endif
+                    }
+                  } else {
+                    __pyx_t_1 = __pyx_t_18(__pyx_t_2);
+                    if (unlikely(!__pyx_t_1)) {
+                      PyObject* exc_type = PyErr_Occurred();
+                      if (exc_type) {
+                        if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                        else __PYX_ERR(0, 399, __pyx_L1_error)
+                      }
+                      break;
+                    }
+                    __Pyx_GOTREF(__pyx_t_1);
+                  }
+                  __Pyx_XDECREF_SET(__pyx_v_tg, __pyx_t_1);
+                  __pyx_t_1 = 0;
+
+                  /* "VectorClipByVector.py":400
+ *                             if g.type == "MultiPoint":
+ *                                 for tg in g:
+ *                                     if tg.is_valid:             # <<<<<<<<<<<<<<
+ *                                         listinset.append(tg.wkt)
+ *             numberout = len(listinset)
+ */
+                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_tg, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 400, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_1);
+                  __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 400, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+                  if (__pyx_t_8) {
+
+                    /* "VectorClipByVector.py":401
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ *                                         listinset.append(tg.wkt)             # <<<<<<<<<<<<<<
+ *             numberout = len(listinset)
+ *             if numberout == 0:
+ */
+                    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_tg, __pyx_n_s_wkt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 401, __pyx_L1_error)
+                    __Pyx_GOTREF(__pyx_t_1);
+                    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listinset, __pyx_t_1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 401, __pyx_L1_error)
+                    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+                    /* "VectorClipByVector.py":400
+ *                             if g.type == "MultiPoint":
+ *                                 for tg in g:
+ *                                     if tg.is_valid:             # <<<<<<<<<<<<<<
+ *                                         listinset.append(tg.wkt)
+ *             numberout = len(listinset)
+ */
+                  }
+
+                  /* "VectorClipByVector.py":399
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiPoint":
+ *                                 for tg in g:             # <<<<<<<<<<<<<<
+ *                                     if tg.is_valid:
+ *                                         listinset.append(tg.wkt)
+ */
+                }
+                __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+                /* "VectorClipByVector.py":398
+ *                                 if g.is_valid:
+ *                                     listinset.append(g.wkt)
+ *                             if g.type == "MultiPoint":             # <<<<<<<<<<<<<<
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ */
+              }
+
+              /* "VectorClipByVector.py":394
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.type == "Point":
+ *                                 if g.is_valid:
+ */
+            }
+            __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+            /* "VectorClipByVector.py":393
+ *                             if g.is_valid:
+ *                                 listinset.append(g.wkt)
+ *                     if geoinset.type == "GeometryCollection":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.type == "Point":
+ */
+          }
+
+          /* "VectorClipByVector.py":385
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "Point":
+ *                         if geoinset.is_valid:
+ */
+        }
+
+        /* "VectorClipByVector.py":382
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):             # <<<<<<<<<<<<<<
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ */
+      }
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+      /* "VectorClipByVector.py":402
+ *                                     if tg.is_valid:
+ *                                         listinset.append(tg.wkt)
+ *             numberout = len(listinset)             # <<<<<<<<<<<<<<
+ *             if numberout == 0:
+ *                 print("Remove")
+ */
+      __pyx_t_12 = PyList_GET_SIZE(__pyx_v_listinset); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(0, 402, __pyx_L1_error)
+      __pyx_v_numberout = __pyx_t_12;
+
+      /* "VectorClipByVector.py":403
+ *                                         listinset.append(tg.wkt)
+ *             numberout = len(listinset)
+ *             if numberout == 0:             # <<<<<<<<<<<<<<
+ *                 print("Remove")
+ *             elif numberout > 1:
+ */
+      __pyx_t_8 = ((__pyx_v_numberout == 0) != 0);
+      if (__pyx_t_8) {
+
+        /* "VectorClipByVector.py":404
+ *             numberout = len(listinset)
+ *             if numberout == 0:
+ *                 print("Remove")             # <<<<<<<<<<<<<<
+ *             elif numberout > 1:
+ *                 geoi1 = wkt.loads(listinset[0])
+ */
+        if (__Pyx_PrintOne(0, __pyx_n_s_Remove) < 0) __PYX_ERR(0, 404, __pyx_L1_error)
+
+        /* "VectorClipByVector.py":403
+ *                                         listinset.append(tg.wkt)
+ *             numberout = len(listinset)
+ *             if numberout == 0:             # <<<<<<<<<<<<<<
+ *                 print("Remove")
+ *             elif numberout > 1:
+ */
+        goto __pyx_L102;
+      }
+
+      /* "VectorClipByVector.py":405
+ *             if numberout == 0:
+ *                 print("Remove")
+ *             elif numberout > 1:             # <<<<<<<<<<<<<<
+ *                 geoi1 = wkt.loads(listinset[0])
+ *                 mp1 = MultiPolygon([geoi1])
+ */
+      __pyx_t_8 = ((__pyx_v_numberout > 1) != 0);
+      if (__pyx_t_8) {
+
+        /* "VectorClipByVector.py":406
+ *                 print("Remove")
+ *             elif numberout > 1:
+ *                 geoi1 = wkt.loads(listinset[0])             # <<<<<<<<<<<<<<
+ *                 mp1 = MultiPolygon([geoi1])
+ *                 if not mp1.is_valid:
+ */
+        __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_wkt); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 406, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_loads); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 406, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __pyx_t_9 = __Pyx_GetItemInt_List(__pyx_v_listinset, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 406, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __pyx_t_1 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
+          __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_2);
+          if (likely(__pyx_t_1)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+            __Pyx_INCREF(__pyx_t_1);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_2, function);
+          }
+        }
+        __pyx_t_3 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_1, __pyx_t_9) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_9);
+        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+        if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 406, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_geoi1, __pyx_t_3);
+        __pyx_t_3 = 0;
+
+        /* "VectorClipByVector.py":407
+ *             elif numberout > 1:
+ *                 geoi1 = wkt.loads(listinset[0])
+ *                 mp1 = MultiPolygon([geoi1])             # <<<<<<<<<<<<<<
+ *                 if not mp1.is_valid:
+ *                     print("Geometry is Invalid")
+ */
+        __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_MultiPolygon); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 407, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __pyx_t_9 = PyList_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 407, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __Pyx_INCREF(__pyx_v_geoi1);
+        __Pyx_GIVEREF(__pyx_v_geoi1);
+        PyList_SET_ITEM(__pyx_t_9, 0, __pyx_v_geoi1);
+        __pyx_t_1 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
+          __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_2);
+          if (likely(__pyx_t_1)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+            __Pyx_INCREF(__pyx_t_1);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_2, function);
+          }
+        }
+        __pyx_t_3 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_1, __pyx_t_9) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_9);
+        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+        if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 407, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_mp1, __pyx_t_3);
+        __pyx_t_3 = 0;
+
+        /* "VectorClipByVector.py":408
+ *                 geoi1 = wkt.loads(listinset[0])
+ *                 mp1 = MultiPolygon([geoi1])
+ *                 if not mp1.is_valid:             # <<<<<<<<<<<<<<
+ *                     print("Geometry is Invalid")
+ *                 for itr in range(1, numberout):
+ */
+        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_mp1, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 408, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 408, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __pyx_t_6 = ((!__pyx_t_8) != 0);
+        if (__pyx_t_6) {
+
+          /* "VectorClipByVector.py":409
+ *                 mp1 = MultiPolygon([geoi1])
+ *                 if not mp1.is_valid:
+ *                     print("Geometry is Invalid")             # <<<<<<<<<<<<<<
+ *                 for itr in range(1, numberout):
+ *                     geoi2 = wkt.loads(listinset[itr])
+ */
+          if (__Pyx_PrintOne(0, __pyx_kp_s_Geometry_is_Invalid) < 0) __PYX_ERR(0, 409, __pyx_L1_error)
+
+          /* "VectorClipByVector.py":408
+ *                 geoi1 = wkt.loads(listinset[0])
+ *                 mp1 = MultiPolygon([geoi1])
+ *                 if not mp1.is_valid:             # <<<<<<<<<<<<<<
+ *                     print("Geometry is Invalid")
+ *                 for itr in range(1, numberout):
+ */
+        }
+
+        /* "VectorClipByVector.py":410
+ *                 if not mp1.is_valid:
+ *                     print("Geometry is Invalid")
+ *                 for itr in range(1, numberout):             # <<<<<<<<<<<<<<
+ *                     geoi2 = wkt.loads(listinset[itr])
+ *                     mp2 = MultiPolygon([geoi2])
+ */
+        __pyx_t_3 = PyInt_FromSsize_t(__pyx_v_numberout); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 410, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 410, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __Pyx_INCREF(__pyx_int_1);
+        __Pyx_GIVEREF(__pyx_int_1);
+        PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_int_1);
+        __Pyx_GIVEREF(__pyx_t_3);
+        PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_3);
+        __pyx_t_3 = 0;
+        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 410, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
+          __pyx_t_2 = __pyx_t_3; __Pyx_INCREF(__pyx_t_2); __pyx_t_12 = 0;
+          __pyx_t_13 = NULL;
+        } else {
+          __pyx_t_12 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 410, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_13 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 410, __pyx_L1_error)
+        }
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        for (;;) {
+          if (likely(!__pyx_t_13)) {
+            if (likely(PyList_CheckExact(__pyx_t_2))) {
+              if (__pyx_t_12 >= PyList_GET_SIZE(__pyx_t_2)) break;
+              #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+              __pyx_t_3 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_12); __Pyx_INCREF(__pyx_t_3); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 410, __pyx_L1_error)
+              #else
+              __pyx_t_3 = PySequence_ITEM(__pyx_t_2, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 410, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              #endif
+            } else {
+              if (__pyx_t_12 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
+              #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+              __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_12); __Pyx_INCREF(__pyx_t_3); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 410, __pyx_L1_error)
+              #else
+              __pyx_t_3 = PySequence_ITEM(__pyx_t_2, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 410, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              #endif
+            }
+          } else {
+            __pyx_t_3 = __pyx_t_13(__pyx_t_2);
+            if (unlikely(!__pyx_t_3)) {
+              PyObject* exc_type = PyErr_Occurred();
+              if (exc_type) {
+                if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                else __PYX_ERR(0, 410, __pyx_L1_error)
+              }
+              break;
+            }
+            __Pyx_GOTREF(__pyx_t_3);
+          }
+          __Pyx_XDECREF_SET(__pyx_v_itr, __pyx_t_3);
+          __pyx_t_3 = 0;
+
+          /* "VectorClipByVector.py":411
+ *                     print("Geometry is Invalid")
+ *                 for itr in range(1, numberout):
+ *                     geoi2 = wkt.loads(listinset[itr])             # <<<<<<<<<<<<<<
+ *                     mp2 = MultiPolygon([geoi2])
+ *                     if mp2.is_valid:
+ */
+          __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_wkt); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 411, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_loads); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 411, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+          __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_listinset, __pyx_v_itr); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 411, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          __pyx_t_14 = NULL;
+          if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+            __pyx_t_14 = PyMethod_GET_SELF(__pyx_t_1);
+            if (likely(__pyx_t_14)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+              __Pyx_INCREF(__pyx_t_14);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_1, function);
+            }
+          }
+          __pyx_t_3 = (__pyx_t_14) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_14, __pyx_t_9) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_9);
+          __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
+          __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+          if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 411, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_3);
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_XDECREF_SET(__pyx_v_geoi2, __pyx_t_3);
+          __pyx_t_3 = 0;
+
+          /* "VectorClipByVector.py":412
+ *                 for itr in range(1, numberout):
+ *                     geoi2 = wkt.loads(listinset[itr])
+ *                     mp2 = MultiPolygon([geoi2])             # <<<<<<<<<<<<<<
+ *                     if mp2.is_valid:
+ *                         mp1 = mp1.union(mp2)
+ */
+          __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_MultiPolygon); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 412, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_9 = PyList_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 412, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          __Pyx_INCREF(__pyx_v_geoi2);
+          __Pyx_GIVEREF(__pyx_v_geoi2);
+          PyList_SET_ITEM(__pyx_t_9, 0, __pyx_v_geoi2);
+          __pyx_t_14 = NULL;
+          if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+            __pyx_t_14 = PyMethod_GET_SELF(__pyx_t_1);
+            if (likely(__pyx_t_14)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+              __Pyx_INCREF(__pyx_t_14);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_1, function);
+            }
+          }
+          __pyx_t_3 = (__pyx_t_14) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_14, __pyx_t_9) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_9);
+          __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
+          __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+          if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 412, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_3);
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_XDECREF_SET(__pyx_v_mp2, __pyx_t_3);
+          __pyx_t_3 = 0;
+
+          /* "VectorClipByVector.py":413
+ *                     geoi2 = wkt.loads(listinset[itr])
+ *                     mp2 = MultiPolygon([geoi2])
+ *                     if mp2.is_valid:             # <<<<<<<<<<<<<<
+ *                         mp1 = mp1.union(mp2)
+ *                 listout.append(mp1.wkt)
+ */
+          __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_mp2, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 413, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_3);
+          __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 413, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+          if (__pyx_t_6) {
+
+            /* "VectorClipByVector.py":414
+ *                     mp2 = MultiPolygon([geoi2])
+ *                     if mp2.is_valid:
+ *                         mp1 = mp1.union(mp2)             # <<<<<<<<<<<<<<
+ *                 listout.append(mp1.wkt)
+ *                 listReserve.append(listFieldOut[i])
+ */
+            __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_mp1, __pyx_n_s_union); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 414, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_1);
+            __pyx_t_9 = NULL;
+            if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
+              __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_1);
+              if (likely(__pyx_t_9)) {
+                PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+                __Pyx_INCREF(__pyx_t_9);
+                __Pyx_INCREF(function);
+                __Pyx_DECREF_SET(__pyx_t_1, function);
+              }
+            }
+            __pyx_t_3 = (__pyx_t_9) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_9, __pyx_v_mp2) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_mp2);
+            __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+            if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 414, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_3);
+            __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+            __Pyx_DECREF_SET(__pyx_v_mp1, __pyx_t_3);
+            __pyx_t_3 = 0;
+
+            /* "VectorClipByVector.py":413
+ *                     geoi2 = wkt.loads(listinset[itr])
+ *                     mp2 = MultiPolygon([geoi2])
+ *                     if mp2.is_valid:             # <<<<<<<<<<<<<<
+ *                         mp1 = mp1.union(mp2)
+ *                 listout.append(mp1.wkt)
+ */
+          }
+
+          /* "VectorClipByVector.py":410
+ *                 if not mp1.is_valid:
+ *                     print("Geometry is Invalid")
+ *                 for itr in range(1, numberout):             # <<<<<<<<<<<<<<
+ *                     geoi2 = wkt.loads(listinset[itr])
+ *                     mp2 = MultiPolygon([geoi2])
+ */
+        }
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+        /* "VectorClipByVector.py":415
+ *                     if mp2.is_valid:
+ *                         mp1 = mp1.union(mp2)
+ *                 listout.append(mp1.wkt)             # <<<<<<<<<<<<<<
+ *                 listReserve.append(listFieldOut[i])
+ *             else:
+ */
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_mp1, __pyx_n_s_wkt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 415, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_2); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 415, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+        /* "VectorClipByVector.py":416
+ *                         mp1 = mp1.union(mp2)
+ *                 listout.append(mp1.wkt)
+ *                 listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *             else:
+ *                 pol = wkt.loads(listinset[0])
+ */
+        __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 416, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_2); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 416, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+        /* "VectorClipByVector.py":405
+ *             if numberout == 0:
+ *                 print("Remove")
+ *             elif numberout > 1:             # <<<<<<<<<<<<<<
+ *                 geoi1 = wkt.loads(listinset[0])
+ *                 mp1 = MultiPolygon([geoi1])
+ */
+        goto __pyx_L102;
+      }
+
+      /* "VectorClipByVector.py":418
+ *                 listReserve.append(listFieldOut[i])
+ *             else:
+ *                 pol = wkt.loads(listinset[0])             # <<<<<<<<<<<<<<
+ *                 mpol = MultiPolygon([pol])
+ *                 listout.append(mpol.wkt)
+ */
+      /*else*/ {
+        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_wkt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 418, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_loads); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 418, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __pyx_t_3 = __Pyx_GetItemInt_List(__pyx_v_listinset, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 418, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_9 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+          __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_1);
+          if (likely(__pyx_t_9)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+            __Pyx_INCREF(__pyx_t_9);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_1, function);
+          }
+        }
+        __pyx_t_2 = (__pyx_t_9) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_9, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3);
+        __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 418, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_pol, __pyx_t_2);
+        __pyx_t_2 = 0;
+
+        /* "VectorClipByVector.py":419
+ *             else:
+ *                 pol = wkt.loads(listinset[0])
+ *                 mpol = MultiPolygon([pol])             # <<<<<<<<<<<<<<
+ *                 listout.append(mpol.wkt)
+ *                 listReserve.append(listFieldOut[i])
+ */
+        __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_MultiPolygon); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 419, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 419, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_INCREF(__pyx_v_pol);
+        __Pyx_GIVEREF(__pyx_v_pol);
+        PyList_SET_ITEM(__pyx_t_3, 0, __pyx_v_pol);
+        __pyx_t_9 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+          __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_1);
+          if (likely(__pyx_t_9)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+            __Pyx_INCREF(__pyx_t_9);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_1, function);
+          }
+        }
+        __pyx_t_2 = (__pyx_t_9) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_9, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3);
+        __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 419, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_mpol, __pyx_t_2);
+        __pyx_t_2 = 0;
+
+        /* "VectorClipByVector.py":420
+ *                 pol = wkt.loads(listinset[0])
+ *                 mpol = MultiPolygon([pol])
+ *                 listout.append(mpol.wkt)             # <<<<<<<<<<<<<<
+ *                 listReserve.append(listFieldOut[i])
+ *     #
+ */
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_mpol, __pyx_n_s_wkt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 420, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_2); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 420, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+        /* "VectorClipByVector.py":421
+ *                 mpol = MultiPolygon([pol])
+ *                 listout.append(mpol.wkt)
+ *                 listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *     #
+ *     #
+ */
+        __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 421, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_2); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 421, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      }
+      __pyx_L102:;
+
+      /* "VectorClipByVector.py":378
+ *                 listReserve.append(listFieldOut[i])
+ *     elif Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":
+ *         for i in range(elementsnumber):             # <<<<<<<<<<<<<<
+ *             # shapely
+ *             listinset = []
+ */
+    }
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+    /* "VectorClipByVector.py":377
+ *                 listout.append(mpol.wkt)
+ *                 listReserve.append(listFieldOut[i])
+ *     elif Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":             # <<<<<<<<<<<<<<
+ *         for i in range(elementsnumber):
+ *             # shapely
+ */
+  }
+  __pyx_L25:;
+
+  /* "VectorClipByVector.py":424
+ *     #
+ *     #
+ *     outNum = len(listout)             # <<<<<<<<<<<<<<
+ *     numberreserve = len(listReserve)
+ *     oLayer=listOutLayer[0]
+ */
+  __pyx_t_10 = PyList_GET_SIZE(__pyx_v_listout); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 424, __pyx_L1_error)
+  __pyx_v_outNum = __pyx_t_10;
+
+  /* "VectorClipByVector.py":425
+ *     #
+ *     outNum = len(listout)
+ *     numberreserve = len(listReserve)             # <<<<<<<<<<<<<<
+ *     oLayer=listOutLayer[0]
+ *     oDefn = oLayer.GetLayerDefn()
+ */
+  __pyx_t_10 = PyList_GET_SIZE(__pyx_v_listReserve); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 425, __pyx_L1_error)
+  __pyx_v_numberreserve = __pyx_t_10;
+
+  /* "VectorClipByVector.py":426
+ *     outNum = len(listout)
+ *     numberreserve = len(listReserve)
+ *     oLayer=listOutLayer[0]             # <<<<<<<<<<<<<<
+ *     oDefn = oLayer.GetLayerDefn()
+ *     if not outNum == numberreserve:
+ */
+  __pyx_t_5 = __Pyx_GetItemInt_List(__pyx_v_listOutLayer, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 426, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_v_oLayer = __pyx_t_5;
+  __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":427
+ *     numberreserve = len(listReserve)
+ *     oLayer=listOutLayer[0]
+ *     oDefn = oLayer.GetLayerDefn()             # <<<<<<<<<<<<<<
+ *     if not outNum == numberreserve:
+ *         print("Topo is Wrong\n")
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_oLayer, __pyx_n_s_GetLayerDefn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 427, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_1)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_1);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+    }
+  }
+  __pyx_t_5 = (__pyx_t_1) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_1) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 427, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_oDefn = __pyx_t_5;
+  __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":428
+ *     oLayer=listOutLayer[0]
+ *     oDefn = oLayer.GetLayerDefn()
+ *     if not outNum == numberreserve:             # <<<<<<<<<<<<<<
+ *         print("Topo is Wrong\n")
+ *     for it in range(outNum):
+ */
+  __pyx_t_6 = ((!((__pyx_v_outNum == __pyx_v_numberreserve) != 0)) != 0);
+  if (__pyx_t_6) {
+
+    /* "VectorClipByVector.py":429
+ *     oDefn = oLayer.GetLayerDefn()
+ *     if not outNum == numberreserve:
+ *         print("Topo is Wrong\n")             # <<<<<<<<<<<<<<
+ *     for it in range(outNum):
+ *         oFet = ogr.Feature(oDefn)
+ */
+    if (__Pyx_PrintOne(0, __pyx_kp_s_Topo_is_Wrong) < 0) __PYX_ERR(0, 429, __pyx_L1_error)
+
+    /* "VectorClipByVector.py":428
+ *     oLayer=listOutLayer[0]
+ *     oDefn = oLayer.GetLayerDefn()
+ *     if not outNum == numberreserve:             # <<<<<<<<<<<<<<
+ *         print("Topo is Wrong\n")
+ *     for it in range(outNum):
+ */
+  }
+
+  /* "VectorClipByVector.py":430
+ *     if not outNum == numberreserve:
+ *         print("Topo is Wrong\n")
+ *     for it in range(outNum):             # <<<<<<<<<<<<<<
+ *         oFet = ogr.Feature(oDefn)
+ *         fieldsubNumber = len(listReserve[it])
+ */
+  __pyx_t_10 = __pyx_v_outNum;
+  __pyx_t_12 = __pyx_t_10;
+  for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_12; __pyx_t_15+=1) {
+    __pyx_v_it = __pyx_t_15;
+
+    /* "VectorClipByVector.py":431
+ *         print("Topo is Wrong\n")
+ *     for it in range(outNum):
+ *         oFet = ogr.Feature(oDefn)             # <<<<<<<<<<<<<<
+ *         fieldsubNumber = len(listReserve[it])
+ *         for iu in range(0, fieldsubNumber, 2):
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_ogr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 431, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Feature); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 431, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = NULL;
+    if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
+      __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_1);
+      if (likely(__pyx_t_2)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+        __Pyx_INCREF(__pyx_t_2);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_1, function);
+      }
+    }
+    __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_2, __pyx_v_oDefn) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_oDefn);
+    __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 431, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_oFet, __pyx_t_5);
+    __pyx_t_5 = 0;
+
+    /* "VectorClipByVector.py":432
+ *     for it in range(outNum):
+ *         oFet = ogr.Feature(oDefn)
+ *         fieldsubNumber = len(listReserve[it])             # <<<<<<<<<<<<<<
+ *         for iu in range(0, fieldsubNumber, 2):
+ *             oFet.SetField(listReserve[it][iu], listReserve[it][iu + 1])
+ */
+    __pyx_t_5 = __Pyx_GetItemInt_List(__pyx_v_listReserve, __pyx_v_it, Py_ssize_t, 1, PyInt_FromSsize_t, 1, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 432, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_17 = PyObject_Length(__pyx_t_5); if (unlikely(__pyx_t_17 == ((Py_ssize_t)-1))) __PYX_ERR(0, 432, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_v_fieldsubNumber = __pyx_t_17;
+
+    /* "VectorClipByVector.py":433
+ *         oFet = ogr.Feature(oDefn)
+ *         fieldsubNumber = len(listReserve[it])
+ *         for iu in range(0, fieldsubNumber, 2):             # <<<<<<<<<<<<<<
+ *             oFet.SetField(listReserve[it][iu], listReserve[it][iu + 1])
+ *         gemetrytt = ogr.CreateGeometryFromWkt(listout[it])
+ */
+    __pyx_t_5 = PyInt_FromSsize_t(__pyx_v_fieldsubNumber); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 433, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 433, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_INCREF(__pyx_int_0);
+    __Pyx_GIVEREF(__pyx_int_0);
+    PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_int_0);
+    __Pyx_GIVEREF(__pyx_t_5);
+    PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_5);
+    __Pyx_INCREF(__pyx_int_2);
+    __Pyx_GIVEREF(__pyx_int_2);
+    PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_int_2);
+    __pyx_t_5 = 0;
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_1, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 433, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    if (likely(PyList_CheckExact(__pyx_t_5)) || PyTuple_CheckExact(__pyx_t_5)) {
+      __pyx_t_1 = __pyx_t_5; __Pyx_INCREF(__pyx_t_1); __pyx_t_17 = 0;
+      __pyx_t_11 = NULL;
+    } else {
+      __pyx_t_17 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 433, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __pyx_t_11 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 433, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_11)) {
+        if (likely(PyList_CheckExact(__pyx_t_1))) {
+          if (__pyx_t_17 >= PyList_GET_SIZE(__pyx_t_1)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_5 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_17); __Pyx_INCREF(__pyx_t_5); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 433, __pyx_L1_error)
+          #else
+          __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 433, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          #endif
+        } else {
+          if (__pyx_t_17 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_17); __Pyx_INCREF(__pyx_t_5); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 433, __pyx_L1_error)
+          #else
+          __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 433, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          #endif
+        }
+      } else {
+        __pyx_t_5 = __pyx_t_11(__pyx_t_1);
+        if (unlikely(!__pyx_t_5)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 433, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_5);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_iu, __pyx_t_5);
+      __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":434
+ *         fieldsubNumber = len(listReserve[it])
+ *         for iu in range(0, fieldsubNumber, 2):
+ *             oFet.SetField(listReserve[it][iu], listReserve[it][iu + 1])             # <<<<<<<<<<<<<<
+ *         gemetrytt = ogr.CreateGeometryFromWkt(listout[it])
+ *         oFet.SetGeometry(gemetrytt)
+ */
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_oFet, __pyx_n_s_SetField); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 434, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_3 = __Pyx_GetItemInt_List(__pyx_v_listReserve, __pyx_v_it, Py_ssize_t, 1, PyInt_FromSsize_t, 1, 1, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 434, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_3, __pyx_v_iu); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 434, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __pyx_t_3 = __Pyx_GetItemInt_List(__pyx_v_listReserve, __pyx_v_it, Py_ssize_t, 1, PyInt_FromSsize_t, 1, 1, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 434, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_14 = __Pyx_PyInt_AddObjC(__pyx_v_iu, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 434, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_14);
+      __pyx_t_19 = __Pyx_PyObject_GetItem(__pyx_t_3, __pyx_t_14); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 434, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_19);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
+      __pyx_t_14 = NULL;
+      __pyx_t_4 = 0;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+        __pyx_t_14 = PyMethod_GET_SELF(__pyx_t_2);
+        if (likely(__pyx_t_14)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+          __Pyx_INCREF(__pyx_t_14);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_2, function);
+          __pyx_t_4 = 1;
+        }
+      }
+      #if CYTHON_FAST_PYCALL
+      if (PyFunction_Check(__pyx_t_2)) {
+        PyObject *__pyx_temp[3] = {__pyx_t_14, __pyx_t_9, __pyx_t_19};
+        __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 434, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+      } else
+      #endif
+      #if CYTHON_FAST_PYCCALL
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
+        PyObject *__pyx_temp[3] = {__pyx_t_14, __pyx_t_9, __pyx_t_19};
+        __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 434, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+      } else
+      #endif
+      {
+        __pyx_t_3 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 434, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        if (__pyx_t_14) {
+          __Pyx_GIVEREF(__pyx_t_14); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_14); __pyx_t_14 = NULL;
+        }
+        __Pyx_GIVEREF(__pyx_t_9);
+        PyTuple_SET_ITEM(__pyx_t_3, 0+__pyx_t_4, __pyx_t_9);
+        __Pyx_GIVEREF(__pyx_t_19);
+        PyTuple_SET_ITEM(__pyx_t_3, 1+__pyx_t_4, __pyx_t_19);
+        __pyx_t_9 = 0;
+        __pyx_t_19 = 0;
+        __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 434, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":433
+ *         oFet = ogr.Feature(oDefn)
+ *         fieldsubNumber = len(listReserve[it])
+ *         for iu in range(0, fieldsubNumber, 2):             # <<<<<<<<<<<<<<
+ *             oFet.SetField(listReserve[it][iu], listReserve[it][iu + 1])
+ *         gemetrytt = ogr.CreateGeometryFromWkt(listout[it])
+ */
+    }
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":435
+ *         for iu in range(0, fieldsubNumber, 2):
+ *             oFet.SetField(listReserve[it][iu], listReserve[it][iu + 1])
+ *         gemetrytt = ogr.CreateGeometryFromWkt(listout[it])             # <<<<<<<<<<<<<<
+ *         oFet.SetGeometry(gemetrytt)
+ *         oLayer.CreateFeature(oFet)
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_ogr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 435, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_CreateGeometryFromWkt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 435, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_t_5 = __Pyx_GetItemInt_List(__pyx_v_listout, __pyx_v_it, Py_ssize_t, 1, PyInt_FromSsize_t, 1, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 435, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_3 = NULL;
+    if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_3)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_3);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+      }
+    }
+    __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 435, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_gemetrytt, __pyx_t_1);
+    __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":436
+ *             oFet.SetField(listReserve[it][iu], listReserve[it][iu + 1])
+ *         gemetrytt = ogr.CreateGeometryFromWkt(listout[it])
+ *         oFet.SetGeometry(gemetrytt)             # <<<<<<<<<<<<<<
+ *         oLayer.CreateFeature(oFet)
+ *     oDS.Destroy()
+ */
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_oFet, __pyx_n_s_SetGeometry); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 436, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_5 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+      }
+    }
+    __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_5, __pyx_v_gemetrytt) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_gemetrytt);
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 436, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":437
+ *         gemetrytt = ogr.CreateGeometryFromWkt(listout[it])
+ *         oFet.SetGeometry(gemetrytt)
+ *         oLayer.CreateFeature(oFet)             # <<<<<<<<<<<<<<
+ *     oDS.Destroy()
+ *     print("\n")
+ */
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_oLayer, __pyx_n_s_CreateFeature); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 437, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_5 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+      }
+    }
+    __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_5, __pyx_v_oFet) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_oFet);
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 437, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  }
+
+  /* "VectorClipByVector.py":438
+ *         oFet.SetGeometry(gemetrytt)
+ *         oLayer.CreateFeature(oFet)
+ *     oDS.Destroy()             # <<<<<<<<<<<<<<
+ *     print("\n")
+ * #VectorClipByVectorNew("E:\shptest\DWFL_2018.shp","E:\shptest\DWFL_2016.shp","E:\shptest\DWFL_2021.shp")
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_oDS, __pyx_n_s_Destroy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 438, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_5);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 438, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":439
+ *         oLayer.CreateFeature(oFet)
+ *     oDS.Destroy()
+ *     print("\n")             # <<<<<<<<<<<<<<
+ * #VectorClipByVectorNew("E:\shptest\DWFL_2018.shp","E:\shptest\DWFL_2016.shp","E:\shptest\DWFL_2021.shp")
+ * def VectorInterSect(strinputbase, strinputclip, stroutput):
+ */
+  if (__Pyx_PrintOne(0, __pyx_kp_s__6) < 0) __PYX_ERR(0, 439, __pyx_L1_error)
+
+  /* "VectorClipByVector.py":166
+ * 
+ * 
+ * def VectorClipByVectorNew(strinputbase, strinputclip, stroutput):             # <<<<<<<<<<<<<<
+ *     # fn1=r"E:\shptest\DWFL_2018.shp"
+ *     # fn2=r"E:\shptest\DWFL_2016.shp"
+ */
+
+  /* function exit code */
+  __pyx_r = Py_None; __Pyx_INCREF(Py_None);
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_9);
+  __Pyx_XDECREF(__pyx_t_14);
+  __Pyx_XDECREF(__pyx_t_19);
+  __Pyx_AddTraceback("VectorClipByVector.VectorClipByVectorNew", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XDECREF(__pyx_v_datasource);
+  __Pyx_XDECREF(__pyx_v_datasourcebefor);
+  __Pyx_XDECREF(__pyx_v_layer_num);
+  __Pyx_XDECREF(__pyx_v_layer_numbefor);
+  __Pyx_XDECREF(__pyx_v_layer);
+  __Pyx_XDECREF(__pyx_v_layer_before);
+  __Pyx_XDECREF(__pyx_v_spatial_ref);
+  __Pyx_XDECREF(__pyx_v_spatial_refBefore);
+  __Pyx_XDECREF(__pyx_v_strDriverName);
+  __Pyx_XDECREF(__pyx_v_oDriver);
+  __Pyx_XDECREF(__pyx_v_oDS);
+  __Pyx_XDECREF(__pyx_v_srs);
+  __Pyx_XDECREF(__pyx_v_srsout);
+  __Pyx_XDECREF(__pyx_v_papszLCO);
+  __Pyx_XDECREF(__pyx_v_oSRCDefn);
+  __Pyx_XDECREF(__pyx_v_numFe);
+  __Pyx_XDECREF(__pyx_v_listoutType);
+  __Pyx_XDECREF(__pyx_v_listOutLayer);
+  __Pyx_XDECREF(__pyx_v_firstFeatur);
+  __Pyx_XDECREF(__pyx_v_FieldNumber);
+  __Pyx_XDECREF(__pyx_v_firstFeGeo);
+  __Pyx_XDECREF(__pyx_v_Baselayertype);
+  __Pyx_XDECREF(__pyx_v_oLayer1);
+  __Pyx_XDECREF(__pyx_v_itr);
+  __Pyx_XDECREF(__pyx_v_curFiedDefn);
+  __Pyx_XDECREF(__pyx_v_fieldname);
+  __Pyx_XDECREF(__pyx_v_fieldtype);
+  __Pyx_XDECREF(__pyx_v_creatFieldN);
+  __Pyx_XDECREF(__pyx_v_listnow);
+  __Pyx_XDECREF(__pyx_v_listbefor);
+  __Pyx_XDECREF(__pyx_v_listFieldOut);
+  __Pyx_XDECREF(__pyx_v_listout);
+  __Pyx_XDECREF(__pyx_v_feature_element);
+  __Pyx_XDECREF(__pyx_v_spatial_data);
+  __Pyx_XDECREF(__pyx_v_fieldnum);
+  __Pyx_XDECREF(__pyx_v_listonefeature);
+  __Pyx_XDECREF(__pyx_v_ite);
+  __Pyx_XDECREF(__pyx_v_currenfielddefn);
+  __Pyx_XDECREF(__pyx_v_fiedlValue);
+  __Pyx_XDECREF(__pyx_v_feature_elementbefor);
+  __Pyx_XDECREF(__pyx_v_spatial_databefore);
+  __Pyx_XDECREF(__pyx_v_geobefore);
+  __Pyx_XDECREF(__pyx_v_elementsnumber);
+  __Pyx_XDECREF(__pyx_v_elementsnumberberfore);
+  __Pyx_XDECREF(__pyx_v_listReserve);
+  __Pyx_XDECREF(__pyx_v_i);
+  __Pyx_XDECREF(__pyx_v_listinset);
+  __Pyx_XDECREF(__pyx_v_geoi);
+  __Pyx_XDECREF(__pyx_v_j);
+  __Pyx_XDECREF(__pyx_v_geoj);
+  __Pyx_XDECREF(__pyx_v_geoinset);
+  __Pyx_XDECREF(__pyx_v_g);
+  __Pyx_XDECREF(__pyx_v_tg);
+  __Pyx_XDECREF(__pyx_v_geoi1);
+  __Pyx_XDECREF(__pyx_v_mp1);
+  __Pyx_XDECREF(__pyx_v_geoi2);
+  __Pyx_XDECREF(__pyx_v_mp2);
+  __Pyx_XDECREF(__pyx_v_pol);
+  __Pyx_XDECREF(__pyx_v_mpol);
+  __Pyx_XDECREF(__pyx_v_oLayer);
+  __Pyx_XDECREF(__pyx_v_oDefn);
+  __Pyx_XDECREF(__pyx_v_oFet);
+  __Pyx_XDECREF(__pyx_v_iu);
+  __Pyx_XDECREF(__pyx_v_gemetrytt);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "VectorClipByVector.py":441
+ *     print("\n")
+ * #VectorClipByVectorNew("E:\shptest\DWFL_2018.shp","E:\shptest\DWFL_2016.shp","E:\shptest\DWFL_2021.shp")
+ * def VectorInterSect(strinputbase, strinputclip, stroutput):             # <<<<<<<<<<<<<<
+ *     datasource = ogr.Open(strinputbase, False)
+ *     datasourcebefor = ogr.Open(strinputclip, False)
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_18VectorClipByVector_5VectorInterSect(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_18VectorClipByVector_5VectorInterSect = {"VectorInterSect", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_18VectorClipByVector_5VectorInterSect, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_18VectorClipByVector_5VectorInterSect(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  PyObject *__pyx_v_strinputbase = 0;
+  PyObject *__pyx_v_strinputclip = 0;
+  PyObject *__pyx_v_stroutput = 0;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("VectorInterSect (wrapper)", 0);
+  {
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_strinputbase,&__pyx_n_s_strinputclip,&__pyx_n_s_stroutput,0};
+    PyObject* values[3] = {0,0,0};
+    if (unlikely(__pyx_kwds)) {
+      Py_ssize_t kw_args;
+      const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
+      switch (pos_args) {
+        case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+        CYTHON_FALLTHROUGH;
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        CYTHON_FALLTHROUGH;
+        case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = PyDict_Size(__pyx_kwds);
+      switch (pos_args) {
+        case  0:
+        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_strinputbase)) != 0)) kw_args--;
+        else goto __pyx_L5_argtuple_error;
+        CYTHON_FALLTHROUGH;
+        case  1:
+        if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_strinputclip)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("VectorInterSect", 1, 3, 3, 1); __PYX_ERR(0, 441, __pyx_L3_error)
+        }
+        CYTHON_FALLTHROUGH;
+        case  2:
+        if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_stroutput)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("VectorInterSect", 1, 3, 3, 2); __PYX_ERR(0, 441, __pyx_L3_error)
+        }
+      }
+      if (unlikely(kw_args > 0)) {
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "VectorInterSect") < 0)) __PYX_ERR(0, 441, __pyx_L3_error)
+      }
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
+      goto __pyx_L5_argtuple_error;
+    } else {
+      values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+      values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+      values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+    }
+    __pyx_v_strinputbase = values[0];
+    __pyx_v_strinputclip = values[1];
+    __pyx_v_stroutput = values[2];
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("VectorInterSect", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 441, __pyx_L3_error)
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("VectorClipByVector.VectorInterSect", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_18VectorClipByVector_4VectorInterSect(__pyx_self, __pyx_v_strinputbase, __pyx_v_strinputclip, __pyx_v_stroutput);
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_18VectorClipByVector_4VectorInterSect(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_strinputbase, PyObject *__pyx_v_strinputclip, PyObject *__pyx_v_stroutput) {
+  PyObject *__pyx_v_datasource = NULL;
+  PyObject *__pyx_v_datasourcebefor = NULL;
+  PyObject *__pyx_v_layer_num = NULL;
+  PyObject *__pyx_v_layer_numbefor = NULL;
+  PyObject *__pyx_v_layer = NULL;
+  PyObject *__pyx_v_layer_before = NULL;
+  PyObject *__pyx_v_spatial_ref = NULL;
+  PyObject *__pyx_v_spatial_refBefore = NULL;
+  PyObject *__pyx_v_strDriverName = NULL;
+  PyObject *__pyx_v_oDriver = NULL;
+  PyObject *__pyx_v_oDS = NULL;
+  PyObject *__pyx_v_srs = NULL;
+  PyObject *__pyx_v_srsout = NULL;
+  PyObject *__pyx_v_papszLCO = NULL;
+  PyObject *__pyx_v_oSRCDefn = NULL;
+  PyObject *__pyx_v_numFe = NULL;
+  PyObject *__pyx_v_oSRCDefnBefor = NULL;
+  PyObject *__pyx_v_numFeBefor = NULL;
+  PyObject *__pyx_v_listoutType = NULL;
+  PyObject *__pyx_v_listOutLayer = NULL;
+  PyObject *__pyx_v_firstFeatur = NULL;
+  PyObject *__pyx_v_FieldNumber = NULL;
+  PyObject *__pyx_v_firstFeGeo = NULL;
+  PyObject *__pyx_v_Baselayertype = NULL;
+  PyObject *__pyx_v_oLayer1 = NULL;
+  PyObject *__pyx_v_itr = NULL;
+  PyObject *__pyx_v_curFiedDefn = NULL;
+  PyObject *__pyx_v_fieldname = NULL;
+  PyObject *__pyx_v_fieldtype = NULL;
+  PyObject *__pyx_v_creatFieldN = NULL;
+  PyObject *__pyx_v_listnow = NULL;
+  PyObject *__pyx_v_listbefor = NULL;
+  PyObject *__pyx_v_listFieldOut = NULL;
+  PyObject *__pyx_v_listFieldBefore = NULL;
+  PyObject *__pyx_v_listout = NULL;
+  PyObject *__pyx_v_feature_element = NULL;
+  PyObject *__pyx_v_spatial_data = NULL;
+  PyObject *__pyx_v_fieldnum = NULL;
+  PyObject *__pyx_v_listonefeature = NULL;
+  PyObject *__pyx_v_ite = NULL;
+  PyObject *__pyx_v_currenfielddefn = NULL;
+  PyObject *__pyx_v_fiedlValue = NULL;
+  PyObject *__pyx_v_feature_elementbefor = NULL;
+  PyObject *__pyx_v_spatial_databefore = NULL;
+  PyObject *__pyx_v_geobefore = NULL;
+  PyObject *__pyx_v_elementsnumber = NULL;
+  PyObject *__pyx_v_elementsnumberberfore = NULL;
+  Py_ssize_t __pyx_v_fnm;
+  PyObject *__pyx_v_listReserve = NULL;
+  PyObject *__pyx_v_listReserveBefore = NULL;
+  PyObject *__pyx_v_i = NULL;
+  CYTHON_UNUSED PyObject *__pyx_v_listinset = NULL;
+  PyObject *__pyx_v_geoi = NULL;
+  PyObject *__pyx_v_j = NULL;
+  PyObject *__pyx_v_geoj = NULL;
+  PyObject *__pyx_v_geoinset = NULL;
+  PyObject *__pyx_v_g = NULL;
+  PyObject *__pyx_v_tg = NULL;
+  Py_ssize_t __pyx_v_outNum;
+  Py_ssize_t __pyx_v_numberreserve;
+  PyObject *__pyx_v_oLayer = NULL;
+  PyObject *__pyx_v_oDefn = NULL;
+  Py_ssize_t __pyx_v_it;
+  PyObject *__pyx_v_oFet = NULL;
+  Py_ssize_t __pyx_v_fieldsubNumber;
+  PyObject *__pyx_v_iu = NULL;
+  Py_ssize_t __pyx_v_fieldsubNumberBefore;
+  PyObject *__pyx_v_gemetrytt = NULL;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  PyObject *__pyx_t_2 = NULL;
+  PyObject *__pyx_t_3 = NULL;
+  int __pyx_t_4;
+  PyObject *__pyx_t_5 = NULL;
+  int __pyx_t_6;
+  int __pyx_t_7;
+  int __pyx_t_8;
+  PyObject *__pyx_t_9 = NULL;
+  Py_ssize_t __pyx_t_10;
+  PyObject *(*__pyx_t_11)(PyObject *);
+  Py_ssize_t __pyx_t_12;
+  PyObject *(*__pyx_t_13)(PyObject *);
+  PyObject *__pyx_t_14 = NULL;
+  Py_ssize_t __pyx_t_15;
+  PyObject *(*__pyx_t_16)(PyObject *);
+  Py_ssize_t __pyx_t_17;
+  PyObject *(*__pyx_t_18)(PyObject *);
+  PyObject *__pyx_t_19 = NULL;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("VectorInterSect", 0);
+
+  /* "VectorClipByVector.py":442
+ * #VectorClipByVectorNew("E:\shptest\DWFL_2018.shp","E:\shptest\DWFL_2016.shp","E:\shptest\DWFL_2021.shp")
+ * def VectorInterSect(strinputbase, strinputclip, stroutput):
+ *     datasource = ogr.Open(strinputbase, False)             # <<<<<<<<<<<<<<
+ *     datasourcebefor = ogr.Open(strinputclip, False)
+ *     # ,shp
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_ogr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 442, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Open); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 442, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = NULL;
+  __pyx_t_4 = 0;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_3, function);
+      __pyx_t_4 = 1;
+    }
+  }
+  #if CYTHON_FAST_PYCALL
+  if (PyFunction_Check(__pyx_t_3)) {
+    PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_strinputbase, Py_False};
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 442, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __Pyx_GOTREF(__pyx_t_1);
+  } else
+  #endif
+  #if CYTHON_FAST_PYCCALL
+  if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
+    PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_strinputbase, Py_False};
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 442, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __Pyx_GOTREF(__pyx_t_1);
+  } else
+  #endif
+  {
+    __pyx_t_5 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 442, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    if (__pyx_t_2) {
+      __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_2); __pyx_t_2 = NULL;
+    }
+    __Pyx_INCREF(__pyx_v_strinputbase);
+    __Pyx_GIVEREF(__pyx_v_strinputbase);
+    PyTuple_SET_ITEM(__pyx_t_5, 0+__pyx_t_4, __pyx_v_strinputbase);
+    __Pyx_INCREF(Py_False);
+    __Pyx_GIVEREF(Py_False);
+    PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_4, Py_False);
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 442, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  }
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_datasource = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":443
+ * def VectorInterSect(strinputbase, strinputclip, stroutput):
+ *     datasource = ogr.Open(strinputbase, False)
+ *     datasourcebefor = ogr.Open(strinputclip, False)             # <<<<<<<<<<<<<<
+ *     # ,shp
+ *     layer_num = datasource.GetLayerCount()
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_ogr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 443, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_Open); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 443, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_t_3 = NULL;
+  __pyx_t_4 = 0;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_3)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_3);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+      __pyx_t_4 = 1;
+    }
+  }
+  #if CYTHON_FAST_PYCALL
+  if (PyFunction_Check(__pyx_t_5)) {
+    PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_v_strinputclip, Py_False};
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 443, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_GOTREF(__pyx_t_1);
+  } else
+  #endif
+  #if CYTHON_FAST_PYCCALL
+  if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
+    PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_v_strinputclip, Py_False};
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 443, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_GOTREF(__pyx_t_1);
+  } else
+  #endif
+  {
+    __pyx_t_2 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 443, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    if (__pyx_t_3) {
+      __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_3); __pyx_t_3 = NULL;
+    }
+    __Pyx_INCREF(__pyx_v_strinputclip);
+    __Pyx_GIVEREF(__pyx_v_strinputclip);
+    PyTuple_SET_ITEM(__pyx_t_2, 0+__pyx_t_4, __pyx_v_strinputclip);
+    __Pyx_INCREF(Py_False);
+    __Pyx_GIVEREF(Py_False);
+    PyTuple_SET_ITEM(__pyx_t_2, 1+__pyx_t_4, Py_False);
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 443, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  }
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_datasourcebefor = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":445
+ *     datasourcebefor = ogr.Open(strinputclip, False)
+ *     # ,shp
+ *     layer_num = datasource.GetLayerCount()             # <<<<<<<<<<<<<<
+ *     layer_numbefor = datasourcebefor.GetLayerCount()
+ *     #
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_datasource, __pyx_n_s_GetLayerCount); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 445, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 445, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_layer_num = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":446
+ *     # ,shp
+ *     layer_num = datasource.GetLayerCount()
+ *     layer_numbefor = datasourcebefor.GetLayerCount()             # <<<<<<<<<<<<<<
+ *     #
+ *     layer = datasource.GetLayerByIndex(0)  # 01
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_datasourcebefor, __pyx_n_s_GetLayerCount); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 446, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 446, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_layer_numbefor = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":448
+ *     layer_numbefor = datasourcebefor.GetLayerCount()
+ *     #
+ *     layer = datasource.GetLayerByIndex(0)  # 01             # <<<<<<<<<<<<<<
+ *     layer_before = datasourcebefor.GetLayerByIndex(0)
+ *     #
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_datasource, __pyx_n_s_GetLayerByIndex); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 448, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_2, __pyx_int_0) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_int_0);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 448, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_layer = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":449
+ *     #
+ *     layer = datasource.GetLayerByIndex(0)  # 01
+ *     layer_before = datasourcebefor.GetLayerByIndex(0)             # <<<<<<<<<<<<<<
+ *     #
+ *     spatial_ref = layer.GetSpatialRef()
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_datasourcebefor, __pyx_n_s_GetLayerByIndex); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 449, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_2, __pyx_int_0) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_int_0);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 449, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_layer_before = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":451
+ *     layer_before = datasourcebefor.GetLayerByIndex(0)
+ *     #
+ *     spatial_ref = layer.GetSpatialRef()             # <<<<<<<<<<<<<<
+ *     spatial_refBefore = layer_before.GetSpatialRef()
+ *     #
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer, __pyx_n_s_GetSpatialRef); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 451, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 451, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_spatial_ref = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":452
+ *     #
+ *     spatial_ref = layer.GetSpatialRef()
+ *     spatial_refBefore = layer_before.GetSpatialRef()             # <<<<<<<<<<<<<<
+ *     #
+ *     print("SpatialReference: ", spatial_ref)
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer_before, __pyx_n_s_GetSpatialRef); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 452, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 452, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_spatial_refBefore = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":454
+ *     spatial_refBefore = layer_before.GetSpatialRef()
+ *     #
+ *     print("SpatialReference: ", spatial_ref)             # <<<<<<<<<<<<<<
+ *     print("LayerCount: ", layer_num)
+ *     print("Elements number:", layer.GetFeatureCount())
+ */
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 454, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_INCREF(__pyx_kp_s_SpatialReference);
+  __Pyx_GIVEREF(__pyx_kp_s_SpatialReference);
+  PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_s_SpatialReference);
+  __Pyx_INCREF(__pyx_v_spatial_ref);
+  __Pyx_GIVEREF(__pyx_v_spatial_ref);
+  PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_spatial_ref);
+  if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 454, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":455
+ *     #
+ *     print("SpatialReference: ", spatial_ref)
+ *     print("LayerCount: ", layer_num)             # <<<<<<<<<<<<<<
+ *     print("Elements number:", layer.GetFeatureCount())
+ *     print("SpatialReference before: ", spatial_refBefore)
+ */
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 455, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_INCREF(__pyx_kp_s_LayerCount);
+  __Pyx_GIVEREF(__pyx_kp_s_LayerCount);
+  PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_s_LayerCount);
+  __Pyx_INCREF(__pyx_v_layer_num);
+  __Pyx_GIVEREF(__pyx_v_layer_num);
+  PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_layer_num);
+  if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 455, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":456
+ *     print("SpatialReference: ", spatial_ref)
+ *     print("LayerCount: ", layer_num)
+ *     print("Elements number:", layer.GetFeatureCount())             # <<<<<<<<<<<<<<
+ *     print("SpatialReference before: ", spatial_refBefore)
+ *     print("LayerCount before: ", layer_numbefor)
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer, __pyx_n_s_GetFeatureCount); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 456, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 456, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 456, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_INCREF(__pyx_kp_s_Elements_number);
+  __Pyx_GIVEREF(__pyx_kp_s_Elements_number);
+  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_kp_s_Elements_number);
+  __Pyx_GIVEREF(__pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_1);
+  __pyx_t_1 = 0;
+  if (__Pyx_PrintOne(0, __pyx_t_5) < 0) __PYX_ERR(0, 456, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":457
+ *     print("LayerCount: ", layer_num)
+ *     print("Elements number:", layer.GetFeatureCount())
+ *     print("SpatialReference before: ", spatial_refBefore)             # <<<<<<<<<<<<<<
+ *     print("LayerCount before: ", layer_numbefor)
+ *     print("Elements number before:", layer_before.GetFeatureCount())
+ */
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 457, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_INCREF(__pyx_kp_s_SpatialReference_before);
+  __Pyx_GIVEREF(__pyx_kp_s_SpatialReference_before);
+  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_kp_s_SpatialReference_before);
+  __Pyx_INCREF(__pyx_v_spatial_refBefore);
+  __Pyx_GIVEREF(__pyx_v_spatial_refBefore);
+  PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_v_spatial_refBefore);
+  if (__Pyx_PrintOne(0, __pyx_t_5) < 0) __PYX_ERR(0, 457, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":458
+ *     print("Elements number:", layer.GetFeatureCount())
+ *     print("SpatialReference before: ", spatial_refBefore)
+ *     print("LayerCount before: ", layer_numbefor)             # <<<<<<<<<<<<<<
+ *     print("Elements number before:", layer_before.GetFeatureCount())
+ *     #
+ */
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 458, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_INCREF(__pyx_kp_s_LayerCount_before);
+  __Pyx_GIVEREF(__pyx_kp_s_LayerCount_before);
+  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_kp_s_LayerCount_before);
+  __Pyx_INCREF(__pyx_v_layer_numbefor);
+  __Pyx_GIVEREF(__pyx_v_layer_numbefor);
+  PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_v_layer_numbefor);
+  if (__Pyx_PrintOne(0, __pyx_t_5) < 0) __PYX_ERR(0, 458, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":459
+ *     print("SpatialReference before: ", spatial_refBefore)
+ *     print("LayerCount before: ", layer_numbefor)
+ *     print("Elements number before:", layer_before.GetFeatureCount())             # <<<<<<<<<<<<<<
+ *     #
+ *     #
+ */
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer_before, __pyx_n_s_GetFeatureCount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 459, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_1);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_1, function);
+    }
+  }
+  __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 459, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 459, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_INCREF(__pyx_kp_s_Elements_number_before);
+  __Pyx_GIVEREF(__pyx_kp_s_Elements_number_before);
+  PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_s_Elements_number_before);
+  __Pyx_GIVEREF(__pyx_t_5);
+  PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_5);
+  __pyx_t_5 = 0;
+  if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 459, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":462
+ *     #
+ *     #
+ *     gdal.SetConfigOption("GDAL_FILENAME_IS_UTF8", "NO")  #             # <<<<<<<<<<<<<<
+ *     gdal.SetConfigOption("SHAPE_ENCODING", "CP936")  #
+ *     ogr.RegisterAll()  #
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_gdal); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 462, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_SetConfigOption); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 462, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple_, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 462, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":463
+ *     #
+ *     gdal.SetConfigOption("GDAL_FILENAME_IS_UTF8", "NO")  #
+ *     gdal.SetConfigOption("SHAPE_ENCODING", "CP936")  #             # <<<<<<<<<<<<<<
+ *     ogr.RegisterAll()  #
+ *     strDriverName = "ESRI Shapefile"  # ESRIshp
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_gdal); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 463, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_SetConfigOption); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 463, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 463, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":464
+ *     gdal.SetConfigOption("GDAL_FILENAME_IS_UTF8", "NO")  #
+ *     gdal.SetConfigOption("SHAPE_ENCODING", "CP936")  #
+ *     ogr.RegisterAll()  #             # <<<<<<<<<<<<<<
+ *     strDriverName = "ESRI Shapefile"  # ESRIshp
+ *     oDriver = ogr.GetDriverByName(strDriverName)
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_ogr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 464, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_RegisterAll); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 464, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_t_5 = NULL;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_5);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 464, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":465
+ *     gdal.SetConfigOption("SHAPE_ENCODING", "CP936")  #
+ *     ogr.RegisterAll()  #
+ *     strDriverName = "ESRI Shapefile"  # ESRIshp             # <<<<<<<<<<<<<<
+ *     oDriver = ogr.GetDriverByName(strDriverName)
+ *     if oDriver == None:
+ */
+  __Pyx_INCREF(__pyx_kp_s_ESRI_Shapefile);
+  __pyx_v_strDriverName = __pyx_kp_s_ESRI_Shapefile;
+
+  /* "VectorClipByVector.py":466
+ *     ogr.RegisterAll()  #
+ *     strDriverName = "ESRI Shapefile"  # ESRIshp
+ *     oDriver = ogr.GetDriverByName(strDriverName)             # <<<<<<<<<<<<<<
+ *     if oDriver == None:
+ *         print("%s \n", strDriverName)
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_ogr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 466, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_GetDriverByName); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 466, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_2, __pyx_v_strDriverName) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_strDriverName);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 466, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_oDriver = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":467
+ *     strDriverName = "ESRI Shapefile"  # ESRIshp
+ *     oDriver = ogr.GetDriverByName(strDriverName)
+ *     if oDriver == None:             # <<<<<<<<<<<<<<
+ *         print("%s \n", strDriverName)
+ * 
+ */
+  __pyx_t_1 = PyObject_RichCompare(__pyx_v_oDriver, Py_None, Py_EQ); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 467, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 467, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  if (__pyx_t_6) {
+
+    /* "VectorClipByVector.py":468
+ *     oDriver = ogr.GetDriverByName(strDriverName)
+ *     if oDriver == None:
+ *         print("%s \n", strDriverName)             # <<<<<<<<<<<<<<
+ * 
+ *     oDS = oDriver.CreateDataSource(stroutput)  #
+ */
+    __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 468, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_INCREF(__pyx_kp_s_s);
+    __Pyx_GIVEREF(__pyx_kp_s_s);
+    PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_s_s);
+    __Pyx_INCREF(__pyx_v_strDriverName);
+    __Pyx_GIVEREF(__pyx_v_strDriverName);
+    PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_strDriverName);
+    if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 468, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":467
+ *     strDriverName = "ESRI Shapefile"  # ESRIshp
+ *     oDriver = ogr.GetDriverByName(strDriverName)
+ *     if oDriver == None:             # <<<<<<<<<<<<<<
+ *         print("%s \n", strDriverName)
+ * 
+ */
+  }
+
+  /* "VectorClipByVector.py":470
+ *         print("%s \n", strDriverName)
+ * 
+ *     oDS = oDriver.CreateDataSource(stroutput)  #             # <<<<<<<<<<<<<<
+ *     if oDS == None:
+ *         print("%s", stroutput)
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_oDriver, __pyx_n_s_CreateDataSource); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 470, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_2)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_2);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_2, __pyx_v_stroutput) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_stroutput);
+  __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 470, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_oDS = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":471
+ * 
+ *     oDS = oDriver.CreateDataSource(stroutput)  #
+ *     if oDS == None:             # <<<<<<<<<<<<<<
+ *         print("%s", stroutput)
+ * 
+ */
+  __pyx_t_1 = PyObject_RichCompare(__pyx_v_oDS, Py_None, Py_EQ); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 471, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 471, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  if (__pyx_t_6) {
+
+    /* "VectorClipByVector.py":472
+ *     oDS = oDriver.CreateDataSource(stroutput)  #
+ *     if oDS == None:
+ *         print("%s", stroutput)             # <<<<<<<<<<<<<<
+ * 
+ *     srs = osr.SpatialReference()  #
+ */
+    __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 472, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_INCREF(__pyx_kp_s_s_2);
+    __Pyx_GIVEREF(__pyx_kp_s_s_2);
+    PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_kp_s_s_2);
+    __Pyx_INCREF(__pyx_v_stroutput);
+    __Pyx_GIVEREF(__pyx_v_stroutput);
+    PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_stroutput);
+    if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 472, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":471
+ * 
+ *     oDS = oDriver.CreateDataSource(stroutput)  #
+ *     if oDS == None:             # <<<<<<<<<<<<<<
+ *         print("%s", stroutput)
+ * 
+ */
+  }
+
+  /* "VectorClipByVector.py":474
+ *         print("%s", stroutput)
+ * 
+ *     srs = osr.SpatialReference()  #             # <<<<<<<<<<<<<<
+ *     srsout = spatial_ref.ExportToWkt()
+ *     srs.ImportFromWkt(srsout)  # WGS1984
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_osr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 474, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_SpatialReference_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 474, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_t_5 = NULL;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_5);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 474, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_srs = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":475
+ * 
+ *     srs = osr.SpatialReference()  #
+ *     srsout = spatial_ref.ExportToWkt()             # <<<<<<<<<<<<<<
+ *     srs.ImportFromWkt(srsout)  # WGS1984
+ *     papszLCO = []
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_spatial_ref, __pyx_n_s_ExportToWkt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 475, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_5);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 475, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_srsout = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":476
+ *     srs = osr.SpatialReference()  #
+ *     srsout = spatial_ref.ExportToWkt()
+ *     srs.ImportFromWkt(srsout)  # WGS1984             # <<<<<<<<<<<<<<
+ *     papszLCO = []
+ * 
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_srs, __pyx_n_s_ImportFromWkt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 476, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_5);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_5, __pyx_v_srsout) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_srsout);
+  __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 476, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":477
+ *     srsout = spatial_ref.ExportToWkt()
+ *     srs.ImportFromWkt(srsout)  # WGS1984
+ *     papszLCO = []             # <<<<<<<<<<<<<<
+ * 
+ *     #
+ */
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 477, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_v_papszLCO = ((PyObject*)__pyx_t_1);
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":480
+ * 
+ *     #
+ *     oSRCDefn = layer.GetLayerDefn()             # <<<<<<<<<<<<<<
+ *     numFe = layer.GetFeatureCount()
+ *     oSRCDefnBefor=layer_before.GetLayerDefn()
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer, __pyx_n_s_GetLayerDefn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 480, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_5);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 480, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_oSRCDefn = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":481
+ *     #
+ *     oSRCDefn = layer.GetLayerDefn()
+ *     numFe = layer.GetFeatureCount()             # <<<<<<<<<<<<<<
+ *     oSRCDefnBefor=layer_before.GetLayerDefn()
+ *     numFeBefor=layer_before.GetFeatureCount()
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer, __pyx_n_s_GetFeatureCount); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 481, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_5);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 481, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_numFe = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":482
+ *     oSRCDefn = layer.GetLayerDefn()
+ *     numFe = layer.GetFeatureCount()
+ *     oSRCDefnBefor=layer_before.GetLayerDefn()             # <<<<<<<<<<<<<<
+ *     numFeBefor=layer_before.GetFeatureCount()
+ *     #
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer_before, __pyx_n_s_GetLayerDefn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 482, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_5);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 482, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_oSRCDefnBefor = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":483
+ *     numFe = layer.GetFeatureCount()
+ *     oSRCDefnBefor=layer_before.GetLayerDefn()
+ *     numFeBefor=layer_before.GetFeatureCount()             # <<<<<<<<<<<<<<
+ *     #
+ *     listoutType=[]
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer_before, __pyx_n_s_GetFeatureCount); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 483, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_5);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 483, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_numFeBefor = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":485
+ *     numFeBefor=layer_before.GetFeatureCount()
+ *     #
+ *     listoutType=[]             # <<<<<<<<<<<<<<
+ *     listOutLayer=[]
+ *     #
+ */
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 485, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_v_listoutType = ((PyObject*)__pyx_t_1);
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":486
+ *     #
+ *     listoutType=[]
+ *     listOutLayer=[]             # <<<<<<<<<<<<<<
+ *     #
+ *     if numFe > 0:
+ */
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 486, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_v_listOutLayer = ((PyObject*)__pyx_t_1);
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":488
+ *     listOutLayer=[]
+ *     #
+ *     if numFe > 0:             # <<<<<<<<<<<<<<
+ *         firstFeatur = layer.GetFeature(0)
+ *         FieldNumber = firstFeatur.GetFieldCount()
+ */
+  __pyx_t_1 = PyObject_RichCompare(__pyx_v_numFe, __pyx_int_0, Py_GT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 488, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 488, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  if (__pyx_t_6) {
+
+    /* "VectorClipByVector.py":489
+ *     #
+ *     if numFe > 0:
+ *         firstFeatur = layer.GetFeature(0)             # <<<<<<<<<<<<<<
+ *         FieldNumber = firstFeatur.GetFieldCount()
+ *         firstFeGeo = firstFeatur.geometry()
+ */
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer, __pyx_n_s_GetFeature); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 489, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_5 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+      }
+    }
+    __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_5, __pyx_int_0) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_int_0);
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 489, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_v_firstFeatur = __pyx_t_1;
+    __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":490
+ *     if numFe > 0:
+ *         firstFeatur = layer.GetFeature(0)
+ *         FieldNumber = firstFeatur.GetFieldCount()             # <<<<<<<<<<<<<<
+ *         firstFeGeo = firstFeatur.geometry()
+ *         Baselayertype = firstFeGeo.GetGeometryName()
+ */
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_firstFeatur, __pyx_n_s_GetFieldCount); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 490, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_5 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+      }
+    }
+    __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 490, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_v_FieldNumber = __pyx_t_1;
+    __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":491
+ *         firstFeatur = layer.GetFeature(0)
+ *         FieldNumber = firstFeatur.GetFieldCount()
+ *         firstFeGeo = firstFeatur.geometry()             # <<<<<<<<<<<<<<
+ *         Baselayertype = firstFeGeo.GetGeometryName()
+ *         listoutType.append(Baselayertype)
+ */
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_firstFeatur, __pyx_n_s_geometry); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 491, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_5 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+      }
+    }
+    __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 491, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_v_firstFeGeo = __pyx_t_1;
+    __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":492
+ *         FieldNumber = firstFeatur.GetFieldCount()
+ *         firstFeGeo = firstFeatur.geometry()
+ *         Baselayertype = firstFeGeo.GetGeometryName()             # <<<<<<<<<<<<<<
+ *         listoutType.append(Baselayertype)
+ *         if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":
+ */
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_firstFeGeo, __pyx_n_s_GetGeometryName); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 492, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_5 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+      }
+    }
+    __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 492, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_v_Baselayertype = __pyx_t_1;
+    __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":493
+ *         firstFeGeo = firstFeatur.geometry()
+ *         Baselayertype = firstFeGeo.GetGeometryName()
+ *         listoutType.append(Baselayertype)             # <<<<<<<<<<<<<<
+ *         if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPolygon, papszLCO)
+ */
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listoutType, __pyx_v_Baselayertype); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 493, __pyx_L1_error)
+
+    /* "VectorClipByVector.py":494
+ *         Baselayertype = firstFeGeo.GetGeometryName()
+ *         listoutType.append(Baselayertype)
+ *         if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":             # <<<<<<<<<<<<<<
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPolygon, papszLCO)
+ *             if oLayer1 == None:
+ */
+    __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_POLYGON, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 494, __pyx_L1_error)
+    if (!__pyx_t_8) {
+    } else {
+      __pyx_t_6 = __pyx_t_8;
+      goto __pyx_L7_bool_binop_done;
+    }
+    __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_MULTIPOLYGON, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 494, __pyx_L1_error)
+    __pyx_t_6 = __pyx_t_8;
+    __pyx_L7_bool_binop_done:;
+    if (__pyx_t_6) {
+
+      /* "VectorClipByVector.py":495
+ *         listoutType.append(Baselayertype)
+ *         if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPolygon, papszLCO)             # <<<<<<<<<<<<<<
+ *             if oLayer1 == None:
+ *                 print("\n")
+ */
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_oDS, __pyx_n_s_CreateLayer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 495, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_ogr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 495, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_wkbMultiPolygon); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 495, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __pyx_t_5 = NULL;
+      __pyx_t_4 = 0;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+        __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+        if (likely(__pyx_t_5)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+          __Pyx_INCREF(__pyx_t_5);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_2, function);
+          __pyx_t_4 = 1;
+        }
+      }
+      #if CYTHON_FAST_PYCALL
+      if (PyFunction_Check(__pyx_t_2)) {
+        PyObject *__pyx_temp[5] = {__pyx_t_5, __pyx_n_s_TestPolygon, __pyx_v_srs, __pyx_t_3, __pyx_v_papszLCO};
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 4+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 495, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      } else
+      #endif
+      #if CYTHON_FAST_PYCCALL
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
+        PyObject *__pyx_temp[5] = {__pyx_t_5, __pyx_n_s_TestPolygon, __pyx_v_srs, __pyx_t_3, __pyx_v_papszLCO};
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 4+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 495, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      } else
+      #endif
+      {
+        __pyx_t_9 = PyTuple_New(4+__pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 495, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        if (__pyx_t_5) {
+          __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_5); __pyx_t_5 = NULL;
+        }
+        __Pyx_INCREF(__pyx_n_s_TestPolygon);
+        __Pyx_GIVEREF(__pyx_n_s_TestPolygon);
+        PyTuple_SET_ITEM(__pyx_t_9, 0+__pyx_t_4, __pyx_n_s_TestPolygon);
+        __Pyx_INCREF(__pyx_v_srs);
+        __Pyx_GIVEREF(__pyx_v_srs);
+        PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_4, __pyx_v_srs);
+        __Pyx_GIVEREF(__pyx_t_3);
+        PyTuple_SET_ITEM(__pyx_t_9, 2+__pyx_t_4, __pyx_t_3);
+        __Pyx_INCREF(__pyx_v_papszLCO);
+        __Pyx_GIVEREF(__pyx_v_papszLCO);
+        PyTuple_SET_ITEM(__pyx_t_9, 3+__pyx_t_4, __pyx_v_papszLCO);
+        __pyx_t_3 = 0;
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 495, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_v_oLayer1 = __pyx_t_1;
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":496
+ *         if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPolygon, papszLCO)
+ *             if oLayer1 == None:             # <<<<<<<<<<<<<<
+ *                 print("\n")
+ *             else:
+ */
+      __pyx_t_1 = PyObject_RichCompare(__pyx_v_oLayer1, Py_None, Py_EQ); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 496, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 496, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      if (__pyx_t_6) {
+
+        /* "VectorClipByVector.py":497
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPolygon, papszLCO)
+ *             if oLayer1 == None:
+ *                 print("\n")             # <<<<<<<<<<<<<<
+ *             else:
+ *                 listOutLayer.append(oLayer1)
+ */
+        if (__Pyx_PrintOne(0, __pyx_kp_s__3) < 0) __PYX_ERR(0, 497, __pyx_L1_error)
+
+        /* "VectorClipByVector.py":496
+ *         if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPolygon, papszLCO)
+ *             if oLayer1 == None:             # <<<<<<<<<<<<<<
+ *                 print("\n")
+ *             else:
+ */
+        goto __pyx_L9;
+      }
+
+      /* "VectorClipByVector.py":499
+ *                 print("\n")
+ *             else:
+ *                 listOutLayer.append(oLayer1)             # <<<<<<<<<<<<<<
+ *         elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiLineString, papszLCO)
+ */
+      /*else*/ {
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listOutLayer, __pyx_v_oLayer1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 499, __pyx_L1_error)
+      }
+      __pyx_L9:;
+
+      /* "VectorClipByVector.py":494
+ *         Baselayertype = firstFeGeo.GetGeometryName()
+ *         listoutType.append(Baselayertype)
+ *         if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":             # <<<<<<<<<<<<<<
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPolygon, papszLCO)
+ *             if oLayer1 == None:
+ */
+      goto __pyx_L6;
+    }
+
+    /* "VectorClipByVector.py":500
+ *             else:
+ *                 listOutLayer.append(oLayer1)
+ *         elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":             # <<<<<<<<<<<<<<
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiLineString, papszLCO)
+ *             if oLayer1 == None:
+ */
+    __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_LINESTRING, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 500, __pyx_L1_error)
+    if (!__pyx_t_8) {
+    } else {
+      __pyx_t_6 = __pyx_t_8;
+      goto __pyx_L10_bool_binop_done;
+    }
+    __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_MULTILINESTRING, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 500, __pyx_L1_error)
+    __pyx_t_6 = __pyx_t_8;
+    __pyx_L10_bool_binop_done:;
+    if (__pyx_t_6) {
+
+      /* "VectorClipByVector.py":501
+ *                 listOutLayer.append(oLayer1)
+ *         elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiLineString, papszLCO)             # <<<<<<<<<<<<<<
+ *             if oLayer1 == None:
+ *                 print("\n")
+ */
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_oDS, __pyx_n_s_CreateLayer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 501, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_ogr); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 501, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_wkbMultiLineString); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 501, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __pyx_t_9 = NULL;
+      __pyx_t_4 = 0;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+        __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_2);
+        if (likely(__pyx_t_9)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+          __Pyx_INCREF(__pyx_t_9);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_2, function);
+          __pyx_t_4 = 1;
+        }
+      }
+      #if CYTHON_FAST_PYCALL
+      if (PyFunction_Check(__pyx_t_2)) {
+        PyObject *__pyx_temp[5] = {__pyx_t_9, __pyx_n_s_TestPolygon, __pyx_v_srs, __pyx_t_3, __pyx_v_papszLCO};
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 4+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 501, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      } else
+      #endif
+      #if CYTHON_FAST_PYCCALL
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
+        PyObject *__pyx_temp[5] = {__pyx_t_9, __pyx_n_s_TestPolygon, __pyx_v_srs, __pyx_t_3, __pyx_v_papszLCO};
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 4+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 501, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      } else
+      #endif
+      {
+        __pyx_t_5 = PyTuple_New(4+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 501, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        if (__pyx_t_9) {
+          __Pyx_GIVEREF(__pyx_t_9); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_9); __pyx_t_9 = NULL;
+        }
+        __Pyx_INCREF(__pyx_n_s_TestPolygon);
+        __Pyx_GIVEREF(__pyx_n_s_TestPolygon);
+        PyTuple_SET_ITEM(__pyx_t_5, 0+__pyx_t_4, __pyx_n_s_TestPolygon);
+        __Pyx_INCREF(__pyx_v_srs);
+        __Pyx_GIVEREF(__pyx_v_srs);
+        PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_4, __pyx_v_srs);
+        __Pyx_GIVEREF(__pyx_t_3);
+        PyTuple_SET_ITEM(__pyx_t_5, 2+__pyx_t_4, __pyx_t_3);
+        __Pyx_INCREF(__pyx_v_papszLCO);
+        __Pyx_GIVEREF(__pyx_v_papszLCO);
+        PyTuple_SET_ITEM(__pyx_t_5, 3+__pyx_t_4, __pyx_v_papszLCO);
+        __pyx_t_3 = 0;
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 501, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_v_oLayer1 = __pyx_t_1;
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":502
+ *         elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiLineString, papszLCO)
+ *             if oLayer1 == None:             # <<<<<<<<<<<<<<
+ *                 print("\n")
+ *             else:
+ */
+      __pyx_t_1 = PyObject_RichCompare(__pyx_v_oLayer1, Py_None, Py_EQ); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 502, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 502, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      if (__pyx_t_6) {
+
+        /* "VectorClipByVector.py":503
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiLineString, papszLCO)
+ *             if oLayer1 == None:
+ *                 print("\n")             # <<<<<<<<<<<<<<
+ *             else:
+ *                 listOutLayer.append(oLayer1)
+ */
+        if (__Pyx_PrintOne(0, __pyx_kp_s__3) < 0) __PYX_ERR(0, 503, __pyx_L1_error)
+
+        /* "VectorClipByVector.py":502
+ *         elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiLineString, papszLCO)
+ *             if oLayer1 == None:             # <<<<<<<<<<<<<<
+ *                 print("\n")
+ *             else:
+ */
+        goto __pyx_L12;
+      }
+
+      /* "VectorClipByVector.py":505
+ *                 print("\n")
+ *             else:
+ *                 listOutLayer.append(oLayer1)             # <<<<<<<<<<<<<<
+ *         if Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPoint, papszLCO)
+ */
+      /*else*/ {
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listOutLayer, __pyx_v_oLayer1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 505, __pyx_L1_error)
+      }
+      __pyx_L12:;
+
+      /* "VectorClipByVector.py":500
+ *             else:
+ *                 listOutLayer.append(oLayer1)
+ *         elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":             # <<<<<<<<<<<<<<
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiLineString, papszLCO)
+ *             if oLayer1 == None:
+ */
+    }
+    __pyx_L6:;
+
+    /* "VectorClipByVector.py":506
+ *             else:
+ *                 listOutLayer.append(oLayer1)
+ *         if Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":             # <<<<<<<<<<<<<<
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPoint, papszLCO)
+ *             if oLayer1 == None:
+ */
+    __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_POINT, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 506, __pyx_L1_error)
+    if (!__pyx_t_8) {
+    } else {
+      __pyx_t_6 = __pyx_t_8;
+      goto __pyx_L14_bool_binop_done;
+    }
+    __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_MULTIPOINT, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 506, __pyx_L1_error)
+    __pyx_t_6 = __pyx_t_8;
+    __pyx_L14_bool_binop_done:;
+    if (__pyx_t_6) {
+
+      /* "VectorClipByVector.py":507
+ *                 listOutLayer.append(oLayer1)
+ *         if Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPoint, papszLCO)             # <<<<<<<<<<<<<<
+ *             if oLayer1 == None:
+ *                 print("\n")
+ */
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_oDS, __pyx_n_s_CreateLayer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 507, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_ogr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 507, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_wkbMultiPoint); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 507, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __pyx_t_5 = NULL;
+      __pyx_t_4 = 0;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+        __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+        if (likely(__pyx_t_5)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+          __Pyx_INCREF(__pyx_t_5);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_2, function);
+          __pyx_t_4 = 1;
+        }
+      }
+      #if CYTHON_FAST_PYCALL
+      if (PyFunction_Check(__pyx_t_2)) {
+        PyObject *__pyx_temp[5] = {__pyx_t_5, __pyx_n_s_TestPolygon, __pyx_v_srs, __pyx_t_3, __pyx_v_papszLCO};
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 4+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 507, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      } else
+      #endif
+      #if CYTHON_FAST_PYCCALL
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
+        PyObject *__pyx_temp[5] = {__pyx_t_5, __pyx_n_s_TestPolygon, __pyx_v_srs, __pyx_t_3, __pyx_v_papszLCO};
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 4+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 507, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      } else
+      #endif
+      {
+        __pyx_t_9 = PyTuple_New(4+__pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 507, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        if (__pyx_t_5) {
+          __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_5); __pyx_t_5 = NULL;
+        }
+        __Pyx_INCREF(__pyx_n_s_TestPolygon);
+        __Pyx_GIVEREF(__pyx_n_s_TestPolygon);
+        PyTuple_SET_ITEM(__pyx_t_9, 0+__pyx_t_4, __pyx_n_s_TestPolygon);
+        __Pyx_INCREF(__pyx_v_srs);
+        __Pyx_GIVEREF(__pyx_v_srs);
+        PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_4, __pyx_v_srs);
+        __Pyx_GIVEREF(__pyx_t_3);
+        PyTuple_SET_ITEM(__pyx_t_9, 2+__pyx_t_4, __pyx_t_3);
+        __Pyx_INCREF(__pyx_v_papszLCO);
+        __Pyx_GIVEREF(__pyx_v_papszLCO);
+        PyTuple_SET_ITEM(__pyx_t_9, 3+__pyx_t_4, __pyx_v_papszLCO);
+        __pyx_t_3 = 0;
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 507, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_oLayer1, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":508
+ *         if Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPoint, papszLCO)
+ *             if oLayer1 == None:             # <<<<<<<<<<<<<<
+ *                 print("\n")
+ *             else:
+ */
+      __pyx_t_1 = PyObject_RichCompare(__pyx_v_oLayer1, Py_None, Py_EQ); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 508, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 508, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      if (__pyx_t_6) {
+
+        /* "VectorClipByVector.py":509
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPoint, papszLCO)
+ *             if oLayer1 == None:
+ *                 print("\n")             # <<<<<<<<<<<<<<
+ *             else:
+ *                 listOutLayer.append(oLayer1)
+ */
+        if (__Pyx_PrintOne(0, __pyx_kp_s__3) < 0) __PYX_ERR(0, 509, __pyx_L1_error)
+
+        /* "VectorClipByVector.py":508
+ *         if Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPoint, papszLCO)
+ *             if oLayer1 == None:             # <<<<<<<<<<<<<<
+ *                 print("\n")
+ *             else:
+ */
+        goto __pyx_L16;
+      }
+
+      /* "VectorClipByVector.py":511
+ *                 print("\n")
+ *             else:
+ *                 listOutLayer.append(oLayer1)             # <<<<<<<<<<<<<<
+ *         for itr in range(FieldNumber):
+ *             curFiedDefn = oSRCDefn.GetFieldDefn(itr)
+ */
+      /*else*/ {
+        __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listOutLayer, __pyx_v_oLayer1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 511, __pyx_L1_error)
+      }
+      __pyx_L16:;
+
+      /* "VectorClipByVector.py":506
+ *             else:
+ *                 listOutLayer.append(oLayer1)
+ *         if Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":             # <<<<<<<<<<<<<<
+ *             oLayer1 = oDS.CreateLayer("TestPolygon", srs, ogr.wkbMultiPoint, papszLCO)
+ *             if oLayer1 == None:
+ */
+    }
+
+    /* "VectorClipByVector.py":512
+ *             else:
+ *                 listOutLayer.append(oLayer1)
+ *         for itr in range(FieldNumber):             # <<<<<<<<<<<<<<
+ *             curFiedDefn = oSRCDefn.GetFieldDefn(itr)
+ *             fieldname = curFiedDefn.GetNameRef()
+ */
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_FieldNumber); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 512, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
+      __pyx_t_2 = __pyx_t_1; __Pyx_INCREF(__pyx_t_2); __pyx_t_10 = 0;
+      __pyx_t_11 = NULL;
+    } else {
+      __pyx_t_10 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 512, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_11 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 512, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_11)) {
+        if (likely(PyList_CheckExact(__pyx_t_2))) {
+          if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_2)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_10); __Pyx_INCREF(__pyx_t_1); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 512, __pyx_L1_error)
+          #else
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 512, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          #endif
+        } else {
+          if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_10); __Pyx_INCREF(__pyx_t_1); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 512, __pyx_L1_error)
+          #else
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 512, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          #endif
+        }
+      } else {
+        __pyx_t_1 = __pyx_t_11(__pyx_t_2);
+        if (unlikely(!__pyx_t_1)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 512, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_1);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_itr, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":513
+ *                 listOutLayer.append(oLayer1)
+ *         for itr in range(FieldNumber):
+ *             curFiedDefn = oSRCDefn.GetFieldDefn(itr)             # <<<<<<<<<<<<<<
+ *             fieldname = curFiedDefn.GetNameRef()
+ *             fieldtype = curFiedDefn.GetType()
+ */
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_oSRCDefn, __pyx_n_s_GetFieldDefn); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 513, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_3 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_9))) {
+        __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_9);
+        if (likely(__pyx_t_3)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+          __Pyx_INCREF(__pyx_t_3);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_9, function);
+        }
+      }
+      __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_3, __pyx_v_itr) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_v_itr);
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 513, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_curFiedDefn, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":514
+ *         for itr in range(FieldNumber):
+ *             curFiedDefn = oSRCDefn.GetFieldDefn(itr)
+ *             fieldname = curFiedDefn.GetNameRef()             # <<<<<<<<<<<<<<
+ *             fieldtype = curFiedDefn.GetType()
+ *             creatFieldN = ogr.FieldDefn(fieldname, fieldtype)
+ */
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_curFiedDefn, __pyx_n_s_GetNameRef); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 514, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_3 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_9))) {
+        __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_9);
+        if (likely(__pyx_t_3)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+          __Pyx_INCREF(__pyx_t_3);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_9, function);
+        }
+      }
+      __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_9);
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 514, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_fieldname, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":515
+ *             curFiedDefn = oSRCDefn.GetFieldDefn(itr)
+ *             fieldname = curFiedDefn.GetNameRef()
+ *             fieldtype = curFiedDefn.GetType()             # <<<<<<<<<<<<<<
+ *             creatFieldN = ogr.FieldDefn(fieldname, fieldtype)
+ *             creatFieldN.SetWidth(100)
+ */
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_curFiedDefn, __pyx_n_s_GetType); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 515, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_3 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_9))) {
+        __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_9);
+        if (likely(__pyx_t_3)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+          __Pyx_INCREF(__pyx_t_3);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_9, function);
+        }
+      }
+      __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_9);
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 515, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_fieldtype, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":516
+ *             fieldname = curFiedDefn.GetNameRef()
+ *             fieldtype = curFiedDefn.GetType()
+ *             creatFieldN = ogr.FieldDefn(fieldname, fieldtype)             # <<<<<<<<<<<<<<
+ *             creatFieldN.SetWidth(100)
+ *             listOutLayer[0].CreateField(creatFieldN)
+ */
+      __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_ogr); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 516, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_FieldDefn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 516, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __pyx_t_9 = NULL;
+      __pyx_t_4 = 0;
+      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_9)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_9);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+          __pyx_t_4 = 1;
+        }
+      }
+      #if CYTHON_FAST_PYCALL
+      if (PyFunction_Check(__pyx_t_3)) {
+        PyObject *__pyx_temp[3] = {__pyx_t_9, __pyx_v_fieldname, __pyx_v_fieldtype};
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 516, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+      } else
+      #endif
+      #if CYTHON_FAST_PYCCALL
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
+        PyObject *__pyx_temp[3] = {__pyx_t_9, __pyx_v_fieldname, __pyx_v_fieldtype};
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 516, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+      } else
+      #endif
+      {
+        __pyx_t_5 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 516, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        if (__pyx_t_9) {
+          __Pyx_GIVEREF(__pyx_t_9); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_9); __pyx_t_9 = NULL;
+        }
+        __Pyx_INCREF(__pyx_v_fieldname);
+        __Pyx_GIVEREF(__pyx_v_fieldname);
+        PyTuple_SET_ITEM(__pyx_t_5, 0+__pyx_t_4, __pyx_v_fieldname);
+        __Pyx_INCREF(__pyx_v_fieldtype);
+        __Pyx_GIVEREF(__pyx_v_fieldtype);
+        PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_4, __pyx_v_fieldtype);
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 516, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_creatFieldN, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":517
+ *             fieldtype = curFiedDefn.GetType()
+ *             creatFieldN = ogr.FieldDefn(fieldname, fieldtype)
+ *             creatFieldN.SetWidth(100)             # <<<<<<<<<<<<<<
+ *             listOutLayer[0].CreateField(creatFieldN)
+ *     if numFeBefor>0:
+ */
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_creatFieldN, __pyx_n_s_SetWidth); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 517, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_5 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_5)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_5);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+        }
+      }
+      __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_5, __pyx_int_100) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_int_100);
+      __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 517, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":518
+ *             creatFieldN = ogr.FieldDefn(fieldname, fieldtype)
+ *             creatFieldN.SetWidth(100)
+ *             listOutLayer[0].CreateField(creatFieldN)             # <<<<<<<<<<<<<<
+ *     if numFeBefor>0:
+ *         firstFeatur=layer_before.GetFeatureCount(0)
+ */
+      __pyx_t_3 = __Pyx_GetItemInt_List(__pyx_v_listOutLayer, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 518, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_CreateField); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 518, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __pyx_t_3 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+        __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_5);
+        if (likely(__pyx_t_3)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+          __Pyx_INCREF(__pyx_t_3);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_5, function);
+        }
+      }
+      __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_3, __pyx_v_creatFieldN) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_creatFieldN);
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 518, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":512
+ *             else:
+ *                 listOutLayer.append(oLayer1)
+ *         for itr in range(FieldNumber):             # <<<<<<<<<<<<<<
+ *             curFiedDefn = oSRCDefn.GetFieldDefn(itr)
+ *             fieldname = curFiedDefn.GetNameRef()
+ */
+    }
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+    /* "VectorClipByVector.py":488
+ *     listOutLayer=[]
+ *     #
+ *     if numFe > 0:             # <<<<<<<<<<<<<<
+ *         firstFeatur = layer.GetFeature(0)
+ *         FieldNumber = firstFeatur.GetFieldCount()
+ */
+  }
+
+  /* "VectorClipByVector.py":519
+ *             creatFieldN.SetWidth(100)
+ *             listOutLayer[0].CreateField(creatFieldN)
+ *     if numFeBefor>0:             # <<<<<<<<<<<<<<
+ *         firstFeatur=layer_before.GetFeatureCount(0)
+ *         FieldNumber=firstFeatur.GetFieldCount()
+ */
+  __pyx_t_2 = PyObject_RichCompare(__pyx_v_numFeBefor, __pyx_int_0, Py_GT); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 519, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 519, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (__pyx_t_6) {
+
+    /* "VectorClipByVector.py":520
+ *             listOutLayer[0].CreateField(creatFieldN)
+ *     if numFeBefor>0:
+ *         firstFeatur=layer_before.GetFeatureCount(0)             # <<<<<<<<<<<<<<
+ *         FieldNumber=firstFeatur.GetFieldCount()
+ *         for itr in range(FieldNumber):
+ */
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer_before, __pyx_n_s_GetFeatureCount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 520, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __pyx_t_5 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_1);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_1, function);
+      }
+    }
+    __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_5, __pyx_int_0) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_int_0);
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 520, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_firstFeatur, __pyx_t_2);
+    __pyx_t_2 = 0;
+
+    /* "VectorClipByVector.py":521
+ *     if numFeBefor>0:
+ *         firstFeatur=layer_before.GetFeatureCount(0)
+ *         FieldNumber=firstFeatur.GetFieldCount()             # <<<<<<<<<<<<<<
+ *         for itr in range(FieldNumber):
+ *             curFiedDefn=oSRCDefnBefor.GetFieldDefn(itr)
+ */
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_firstFeatur, __pyx_n_s_GetFieldCount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 521, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __pyx_t_5 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_1);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_1, function);
+      }
+    }
+    __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 521, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_FieldNumber, __pyx_t_2);
+    __pyx_t_2 = 0;
+
+    /* "VectorClipByVector.py":522
+ *         firstFeatur=layer_before.GetFeatureCount(0)
+ *         FieldNumber=firstFeatur.GetFieldCount()
+ *         for itr in range(FieldNumber):             # <<<<<<<<<<<<<<
+ *             curFiedDefn=oSRCDefnBefor.GetFieldDefn(itr)
+ *             fieldname="1_"+curFiedDefn.GetNameRef()
+ */
+    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_FieldNumber); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 522, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    if (likely(PyList_CheckExact(__pyx_t_2)) || PyTuple_CheckExact(__pyx_t_2)) {
+      __pyx_t_1 = __pyx_t_2; __Pyx_INCREF(__pyx_t_1); __pyx_t_10 = 0;
+      __pyx_t_11 = NULL;
+    } else {
+      __pyx_t_10 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 522, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __pyx_t_11 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 522, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_11)) {
+        if (likely(PyList_CheckExact(__pyx_t_1))) {
+          if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_1)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_2 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_10); __Pyx_INCREF(__pyx_t_2); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 522, __pyx_L1_error)
+          #else
+          __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 522, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          #endif
+        } else {
+          if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_10); __Pyx_INCREF(__pyx_t_2); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 522, __pyx_L1_error)
+          #else
+          __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 522, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          #endif
+        }
+      } else {
+        __pyx_t_2 = __pyx_t_11(__pyx_t_1);
+        if (unlikely(!__pyx_t_2)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 522, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_2);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_itr, __pyx_t_2);
+      __pyx_t_2 = 0;
+
+      /* "VectorClipByVector.py":523
+ *         FieldNumber=firstFeatur.GetFieldCount()
+ *         for itr in range(FieldNumber):
+ *             curFiedDefn=oSRCDefnBefor.GetFieldDefn(itr)             # <<<<<<<<<<<<<<
+ *             fieldname="1_"+curFiedDefn.GetNameRef()
+ *             fieldtype=curFiedDefn.GetType()
+ */
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_oSRCDefnBefor, __pyx_n_s_GetFieldDefn); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 523, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_3 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+        __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_5);
+        if (likely(__pyx_t_3)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+          __Pyx_INCREF(__pyx_t_3);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_5, function);
+        }
+      }
+      __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_3, __pyx_v_itr) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_itr);
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 523, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_curFiedDefn, __pyx_t_2);
+      __pyx_t_2 = 0;
+
+      /* "VectorClipByVector.py":524
+ *         for itr in range(FieldNumber):
+ *             curFiedDefn=oSRCDefnBefor.GetFieldDefn(itr)
+ *             fieldname="1_"+curFiedDefn.GetNameRef()             # <<<<<<<<<<<<<<
+ *             fieldtype=curFiedDefn.GetType()
+ *             creatFieldN=ogr.FieldDefn(fieldname,fieldtype)
+ */
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_curFiedDefn, __pyx_n_s_GetNameRef); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 524, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_3 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+        __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_5);
+        if (likely(__pyx_t_3)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+          __Pyx_INCREF(__pyx_t_3);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_5, function);
+        }
+      }
+      __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 524, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __pyx_t_5 = PyNumber_Add(__pyx_kp_s_1, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 524, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_fieldname, __pyx_t_5);
+      __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":525
+ *             curFiedDefn=oSRCDefnBefor.GetFieldDefn(itr)
+ *             fieldname="1_"+curFiedDefn.GetNameRef()
+ *             fieldtype=curFiedDefn.GetType()             # <<<<<<<<<<<<<<
+ *             creatFieldN=ogr.FieldDefn(fieldname,fieldtype)
+ *             creatFieldN.SetWidth(100)
+ */
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_curFiedDefn, __pyx_n_s_GetType); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 525, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_3 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+        __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_2);
+        if (likely(__pyx_t_3)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+          __Pyx_INCREF(__pyx_t_3);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_2, function);
+        }
+      }
+      __pyx_t_5 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 525, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_fieldtype, __pyx_t_5);
+      __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":526
+ *             fieldname="1_"+curFiedDefn.GetNameRef()
+ *             fieldtype=curFiedDefn.GetType()
+ *             creatFieldN=ogr.FieldDefn(fieldname,fieldtype)             # <<<<<<<<<<<<<<
+ *             creatFieldN.SetWidth(100)
+ *             listOutLayer[0].CreateField(creatFieldN)
+ */
+      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_ogr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 526, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_FieldDefn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 526, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_t_2 = NULL;
+      __pyx_t_4 = 0;
+      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_2)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_2);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+          __pyx_t_4 = 1;
+        }
+      }
+      #if CYTHON_FAST_PYCALL
+      if (PyFunction_Check(__pyx_t_3)) {
+        PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_fieldname, __pyx_v_fieldtype};
+        __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 526, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_GOTREF(__pyx_t_5);
+      } else
+      #endif
+      #if CYTHON_FAST_PYCCALL
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
+        PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_fieldname, __pyx_v_fieldtype};
+        __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 526, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_GOTREF(__pyx_t_5);
+      } else
+      #endif
+      {
+        __pyx_t_9 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 526, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        if (__pyx_t_2) {
+          __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_2); __pyx_t_2 = NULL;
+        }
+        __Pyx_INCREF(__pyx_v_fieldname);
+        __Pyx_GIVEREF(__pyx_v_fieldname);
+        PyTuple_SET_ITEM(__pyx_t_9, 0+__pyx_t_4, __pyx_v_fieldname);
+        __Pyx_INCREF(__pyx_v_fieldtype);
+        __Pyx_GIVEREF(__pyx_v_fieldtype);
+        PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_4, __pyx_v_fieldtype);
+        __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_9, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 526, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_creatFieldN, __pyx_t_5);
+      __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":527
+ *             fieldtype=curFiedDefn.GetType()
+ *             creatFieldN=ogr.FieldDefn(fieldname,fieldtype)
+ *             creatFieldN.SetWidth(100)             # <<<<<<<<<<<<<<
+ *             listOutLayer[0].CreateField(creatFieldN)
+ *     # 50
+ */
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_creatFieldN, __pyx_n_s_SetWidth); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 527, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_9 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_9)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_9);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+        }
+      }
+      __pyx_t_5 = (__pyx_t_9) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_9, __pyx_int_100) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_int_100);
+      __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 527, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":528
+ *             creatFieldN=ogr.FieldDefn(fieldname,fieldtype)
+ *             creatFieldN.SetWidth(100)
+ *             listOutLayer[0].CreateField(creatFieldN)             # <<<<<<<<<<<<<<
+ *     # 50
+ *     listnow = []
+ */
+      __pyx_t_3 = __Pyx_GetItemInt_List(__pyx_v_listOutLayer, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_CreateField); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __pyx_t_3 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_9))) {
+        __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_9);
+        if (likely(__pyx_t_3)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+          __Pyx_INCREF(__pyx_t_3);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_9, function);
+        }
+      }
+      __pyx_t_5 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_3, __pyx_v_creatFieldN) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_v_creatFieldN);
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":522
+ *         firstFeatur=layer_before.GetFeatureCount(0)
+ *         FieldNumber=firstFeatur.GetFieldCount()
+ *         for itr in range(FieldNumber):             # <<<<<<<<<<<<<<
+ *             curFiedDefn=oSRCDefnBefor.GetFieldDefn(itr)
+ *             fieldname="1_"+curFiedDefn.GetNameRef()
+ */
+    }
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":519
+ *             creatFieldN.SetWidth(100)
+ *             listOutLayer[0].CreateField(creatFieldN)
+ *     if numFeBefor>0:             # <<<<<<<<<<<<<<
+ *         firstFeatur=layer_before.GetFeatureCount(0)
+ *         FieldNumber=firstFeatur.GetFieldCount()
+ */
+  }
+
+  /* "VectorClipByVector.py":530
+ *             listOutLayer[0].CreateField(creatFieldN)
+ *     # 50
+ *     listnow = []             # <<<<<<<<<<<<<<
+ *     listbefor = []
+ *     listFieldOut = []
+ */
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 530, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_v_listnow = ((PyObject*)__pyx_t_1);
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":531
+ *     # 50
+ *     listnow = []
+ *     listbefor = []             # <<<<<<<<<<<<<<
+ *     listFieldOut = []
+ *     listFieldBefore=[]
+ */
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 531, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_v_listbefor = ((PyObject*)__pyx_t_1);
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":532
+ *     listnow = []
+ *     listbefor = []
+ *     listFieldOut = []             # <<<<<<<<<<<<<<
+ *     listFieldBefore=[]
+ *     listout = []
+ */
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 532, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_v_listFieldOut = ((PyObject*)__pyx_t_1);
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":533
+ *     listbefor = []
+ *     listFieldOut = []
+ *     listFieldBefore=[]             # <<<<<<<<<<<<<<
+ *     listout = []
+ *     for feature_element in layer:
+ */
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 533, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_v_listFieldBefore = ((PyObject*)__pyx_t_1);
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":534
+ *     listFieldOut = []
+ *     listFieldBefore=[]
+ *     listout = []             # <<<<<<<<<<<<<<
+ *     for feature_element in layer:
+ *         # (xy)
+ */
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 534, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_v_listout = ((PyObject*)__pyx_t_1);
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":535
+ *     listFieldBefore=[]
+ *     listout = []
+ *     for feature_element in layer:             # <<<<<<<<<<<<<<
+ *         # (xy)
+ *         spatial_data = feature_element.geometry()
+ */
+  if (likely(PyList_CheckExact(__pyx_v_layer)) || PyTuple_CheckExact(__pyx_v_layer)) {
+    __pyx_t_1 = __pyx_v_layer; __Pyx_INCREF(__pyx_t_1); __pyx_t_10 = 0;
+    __pyx_t_11 = NULL;
+  } else {
+    __pyx_t_10 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_layer); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 535, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __pyx_t_11 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 535, __pyx_L1_error)
+  }
+  for (;;) {
+    if (likely(!__pyx_t_11)) {
+      if (likely(PyList_CheckExact(__pyx_t_1))) {
+        if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_1)) break;
+        #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+        __pyx_t_5 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_10); __Pyx_INCREF(__pyx_t_5); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 535, __pyx_L1_error)
+        #else
+        __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 535, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        #endif
+      } else {
+        if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
+        #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+        __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_10); __Pyx_INCREF(__pyx_t_5); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 535, __pyx_L1_error)
+        #else
+        __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 535, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        #endif
+      }
+    } else {
+      __pyx_t_5 = __pyx_t_11(__pyx_t_1);
+      if (unlikely(!__pyx_t_5)) {
+        PyObject* exc_type = PyErr_Occurred();
+        if (exc_type) {
+          if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+          else __PYX_ERR(0, 535, __pyx_L1_error)
+        }
+        break;
+      }
+      __Pyx_GOTREF(__pyx_t_5);
+    }
+    __Pyx_XDECREF_SET(__pyx_v_feature_element, __pyx_t_5);
+    __pyx_t_5 = 0;
+
+    /* "VectorClipByVector.py":537
+ *     for feature_element in layer:
+ *         # (xy)
+ *         spatial_data = feature_element.geometry()             # <<<<<<<<<<<<<<
+ *         fieldnum = feature_element.GetFieldCount()
+ *         listnow.append(spatial_data.ExportToWkt())
+ */
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_feature_element, __pyx_n_s_geometry); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 537, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    __pyx_t_3 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_9))) {
+      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_9);
+      if (likely(__pyx_t_3)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+        __Pyx_INCREF(__pyx_t_3);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_9, function);
+      }
+    }
+    __pyx_t_5 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_9);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 537, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_spatial_data, __pyx_t_5);
+    __pyx_t_5 = 0;
+
+    /* "VectorClipByVector.py":538
+ *         # (xy)
+ *         spatial_data = feature_element.geometry()
+ *         fieldnum = feature_element.GetFieldCount()             # <<<<<<<<<<<<<<
+ *         listnow.append(spatial_data.ExportToWkt())
+ *         listonefeature = []
+ */
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_feature_element, __pyx_n_s_GetFieldCount); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 538, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    __pyx_t_3 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_9))) {
+      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_9);
+      if (likely(__pyx_t_3)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+        __Pyx_INCREF(__pyx_t_3);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_9, function);
+      }
+    }
+    __pyx_t_5 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_9);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 538, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_fieldnum, __pyx_t_5);
+    __pyx_t_5 = 0;
+
+    /* "VectorClipByVector.py":539
+ *         spatial_data = feature_element.geometry()
+ *         fieldnum = feature_element.GetFieldCount()
+ *         listnow.append(spatial_data.ExportToWkt())             # <<<<<<<<<<<<<<
+ *         listonefeature = []
+ *         for ite in range(fieldnum):
+ */
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_spatial_data, __pyx_n_s_ExportToWkt); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 539, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    __pyx_t_3 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_9))) {
+      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_9);
+      if (likely(__pyx_t_3)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+        __Pyx_INCREF(__pyx_t_3);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_9, function);
+      }
+    }
+    __pyx_t_5 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_9);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 539, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listnow, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 539, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+    /* "VectorClipByVector.py":540
+ *         fieldnum = feature_element.GetFieldCount()
+ *         listnow.append(spatial_data.ExportToWkt())
+ *         listonefeature = []             # <<<<<<<<<<<<<<
+ *         for ite in range(fieldnum):
+ *             currenfielddefn = oSRCDefn.GetFieldDefn(ite)
+ */
+    __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 540, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_XDECREF_SET(__pyx_v_listonefeature, ((PyObject*)__pyx_t_5));
+    __pyx_t_5 = 0;
+
+    /* "VectorClipByVector.py":541
+ *         listnow.append(spatial_data.ExportToWkt())
+ *         listonefeature = []
+ *         for ite in range(fieldnum):             # <<<<<<<<<<<<<<
+ *             currenfielddefn = oSRCDefn.GetFieldDefn(ite)
+ *             fieldname = currenfielddefn.GetNameRef()
+ */
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_fieldnum); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 541, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    if (likely(PyList_CheckExact(__pyx_t_5)) || PyTuple_CheckExact(__pyx_t_5)) {
+      __pyx_t_9 = __pyx_t_5; __Pyx_INCREF(__pyx_t_9); __pyx_t_12 = 0;
+      __pyx_t_13 = NULL;
+    } else {
+      __pyx_t_12 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 541, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_13 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 541, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_13)) {
+        if (likely(PyList_CheckExact(__pyx_t_9))) {
+          if (__pyx_t_12 >= PyList_GET_SIZE(__pyx_t_9)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_5 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_12); __Pyx_INCREF(__pyx_t_5); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 541, __pyx_L1_error)
+          #else
+          __pyx_t_5 = PySequence_ITEM(__pyx_t_9, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 541, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          #endif
+        } else {
+          if (__pyx_t_12 >= PyTuple_GET_SIZE(__pyx_t_9)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_12); __Pyx_INCREF(__pyx_t_5); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 541, __pyx_L1_error)
+          #else
+          __pyx_t_5 = PySequence_ITEM(__pyx_t_9, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 541, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          #endif
+        }
+      } else {
+        __pyx_t_5 = __pyx_t_13(__pyx_t_9);
+        if (unlikely(!__pyx_t_5)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 541, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_5);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_ite, __pyx_t_5);
+      __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":542
+ *         listonefeature = []
+ *         for ite in range(fieldnum):
+ *             currenfielddefn = oSRCDefn.GetFieldDefn(ite)             # <<<<<<<<<<<<<<
+ *             fieldname = currenfielddefn.GetNameRef()
+ *             fiedlValue = feature_element.GetField(ite)
+ */
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_oSRCDefn, __pyx_n_s_GetFieldDefn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 542, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_2 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_2)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_2);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+        }
+      }
+      __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_v_ite) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_ite);
+      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 542, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_currenfielddefn, __pyx_t_5);
+      __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":543
+ *         for ite in range(fieldnum):
+ *             currenfielddefn = oSRCDefn.GetFieldDefn(ite)
+ *             fieldname = currenfielddefn.GetNameRef()             # <<<<<<<<<<<<<<
+ *             fiedlValue = feature_element.GetField(ite)
+ *             listonefeature.append(fieldname)
+ */
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_currenfielddefn, __pyx_n_s_GetNameRef); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 543, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_2 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_2)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_2);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+        }
+      }
+      __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
+      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 543, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_fieldname, __pyx_t_5);
+      __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":544
+ *             currenfielddefn = oSRCDefn.GetFieldDefn(ite)
+ *             fieldname = currenfielddefn.GetNameRef()
+ *             fiedlValue = feature_element.GetField(ite)             # <<<<<<<<<<<<<<
+ *             listonefeature.append(fieldname)
+ *             listonefeature.append(fiedlValue)
+ */
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_feature_element, __pyx_n_s_GetField); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 544, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_2 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_2)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_2);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+        }
+      }
+      __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_v_ite) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_ite);
+      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 544, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_fiedlValue, __pyx_t_5);
+      __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":545
+ *             fieldname = currenfielddefn.GetNameRef()
+ *             fiedlValue = feature_element.GetField(ite)
+ *             listonefeature.append(fieldname)             # <<<<<<<<<<<<<<
+ *             listonefeature.append(fiedlValue)
+ *         listFieldOut.append(listonefeature)
+ */
+      __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listonefeature, __pyx_v_fieldname); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 545, __pyx_L1_error)
+
+      /* "VectorClipByVector.py":546
+ *             fiedlValue = feature_element.GetField(ite)
+ *             listonefeature.append(fieldname)
+ *             listonefeature.append(fiedlValue)             # <<<<<<<<<<<<<<
+ *         listFieldOut.append(listonefeature)
+ * 
+ */
+      __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listonefeature, __pyx_v_fiedlValue); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 546, __pyx_L1_error)
+
+      /* "VectorClipByVector.py":541
+ *         listnow.append(spatial_data.ExportToWkt())
+ *         listonefeature = []
+ *         for ite in range(fieldnum):             # <<<<<<<<<<<<<<
+ *             currenfielddefn = oSRCDefn.GetFieldDefn(ite)
+ *             fieldname = currenfielddefn.GetNameRef()
+ */
+    }
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+    /* "VectorClipByVector.py":547
+ *             listonefeature.append(fieldname)
+ *             listonefeature.append(fiedlValue)
+ *         listFieldOut.append(listonefeature)             # <<<<<<<<<<<<<<
+ * 
+ *     for feature_elementbefor in layer_before:
+ */
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listFieldOut, __pyx_v_listonefeature); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 547, __pyx_L1_error)
+
+    /* "VectorClipByVector.py":535
+ *     listFieldBefore=[]
+ *     listout = []
+ *     for feature_element in layer:             # <<<<<<<<<<<<<<
+ *         # (xy)
+ *         spatial_data = feature_element.geometry()
+ */
+  }
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":549
+ *         listFieldOut.append(listonefeature)
+ * 
+ *     for feature_elementbefor in layer_before:             # <<<<<<<<<<<<<<
+ *         spatial_databefore = feature_elementbefor.geometry()
+ *         fieldnum=feature_elementbefor.GetFieldCount()
+ */
+  if (likely(PyList_CheckExact(__pyx_v_layer_before)) || PyTuple_CheckExact(__pyx_v_layer_before)) {
+    __pyx_t_1 = __pyx_v_layer_before; __Pyx_INCREF(__pyx_t_1); __pyx_t_10 = 0;
+    __pyx_t_11 = NULL;
+  } else {
+    __pyx_t_10 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_layer_before); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 549, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __pyx_t_11 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 549, __pyx_L1_error)
+  }
+  for (;;) {
+    if (likely(!__pyx_t_11)) {
+      if (likely(PyList_CheckExact(__pyx_t_1))) {
+        if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_1)) break;
+        #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+        __pyx_t_9 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_10); __Pyx_INCREF(__pyx_t_9); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 549, __pyx_L1_error)
+        #else
+        __pyx_t_9 = PySequence_ITEM(__pyx_t_1, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 549, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        #endif
+      } else {
+        if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
+        #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+        __pyx_t_9 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_10); __Pyx_INCREF(__pyx_t_9); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 549, __pyx_L1_error)
+        #else
+        __pyx_t_9 = PySequence_ITEM(__pyx_t_1, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 549, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        #endif
+      }
+    } else {
+      __pyx_t_9 = __pyx_t_11(__pyx_t_1);
+      if (unlikely(!__pyx_t_9)) {
+        PyObject* exc_type = PyErr_Occurred();
+        if (exc_type) {
+          if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+          else __PYX_ERR(0, 549, __pyx_L1_error)
+        }
+        break;
+      }
+      __Pyx_GOTREF(__pyx_t_9);
+    }
+    __Pyx_XDECREF_SET(__pyx_v_feature_elementbefor, __pyx_t_9);
+    __pyx_t_9 = 0;
+
+    /* "VectorClipByVector.py":550
+ * 
+ *     for feature_elementbefor in layer_before:
+ *         spatial_databefore = feature_elementbefor.geometry()             # <<<<<<<<<<<<<<
+ *         fieldnum=feature_elementbefor.GetFieldCount()
+ *         geobefore = spatial_databefore.ExportToWkt()
+ */
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_feature_elementbefor, __pyx_n_s_geometry); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 550, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_3 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_5);
+      if (likely(__pyx_t_3)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+        __Pyx_INCREF(__pyx_t_3);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_5, function);
+      }
+    }
+    __pyx_t_9 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 550, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_spatial_databefore, __pyx_t_9);
+    __pyx_t_9 = 0;
+
+    /* "VectorClipByVector.py":551
+ *     for feature_elementbefor in layer_before:
+ *         spatial_databefore = feature_elementbefor.geometry()
+ *         fieldnum=feature_elementbefor.GetFieldCount()             # <<<<<<<<<<<<<<
+ *         geobefore = spatial_databefore.ExportToWkt()
+ *         listbefor.append(geobefore)
+ */
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_feature_elementbefor, __pyx_n_s_GetFieldCount); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 551, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_3 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_5);
+      if (likely(__pyx_t_3)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+        __Pyx_INCREF(__pyx_t_3);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_5, function);
+      }
+    }
+    __pyx_t_9 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 551, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_fieldnum, __pyx_t_9);
+    __pyx_t_9 = 0;
+
+    /* "VectorClipByVector.py":552
+ *         spatial_databefore = feature_elementbefor.geometry()
+ *         fieldnum=feature_elementbefor.GetFieldCount()
+ *         geobefore = spatial_databefore.ExportToWkt()             # <<<<<<<<<<<<<<
+ *         listbefor.append(geobefore)
+ *         listonefeature=[]
+ */
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_spatial_databefore, __pyx_n_s_ExportToWkt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 552, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_3 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_5);
+      if (likely(__pyx_t_3)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+        __Pyx_INCREF(__pyx_t_3);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_5, function);
+      }
+    }
+    __pyx_t_9 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 552, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_geobefore, __pyx_t_9);
+    __pyx_t_9 = 0;
+
+    /* "VectorClipByVector.py":553
+ *         fieldnum=feature_elementbefor.GetFieldCount()
+ *         geobefore = spatial_databefore.ExportToWkt()
+ *         listbefor.append(geobefore)             # <<<<<<<<<<<<<<
+ *         listonefeature=[]
+ *         for ite in range(fieldnum):
+ */
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listbefor, __pyx_v_geobefore); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 553, __pyx_L1_error)
+
+    /* "VectorClipByVector.py":554
+ *         geobefore = spatial_databefore.ExportToWkt()
+ *         listbefor.append(geobefore)
+ *         listonefeature=[]             # <<<<<<<<<<<<<<
+ *         for ite in range(fieldnum):
+ *             currenfielddefn=oSRCDefnBefor.GetFieldDefn(ite)
+ */
+    __pyx_t_9 = PyList_New(0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 554, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    __Pyx_XDECREF_SET(__pyx_v_listonefeature, ((PyObject*)__pyx_t_9));
+    __pyx_t_9 = 0;
+
+    /* "VectorClipByVector.py":555
+ *         listbefor.append(geobefore)
+ *         listonefeature=[]
+ *         for ite in range(fieldnum):             # <<<<<<<<<<<<<<
+ *             currenfielddefn=oSRCDefnBefor.GetFieldDefn(ite)
+ *             fieldname="1_"+currenfielddefn.GetNameRef()
+ */
+    __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_fieldnum); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 555, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    if (likely(PyList_CheckExact(__pyx_t_9)) || PyTuple_CheckExact(__pyx_t_9)) {
+      __pyx_t_5 = __pyx_t_9; __Pyx_INCREF(__pyx_t_5); __pyx_t_12 = 0;
+      __pyx_t_13 = NULL;
+    } else {
+      __pyx_t_12 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 555, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_13 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 555, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_13)) {
+        if (likely(PyList_CheckExact(__pyx_t_5))) {
+          if (__pyx_t_12 >= PyList_GET_SIZE(__pyx_t_5)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_9 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_12); __Pyx_INCREF(__pyx_t_9); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 555, __pyx_L1_error)
+          #else
+          __pyx_t_9 = PySequence_ITEM(__pyx_t_5, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 555, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          #endif
+        } else {
+          if (__pyx_t_12 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_9 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_12); __Pyx_INCREF(__pyx_t_9); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 555, __pyx_L1_error)
+          #else
+          __pyx_t_9 = PySequence_ITEM(__pyx_t_5, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 555, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          #endif
+        }
+      } else {
+        __pyx_t_9 = __pyx_t_13(__pyx_t_5);
+        if (unlikely(!__pyx_t_9)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 555, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_9);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_ite, __pyx_t_9);
+      __pyx_t_9 = 0;
+
+      /* "VectorClipByVector.py":556
+ *         listonefeature=[]
+ *         for ite in range(fieldnum):
+ *             currenfielddefn=oSRCDefnBefor.GetFieldDefn(ite)             # <<<<<<<<<<<<<<
+ *             fieldname="1_"+currenfielddefn.GetNameRef()
+ *             fiedlValue=feature_elementbefor.GetField(ite)
+ */
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_oSRCDefnBefor, __pyx_n_s_GetFieldDefn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 556, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_2 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_2)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_2);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+        }
+      }
+      __pyx_t_9 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_v_ite) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_ite);
+      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+      if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 556, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_currenfielddefn, __pyx_t_9);
+      __pyx_t_9 = 0;
+
+      /* "VectorClipByVector.py":557
+ *         for ite in range(fieldnum):
+ *             currenfielddefn=oSRCDefnBefor.GetFieldDefn(ite)
+ *             fieldname="1_"+currenfielddefn.GetNameRef()             # <<<<<<<<<<<<<<
+ *             fiedlValue=feature_elementbefor.GetField(ite)
+ *             listonefeature.append(fieldname)
+ */
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_currenfielddefn, __pyx_n_s_GetNameRef); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 557, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_2 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_2)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_2);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+        }
+      }
+      __pyx_t_9 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
+      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+      if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 557, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __pyx_t_3 = PyNumber_Add(__pyx_kp_s_1, __pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 557, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_fieldname, __pyx_t_3);
+      __pyx_t_3 = 0;
+
+      /* "VectorClipByVector.py":558
+ *             currenfielddefn=oSRCDefnBefor.GetFieldDefn(ite)
+ *             fieldname="1_"+currenfielddefn.GetNameRef()
+ *             fiedlValue=feature_elementbefor.GetField(ite)             # <<<<<<<<<<<<<<
+ *             listonefeature.append(fieldname)
+ *             listonefeature.append(fiedlValue)
+ */
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_feature_elementbefor, __pyx_n_s_GetField); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 558, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_2 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_9))) {
+        __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_9);
+        if (likely(__pyx_t_2)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+          __Pyx_INCREF(__pyx_t_2);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_9, function);
+        }
+      }
+      __pyx_t_3 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_2, __pyx_v_ite) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_v_ite);
+      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 558, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_fiedlValue, __pyx_t_3);
+      __pyx_t_3 = 0;
+
+      /* "VectorClipByVector.py":559
+ *             fieldname="1_"+currenfielddefn.GetNameRef()
+ *             fiedlValue=feature_elementbefor.GetField(ite)
+ *             listonefeature.append(fieldname)             # <<<<<<<<<<<<<<
+ *             listonefeature.append(fiedlValue)
+ *         listFieldBefore.append(listonefeature)
+ */
+      __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listonefeature, __pyx_v_fieldname); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 559, __pyx_L1_error)
+
+      /* "VectorClipByVector.py":560
+ *             fiedlValue=feature_elementbefor.GetField(ite)
+ *             listonefeature.append(fieldname)
+ *             listonefeature.append(fiedlValue)             # <<<<<<<<<<<<<<
+ *         listFieldBefore.append(listonefeature)
+ *     # shapely
+ */
+      __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listonefeature, __pyx_v_fiedlValue); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 560, __pyx_L1_error)
+
+      /* "VectorClipByVector.py":555
+ *         listbefor.append(geobefore)
+ *         listonefeature=[]
+ *         for ite in range(fieldnum):             # <<<<<<<<<<<<<<
+ *             currenfielddefn=oSRCDefnBefor.GetFieldDefn(ite)
+ *             fieldname="1_"+currenfielddefn.GetNameRef()
+ */
+    }
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+    /* "VectorClipByVector.py":561
+ *             listonefeature.append(fieldname)
+ *             listonefeature.append(fiedlValue)
+ *         listFieldBefore.append(listonefeature)             # <<<<<<<<<<<<<<
+ *     # shapely
+ *     # TODOpolygonmultipolygon
+ */
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listFieldBefore, __pyx_v_listonefeature); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 561, __pyx_L1_error)
+
+    /* "VectorClipByVector.py":549
+ *         listFieldOut.append(listonefeature)
+ * 
+ *     for feature_elementbefor in layer_before:             # <<<<<<<<<<<<<<
+ *         spatial_databefore = feature_elementbefor.geometry()
+ *         fieldnum=feature_elementbefor.GetFieldCount()
+ */
+  }
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":564
+ *     # shapely
+ *     # TODOpolygonmultipolygon
+ *     elementsnumber = layer.GetFeatureCount()             # <<<<<<<<<<<<<<
+ *     elementsnumberberfore = layer_before.GetFeatureCount()
+ *     fnm = len(listFieldOut)
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer, __pyx_n_s_GetFeatureCount); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 564, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_3 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_3)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_3);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 564, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_elementsnumber = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":565
+ *     # TODOpolygonmultipolygon
+ *     elementsnumber = layer.GetFeatureCount()
+ *     elementsnumberberfore = layer_before.GetFeatureCount()             # <<<<<<<<<<<<<<
+ *     fnm = len(listFieldOut)
+ *     print("fnm is :", fnm)
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_layer_before, __pyx_n_s_GetFeatureCount); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 565, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_3 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_3)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_3);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 565, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_elementsnumberberfore = __pyx_t_1;
+  __pyx_t_1 = 0;
+
+  /* "VectorClipByVector.py":566
+ *     elementsnumber = layer.GetFeatureCount()
+ *     elementsnumberberfore = layer_before.GetFeatureCount()
+ *     fnm = len(listFieldOut)             # <<<<<<<<<<<<<<
+ *     print("fnm is :", fnm)
+ *     print("elementnumber is :", elementsnumber)
+ */
+  __pyx_t_10 = PyList_GET_SIZE(__pyx_v_listFieldOut); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 566, __pyx_L1_error)
+  __pyx_v_fnm = __pyx_t_10;
+
+  /* "VectorClipByVector.py":567
+ *     elementsnumberberfore = layer_before.GetFeatureCount()
+ *     fnm = len(listFieldOut)
+ *     print("fnm is :", fnm)             # <<<<<<<<<<<<<<
+ *     print("elementnumber is :", elementsnumber)
+ *     listReserve = []
+ */
+  __pyx_t_1 = PyInt_FromSsize_t(__pyx_v_fnm); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 567, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 567, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_INCREF(__pyx_kp_s_fnm_is);
+  __Pyx_GIVEREF(__pyx_kp_s_fnm_is);
+  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_kp_s_fnm_is);
+  __Pyx_GIVEREF(__pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_1);
+  __pyx_t_1 = 0;
+  if (__Pyx_PrintOne(0, __pyx_t_5) < 0) __PYX_ERR(0, 567, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":568
+ *     fnm = len(listFieldOut)
+ *     print("fnm is :", fnm)
+ *     print("elementnumber is :", elementsnumber)             # <<<<<<<<<<<<<<
+ *     listReserve = []
+ *     listReserveBefore=[]
+ */
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 568, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_INCREF(__pyx_kp_s_elementnumber_is);
+  __Pyx_GIVEREF(__pyx_kp_s_elementnumber_is);
+  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_kp_s_elementnumber_is);
+  __Pyx_INCREF(__pyx_v_elementsnumber);
+  __Pyx_GIVEREF(__pyx_v_elementsnumber);
+  PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_v_elementsnumber);
+  if (__Pyx_PrintOne(0, __pyx_t_5) < 0) __PYX_ERR(0, 568, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":569
+ *     print("fnm is :", fnm)
+ *     print("elementnumber is :", elementsnumber)
+ *     listReserve = []             # <<<<<<<<<<<<<<
+ *     listReserveBefore=[]
+ *     # Polygon
+ */
+  __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 569, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_v_listReserve = ((PyObject*)__pyx_t_5);
+  __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":570
+ *     print("elementnumber is :", elementsnumber)
+ *     listReserve = []
+ *     listReserveBefore=[]             # <<<<<<<<<<<<<<
+ *     # Polygon
+ *     Baselayertype = listoutType[0]
+ */
+  __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 570, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_v_listReserveBefore = ((PyObject*)__pyx_t_5);
+  __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":572
+ *     listReserveBefore=[]
+ *     # Polygon
+ *     Baselayertype = listoutType[0]             # <<<<<<<<<<<<<<
+ *     if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":
+ *         for i in range(elementsnumber):
+ */
+  __pyx_t_5 = __Pyx_GetItemInt_List(__pyx_v_listoutType, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 572, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_XDECREF_SET(__pyx_v_Baselayertype, __pyx_t_5);
+  __pyx_t_5 = 0;
+
+  /* "VectorClipByVector.py":573
+ *     # Polygon
+ *     Baselayertype = listoutType[0]
+ *     if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":             # <<<<<<<<<<<<<<
+ *         for i in range(elementsnumber):
+ *             # shapely
+ */
+  __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_POLYGON, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 573, __pyx_L1_error)
+  if (!__pyx_t_8) {
+  } else {
+    __pyx_t_6 = __pyx_t_8;
+    goto __pyx_L31_bool_binop_done;
+  }
+  __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_MULTIPOLYGON, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 573, __pyx_L1_error)
+  __pyx_t_6 = __pyx_t_8;
+  __pyx_L31_bool_binop_done:;
+  if (__pyx_t_6) {
+
+    /* "VectorClipByVector.py":574
+ *     Baselayertype = listoutType[0]
+ *     if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":
+ *         for i in range(elementsnumber):             # <<<<<<<<<<<<<<
+ *             # shapely
+ *             listinset = []
+ */
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_elementsnumber); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 574, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    if (likely(PyList_CheckExact(__pyx_t_5)) || PyTuple_CheckExact(__pyx_t_5)) {
+      __pyx_t_1 = __pyx_t_5; __Pyx_INCREF(__pyx_t_1); __pyx_t_10 = 0;
+      __pyx_t_11 = NULL;
+    } else {
+      __pyx_t_10 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 574, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __pyx_t_11 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 574, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_11)) {
+        if (likely(PyList_CheckExact(__pyx_t_1))) {
+          if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_1)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_5 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_10); __Pyx_INCREF(__pyx_t_5); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 574, __pyx_L1_error)
+          #else
+          __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 574, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          #endif
+        } else {
+          if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_10); __Pyx_INCREF(__pyx_t_5); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 574, __pyx_L1_error)
+          #else
+          __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 574, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          #endif
+        }
+      } else {
+        __pyx_t_5 = __pyx_t_11(__pyx_t_1);
+        if (unlikely(!__pyx_t_5)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 574, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_5);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_5);
+      __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":576
+ *         for i in range(elementsnumber):
+ *             # shapely
+ *             listinset = []             # <<<<<<<<<<<<<<
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):
+ */
+      __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 576, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_XDECREF_SET(__pyx_v_listinset, ((PyObject*)__pyx_t_5));
+      __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":577
+ *             # shapely
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])             # <<<<<<<<<<<<<<
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])
+ */
+      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_wkt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 577, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_loads); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 577, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_listnow, __pyx_v_i); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 577, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_2 = NULL;
+      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_9))) {
+        __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_9);
+        if (likely(__pyx_t_2)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+          __Pyx_INCREF(__pyx_t_2);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_9, function);
+        }
+      }
+      __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_2, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_3);
+      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 577, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_geoi, __pyx_t_5);
+      __pyx_t_5 = 0;
+
+      /* "VectorClipByVector.py":578
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):             # <<<<<<<<<<<<<<
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ */
+      __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_elementsnumberberfore); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 578, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      if (likely(PyList_CheckExact(__pyx_t_5)) || PyTuple_CheckExact(__pyx_t_5)) {
+        __pyx_t_9 = __pyx_t_5; __Pyx_INCREF(__pyx_t_9); __pyx_t_12 = 0;
+        __pyx_t_13 = NULL;
+      } else {
+        __pyx_t_12 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 578, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __pyx_t_13 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 578, __pyx_L1_error)
+      }
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      for (;;) {
+        if (likely(!__pyx_t_13)) {
+          if (likely(PyList_CheckExact(__pyx_t_9))) {
+            if (__pyx_t_12 >= PyList_GET_SIZE(__pyx_t_9)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_5 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_12); __Pyx_INCREF(__pyx_t_5); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 578, __pyx_L1_error)
+            #else
+            __pyx_t_5 = PySequence_ITEM(__pyx_t_9, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 578, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_5);
+            #endif
+          } else {
+            if (__pyx_t_12 >= PyTuple_GET_SIZE(__pyx_t_9)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_12); __Pyx_INCREF(__pyx_t_5); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 578, __pyx_L1_error)
+            #else
+            __pyx_t_5 = PySequence_ITEM(__pyx_t_9, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 578, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_5);
+            #endif
+          }
+        } else {
+          __pyx_t_5 = __pyx_t_13(__pyx_t_9);
+          if (unlikely(!__pyx_t_5)) {
+            PyObject* exc_type = PyErr_Occurred();
+            if (exc_type) {
+              if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+              else __PYX_ERR(0, 578, __pyx_L1_error)
+            }
+            break;
+          }
+          __Pyx_GOTREF(__pyx_t_5);
+        }
+        __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_5);
+        __pyx_t_5 = 0;
+
+        /* "VectorClipByVector.py":579
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])             # <<<<<<<<<<<<<<
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ */
+        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_wkt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 579, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_loads); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 579, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_listbefor, __pyx_v_j); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 579, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_14 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
+          __pyx_t_14 = PyMethod_GET_SELF(__pyx_t_2);
+          if (likely(__pyx_t_14)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+            __Pyx_INCREF(__pyx_t_14);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_2, function);
+          }
+        }
+        __pyx_t_5 = (__pyx_t_14) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_14, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3);
+        __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 579, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_geoj, __pyx_t_5);
+        __pyx_t_5 = 0;
+
+        /* "VectorClipByVector.py":580
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)             # <<<<<<<<<<<<<<
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Polygon":
+ */
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoi, __pyx_n_s_intersection); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 580, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __pyx_t_3 = NULL;
+        if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+          __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_2);
+          if (likely(__pyx_t_3)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+            __Pyx_INCREF(__pyx_t_3);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_2, function);
+          }
+        }
+        __pyx_t_5 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_v_geoj) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_geoj);
+        __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+        if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 580, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_geoinset, __pyx_t_5);
+        __pyx_t_5 = 0;
+
+        /* "VectorClipByVector.py":581
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "Polygon":
+ *                         if geoinset.is_valid:
+ */
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_is_empty); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 581, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 581, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __pyx_t_8 = ((!__pyx_t_6) != 0);
+        if (__pyx_t_8) {
+
+          /* "VectorClipByVector.py":582
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Polygon":             # <<<<<<<<<<<<<<
+ *                         if geoinset.is_valid:
+ *                             listout.append(geoinset.wkt)
+ */
+          __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 582, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_5, __pyx_n_s_Polygon, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 582, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          if (__pyx_t_8) {
+
+            /* "VectorClipByVector.py":583
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Polygon":
+ *                         if geoinset.is_valid:             # <<<<<<<<<<<<<<
+ *                             listout.append(geoinset.wkt)
+ *                             listReserve.append(listFieldOut[i])
+ */
+            __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 583, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_5);
+            __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 583, __pyx_L1_error)
+            __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+            if (__pyx_t_8) {
+
+              /* "VectorClipByVector.py":584
+ *                     if geoinset.type == "Polygon":
+ *                         if geoinset.is_valid:
+ *                             listout.append(geoinset.wkt)             # <<<<<<<<<<<<<<
+ *                             listReserve.append(listFieldOut[i])
+ *                             listReserveBefore.append(listFieldBefore[j])
+ */
+              __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_wkt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 584, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_5);
+              __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 584, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+              /* "VectorClipByVector.py":585
+ *                         if geoinset.is_valid:
+ *                             listout.append(geoinset.wkt)
+ *                             listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *                             listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "MultiPolygon":
+ */
+              __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 585, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_5);
+              __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 585, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+              /* "VectorClipByVector.py":586
+ *                             listout.append(geoinset.wkt)
+ *                             listReserve.append(listFieldOut[i])
+ *                             listReserveBefore.append(listFieldBefore[j])             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "MultiPolygon":
+ *                         for g in geoinset:
+ */
+              __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_listFieldBefore, __pyx_v_j); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 586, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_5);
+              __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserveBefore, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 586, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+              /* "VectorClipByVector.py":583
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Polygon":
+ *                         if geoinset.is_valid:             # <<<<<<<<<<<<<<
+ *                             listout.append(geoinset.wkt)
+ *                             listReserve.append(listFieldOut[i])
+ */
+            }
+
+            /* "VectorClipByVector.py":582
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Polygon":             # <<<<<<<<<<<<<<
+ *                         if geoinset.is_valid:
+ *                             listout.append(geoinset.wkt)
+ */
+          }
+
+          /* "VectorClipByVector.py":587
+ *                             listReserve.append(listFieldOut[i])
+ *                             listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "MultiPolygon":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ */
+          __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 587, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_5, __pyx_n_s_MultiPolygon, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 587, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          if (__pyx_t_8) {
+
+            /* "VectorClipByVector.py":588
+ *                             listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "MultiPolygon":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.is_valid:
+ *                                 listout.append(g.wkt)
+ */
+            if (likely(PyList_CheckExact(__pyx_v_geoinset)) || PyTuple_CheckExact(__pyx_v_geoinset)) {
+              __pyx_t_5 = __pyx_v_geoinset; __Pyx_INCREF(__pyx_t_5); __pyx_t_15 = 0;
+              __pyx_t_16 = NULL;
+            } else {
+              __pyx_t_15 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_v_geoinset); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 588, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_5);
+              __pyx_t_16 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 588, __pyx_L1_error)
+            }
+            for (;;) {
+              if (likely(!__pyx_t_16)) {
+                if (likely(PyList_CheckExact(__pyx_t_5))) {
+                  if (__pyx_t_15 >= PyList_GET_SIZE(__pyx_t_5)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_2 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_15); __Pyx_INCREF(__pyx_t_2); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 588, __pyx_L1_error)
+                  #else
+                  __pyx_t_2 = PySequence_ITEM(__pyx_t_5, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 588, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_2);
+                  #endif
+                } else {
+                  if (__pyx_t_15 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_15); __Pyx_INCREF(__pyx_t_2); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 588, __pyx_L1_error)
+                  #else
+                  __pyx_t_2 = PySequence_ITEM(__pyx_t_5, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 588, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_2);
+                  #endif
+                }
+              } else {
+                __pyx_t_2 = __pyx_t_16(__pyx_t_5);
+                if (unlikely(!__pyx_t_2)) {
+                  PyObject* exc_type = PyErr_Occurred();
+                  if (exc_type) {
+                    if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                    else __PYX_ERR(0, 588, __pyx_L1_error)
+                  }
+                  break;
+                }
+                __Pyx_GOTREF(__pyx_t_2);
+              }
+              __Pyx_XDECREF_SET(__pyx_v_g, __pyx_t_2);
+              __pyx_t_2 = 0;
+
+              /* "VectorClipByVector.py":589
+ *                     if geoinset.type == "MultiPolygon":
+ *                         for g in geoinset:
+ *                             if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                 listout.append(g.wkt)
+ *                                 listReserve.append(listFieldOut[i])
+ */
+              __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 589, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_2);
+              __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 589, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+              if (__pyx_t_8) {
+
+                /* "VectorClipByVector.py":590
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ *                                 listout.append(g.wkt)             # <<<<<<<<<<<<<<
+ *                                 listReserve.append(listFieldOut[i])
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ */
+                __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_wkt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 590, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_2);
+                __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_2); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 590, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+                /* "VectorClipByVector.py":591
+ *                             if g.is_valid:
+ *                                 listout.append(g.wkt)
+ *                                 listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "GeometryCollection":
+ */
+                __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 591, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_2);
+                __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_2); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 591, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+                /* "VectorClipByVector.py":592
+ *                                 listout.append(g.wkt)
+ *                                 listReserve.append(listFieldOut[i])
+ *                                 listReserveBefore.append(listFieldBefore[j])             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ */
+                __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_listFieldBefore, __pyx_v_j); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 592, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_2);
+                __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserveBefore, __pyx_t_2); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 592, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+                /* "VectorClipByVector.py":589
+ *                     if geoinset.type == "MultiPolygon":
+ *                         for g in geoinset:
+ *                             if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                 listout.append(g.wkt)
+ *                                 listReserve.append(listFieldOut[i])
+ */
+              }
+
+              /* "VectorClipByVector.py":588
+ *                             listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "MultiPolygon":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.is_valid:
+ *                                 listout.append(g.wkt)
+ */
+            }
+            __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+            /* "VectorClipByVector.py":587
+ *                             listReserve.append(listFieldOut[i])
+ *                             listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "MultiPolygon":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ */
+          }
+
+          /* "VectorClipByVector.py":593
+ *                                 listReserve.append(listFieldOut[i])
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "GeometryCollection":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.type == "Polygon":
+ */
+          __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 593, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_5, __pyx_n_s_GeometryCollection, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 593, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          if (__pyx_t_8) {
+
+            /* "VectorClipByVector.py":594
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.type == "Polygon":
+ *                                 if g.is_valid:
+ */
+            if (likely(PyList_CheckExact(__pyx_v_geoinset)) || PyTuple_CheckExact(__pyx_v_geoinset)) {
+              __pyx_t_5 = __pyx_v_geoinset; __Pyx_INCREF(__pyx_t_5); __pyx_t_15 = 0;
+              __pyx_t_16 = NULL;
+            } else {
+              __pyx_t_15 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_v_geoinset); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 594, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_5);
+              __pyx_t_16 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 594, __pyx_L1_error)
+            }
+            for (;;) {
+              if (likely(!__pyx_t_16)) {
+                if (likely(PyList_CheckExact(__pyx_t_5))) {
+                  if (__pyx_t_15 >= PyList_GET_SIZE(__pyx_t_5)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_2 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_15); __Pyx_INCREF(__pyx_t_2); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 594, __pyx_L1_error)
+                  #else
+                  __pyx_t_2 = PySequence_ITEM(__pyx_t_5, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 594, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_2);
+                  #endif
+                } else {
+                  if (__pyx_t_15 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_15); __Pyx_INCREF(__pyx_t_2); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 594, __pyx_L1_error)
+                  #else
+                  __pyx_t_2 = PySequence_ITEM(__pyx_t_5, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 594, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_2);
+                  #endif
+                }
+              } else {
+                __pyx_t_2 = __pyx_t_16(__pyx_t_5);
+                if (unlikely(!__pyx_t_2)) {
+                  PyObject* exc_type = PyErr_Occurred();
+                  if (exc_type) {
+                    if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                    else __PYX_ERR(0, 594, __pyx_L1_error)
+                  }
+                  break;
+                }
+                __Pyx_GOTREF(__pyx_t_2);
+              }
+              __Pyx_XDECREF_SET(__pyx_v_g, __pyx_t_2);
+              __pyx_t_2 = 0;
+
+              /* "VectorClipByVector.py":595
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ *                             if g.type == "Polygon":             # <<<<<<<<<<<<<<
+ *                                 if g.is_valid:
+ *                                     listout.append(g.wkt)
+ */
+              __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_type); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 595, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_2);
+              __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_2, __pyx_n_s_Polygon, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 595, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+              if (__pyx_t_8) {
+
+                /* "VectorClipByVector.py":596
+ *                         for g in geoinset:
+ *                             if g.type == "Polygon":
+ *                                 if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                     listout.append(g.wkt)
+ *                                     listReserve.append(listFieldOut[i])
+ */
+                __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 596, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_2);
+                __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 596, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+                if (__pyx_t_8) {
+
+                  /* "VectorClipByVector.py":597
+ *                             if g.type == "Polygon":
+ *                                 if g.is_valid:
+ *                                     listout.append(g.wkt)             # <<<<<<<<<<<<<<
+ *                                     listReserve.append(listFieldOut[i])
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ */
+                  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_wkt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 597, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_2);
+                  __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_2); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 597, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+                  /* "VectorClipByVector.py":598
+ *                                 if g.is_valid:
+ *                                     listout.append(g.wkt)
+ *                                     listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ *                             if g.type == "MultiPolygon":
+ */
+                  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 598, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_2);
+                  __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_2); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 598, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+                  /* "VectorClipByVector.py":599
+ *                                     listout.append(g.wkt)
+ *                                     listReserve.append(listFieldOut[i])
+ *                                     listReserveBefore.append(listFieldBefore[j])             # <<<<<<<<<<<<<<
+ *                             if g.type == "MultiPolygon":
+ *                                 for tg in g:
+ */
+                  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_listFieldBefore, __pyx_v_j); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 599, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_2);
+                  __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserveBefore, __pyx_t_2); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 599, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+                  /* "VectorClipByVector.py":596
+ *                         for g in geoinset:
+ *                             if g.type == "Polygon":
+ *                                 if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                     listout.append(g.wkt)
+ *                                     listReserve.append(listFieldOut[i])
+ */
+                }
+
+                /* "VectorClipByVector.py":595
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ *                             if g.type == "Polygon":             # <<<<<<<<<<<<<<
+ *                                 if g.is_valid:
+ *                                     listout.append(g.wkt)
+ */
+              }
+
+              /* "VectorClipByVector.py":600
+ *                                     listReserve.append(listFieldOut[i])
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ *                             if g.type == "MultiPolygon":             # <<<<<<<<<<<<<<
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ */
+              __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_type); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 600, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_2);
+              __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_2, __pyx_n_s_MultiPolygon, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 600, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+              if (__pyx_t_8) {
+
+                /* "VectorClipByVector.py":601
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ *                             if g.type == "MultiPolygon":
+ *                                 for tg in g:             # <<<<<<<<<<<<<<
+ *                                     if tg.is_valid:
+ *                                         listout.append(tg.wkt)
+ */
+                if (likely(PyList_CheckExact(__pyx_v_g)) || PyTuple_CheckExact(__pyx_v_g)) {
+                  __pyx_t_2 = __pyx_v_g; __Pyx_INCREF(__pyx_t_2); __pyx_t_17 = 0;
+                  __pyx_t_18 = NULL;
+                } else {
+                  __pyx_t_17 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_g); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 601, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_2);
+                  __pyx_t_18 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 601, __pyx_L1_error)
+                }
+                for (;;) {
+                  if (likely(!__pyx_t_18)) {
+                    if (likely(PyList_CheckExact(__pyx_t_2))) {
+                      if (__pyx_t_17 >= PyList_GET_SIZE(__pyx_t_2)) break;
+                      #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                      __pyx_t_3 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_17); __Pyx_INCREF(__pyx_t_3); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 601, __pyx_L1_error)
+                      #else
+                      __pyx_t_3 = PySequence_ITEM(__pyx_t_2, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 601, __pyx_L1_error)
+                      __Pyx_GOTREF(__pyx_t_3);
+                      #endif
+                    } else {
+                      if (__pyx_t_17 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
+                      #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                      __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_17); __Pyx_INCREF(__pyx_t_3); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 601, __pyx_L1_error)
+                      #else
+                      __pyx_t_3 = PySequence_ITEM(__pyx_t_2, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 601, __pyx_L1_error)
+                      __Pyx_GOTREF(__pyx_t_3);
+                      #endif
+                    }
+                  } else {
+                    __pyx_t_3 = __pyx_t_18(__pyx_t_2);
+                    if (unlikely(!__pyx_t_3)) {
+                      PyObject* exc_type = PyErr_Occurred();
+                      if (exc_type) {
+                        if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                        else __PYX_ERR(0, 601, __pyx_L1_error)
+                      }
+                      break;
+                    }
+                    __Pyx_GOTREF(__pyx_t_3);
+                  }
+                  __Pyx_XDECREF_SET(__pyx_v_tg, __pyx_t_3);
+                  __pyx_t_3 = 0;
+
+                  /* "VectorClipByVector.py":602
+ *                             if g.type == "MultiPolygon":
+ *                                 for tg in g:
+ *                                     if tg.is_valid:             # <<<<<<<<<<<<<<
+ *                                         listout.append(tg.wkt)
+ *                                         listReserve.append(listFieldOut[i])
+ */
+                  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_tg, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 602, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_3);
+                  __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 602, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+                  if (__pyx_t_8) {
+
+                    /* "VectorClipByVector.py":603
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ *                                         listout.append(tg.wkt)             # <<<<<<<<<<<<<<
+ *                                         listReserve.append(listFieldOut[i])
+ *                                         listReserveBefore.append(listFieldBefore[j])
+ */
+                    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_tg, __pyx_n_s_wkt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 603, __pyx_L1_error)
+                    __Pyx_GOTREF(__pyx_t_3);
+                    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_3); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 603, __pyx_L1_error)
+                    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+                    /* "VectorClipByVector.py":604
+ *                                     if tg.is_valid:
+ *                                         listout.append(tg.wkt)
+ *                                         listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *                                         listReserveBefore.append(listFieldBefore[j])
+ *     elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":
+ */
+                    __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 604, __pyx_L1_error)
+                    __Pyx_GOTREF(__pyx_t_3);
+                    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_3); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 604, __pyx_L1_error)
+                    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+                    /* "VectorClipByVector.py":605
+ *                                         listout.append(tg.wkt)
+ *                                         listReserve.append(listFieldOut[i])
+ *                                         listReserveBefore.append(listFieldBefore[j])             # <<<<<<<<<<<<<<
+ *     elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":
+ *         for i in range(elementsnumber):
+ */
+                    __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_listFieldBefore, __pyx_v_j); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 605, __pyx_L1_error)
+                    __Pyx_GOTREF(__pyx_t_3);
+                    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserveBefore, __pyx_t_3); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 605, __pyx_L1_error)
+                    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+                    /* "VectorClipByVector.py":602
+ *                             if g.type == "MultiPolygon":
+ *                                 for tg in g:
+ *                                     if tg.is_valid:             # <<<<<<<<<<<<<<
+ *                                         listout.append(tg.wkt)
+ *                                         listReserve.append(listFieldOut[i])
+ */
+                  }
+
+                  /* "VectorClipByVector.py":601
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ *                             if g.type == "MultiPolygon":
+ *                                 for tg in g:             # <<<<<<<<<<<<<<
+ *                                     if tg.is_valid:
+ *                                         listout.append(tg.wkt)
+ */
+                }
+                __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+                /* "VectorClipByVector.py":600
+ *                                     listReserve.append(listFieldOut[i])
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ *                             if g.type == "MultiPolygon":             # <<<<<<<<<<<<<<
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ */
+              }
+
+              /* "VectorClipByVector.py":594
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.type == "Polygon":
+ *                                 if g.is_valid:
+ */
+            }
+            __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+            /* "VectorClipByVector.py":593
+ *                                 listReserve.append(listFieldOut[i])
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "GeometryCollection":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.type == "Polygon":
+ */
+          }
+
+          /* "VectorClipByVector.py":581
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "Polygon":
+ *                         if geoinset.is_valid:
+ */
+        }
+
+        /* "VectorClipByVector.py":578
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):             # <<<<<<<<<<<<<<
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ */
+      }
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+      /* "VectorClipByVector.py":574
+ *     Baselayertype = listoutType[0]
+ *     if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":
+ *         for i in range(elementsnumber):             # <<<<<<<<<<<<<<
+ *             # shapely
+ *             listinset = []
+ */
+    }
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+    /* "VectorClipByVector.py":573
+ *     # Polygon
+ *     Baselayertype = listoutType[0]
+ *     if Baselayertype == "POLYGON" or Baselayertype == "MULTIPOLYGON":             # <<<<<<<<<<<<<<
+ *         for i in range(elementsnumber):
+ *             # shapely
+ */
+    goto __pyx_L30;
+  }
+
+  /* "VectorClipByVector.py":606
+ *                                         listReserve.append(listFieldOut[i])
+ *                                         listReserveBefore.append(listFieldBefore[j])
+ *     elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":             # <<<<<<<<<<<<<<
+ *         for i in range(elementsnumber):
+ *             # shapely
+ */
+  __pyx_t_6 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_LINESTRING, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 606, __pyx_L1_error)
+  if (!__pyx_t_6) {
+  } else {
+    __pyx_t_8 = __pyx_t_6;
+    goto __pyx_L53_bool_binop_done;
+  }
+  __pyx_t_6 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_MULTILINESTRING, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 606, __pyx_L1_error)
+  __pyx_t_8 = __pyx_t_6;
+  __pyx_L53_bool_binop_done:;
+  if (__pyx_t_8) {
+
+    /* "VectorClipByVector.py":607
+ *                                         listReserveBefore.append(listFieldBefore[j])
+ *     elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":
+ *         for i in range(elementsnumber):             # <<<<<<<<<<<<<<
+ *             # shapely
+ *             listinset = []
+ */
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_elementsnumber); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 607, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
+      __pyx_t_9 = __pyx_t_1; __Pyx_INCREF(__pyx_t_9); __pyx_t_10 = 0;
+      __pyx_t_11 = NULL;
+    } else {
+      __pyx_t_10 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 607, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_11 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 607, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_11)) {
+        if (likely(PyList_CheckExact(__pyx_t_9))) {
+          if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_9)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_1 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_10); __Pyx_INCREF(__pyx_t_1); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 607, __pyx_L1_error)
+          #else
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_9, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 607, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          #endif
+        } else {
+          if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_9)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_10); __Pyx_INCREF(__pyx_t_1); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 607, __pyx_L1_error)
+          #else
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_9, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 607, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          #endif
+        }
+      } else {
+        __pyx_t_1 = __pyx_t_11(__pyx_t_9);
+        if (unlikely(!__pyx_t_1)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 607, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_1);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":609
+ *         for i in range(elementsnumber):
+ *             # shapely
+ *             listinset = []             # <<<<<<<<<<<<<<
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):
+ */
+      __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 609, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_XDECREF_SET(__pyx_v_listinset, ((PyObject*)__pyx_t_1));
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":610
+ *             # shapely
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])             # <<<<<<<<<<<<<<
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])
+ */
+      __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_wkt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 610, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_loads); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 610, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_listnow, __pyx_v_i); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 610, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_3 = NULL;
+      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
+        __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_2);
+        if (likely(__pyx_t_3)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+          __Pyx_INCREF(__pyx_t_3);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_2, function);
+        }
+      }
+      __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5);
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 610, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_geoi, __pyx_t_1);
+      __pyx_t_1 = 0;
+
+      /* "VectorClipByVector.py":611
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):             # <<<<<<<<<<<<<<
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ */
+      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_elementsnumberberfore); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 611, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
+        __pyx_t_2 = __pyx_t_1; __Pyx_INCREF(__pyx_t_2); __pyx_t_12 = 0;
+        __pyx_t_13 = NULL;
+      } else {
+        __pyx_t_12 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 611, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __pyx_t_13 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 611, __pyx_L1_error)
+      }
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      for (;;) {
+        if (likely(!__pyx_t_13)) {
+          if (likely(PyList_CheckExact(__pyx_t_2))) {
+            if (__pyx_t_12 >= PyList_GET_SIZE(__pyx_t_2)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_12); __Pyx_INCREF(__pyx_t_1); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 611, __pyx_L1_error)
+            #else
+            __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 611, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_1);
+            #endif
+          } else {
+            if (__pyx_t_12 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_12); __Pyx_INCREF(__pyx_t_1); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 611, __pyx_L1_error)
+            #else
+            __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 611, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_1);
+            #endif
+          }
+        } else {
+          __pyx_t_1 = __pyx_t_13(__pyx_t_2);
+          if (unlikely(!__pyx_t_1)) {
+            PyObject* exc_type = PyErr_Occurred();
+            if (exc_type) {
+              if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+              else __PYX_ERR(0, 611, __pyx_L1_error)
+            }
+            break;
+          }
+          __Pyx_GOTREF(__pyx_t_1);
+        }
+        __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_1);
+        __pyx_t_1 = 0;
+
+        /* "VectorClipByVector.py":612
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])             # <<<<<<<<<<<<<<
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ */
+        __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_wkt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 612, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_loads); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 612, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_listbefor, __pyx_v_j); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 612, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_14 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
+          __pyx_t_14 = PyMethod_GET_SELF(__pyx_t_3);
+          if (likely(__pyx_t_14)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+            __Pyx_INCREF(__pyx_t_14);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_3, function);
+          }
+        }
+        __pyx_t_1 = (__pyx_t_14) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_14, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_5);
+        __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 612, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_geoj, __pyx_t_1);
+        __pyx_t_1 = 0;
+
+        /* "VectorClipByVector.py":613
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)             # <<<<<<<<<<<<<<
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "LinearRing":
+ */
+        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoi, __pyx_n_s_intersection); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 613, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_5 = NULL;
+        if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+          __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_3);
+          if (likely(__pyx_t_5)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+            __Pyx_INCREF(__pyx_t_5);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_3, function);
+          }
+        }
+        __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_5, __pyx_v_geoj) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_geoj);
+        __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+        if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 613, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_geoinset, __pyx_t_1);
+        __pyx_t_1 = 0;
+
+        /* "VectorClipByVector.py":614
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "LinearRing":
+ *                         if geoinset.is_valid:
+ */
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_is_empty); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 614, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 614, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __pyx_t_6 = ((!__pyx_t_8) != 0);
+        if (__pyx_t_6) {
+
+          /* "VectorClipByVector.py":615
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "LinearRing":             # <<<<<<<<<<<<<<
+ *                         if geoinset.is_valid:
+ *                             listout.append(geoinset.wkt)
+ */
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 615, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_6 = (__Pyx_PyString_Equals(__pyx_t_1, __pyx_n_s_LinearRing, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 615, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          if (__pyx_t_6) {
+
+            /* "VectorClipByVector.py":616
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "LinearRing":
+ *                         if geoinset.is_valid:             # <<<<<<<<<<<<<<
+ *                             listout.append(geoinset.wkt)
+ *                             listReserve.append(listFieldOut[i])
+ */
+            __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 616, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_1);
+            __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 616, __pyx_L1_error)
+            __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+            if (__pyx_t_6) {
+
+              /* "VectorClipByVector.py":617
+ *                     if geoinset.type == "LinearRing":
+ *                         if geoinset.is_valid:
+ *                             listout.append(geoinset.wkt)             # <<<<<<<<<<<<<<
+ *                             listReserve.append(listFieldOut[i])
+ *                             listReserveBefore.append(listFieldBefore[j])
+ */
+              __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_wkt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 617, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_1);
+              __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 617, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+              /* "VectorClipByVector.py":618
+ *                         if geoinset.is_valid:
+ *                             listout.append(geoinset.wkt)
+ *                             listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *                             listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "MultiLineString":
+ */
+              __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 618, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_1);
+              __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 618, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+              /* "VectorClipByVector.py":619
+ *                             listout.append(geoinset.wkt)
+ *                             listReserve.append(listFieldOut[i])
+ *                             listReserveBefore.append(listFieldBefore[j])             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "MultiLineString":
+ *                         for g in geoinset:
+ */
+              __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_listFieldBefore, __pyx_v_j); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 619, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_1);
+              __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserveBefore, __pyx_t_1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 619, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+              /* "VectorClipByVector.py":616
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "LinearRing":
+ *                         if geoinset.is_valid:             # <<<<<<<<<<<<<<
+ *                             listout.append(geoinset.wkt)
+ *                             listReserve.append(listFieldOut[i])
+ */
+            }
+
+            /* "VectorClipByVector.py":615
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "LinearRing":             # <<<<<<<<<<<<<<
+ *                         if geoinset.is_valid:
+ *                             listout.append(geoinset.wkt)
+ */
+          }
+
+          /* "VectorClipByVector.py":620
+ *                             listReserve.append(listFieldOut[i])
+ *                             listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "MultiLineString":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ */
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 620, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_6 = (__Pyx_PyString_Equals(__pyx_t_1, __pyx_n_s_MultiLineString, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 620, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          if (__pyx_t_6) {
+
+            /* "VectorClipByVector.py":621
+ *                             listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "MultiLineString":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.is_valid:
+ *                                 listout.append(g.wkt)
+ */
+            if (likely(PyList_CheckExact(__pyx_v_geoinset)) || PyTuple_CheckExact(__pyx_v_geoinset)) {
+              __pyx_t_1 = __pyx_v_geoinset; __Pyx_INCREF(__pyx_t_1); __pyx_t_15 = 0;
+              __pyx_t_16 = NULL;
+            } else {
+              __pyx_t_15 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_geoinset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 621, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_1);
+              __pyx_t_16 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 621, __pyx_L1_error)
+            }
+            for (;;) {
+              if (likely(!__pyx_t_16)) {
+                if (likely(PyList_CheckExact(__pyx_t_1))) {
+                  if (__pyx_t_15 >= PyList_GET_SIZE(__pyx_t_1)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_15); __Pyx_INCREF(__pyx_t_3); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 621, __pyx_L1_error)
+                  #else
+                  __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 621, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_3);
+                  #endif
+                } else {
+                  if (__pyx_t_15 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_15); __Pyx_INCREF(__pyx_t_3); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 621, __pyx_L1_error)
+                  #else
+                  __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 621, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_3);
+                  #endif
+                }
+              } else {
+                __pyx_t_3 = __pyx_t_16(__pyx_t_1);
+                if (unlikely(!__pyx_t_3)) {
+                  PyObject* exc_type = PyErr_Occurred();
+                  if (exc_type) {
+                    if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                    else __PYX_ERR(0, 621, __pyx_L1_error)
+                  }
+                  break;
+                }
+                __Pyx_GOTREF(__pyx_t_3);
+              }
+              __Pyx_XDECREF_SET(__pyx_v_g, __pyx_t_3);
+              __pyx_t_3 = 0;
+
+              /* "VectorClipByVector.py":622
+ *                     if geoinset.type == "MultiLineString":
+ *                         for g in geoinset:
+ *                             if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                 listout.append(g.wkt)
+ *                                 listReserve.append(listFieldOut[i])
+ */
+              __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 622, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 622, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+              if (__pyx_t_6) {
+
+                /* "VectorClipByVector.py":623
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ *                                 listout.append(g.wkt)             # <<<<<<<<<<<<<<
+ *                                 listReserve.append(listFieldOut[i])
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ */
+                __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_wkt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 623, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_3);
+                __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_3); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 623, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+                /* "VectorClipByVector.py":624
+ *                             if g.is_valid:
+ *                                 listout.append(g.wkt)
+ *                                 listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "GeometryCollection":
+ */
+                __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 624, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_3);
+                __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_3); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 624, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+                /* "VectorClipByVector.py":625
+ *                                 listout.append(g.wkt)
+ *                                 listReserve.append(listFieldOut[i])
+ *                                 listReserveBefore.append(listFieldBefore[j])             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ */
+                __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_listFieldBefore, __pyx_v_j); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 625, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_3);
+                __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserveBefore, __pyx_t_3); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 625, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+                /* "VectorClipByVector.py":622
+ *                     if geoinset.type == "MultiLineString":
+ *                         for g in geoinset:
+ *                             if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                 listout.append(g.wkt)
+ *                                 listReserve.append(listFieldOut[i])
+ */
+              }
+
+              /* "VectorClipByVector.py":621
+ *                             listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "MultiLineString":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.is_valid:
+ *                                 listout.append(g.wkt)
+ */
+            }
+            __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+            /* "VectorClipByVector.py":620
+ *                             listReserve.append(listFieldOut[i])
+ *                             listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "MultiLineString":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ */
+          }
+
+          /* "VectorClipByVector.py":626
+ *                                 listReserve.append(listFieldOut[i])
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "GeometryCollection":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.type == "LinearRing":
+ */
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 626, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_6 = (__Pyx_PyString_Equals(__pyx_t_1, __pyx_n_s_GeometryCollection, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 626, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          if (__pyx_t_6) {
+
+            /* "VectorClipByVector.py":627
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.type == "LinearRing":
+ *                                 if g.is_valid:
+ */
+            if (likely(PyList_CheckExact(__pyx_v_geoinset)) || PyTuple_CheckExact(__pyx_v_geoinset)) {
+              __pyx_t_1 = __pyx_v_geoinset; __Pyx_INCREF(__pyx_t_1); __pyx_t_15 = 0;
+              __pyx_t_16 = NULL;
+            } else {
+              __pyx_t_15 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_geoinset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 627, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_1);
+              __pyx_t_16 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 627, __pyx_L1_error)
+            }
+            for (;;) {
+              if (likely(!__pyx_t_16)) {
+                if (likely(PyList_CheckExact(__pyx_t_1))) {
+                  if (__pyx_t_15 >= PyList_GET_SIZE(__pyx_t_1)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_15); __Pyx_INCREF(__pyx_t_3); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 627, __pyx_L1_error)
+                  #else
+                  __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 627, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_3);
+                  #endif
+                } else {
+                  if (__pyx_t_15 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_15); __Pyx_INCREF(__pyx_t_3); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 627, __pyx_L1_error)
+                  #else
+                  __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 627, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_3);
+                  #endif
+                }
+              } else {
+                __pyx_t_3 = __pyx_t_16(__pyx_t_1);
+                if (unlikely(!__pyx_t_3)) {
+                  PyObject* exc_type = PyErr_Occurred();
+                  if (exc_type) {
+                    if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                    else __PYX_ERR(0, 627, __pyx_L1_error)
+                  }
+                  break;
+                }
+                __Pyx_GOTREF(__pyx_t_3);
+              }
+              __Pyx_XDECREF_SET(__pyx_v_g, __pyx_t_3);
+              __pyx_t_3 = 0;
+
+              /* "VectorClipByVector.py":628
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ *                             if g.type == "LinearRing":             # <<<<<<<<<<<<<<
+ *                                 if g.is_valid:
+ *                                     listout.append(g.wkt)
+ */
+              __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_type); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 628, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              __pyx_t_6 = (__Pyx_PyString_Equals(__pyx_t_3, __pyx_n_s_LinearRing, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 628, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+              if (__pyx_t_6) {
+
+                /* "VectorClipByVector.py":629
+ *                         for g in geoinset:
+ *                             if g.type == "LinearRing":
+ *                                 if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                     listout.append(g.wkt)
+ *                                     listReserve.append(listFieldOut[i])
+ */
+                __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 629, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_3);
+                __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 629, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+                if (__pyx_t_6) {
+
+                  /* "VectorClipByVector.py":630
+ *                             if g.type == "LinearRing":
+ *                                 if g.is_valid:
+ *                                     listout.append(g.wkt)             # <<<<<<<<<<<<<<
+ *                                     listReserve.append(listFieldOut[i])
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ */
+                  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_wkt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 630, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_3);
+                  __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_3); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 630, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+                  /* "VectorClipByVector.py":631
+ *                                 if g.is_valid:
+ *                                     listout.append(g.wkt)
+ *                                     listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ *                             if g.type == "MultiLineString":
+ */
+                  __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 631, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_3);
+                  __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_3); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 631, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+                  /* "VectorClipByVector.py":632
+ *                                     listout.append(g.wkt)
+ *                                     listReserve.append(listFieldOut[i])
+ *                                     listReserveBefore.append(listFieldBefore[j])             # <<<<<<<<<<<<<<
+ *                             if g.type == "MultiLineString":
+ *                                 for tg in g:
+ */
+                  __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_listFieldBefore, __pyx_v_j); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 632, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_3);
+                  __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserveBefore, __pyx_t_3); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 632, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+                  /* "VectorClipByVector.py":629
+ *                         for g in geoinset:
+ *                             if g.type == "LinearRing":
+ *                                 if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                     listout.append(g.wkt)
+ *                                     listReserve.append(listFieldOut[i])
+ */
+                }
+
+                /* "VectorClipByVector.py":628
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ *                             if g.type == "LinearRing":             # <<<<<<<<<<<<<<
+ *                                 if g.is_valid:
+ *                                     listout.append(g.wkt)
+ */
+              }
+
+              /* "VectorClipByVector.py":633
+ *                                     listReserve.append(listFieldOut[i])
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ *                             if g.type == "MultiLineString":             # <<<<<<<<<<<<<<
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ */
+              __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_type); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 633, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              __pyx_t_6 = (__Pyx_PyString_Equals(__pyx_t_3, __pyx_n_s_MultiLineString, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 633, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+              if (__pyx_t_6) {
+
+                /* "VectorClipByVector.py":634
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ *                             if g.type == "MultiLineString":
+ *                                 for tg in g:             # <<<<<<<<<<<<<<
+ *                                     if tg.is_valid:
+ *                                         listout.append(tg.wkt)
+ */
+                if (likely(PyList_CheckExact(__pyx_v_g)) || PyTuple_CheckExact(__pyx_v_g)) {
+                  __pyx_t_3 = __pyx_v_g; __Pyx_INCREF(__pyx_t_3); __pyx_t_17 = 0;
+                  __pyx_t_18 = NULL;
+                } else {
+                  __pyx_t_17 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_g); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 634, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_3);
+                  __pyx_t_18 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 634, __pyx_L1_error)
+                }
+                for (;;) {
+                  if (likely(!__pyx_t_18)) {
+                    if (likely(PyList_CheckExact(__pyx_t_3))) {
+                      if (__pyx_t_17 >= PyList_GET_SIZE(__pyx_t_3)) break;
+                      #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                      __pyx_t_5 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_17); __Pyx_INCREF(__pyx_t_5); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 634, __pyx_L1_error)
+                      #else
+                      __pyx_t_5 = PySequence_ITEM(__pyx_t_3, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 634, __pyx_L1_error)
+                      __Pyx_GOTREF(__pyx_t_5);
+                      #endif
+                    } else {
+                      if (__pyx_t_17 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
+                      #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                      __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_17); __Pyx_INCREF(__pyx_t_5); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 634, __pyx_L1_error)
+                      #else
+                      __pyx_t_5 = PySequence_ITEM(__pyx_t_3, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 634, __pyx_L1_error)
+                      __Pyx_GOTREF(__pyx_t_5);
+                      #endif
+                    }
+                  } else {
+                    __pyx_t_5 = __pyx_t_18(__pyx_t_3);
+                    if (unlikely(!__pyx_t_5)) {
+                      PyObject* exc_type = PyErr_Occurred();
+                      if (exc_type) {
+                        if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                        else __PYX_ERR(0, 634, __pyx_L1_error)
+                      }
+                      break;
+                    }
+                    __Pyx_GOTREF(__pyx_t_5);
+                  }
+                  __Pyx_XDECREF_SET(__pyx_v_tg, __pyx_t_5);
+                  __pyx_t_5 = 0;
+
+                  /* "VectorClipByVector.py":635
+ *                             if g.type == "MultiLineString":
+ *                                 for tg in g:
+ *                                     if tg.is_valid:             # <<<<<<<<<<<<<<
+ *                                         listout.append(tg.wkt)
+ *                                         listReserve.append(listFieldOut[i])
+ */
+                  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_tg, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 635, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_5);
+                  __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 635, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+                  if (__pyx_t_6) {
+
+                    /* "VectorClipByVector.py":636
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ *                                         listout.append(tg.wkt)             # <<<<<<<<<<<<<<
+ *                                         listReserve.append(listFieldOut[i])
+ *                                         listReserveBefore.append(listFieldBefore[j])
+ */
+                    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_tg, __pyx_n_s_wkt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 636, __pyx_L1_error)
+                    __Pyx_GOTREF(__pyx_t_5);
+                    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 636, __pyx_L1_error)
+                    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+                    /* "VectorClipByVector.py":637
+ *                                     if tg.is_valid:
+ *                                         listout.append(tg.wkt)
+ *                                         listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *                                         listReserveBefore.append(listFieldBefore[j])
+ *     elif Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":
+ */
+                    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 637, __pyx_L1_error)
+                    __Pyx_GOTREF(__pyx_t_5);
+                    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 637, __pyx_L1_error)
+                    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+                    /* "VectorClipByVector.py":638
+ *                                         listout.append(tg.wkt)
+ *                                         listReserve.append(listFieldOut[i])
+ *                                         listReserveBefore.append(listFieldBefore[j])             # <<<<<<<<<<<<<<
+ *     elif Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":
+ *         for i in range(elementsnumber):
+ */
+                    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_listFieldBefore, __pyx_v_j); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 638, __pyx_L1_error)
+                    __Pyx_GOTREF(__pyx_t_5);
+                    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserveBefore, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 638, __pyx_L1_error)
+                    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+                    /* "VectorClipByVector.py":635
+ *                             if g.type == "MultiLineString":
+ *                                 for tg in g:
+ *                                     if tg.is_valid:             # <<<<<<<<<<<<<<
+ *                                         listout.append(tg.wkt)
+ *                                         listReserve.append(listFieldOut[i])
+ */
+                  }
+
+                  /* "VectorClipByVector.py":634
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ *                             if g.type == "MultiLineString":
+ *                                 for tg in g:             # <<<<<<<<<<<<<<
+ *                                     if tg.is_valid:
+ *                                         listout.append(tg.wkt)
+ */
+                }
+                __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+                /* "VectorClipByVector.py":633
+ *                                     listReserve.append(listFieldOut[i])
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ *                             if g.type == "MultiLineString":             # <<<<<<<<<<<<<<
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ */
+              }
+
+              /* "VectorClipByVector.py":627
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.type == "LinearRing":
+ *                                 if g.is_valid:
+ */
+            }
+            __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+            /* "VectorClipByVector.py":626
+ *                                 listReserve.append(listFieldOut[i])
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "GeometryCollection":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.type == "LinearRing":
+ */
+          }
+
+          /* "VectorClipByVector.py":614
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "LinearRing":
+ *                         if geoinset.is_valid:
+ */
+        }
+
+        /* "VectorClipByVector.py":611
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):             # <<<<<<<<<<<<<<
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ */
+      }
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+      /* "VectorClipByVector.py":607
+ *                                         listReserveBefore.append(listFieldBefore[j])
+ *     elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":
+ *         for i in range(elementsnumber):             # <<<<<<<<<<<<<<
+ *             # shapely
+ *             listinset = []
+ */
+    }
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+    /* "VectorClipByVector.py":606
+ *                                         listReserve.append(listFieldOut[i])
+ *                                         listReserveBefore.append(listFieldBefore[j])
+ *     elif Baselayertype == "LINESTRING" or Baselayertype == "MULTILINESTRING":             # <<<<<<<<<<<<<<
+ *         for i in range(elementsnumber):
+ *             # shapely
+ */
+    goto __pyx_L30;
+  }
+
+  /* "VectorClipByVector.py":639
+ *                                         listReserve.append(listFieldOut[i])
+ *                                         listReserveBefore.append(listFieldBefore[j])
+ *     elif Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":             # <<<<<<<<<<<<<<
+ *         for i in range(elementsnumber):
+ *             # shapely
+ */
+  __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_POINT, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 639, __pyx_L1_error)
+  if (!__pyx_t_8) {
+  } else {
+    __pyx_t_6 = __pyx_t_8;
+    goto __pyx_L75_bool_binop_done;
+  }
+  __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_Baselayertype, __pyx_n_s_MULTIPOINT, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 639, __pyx_L1_error)
+  __pyx_t_6 = __pyx_t_8;
+  __pyx_L75_bool_binop_done:;
+  if (__pyx_t_6) {
+
+    /* "VectorClipByVector.py":640
+ *                                         listReserveBefore.append(listFieldBefore[j])
+ *     elif Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":
+ *         for i in range(elementsnumber):             # <<<<<<<<<<<<<<
+ *             # shapely
+ *             listinset = []
+ */
+    __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_elementsnumber); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 640, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    if (likely(PyList_CheckExact(__pyx_t_9)) || PyTuple_CheckExact(__pyx_t_9)) {
+      __pyx_t_2 = __pyx_t_9; __Pyx_INCREF(__pyx_t_2); __pyx_t_10 = 0;
+      __pyx_t_11 = NULL;
+    } else {
+      __pyx_t_10 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 640, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_11 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 640, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_11)) {
+        if (likely(PyList_CheckExact(__pyx_t_2))) {
+          if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_2)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_9 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_10); __Pyx_INCREF(__pyx_t_9); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 640, __pyx_L1_error)
+          #else
+          __pyx_t_9 = PySequence_ITEM(__pyx_t_2, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 640, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          #endif
+        } else {
+          if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_9 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_10); __Pyx_INCREF(__pyx_t_9); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 640, __pyx_L1_error)
+          #else
+          __pyx_t_9 = PySequence_ITEM(__pyx_t_2, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 640, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          #endif
+        }
+      } else {
+        __pyx_t_9 = __pyx_t_11(__pyx_t_2);
+        if (unlikely(!__pyx_t_9)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 640, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_9);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_9);
+      __pyx_t_9 = 0;
+
+      /* "VectorClipByVector.py":642
+ *         for i in range(elementsnumber):
+ *             # shapely
+ *             listinset = []             # <<<<<<<<<<<<<<
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):
+ */
+      __pyx_t_9 = PyList_New(0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 642, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __Pyx_XDECREF_SET(__pyx_v_listinset, ((PyObject*)__pyx_t_9));
+      __pyx_t_9 = 0;
+
+      /* "VectorClipByVector.py":643
+ *             # shapely
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])             # <<<<<<<<<<<<<<
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])
+ */
+      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_wkt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 643, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_loads); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 643, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_listnow, __pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 643, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __pyx_t_5 = NULL;
+      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_5)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_5);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+        }
+      }
+      __pyx_t_9 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_5, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_1);
+      __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 643, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_geoi, __pyx_t_9);
+      __pyx_t_9 = 0;
+
+      /* "VectorClipByVector.py":644
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):             # <<<<<<<<<<<<<<
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ */
+      __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_elementsnumberberfore); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 644, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      if (likely(PyList_CheckExact(__pyx_t_9)) || PyTuple_CheckExact(__pyx_t_9)) {
+        __pyx_t_3 = __pyx_t_9; __Pyx_INCREF(__pyx_t_3); __pyx_t_12 = 0;
+        __pyx_t_13 = NULL;
+      } else {
+        __pyx_t_12 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 644, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_13 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 644, __pyx_L1_error)
+      }
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      for (;;) {
+        if (likely(!__pyx_t_13)) {
+          if (likely(PyList_CheckExact(__pyx_t_3))) {
+            if (__pyx_t_12 >= PyList_GET_SIZE(__pyx_t_3)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_9 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_12); __Pyx_INCREF(__pyx_t_9); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 644, __pyx_L1_error)
+            #else
+            __pyx_t_9 = PySequence_ITEM(__pyx_t_3, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 644, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_9);
+            #endif
+          } else {
+            if (__pyx_t_12 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_9 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_12); __Pyx_INCREF(__pyx_t_9); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 644, __pyx_L1_error)
+            #else
+            __pyx_t_9 = PySequence_ITEM(__pyx_t_3, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 644, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_9);
+            #endif
+          }
+        } else {
+          __pyx_t_9 = __pyx_t_13(__pyx_t_3);
+          if (unlikely(!__pyx_t_9)) {
+            PyObject* exc_type = PyErr_Occurred();
+            if (exc_type) {
+              if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+              else __PYX_ERR(0, 644, __pyx_L1_error)
+            }
+            break;
+          }
+          __Pyx_GOTREF(__pyx_t_9);
+        }
+        __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_9);
+        __pyx_t_9 = 0;
+
+        /* "VectorClipByVector.py":645
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])             # <<<<<<<<<<<<<<
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ */
+        __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_wkt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 645, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_loads); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 645, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_listbefor, __pyx_v_j); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 645, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_14 = NULL;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
+          __pyx_t_14 = PyMethod_GET_SELF(__pyx_t_5);
+          if (likely(__pyx_t_14)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+            __Pyx_INCREF(__pyx_t_14);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_5, function);
+          }
+        }
+        __pyx_t_9 = (__pyx_t_14) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_14, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_1);
+        __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 645, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_geoj, __pyx_t_9);
+        __pyx_t_9 = 0;
+
+        /* "VectorClipByVector.py":646
+ *             for j in range(elementsnumberberfore):
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)             # <<<<<<<<<<<<<<
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Point":
+ */
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoi, __pyx_n_s_intersection); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 646, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_1 = NULL;
+        if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+          __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_5);
+          if (likely(__pyx_t_1)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+            __Pyx_INCREF(__pyx_t_1);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_5, function);
+          }
+        }
+        __pyx_t_9 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_1, __pyx_v_geoj) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_geoj);
+        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+        if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 646, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_geoinset, __pyx_t_9);
+        __pyx_t_9 = 0;
+
+        /* "VectorClipByVector.py":647
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "Point":
+ *                         if geoinset.is_valid:
+ */
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_is_empty); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 647, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 647, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+        __pyx_t_8 = ((!__pyx_t_6) != 0);
+        if (__pyx_t_8) {
+
+          /* "VectorClipByVector.py":648
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Point":             # <<<<<<<<<<<<<<
+ *                         if geoinset.is_valid:
+ *                             listout.append(geoinset.wkt)
+ */
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 648, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_9, __pyx_n_s_Point, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 648, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+          if (__pyx_t_8) {
+
+            /* "VectorClipByVector.py":649
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Point":
+ *                         if geoinset.is_valid:             # <<<<<<<<<<<<<<
+ *                             listout.append(geoinset.wkt)
+ *                             listReserve.append(listFieldOut[i])
+ */
+            __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 649, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_9);
+            __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 649, __pyx_L1_error)
+            __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+            if (__pyx_t_8) {
+
+              /* "VectorClipByVector.py":650
+ *                     if geoinset.type == "Point":
+ *                         if geoinset.is_valid:
+ *                             listout.append(geoinset.wkt)             # <<<<<<<<<<<<<<
+ *                             listReserve.append(listFieldOut[i])
+ *                             listReserveBefore.append(listFieldBefore[j])
+ */
+              __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_wkt); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 650, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_9);
+              __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_9); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 650, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+              /* "VectorClipByVector.py":651
+ *                         if geoinset.is_valid:
+ *                             listout.append(geoinset.wkt)
+ *                             listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *                             listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "MultiPoint":
+ */
+              __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 651, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_9);
+              __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_9); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 651, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+              /* "VectorClipByVector.py":652
+ *                             listout.append(geoinset.wkt)
+ *                             listReserve.append(listFieldOut[i])
+ *                             listReserveBefore.append(listFieldBefore[j])             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "MultiPoint":
+ *                         for g in geoinset:
+ */
+              __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_listFieldBefore, __pyx_v_j); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 652, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_9);
+              __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserveBefore, __pyx_t_9); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 652, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+              /* "VectorClipByVector.py":649
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Point":
+ *                         if geoinset.is_valid:             # <<<<<<<<<<<<<<
+ *                             listout.append(geoinset.wkt)
+ *                             listReserve.append(listFieldOut[i])
+ */
+            }
+
+            /* "VectorClipByVector.py":648
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:
+ *                     if geoinset.type == "Point":             # <<<<<<<<<<<<<<
+ *                         if geoinset.is_valid:
+ *                             listout.append(geoinset.wkt)
+ */
+          }
+
+          /* "VectorClipByVector.py":653
+ *                             listReserve.append(listFieldOut[i])
+ *                             listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "MultiPoint":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ */
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 653, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_9, __pyx_n_s_MultiPoint, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 653, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+          if (__pyx_t_8) {
+
+            /* "VectorClipByVector.py":654
+ *                             listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "MultiPoint":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.is_valid:
+ *                                 listout.append(g.wkt)
+ */
+            if (likely(PyList_CheckExact(__pyx_v_geoinset)) || PyTuple_CheckExact(__pyx_v_geoinset)) {
+              __pyx_t_9 = __pyx_v_geoinset; __Pyx_INCREF(__pyx_t_9); __pyx_t_15 = 0;
+              __pyx_t_16 = NULL;
+            } else {
+              __pyx_t_15 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_v_geoinset); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 654, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_9);
+              __pyx_t_16 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 654, __pyx_L1_error)
+            }
+            for (;;) {
+              if (likely(!__pyx_t_16)) {
+                if (likely(PyList_CheckExact(__pyx_t_9))) {
+                  if (__pyx_t_15 >= PyList_GET_SIZE(__pyx_t_9)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_5 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_15); __Pyx_INCREF(__pyx_t_5); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 654, __pyx_L1_error)
+                  #else
+                  __pyx_t_5 = PySequence_ITEM(__pyx_t_9, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 654, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_5);
+                  #endif
+                } else {
+                  if (__pyx_t_15 >= PyTuple_GET_SIZE(__pyx_t_9)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_15); __Pyx_INCREF(__pyx_t_5); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 654, __pyx_L1_error)
+                  #else
+                  __pyx_t_5 = PySequence_ITEM(__pyx_t_9, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 654, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_5);
+                  #endif
+                }
+              } else {
+                __pyx_t_5 = __pyx_t_16(__pyx_t_9);
+                if (unlikely(!__pyx_t_5)) {
+                  PyObject* exc_type = PyErr_Occurred();
+                  if (exc_type) {
+                    if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                    else __PYX_ERR(0, 654, __pyx_L1_error)
+                  }
+                  break;
+                }
+                __Pyx_GOTREF(__pyx_t_5);
+              }
+              __Pyx_XDECREF_SET(__pyx_v_g, __pyx_t_5);
+              __pyx_t_5 = 0;
+
+              /* "VectorClipByVector.py":655
+ *                     if geoinset.type == "MultiPoint":
+ *                         for g in geoinset:
+ *                             if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                 listout.append(g.wkt)
+ *                                 listReserve.append(listFieldOut[i])
+ */
+              __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 655, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_5);
+              __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 655, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+              if (__pyx_t_8) {
+
+                /* "VectorClipByVector.py":656
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ *                                 listout.append(g.wkt)             # <<<<<<<<<<<<<<
+ *                                 listReserve.append(listFieldOut[i])
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ */
+                __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_wkt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 656, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_5);
+                __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 656, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+                /* "VectorClipByVector.py":657
+ *                             if g.is_valid:
+ *                                 listout.append(g.wkt)
+ *                                 listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "GeometryCollection":
+ */
+                __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 657, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_5);
+                __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 657, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+                /* "VectorClipByVector.py":658
+ *                                 listout.append(g.wkt)
+ *                                 listReserve.append(listFieldOut[i])
+ *                                 listReserveBefore.append(listFieldBefore[j])             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ */
+                __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_listFieldBefore, __pyx_v_j); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 658, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_5);
+                __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserveBefore, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 658, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+                /* "VectorClipByVector.py":655
+ *                     if geoinset.type == "MultiPoint":
+ *                         for g in geoinset:
+ *                             if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                 listout.append(g.wkt)
+ *                                 listReserve.append(listFieldOut[i])
+ */
+              }
+
+              /* "VectorClipByVector.py":654
+ *                             listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "MultiPoint":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.is_valid:
+ *                                 listout.append(g.wkt)
+ */
+            }
+            __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+            /* "VectorClipByVector.py":653
+ *                             listReserve.append(listFieldOut[i])
+ *                             listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "MultiPoint":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.is_valid:
+ */
+          }
+
+          /* "VectorClipByVector.py":659
+ *                                 listReserve.append(listFieldOut[i])
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "GeometryCollection":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.type == "Point":
+ */
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_geoinset, __pyx_n_s_type); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 659, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_9, __pyx_n_s_GeometryCollection, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 659, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+          if (__pyx_t_8) {
+
+            /* "VectorClipByVector.py":660
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.type == "Point":
+ *                                 if g.is_valid:
+ */
+            if (likely(PyList_CheckExact(__pyx_v_geoinset)) || PyTuple_CheckExact(__pyx_v_geoinset)) {
+              __pyx_t_9 = __pyx_v_geoinset; __Pyx_INCREF(__pyx_t_9); __pyx_t_15 = 0;
+              __pyx_t_16 = NULL;
+            } else {
+              __pyx_t_15 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_v_geoinset); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 660, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_9);
+              __pyx_t_16 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 660, __pyx_L1_error)
+            }
+            for (;;) {
+              if (likely(!__pyx_t_16)) {
+                if (likely(PyList_CheckExact(__pyx_t_9))) {
+                  if (__pyx_t_15 >= PyList_GET_SIZE(__pyx_t_9)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_5 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_15); __Pyx_INCREF(__pyx_t_5); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 660, __pyx_L1_error)
+                  #else
+                  __pyx_t_5 = PySequence_ITEM(__pyx_t_9, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 660, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_5);
+                  #endif
+                } else {
+                  if (__pyx_t_15 >= PyTuple_GET_SIZE(__pyx_t_9)) break;
+                  #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                  __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_15); __Pyx_INCREF(__pyx_t_5); __pyx_t_15++; if (unlikely(0 < 0)) __PYX_ERR(0, 660, __pyx_L1_error)
+                  #else
+                  __pyx_t_5 = PySequence_ITEM(__pyx_t_9, __pyx_t_15); __pyx_t_15++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 660, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_5);
+                  #endif
+                }
+              } else {
+                __pyx_t_5 = __pyx_t_16(__pyx_t_9);
+                if (unlikely(!__pyx_t_5)) {
+                  PyObject* exc_type = PyErr_Occurred();
+                  if (exc_type) {
+                    if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                    else __PYX_ERR(0, 660, __pyx_L1_error)
+                  }
+                  break;
+                }
+                __Pyx_GOTREF(__pyx_t_5);
+              }
+              __Pyx_XDECREF_SET(__pyx_v_g, __pyx_t_5);
+              __pyx_t_5 = 0;
+
+              /* "VectorClipByVector.py":661
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ *                             if g.type == "Point":             # <<<<<<<<<<<<<<
+ *                                 if g.is_valid:
+ *                                     listout.append(g.wkt)
+ */
+              __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_type); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 661, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_5);
+              __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_5, __pyx_n_s_Point, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 661, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+              if (__pyx_t_8) {
+
+                /* "VectorClipByVector.py":662
+ *                         for g in geoinset:
+ *                             if g.type == "Point":
+ *                                 if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                     listout.append(g.wkt)
+ *                                     listReserve.append(listFieldOut[i])
+ */
+                __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 662, __pyx_L1_error)
+                __Pyx_GOTREF(__pyx_t_5);
+                __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 662, __pyx_L1_error)
+                __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+                if (__pyx_t_8) {
+
+                  /* "VectorClipByVector.py":663
+ *                             if g.type == "Point":
+ *                                 if g.is_valid:
+ *                                     listout.append(g.wkt)             # <<<<<<<<<<<<<<
+ *                                     listReserve.append(listFieldOut[i])
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ */
+                  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_wkt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 663, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_5);
+                  __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 663, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+                  /* "VectorClipByVector.py":664
+ *                                 if g.is_valid:
+ *                                     listout.append(g.wkt)
+ *                                     listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ *                             if g.type == "MultiPoint":
+ */
+                  __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 664, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_5);
+                  __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 664, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+                  /* "VectorClipByVector.py":665
+ *                                     listout.append(g.wkt)
+ *                                     listReserve.append(listFieldOut[i])
+ *                                     listReserveBefore.append(listFieldBefore[j])             # <<<<<<<<<<<<<<
+ *                             if g.type == "MultiPoint":
+ *                                 for tg in g:
+ */
+                  __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_listFieldBefore, __pyx_v_j); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 665, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_5);
+                  __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserveBefore, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 665, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+                  /* "VectorClipByVector.py":662
+ *                         for g in geoinset:
+ *                             if g.type == "Point":
+ *                                 if g.is_valid:             # <<<<<<<<<<<<<<
+ *                                     listout.append(g.wkt)
+ *                                     listReserve.append(listFieldOut[i])
+ */
+                }
+
+                /* "VectorClipByVector.py":661
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:
+ *                             if g.type == "Point":             # <<<<<<<<<<<<<<
+ *                                 if g.is_valid:
+ *                                     listout.append(g.wkt)
+ */
+              }
+
+              /* "VectorClipByVector.py":666
+ *                                     listReserve.append(listFieldOut[i])
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ *                             if g.type == "MultiPoint":             # <<<<<<<<<<<<<<
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ */
+              __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_type); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 666, __pyx_L1_error)
+              __Pyx_GOTREF(__pyx_t_5);
+              __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_5, __pyx_n_s_MultiPoint, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 666, __pyx_L1_error)
+              __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+              if (__pyx_t_8) {
+
+                /* "VectorClipByVector.py":667
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ *                             if g.type == "MultiPoint":
+ *                                 for tg in g:             # <<<<<<<<<<<<<<
+ *                                     if tg.is_valid:
+ *                                         listout.append(tg.wkt)
+ */
+                if (likely(PyList_CheckExact(__pyx_v_g)) || PyTuple_CheckExact(__pyx_v_g)) {
+                  __pyx_t_5 = __pyx_v_g; __Pyx_INCREF(__pyx_t_5); __pyx_t_17 = 0;
+                  __pyx_t_18 = NULL;
+                } else {
+                  __pyx_t_17 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_v_g); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 667, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_5);
+                  __pyx_t_18 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 667, __pyx_L1_error)
+                }
+                for (;;) {
+                  if (likely(!__pyx_t_18)) {
+                    if (likely(PyList_CheckExact(__pyx_t_5))) {
+                      if (__pyx_t_17 >= PyList_GET_SIZE(__pyx_t_5)) break;
+                      #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                      __pyx_t_1 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_17); __Pyx_INCREF(__pyx_t_1); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 667, __pyx_L1_error)
+                      #else
+                      __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 667, __pyx_L1_error)
+                      __Pyx_GOTREF(__pyx_t_1);
+                      #endif
+                    } else {
+                      if (__pyx_t_17 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
+                      #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+                      __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_17); __Pyx_INCREF(__pyx_t_1); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 667, __pyx_L1_error)
+                      #else
+                      __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 667, __pyx_L1_error)
+                      __Pyx_GOTREF(__pyx_t_1);
+                      #endif
+                    }
+                  } else {
+                    __pyx_t_1 = __pyx_t_18(__pyx_t_5);
+                    if (unlikely(!__pyx_t_1)) {
+                      PyObject* exc_type = PyErr_Occurred();
+                      if (exc_type) {
+                        if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+                        else __PYX_ERR(0, 667, __pyx_L1_error)
+                      }
+                      break;
+                    }
+                    __Pyx_GOTREF(__pyx_t_1);
+                  }
+                  __Pyx_XDECREF_SET(__pyx_v_tg, __pyx_t_1);
+                  __pyx_t_1 = 0;
+
+                  /* "VectorClipByVector.py":668
+ *                             if g.type == "MultiPoint":
+ *                                 for tg in g:
+ *                                     if tg.is_valid:             # <<<<<<<<<<<<<<
+ *                                         listout.append(tg.wkt)
+ *                                         listReserve.append(listFieldOut[i])
+ */
+                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_tg, __pyx_n_s_is_valid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 668, __pyx_L1_error)
+                  __Pyx_GOTREF(__pyx_t_1);
+                  __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 668, __pyx_L1_error)
+                  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+                  if (__pyx_t_8) {
+
+                    /* "VectorClipByVector.py":669
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ *                                         listout.append(tg.wkt)             # <<<<<<<<<<<<<<
+ *                                         listReserve.append(listFieldOut[i])
+ *                                         listReserveBefore.append(listFieldBefore[j])
+ */
+                    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_tg, __pyx_n_s_wkt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 669, __pyx_L1_error)
+                    __Pyx_GOTREF(__pyx_t_1);
+                    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listout, __pyx_t_1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 669, __pyx_L1_error)
+                    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+                    /* "VectorClipByVector.py":670
+ *                                     if tg.is_valid:
+ *                                         listout.append(tg.wkt)
+ *                                         listReserve.append(listFieldOut[i])             # <<<<<<<<<<<<<<
+ *                                         listReserveBefore.append(listFieldBefore[j])
+ *     #
+ */
+                    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_listFieldOut, __pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 670, __pyx_L1_error)
+                    __Pyx_GOTREF(__pyx_t_1);
+                    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserve, __pyx_t_1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 670, __pyx_L1_error)
+                    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+                    /* "VectorClipByVector.py":671
+ *                                         listout.append(tg.wkt)
+ *                                         listReserve.append(listFieldOut[i])
+ *                                         listReserveBefore.append(listFieldBefore[j])             # <<<<<<<<<<<<<<
+ *     #
+ *     #
+ */
+                    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_listFieldBefore, __pyx_v_j); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 671, __pyx_L1_error)
+                    __Pyx_GOTREF(__pyx_t_1);
+                    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_listReserveBefore, __pyx_t_1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 671, __pyx_L1_error)
+                    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+                    /* "VectorClipByVector.py":668
+ *                             if g.type == "MultiPoint":
+ *                                 for tg in g:
+ *                                     if tg.is_valid:             # <<<<<<<<<<<<<<
+ *                                         listout.append(tg.wkt)
+ *                                         listReserve.append(listFieldOut[i])
+ */
+                  }
+
+                  /* "VectorClipByVector.py":667
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ *                             if g.type == "MultiPoint":
+ *                                 for tg in g:             # <<<<<<<<<<<<<<
+ *                                     if tg.is_valid:
+ *                                         listout.append(tg.wkt)
+ */
+                }
+                __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+                /* "VectorClipByVector.py":666
+ *                                     listReserve.append(listFieldOut[i])
+ *                                     listReserveBefore.append(listFieldBefore[j])
+ *                             if g.type == "MultiPoint":             # <<<<<<<<<<<<<<
+ *                                 for tg in g:
+ *                                     if tg.is_valid:
+ */
+              }
+
+              /* "VectorClipByVector.py":660
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "GeometryCollection":
+ *                         for g in geoinset:             # <<<<<<<<<<<<<<
+ *                             if g.type == "Point":
+ *                                 if g.is_valid:
+ */
+            }
+            __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+            /* "VectorClipByVector.py":659
+ *                                 listReserve.append(listFieldOut[i])
+ *                                 listReserveBefore.append(listFieldBefore[j])
+ *                     if geoinset.type == "GeometryCollection":             # <<<<<<<<<<<<<<
+ *                         for g in geoinset:
+ *                             if g.type == "Point":
+ */
+          }
+
+          /* "VectorClipByVector.py":647
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ *                 if not geoinset.is_empty:             # <<<<<<<<<<<<<<
+ *                     if geoinset.type == "Point":
+ *                         if geoinset.is_valid:
+ */
+        }
+
+        /* "VectorClipByVector.py":644
+ *             listinset = []
+ *             geoi = wkt.loads(listnow[i])
+ *             for j in range(elementsnumberberfore):             # <<<<<<<<<<<<<<
+ *                 geoj = wkt.loads(listbefor[j])
+ *                 geoinset = geoi.intersection(geoj)
+ */
+      }
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+      /* "VectorClipByVector.py":640
+ *                                         listReserveBefore.append(listFieldBefore[j])
+ *     elif Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":
+ *         for i in range(elementsnumber):             # <<<<<<<<<<<<<<
+ *             # shapely
+ *             listinset = []
+ */
+    }
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+    /* "VectorClipByVector.py":639
+ *                                         listReserve.append(listFieldOut[i])
+ *                                         listReserveBefore.append(listFieldBefore[j])
+ *     elif Baselayertype == "POINT" or Baselayertype == "MULTIPOINT":             # <<<<<<<<<<<<<<
+ *         for i in range(elementsnumber):
+ *             # shapely
+ */
+  }
+  __pyx_L30:;
+
+  /* "VectorClipByVector.py":674
+ *     #
+ *     #
+ *     outNum = len(listout)             # <<<<<<<<<<<<<<
+ *     numberreserve = len(listReserve)
+ *     oLayer=listOutLayer[0]
+ */
+  __pyx_t_10 = PyList_GET_SIZE(__pyx_v_listout); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 674, __pyx_L1_error)
+  __pyx_v_outNum = __pyx_t_10;
+
+  /* "VectorClipByVector.py":675
+ *     #
+ *     outNum = len(listout)
+ *     numberreserve = len(listReserve)             # <<<<<<<<<<<<<<
+ *     oLayer=listOutLayer[0]
+ *     oDefn = oLayer.GetLayerDefn()
+ */
+  __pyx_t_10 = PyList_GET_SIZE(__pyx_v_listReserve); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 675, __pyx_L1_error)
+  __pyx_v_numberreserve = __pyx_t_10;
+
+  /* "VectorClipByVector.py":676
+ *     outNum = len(listout)
+ *     numberreserve = len(listReserve)
+ *     oLayer=listOutLayer[0]             # <<<<<<<<<<<<<<
+ *     oDefn = oLayer.GetLayerDefn()
+ *     if not outNum == numberreserve:
+ */
+  __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_listOutLayer, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 676, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_v_oLayer = __pyx_t_2;
+  __pyx_t_2 = 0;
+
+  /* "VectorClipByVector.py":677
+ *     numberreserve = len(listReserve)
+ *     oLayer=listOutLayer[0]
+ *     oDefn = oLayer.GetLayerDefn()             # <<<<<<<<<<<<<<
+ *     if not outNum == numberreserve:
+ *         print("Topo is Wrong\n")
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_oLayer, __pyx_n_s_GetLayerDefn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 677, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_9 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+    __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_3);
+    if (likely(__pyx_t_9)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+      __Pyx_INCREF(__pyx_t_9);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_3, function);
+    }
+  }
+  __pyx_t_2 = (__pyx_t_9) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_9) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 677, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_v_oDefn = __pyx_t_2;
+  __pyx_t_2 = 0;
+
+  /* "VectorClipByVector.py":678
+ *     oLayer=listOutLayer[0]
+ *     oDefn = oLayer.GetLayerDefn()
+ *     if not outNum == numberreserve:             # <<<<<<<<<<<<<<
+ *         print("Topo is Wrong\n")
+ *     for it in range(outNum):
+ */
+  __pyx_t_8 = ((!((__pyx_v_outNum == __pyx_v_numberreserve) != 0)) != 0);
+  if (__pyx_t_8) {
+
+    /* "VectorClipByVector.py":679
+ *     oDefn = oLayer.GetLayerDefn()
+ *     if not outNum == numberreserve:
+ *         print("Topo is Wrong\n")             # <<<<<<<<<<<<<<
+ *     for it in range(outNum):
+ *         oFet = ogr.Feature(oDefn)
+ */
+    if (__Pyx_PrintOne(0, __pyx_kp_s_Topo_is_Wrong) < 0) __PYX_ERR(0, 679, __pyx_L1_error)
+
+    /* "VectorClipByVector.py":678
+ *     oLayer=listOutLayer[0]
+ *     oDefn = oLayer.GetLayerDefn()
+ *     if not outNum == numberreserve:             # <<<<<<<<<<<<<<
+ *         print("Topo is Wrong\n")
+ *     for it in range(outNum):
+ */
+  }
+
+  /* "VectorClipByVector.py":680
+ *     if not outNum == numberreserve:
+ *         print("Topo is Wrong\n")
+ *     for it in range(outNum):             # <<<<<<<<<<<<<<
+ *         oFet = ogr.Feature(oDefn)
+ *         fieldsubNumber = len(listReserve[it])
+ */
+  __pyx_t_10 = __pyx_v_outNum;
+  __pyx_t_12 = __pyx_t_10;
+  for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_12; __pyx_t_15+=1) {
+    __pyx_v_it = __pyx_t_15;
+
+    /* "VectorClipByVector.py":681
+ *         print("Topo is Wrong\n")
+ *     for it in range(outNum):
+ *         oFet = ogr.Feature(oDefn)             # <<<<<<<<<<<<<<
+ *         fieldsubNumber = len(listReserve[it])
+ *         for iu in range(0, fieldsubNumber, 2):
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_ogr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 681, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_Feature); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 681, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __pyx_t_3 = NULL;
+    if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_9))) {
+      __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_9);
+      if (likely(__pyx_t_3)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+        __Pyx_INCREF(__pyx_t_3);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_9, function);
+      }
+    }
+    __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_3, __pyx_v_oDefn) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_v_oDefn);
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 681, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_oFet, __pyx_t_2);
+    __pyx_t_2 = 0;
+
+    /* "VectorClipByVector.py":682
+ *     for it in range(outNum):
+ *         oFet = ogr.Feature(oDefn)
+ *         fieldsubNumber = len(listReserve[it])             # <<<<<<<<<<<<<<
+ *         for iu in range(0, fieldsubNumber, 2):
+ *             oFet.SetField(listReserve[it][iu], listReserve[it][iu + 1])
+ */
+    __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_listReserve, __pyx_v_it, Py_ssize_t, 1, PyInt_FromSsize_t, 1, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 682, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_17 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_17 == ((Py_ssize_t)-1))) __PYX_ERR(0, 682, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_v_fieldsubNumber = __pyx_t_17;
+
+    /* "VectorClipByVector.py":683
+ *         oFet = ogr.Feature(oDefn)
+ *         fieldsubNumber = len(listReserve[it])
+ *         for iu in range(0, fieldsubNumber, 2):             # <<<<<<<<<<<<<<
+ *             oFet.SetField(listReserve[it][iu], listReserve[it][iu + 1])
+ *         fieldsubNumberBefore=len(listReserveBefore[it])
+ */
+    __pyx_t_2 = PyInt_FromSsize_t(__pyx_v_fieldsubNumber); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 683, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_9 = PyTuple_New(3); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 683, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    __Pyx_INCREF(__pyx_int_0);
+    __Pyx_GIVEREF(__pyx_int_0);
+    PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_int_0);
+    __Pyx_GIVEREF(__pyx_t_2);
+    PyTuple_SET_ITEM(__pyx_t_9, 1, __pyx_t_2);
+    __Pyx_INCREF(__pyx_int_2);
+    __Pyx_GIVEREF(__pyx_int_2);
+    PyTuple_SET_ITEM(__pyx_t_9, 2, __pyx_int_2);
+    __pyx_t_2 = 0;
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_9, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 683, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+    if (likely(PyList_CheckExact(__pyx_t_2)) || PyTuple_CheckExact(__pyx_t_2)) {
+      __pyx_t_9 = __pyx_t_2; __Pyx_INCREF(__pyx_t_9); __pyx_t_17 = 0;
+      __pyx_t_11 = NULL;
+    } else {
+      __pyx_t_17 = -1; __pyx_t_9 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 683, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_11 = Py_TYPE(__pyx_t_9)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 683, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_11)) {
+        if (likely(PyList_CheckExact(__pyx_t_9))) {
+          if (__pyx_t_17 >= PyList_GET_SIZE(__pyx_t_9)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_2 = PyList_GET_ITEM(__pyx_t_9, __pyx_t_17); __Pyx_INCREF(__pyx_t_2); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 683, __pyx_L1_error)
+          #else
+          __pyx_t_2 = PySequence_ITEM(__pyx_t_9, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 683, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          #endif
+        } else {
+          if (__pyx_t_17 >= PyTuple_GET_SIZE(__pyx_t_9)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_9, __pyx_t_17); __Pyx_INCREF(__pyx_t_2); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 683, __pyx_L1_error)
+          #else
+          __pyx_t_2 = PySequence_ITEM(__pyx_t_9, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 683, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_2);
+          #endif
+        }
+      } else {
+        __pyx_t_2 = __pyx_t_11(__pyx_t_9);
+        if (unlikely(!__pyx_t_2)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 683, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_2);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_iu, __pyx_t_2);
+      __pyx_t_2 = 0;
+
+      /* "VectorClipByVector.py":684
+ *         fieldsubNumber = len(listReserve[it])
+ *         for iu in range(0, fieldsubNumber, 2):
+ *             oFet.SetField(listReserve[it][iu], listReserve[it][iu + 1])             # <<<<<<<<<<<<<<
+ *         fieldsubNumberBefore=len(listReserveBefore[it])
+ *         for iu in range(0,fieldsubNumberBefore,2):
+ */
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_oFet, __pyx_n_s_SetField); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 684, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_5 = __Pyx_GetItemInt_List(__pyx_v_listReserve, __pyx_v_it, Py_ssize_t, 1, PyInt_FromSsize_t, 1, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 684, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_5, __pyx_v_iu); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 684, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __pyx_t_5 = __Pyx_GetItemInt_List(__pyx_v_listReserve, __pyx_v_it, Py_ssize_t, 1, PyInt_FromSsize_t, 1, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 684, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_14 = __Pyx_PyInt_AddObjC(__pyx_v_iu, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 684, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_14);
+      __pyx_t_19 = __Pyx_PyObject_GetItem(__pyx_t_5, __pyx_t_14); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 684, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_19);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
+      __pyx_t_14 = NULL;
+      __pyx_t_4 = 0;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_14 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_14)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_14);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+          __pyx_t_4 = 1;
+        }
+      }
+      #if CYTHON_FAST_PYCALL
+      if (PyFunction_Check(__pyx_t_3)) {
+        PyObject *__pyx_temp[3] = {__pyx_t_14, __pyx_t_1, __pyx_t_19};
+        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 684, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
+        __Pyx_GOTREF(__pyx_t_2);
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+      } else
+      #endif
+      #if CYTHON_FAST_PYCCALL
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
+        PyObject *__pyx_temp[3] = {__pyx_t_14, __pyx_t_1, __pyx_t_19};
+        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 684, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
+        __Pyx_GOTREF(__pyx_t_2);
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+      } else
+      #endif
+      {
+        __pyx_t_5 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 684, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        if (__pyx_t_14) {
+          __Pyx_GIVEREF(__pyx_t_14); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_14); __pyx_t_14 = NULL;
+        }
+        __Pyx_GIVEREF(__pyx_t_1);
+        PyTuple_SET_ITEM(__pyx_t_5, 0+__pyx_t_4, __pyx_t_1);
+        __Pyx_GIVEREF(__pyx_t_19);
+        PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_4, __pyx_t_19);
+        __pyx_t_1 = 0;
+        __pyx_t_19 = 0;
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 684, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+      /* "VectorClipByVector.py":683
+ *         oFet = ogr.Feature(oDefn)
+ *         fieldsubNumber = len(listReserve[it])
+ *         for iu in range(0, fieldsubNumber, 2):             # <<<<<<<<<<<<<<
+ *             oFet.SetField(listReserve[it][iu], listReserve[it][iu + 1])
+ *         fieldsubNumberBefore=len(listReserveBefore[it])
+ */
+    }
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+    /* "VectorClipByVector.py":685
+ *         for iu in range(0, fieldsubNumber, 2):
+ *             oFet.SetField(listReserve[it][iu], listReserve[it][iu + 1])
+ *         fieldsubNumberBefore=len(listReserveBefore[it])             # <<<<<<<<<<<<<<
+ *         for iu in range(0,fieldsubNumberBefore,2):
+ *             oFet.SetField(listReserveBefore[it][iu],listReserve[it][iu+1])
+ */
+    __pyx_t_9 = __Pyx_GetItemInt_List(__pyx_v_listReserveBefore, __pyx_v_it, Py_ssize_t, 1, PyInt_FromSsize_t, 1, 1, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 685, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    __pyx_t_17 = PyObject_Length(__pyx_t_9); if (unlikely(__pyx_t_17 == ((Py_ssize_t)-1))) __PYX_ERR(0, 685, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+    __pyx_v_fieldsubNumberBefore = __pyx_t_17;
+
+    /* "VectorClipByVector.py":686
+ *             oFet.SetField(listReserve[it][iu], listReserve[it][iu + 1])
+ *         fieldsubNumberBefore=len(listReserveBefore[it])
+ *         for iu in range(0,fieldsubNumberBefore,2):             # <<<<<<<<<<<<<<
+ *             oFet.SetField(listReserveBefore[it][iu],listReserve[it][iu+1])
+ *         gemetrytt = ogr.CreateGeometryFromWkt(listout[it])
+ */
+    __pyx_t_9 = PyInt_FromSsize_t(__pyx_v_fieldsubNumberBefore); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 686, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 686, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_INCREF(__pyx_int_0);
+    __Pyx_GIVEREF(__pyx_int_0);
+    PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_int_0);
+    __Pyx_GIVEREF(__pyx_t_9);
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_9);
+    __Pyx_INCREF(__pyx_int_2);
+    __Pyx_GIVEREF(__pyx_int_2);
+    PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_int_2);
+    __pyx_t_9 = 0;
+    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_2, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 686, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    if (likely(PyList_CheckExact(__pyx_t_9)) || PyTuple_CheckExact(__pyx_t_9)) {
+      __pyx_t_2 = __pyx_t_9; __Pyx_INCREF(__pyx_t_2); __pyx_t_17 = 0;
+      __pyx_t_11 = NULL;
+    } else {
+      __pyx_t_17 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 686, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_11 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 686, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_11)) {
+        if (likely(PyList_CheckExact(__pyx_t_2))) {
+          if (__pyx_t_17 >= PyList_GET_SIZE(__pyx_t_2)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_9 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_17); __Pyx_INCREF(__pyx_t_9); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 686, __pyx_L1_error)
+          #else
+          __pyx_t_9 = PySequence_ITEM(__pyx_t_2, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 686, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          #endif
+        } else {
+          if (__pyx_t_17 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_9 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_17); __Pyx_INCREF(__pyx_t_9); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 686, __pyx_L1_error)
+          #else
+          __pyx_t_9 = PySequence_ITEM(__pyx_t_2, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 686, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          #endif
+        }
+      } else {
+        __pyx_t_9 = __pyx_t_11(__pyx_t_2);
+        if (unlikely(!__pyx_t_9)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 686, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_9);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_iu, __pyx_t_9);
+      __pyx_t_9 = 0;
+
+      /* "VectorClipByVector.py":687
+ *         fieldsubNumberBefore=len(listReserveBefore[it])
+ *         for iu in range(0,fieldsubNumberBefore,2):
+ *             oFet.SetField(listReserveBefore[it][iu],listReserve[it][iu+1])             # <<<<<<<<<<<<<<
+ *         gemetrytt = ogr.CreateGeometryFromWkt(listout[it])
+ *         oFet.SetGeometry(gemetrytt)
+ */
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_oFet, __pyx_n_s_SetField); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 687, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_5 = __Pyx_GetItemInt_List(__pyx_v_listReserveBefore, __pyx_v_it, Py_ssize_t, 1, PyInt_FromSsize_t, 1, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 687, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_19 = __Pyx_PyObject_GetItem(__pyx_t_5, __pyx_v_iu); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 687, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_19);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __pyx_t_5 = __Pyx_GetItemInt_List(__pyx_v_listReserve, __pyx_v_it, Py_ssize_t, 1, PyInt_FromSsize_t, 1, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 687, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_1 = __Pyx_PyInt_AddObjC(__pyx_v_iu, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 687, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __pyx_t_14 = __Pyx_PyObject_GetItem(__pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 687, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_14);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+      __pyx_t_1 = NULL;
+      __pyx_t_4 = 0;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+        __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_3);
+        if (likely(__pyx_t_1)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+          __Pyx_INCREF(__pyx_t_1);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_3, function);
+          __pyx_t_4 = 1;
+        }
+      }
+      #if CYTHON_FAST_PYCALL
+      if (PyFunction_Check(__pyx_t_3)) {
+        PyObject *__pyx_temp[3] = {__pyx_t_1, __pyx_t_19, __pyx_t_14};
+        __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 687, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_GOTREF(__pyx_t_9);
+        __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+        __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
+      } else
+      #endif
+      #if CYTHON_FAST_PYCCALL
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
+        PyObject *__pyx_temp[3] = {__pyx_t_1, __pyx_t_19, __pyx_t_14};
+        __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 687, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_GOTREF(__pyx_t_9);
+        __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+        __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
+      } else
+      #endif
+      {
+        __pyx_t_5 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 687, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        if (__pyx_t_1) {
+          __Pyx_GIVEREF(__pyx_t_1); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1); __pyx_t_1 = NULL;
+        }
+        __Pyx_GIVEREF(__pyx_t_19);
+        PyTuple_SET_ITEM(__pyx_t_5, 0+__pyx_t_4, __pyx_t_19);
+        __Pyx_GIVEREF(__pyx_t_14);
+        PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_4, __pyx_t_14);
+        __pyx_t_19 = 0;
+        __pyx_t_14 = 0;
+        __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 687, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+
+      /* "VectorClipByVector.py":686
+ *             oFet.SetField(listReserve[it][iu], listReserve[it][iu + 1])
+ *         fieldsubNumberBefore=len(listReserveBefore[it])
+ *         for iu in range(0,fieldsubNumberBefore,2):             # <<<<<<<<<<<<<<
+ *             oFet.SetField(listReserveBefore[it][iu],listReserve[it][iu+1])
+ *         gemetrytt = ogr.CreateGeometryFromWkt(listout[it])
+ */
+    }
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+    /* "VectorClipByVector.py":688
+ *         for iu in range(0,fieldsubNumberBefore,2):
+ *             oFet.SetField(listReserveBefore[it][iu],listReserve[it][iu+1])
+ *         gemetrytt = ogr.CreateGeometryFromWkt(listout[it])             # <<<<<<<<<<<<<<
+ *         oFet.SetGeometry(gemetrytt)
+ *         oLayer.CreateFeature(oFet)
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_ogr); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 688, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_CreateGeometryFromWkt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 688, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+    __pyx_t_9 = __Pyx_GetItemInt_List(__pyx_v_listout, __pyx_v_it, Py_ssize_t, 1, PyInt_FromSsize_t, 1, 1, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 688, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    __pyx_t_5 = NULL;
+    if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_3);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_3, function);
+      }
+    }
+    __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_5, __pyx_t_9) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_9);
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 688, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_gemetrytt, __pyx_t_2);
+    __pyx_t_2 = 0;
+
+    /* "VectorClipByVector.py":689
+ *             oFet.SetField(listReserveBefore[it][iu],listReserve[it][iu+1])
+ *         gemetrytt = ogr.CreateGeometryFromWkt(listout[it])
+ *         oFet.SetGeometry(gemetrytt)             # <<<<<<<<<<<<<<
+ *         oLayer.CreateFeature(oFet)
+ *     oDS.Destroy()
+ */
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_oFet, __pyx_n_s_SetGeometry); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 689, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __pyx_t_9 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+      __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_3);
+      if (likely(__pyx_t_9)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+        __Pyx_INCREF(__pyx_t_9);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_3, function);
+      }
+    }
+    __pyx_t_2 = (__pyx_t_9) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_9, __pyx_v_gemetrytt) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_gemetrytt);
+    __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 689, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+    /* "VectorClipByVector.py":690
+ *         gemetrytt = ogr.CreateGeometryFromWkt(listout[it])
+ *         oFet.SetGeometry(gemetrytt)
+ *         oLayer.CreateFeature(oFet)             # <<<<<<<<<<<<<<
+ *     oDS.Destroy()
+ *     print("\n")
+ */
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_oLayer, __pyx_n_s_CreateFeature); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 690, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __pyx_t_9 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+      __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_3);
+      if (likely(__pyx_t_9)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+        __Pyx_INCREF(__pyx_t_9);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_3, function);
+      }
+    }
+    __pyx_t_2 = (__pyx_t_9) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_9, __pyx_v_oFet) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_oFet);
+    __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 690, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  }
+
+  /* "VectorClipByVector.py":691
+ *         oFet.SetGeometry(gemetrytt)
+ *         oLayer.CreateFeature(oFet)
+ *     oDS.Destroy()             # <<<<<<<<<<<<<<
+ *     print("\n")
+ */
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_oDS, __pyx_n_s_Destroy); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 691, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_9 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
+    __pyx_t_9 = PyMethod_GET_SELF(__pyx_t_3);
+    if (likely(__pyx_t_9)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+      __Pyx_INCREF(__pyx_t_9);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_3, function);
+    }
+  }
+  __pyx_t_2 = (__pyx_t_9) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_9) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 691, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "VectorClipByVector.py":692
+ *         oLayer.CreateFeature(oFet)
+ *     oDS.Destroy()
+ *     print("\n")             # <<<<<<<<<<<<<<
+ */
+  if (__Pyx_PrintOne(0, __pyx_kp_s__6) < 0) __PYX_ERR(0, 692, __pyx_L1_error)
+
+  /* "VectorClipByVector.py":441
+ *     print("\n")
+ * #VectorClipByVectorNew("E:\shptest\DWFL_2018.shp","E:\shptest\DWFL_2016.shp","E:\shptest\DWFL_2021.shp")
+ * def VectorInterSect(strinputbase, strinputclip, stroutput):             # <<<<<<<<<<<<<<
+ *     datasource = ogr.Open(strinputbase, False)
+ *     datasourcebefor = ogr.Open(strinputclip, False)
+ */
+
+  /* function exit code */
+  __pyx_r = Py_None; __Pyx_INCREF(Py_None);
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_9);
+  __Pyx_XDECREF(__pyx_t_14);
+  __Pyx_XDECREF(__pyx_t_19);
+  __Pyx_AddTraceback("VectorClipByVector.VectorInterSect", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XDECREF(__pyx_v_datasource);
+  __Pyx_XDECREF(__pyx_v_datasourcebefor);
+  __Pyx_XDECREF(__pyx_v_layer_num);
+  __Pyx_XDECREF(__pyx_v_layer_numbefor);
+  __Pyx_XDECREF(__pyx_v_layer);
+  __Pyx_XDECREF(__pyx_v_layer_before);
+  __Pyx_XDECREF(__pyx_v_spatial_ref);
+  __Pyx_XDECREF(__pyx_v_spatial_refBefore);
+  __Pyx_XDECREF(__pyx_v_strDriverName);
+  __Pyx_XDECREF(__pyx_v_oDriver);
+  __Pyx_XDECREF(__pyx_v_oDS);
+  __Pyx_XDECREF(__pyx_v_srs);
+  __Pyx_XDECREF(__pyx_v_srsout);
+  __Pyx_XDECREF(__pyx_v_papszLCO);
+  __Pyx_XDECREF(__pyx_v_oSRCDefn);
+  __Pyx_XDECREF(__pyx_v_numFe);
+  __Pyx_XDECREF(__pyx_v_oSRCDefnBefor);
+  __Pyx_XDECREF(__pyx_v_numFeBefor);
+  __Pyx_XDECREF(__pyx_v_listoutType);
+  __Pyx_XDECREF(__pyx_v_listOutLayer);
+  __Pyx_XDECREF(__pyx_v_firstFeatur);
+  __Pyx_XDECREF(__pyx_v_FieldNumber);
+  __Pyx_XDECREF(__pyx_v_firstFeGeo);
+  __Pyx_XDECREF(__pyx_v_Baselayertype);
+  __Pyx_XDECREF(__pyx_v_oLayer1);
+  __Pyx_XDECREF(__pyx_v_itr);
+  __Pyx_XDECREF(__pyx_v_curFiedDefn);
+  __Pyx_XDECREF(__pyx_v_fieldname);
+  __Pyx_XDECREF(__pyx_v_fieldtype);
+  __Pyx_XDECREF(__pyx_v_creatFieldN);
+  __Pyx_XDECREF(__pyx_v_listnow);
+  __Pyx_XDECREF(__pyx_v_listbefor);
+  __Pyx_XDECREF(__pyx_v_listFieldOut);
+  __Pyx_XDECREF(__pyx_v_listFieldBefore);
+  __Pyx_XDECREF(__pyx_v_listout);
+  __Pyx_XDECREF(__pyx_v_feature_element);
+  __Pyx_XDECREF(__pyx_v_spatial_data);
+  __Pyx_XDECREF(__pyx_v_fieldnum);
+  __Pyx_XDECREF(__pyx_v_listonefeature);
+  __Pyx_XDECREF(__pyx_v_ite);
+  __Pyx_XDECREF(__pyx_v_currenfielddefn);
+  __Pyx_XDECREF(__pyx_v_fiedlValue);
+  __Pyx_XDECREF(__pyx_v_feature_elementbefor);
+  __Pyx_XDECREF(__pyx_v_spatial_databefore);
+  __Pyx_XDECREF(__pyx_v_geobefore);
+  __Pyx_XDECREF(__pyx_v_elementsnumber);
+  __Pyx_XDECREF(__pyx_v_elementsnumberberfore);
+  __Pyx_XDECREF(__pyx_v_listReserve);
+  __Pyx_XDECREF(__pyx_v_listReserveBefore);
+  __Pyx_XDECREF(__pyx_v_i);
+  __Pyx_XDECREF(__pyx_v_listinset);
+  __Pyx_XDECREF(__pyx_v_geoi);
+  __Pyx_XDECREF(__pyx_v_j);
+  __Pyx_XDECREF(__pyx_v_geoj);
+  __Pyx_XDECREF(__pyx_v_geoinset);
+  __Pyx_XDECREF(__pyx_v_g);
+  __Pyx_XDECREF(__pyx_v_tg);
+  __Pyx_XDECREF(__pyx_v_oLayer);
+  __Pyx_XDECREF(__pyx_v_oDefn);
+  __Pyx_XDECREF(__pyx_v_oFet);
+  __Pyx_XDECREF(__pyx_v_iu);
+  __Pyx_XDECREF(__pyx_v_gemetrytt);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
 static PyMethodDef __pyx_methods[] = {
   {0, 0, 0, 0}
 };
@@ -5246,6 +17838,8 @@ static struct PyModuleDef __pyx_moduledef = {
 #endif
 
 static __Pyx_StringTabEntry __pyx_string_tab[] = {
+  {&__pyx_kp_s_1, __pyx_k_1, sizeof(__pyx_k_1), 0, 0, 1, 0},
+  {&__pyx_n_s_Baselayertype, __pyx_k_Baselayertype, sizeof(__pyx_k_Baselayertype), 0, 0, 1, 1},
   {&__pyx_n_s_CP936, __pyx_k_CP936, sizeof(__pyx_k_CP936), 0, 0, 1, 1},
   {&__pyx_n_s_CreateDataSource, __pyx_k_CreateDataSource, sizeof(__pyx_k_CreateDataSource), 0, 0, 1, 1},
   {&__pyx_n_s_CreateFeature, __pyx_k_CreateFeature, sizeof(__pyx_k_CreateFeature), 0, 0, 1, 1},
@@ -5262,12 +17856,14 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_FieldNumber, __pyx_k_FieldNumber, sizeof(__pyx_k_FieldNumber), 0, 0, 1, 1},
   {&__pyx_n_s_GDAL_FILENAME_IS_UTF8, __pyx_k_GDAL_FILENAME_IS_UTF8, sizeof(__pyx_k_GDAL_FILENAME_IS_UTF8), 0, 0, 1, 1},
   {&__pyx_n_s_GeometryCollection, __pyx_k_GeometryCollection, sizeof(__pyx_k_GeometryCollection), 0, 0, 1, 1},
+  {&__pyx_kp_s_Geometry_is_Invalid, __pyx_k_Geometry_is_Invalid, sizeof(__pyx_k_Geometry_is_Invalid), 0, 0, 1, 0},
   {&__pyx_n_s_GetDriverByName, __pyx_k_GetDriverByName, sizeof(__pyx_k_GetDriverByName), 0, 0, 1, 1},
   {&__pyx_n_s_GetFeature, __pyx_k_GetFeature, sizeof(__pyx_k_GetFeature), 0, 0, 1, 1},
   {&__pyx_n_s_GetFeatureCount, __pyx_k_GetFeatureCount, sizeof(__pyx_k_GetFeatureCount), 0, 0, 1, 1},
   {&__pyx_n_s_GetField, __pyx_k_GetField, sizeof(__pyx_k_GetField), 0, 0, 1, 1},
   {&__pyx_n_s_GetFieldCount, __pyx_k_GetFieldCount, sizeof(__pyx_k_GetFieldCount), 0, 0, 1, 1},
   {&__pyx_n_s_GetFieldDefn, __pyx_k_GetFieldDefn, sizeof(__pyx_k_GetFieldDefn), 0, 0, 1, 1},
+  {&__pyx_n_s_GetGeometryName, __pyx_k_GetGeometryName, sizeof(__pyx_k_GetGeometryName), 0, 0, 1, 1},
   {&__pyx_n_s_GetLayerByIndex, __pyx_k_GetLayerByIndex, sizeof(__pyx_k_GetLayerByIndex), 0, 0, 1, 1},
   {&__pyx_n_s_GetLayerCount, __pyx_k_GetLayerCount, sizeof(__pyx_k_GetLayerCount), 0, 0, 1, 1},
   {&__pyx_n_s_GetLayerDefn, __pyx_k_GetLayerDefn, sizeof(__pyx_k_GetLayerDefn), 0, 0, 1, 1},
@@ -5275,13 +17871,25 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_GetSpatialRef, __pyx_k_GetSpatialRef, sizeof(__pyx_k_GetSpatialRef), 0, 0, 1, 1},
   {&__pyx_n_s_GetType, __pyx_k_GetType, sizeof(__pyx_k_GetType), 0, 0, 1, 1},
   {&__pyx_n_s_ImportFromWkt, __pyx_k_ImportFromWkt, sizeof(__pyx_k_ImportFromWkt), 0, 0, 1, 1},
+  {&__pyx_n_s_LINESTRING, __pyx_k_LINESTRING, sizeof(__pyx_k_LINESTRING), 0, 0, 1, 1},
   {&__pyx_kp_s_LayerCount, __pyx_k_LayerCount, sizeof(__pyx_k_LayerCount), 0, 0, 1, 0},
   {&__pyx_kp_s_LayerCount_before, __pyx_k_LayerCount_before, sizeof(__pyx_k_LayerCount_before), 0, 0, 1, 0},
+  {&__pyx_n_s_LineString, __pyx_k_LineString, sizeof(__pyx_k_LineString), 0, 0, 1, 1},
+  {&__pyx_n_s_LinearRing, __pyx_k_LinearRing, sizeof(__pyx_k_LinearRing), 0, 0, 1, 1},
+  {&__pyx_n_s_MULTILINESTRING, __pyx_k_MULTILINESTRING, sizeof(__pyx_k_MULTILINESTRING), 0, 0, 1, 1},
+  {&__pyx_n_s_MULTIPOINT, __pyx_k_MULTIPOINT, sizeof(__pyx_k_MULTIPOINT), 0, 0, 1, 1},
+  {&__pyx_n_s_MULTIPOLYGON, __pyx_k_MULTIPOLYGON, sizeof(__pyx_k_MULTIPOLYGON), 0, 0, 1, 1},
+  {&__pyx_n_s_MultiLineString, __pyx_k_MultiLineString, sizeof(__pyx_k_MultiLineString), 0, 0, 1, 1},
+  {&__pyx_n_s_MultiPoint, __pyx_k_MultiPoint, sizeof(__pyx_k_MultiPoint), 0, 0, 1, 1},
   {&__pyx_n_s_MultiPolygon, __pyx_k_MultiPolygon, sizeof(__pyx_k_MultiPolygon), 0, 0, 1, 1},
   {&__pyx_n_s_NO, __pyx_k_NO, sizeof(__pyx_k_NO), 0, 0, 1, 1},
   {&__pyx_n_s_Open, __pyx_k_Open, sizeof(__pyx_k_Open), 0, 0, 1, 1},
+  {&__pyx_n_s_POINT, __pyx_k_POINT, sizeof(__pyx_k_POINT), 0, 0, 1, 1},
+  {&__pyx_n_s_POLYGON, __pyx_k_POLYGON, sizeof(__pyx_k_POLYGON), 0, 0, 1, 1},
+  {&__pyx_n_s_Point, __pyx_k_Point, sizeof(__pyx_k_Point), 0, 0, 1, 1},
   {&__pyx_n_s_Polygon, __pyx_k_Polygon, sizeof(__pyx_k_Polygon), 0, 0, 1, 1},
   {&__pyx_n_s_RegisterAll, __pyx_k_RegisterAll, sizeof(__pyx_k_RegisterAll), 0, 0, 1, 1},
+  {&__pyx_n_s_Remove, __pyx_k_Remove, sizeof(__pyx_k_Remove), 0, 0, 1, 1},
   {&__pyx_n_s_SHAPE_ENCODING, __pyx_k_SHAPE_ENCODING, sizeof(__pyx_k_SHAPE_ENCODING), 0, 0, 1, 1},
   {&__pyx_n_s_SetConfigOption, __pyx_k_SetConfigOption, sizeof(__pyx_k_SetConfigOption), 0, 0, 1, 1},
   {&__pyx_n_s_SetField, __pyx_k_SetField, sizeof(__pyx_k_SetField), 0, 0, 1, 1},
@@ -5291,8 +17899,11 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_SpatialReference_2, __pyx_k_SpatialReference_2, sizeof(__pyx_k_SpatialReference_2), 0, 0, 1, 1},
   {&__pyx_kp_s_SpatialReference_before, __pyx_k_SpatialReference_before, sizeof(__pyx_k_SpatialReference_before), 0, 0, 1, 0},
   {&__pyx_n_s_TestPolygon, __pyx_k_TestPolygon, sizeof(__pyx_k_TestPolygon), 0, 0, 1, 1},
+  {&__pyx_kp_s_Topo_is_Wrong, __pyx_k_Topo_is_Wrong, sizeof(__pyx_k_Topo_is_Wrong), 0, 0, 1, 0},
   {&__pyx_n_s_VectorClipByVector, __pyx_k_VectorClipByVector, sizeof(__pyx_k_VectorClipByVector), 0, 0, 1, 1},
+  {&__pyx_n_s_VectorClipByVectorNew, __pyx_k_VectorClipByVectorNew, sizeof(__pyx_k_VectorClipByVectorNew), 0, 0, 1, 1},
   {&__pyx_kp_s_VectorClipByVector_py, __pyx_k_VectorClipByVector_py, sizeof(__pyx_k_VectorClipByVector_py), 0, 0, 1, 0},
+  {&__pyx_n_s_VectorInterSect, __pyx_k_VectorInterSect, sizeof(__pyx_k_VectorInterSect), 0, 0, 1, 1},
   {&__pyx_kp_s__3, __pyx_k__3, sizeof(__pyx_k__3), 0, 0, 1, 0},
   {&__pyx_kp_s__4, __pyx_k__4, sizeof(__pyx_k__4), 0, 0, 1, 0},
   {&__pyx_kp_s__5, __pyx_k__5, sizeof(__pyx_k__5), 0, 0, 1, 0},
@@ -5313,8 +17924,10 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_fieldname, __pyx_k_fieldname, sizeof(__pyx_k_fieldname), 0, 0, 1, 1},
   {&__pyx_n_s_fieldnum, __pyx_k_fieldnum, sizeof(__pyx_k_fieldnum), 0, 0, 1, 1},
   {&__pyx_n_s_fieldsubNumber, __pyx_k_fieldsubNumber, sizeof(__pyx_k_fieldsubNumber), 0, 0, 1, 1},
+  {&__pyx_n_s_fieldsubNumberBefore, __pyx_k_fieldsubNumberBefore, sizeof(__pyx_k_fieldsubNumberBefore), 0, 0, 1, 1},
   {&__pyx_n_s_fieldtype, __pyx_k_fieldtype, sizeof(__pyx_k_fieldtype), 0, 0, 1, 1},
   {&__pyx_n_s_file, __pyx_k_file, sizeof(__pyx_k_file), 0, 0, 1, 1},
+  {&__pyx_n_s_firstFeGeo, __pyx_k_firstFeGeo, sizeof(__pyx_k_firstFeGeo), 0, 0, 1, 1},
   {&__pyx_n_s_firstFeatur, __pyx_k_firstFeatur, sizeof(__pyx_k_firstFeatur), 0, 0, 1, 1},
   {&__pyx_n_s_fnm, __pyx_k_fnm, sizeof(__pyx_k_fnm), 0, 0, 1, 1},
   {&__pyx_kp_s_fnm_is, __pyx_k_fnm_is, sizeof(__pyx_k_fnm_is), 0, 0, 1, 0},
@@ -5342,13 +17955,17 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_layer_before, __pyx_k_layer_before, sizeof(__pyx_k_layer_before), 0, 0, 1, 1},
   {&__pyx_n_s_layer_num, __pyx_k_layer_num, sizeof(__pyx_k_layer_num), 0, 0, 1, 1},
   {&__pyx_n_s_layer_numbefor, __pyx_k_layer_numbefor, sizeof(__pyx_k_layer_numbefor), 0, 0, 1, 1},
+  {&__pyx_n_s_listFieldBefore, __pyx_k_listFieldBefore, sizeof(__pyx_k_listFieldBefore), 0, 0, 1, 1},
   {&__pyx_n_s_listFieldOut, __pyx_k_listFieldOut, sizeof(__pyx_k_listFieldOut), 0, 0, 1, 1},
+  {&__pyx_n_s_listOutLayer, __pyx_k_listOutLayer, sizeof(__pyx_k_listOutLayer), 0, 0, 1, 1},
   {&__pyx_n_s_listReserve, __pyx_k_listReserve, sizeof(__pyx_k_listReserve), 0, 0, 1, 1},
+  {&__pyx_n_s_listReserveBefore, __pyx_k_listReserveBefore, sizeof(__pyx_k_listReserveBefore), 0, 0, 1, 1},
   {&__pyx_n_s_listbefor, __pyx_k_listbefor, sizeof(__pyx_k_listbefor), 0, 0, 1, 1},
   {&__pyx_n_s_listinset, __pyx_k_listinset, sizeof(__pyx_k_listinset), 0, 0, 1, 1},
   {&__pyx_n_s_listnow, __pyx_k_listnow, sizeof(__pyx_k_listnow), 0, 0, 1, 1},
   {&__pyx_n_s_listonefeature, __pyx_k_listonefeature, sizeof(__pyx_k_listonefeature), 0, 0, 1, 1},
   {&__pyx_n_s_listout, __pyx_k_listout, sizeof(__pyx_k_listout), 0, 0, 1, 1},
+  {&__pyx_n_s_listoutType, __pyx_k_listoutType, sizeof(__pyx_k_listoutType), 0, 0, 1, 1},
   {&__pyx_n_s_loads, __pyx_k_loads, sizeof(__pyx_k_loads), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
   {&__pyx_n_s_mp1, __pyx_k_mp1, sizeof(__pyx_k_mp1), 0, 0, 1, 1},
@@ -5356,6 +17973,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_mpol, __pyx_k_mpol, sizeof(__pyx_k_mpol), 0, 0, 1, 1},
   {&__pyx_n_s_name, __pyx_k_name, sizeof(__pyx_k_name), 0, 0, 1, 1},
   {&__pyx_n_s_numFe, __pyx_k_numFe, sizeof(__pyx_k_numFe), 0, 0, 1, 1},
+  {&__pyx_n_s_numFeBefor, __pyx_k_numFeBefor, sizeof(__pyx_k_numFeBefor), 0, 0, 1, 1},
   {&__pyx_n_s_numberout, __pyx_k_numberout, sizeof(__pyx_k_numberout), 0, 0, 1, 1},
   {&__pyx_n_s_numberreserve, __pyx_k_numberreserve, sizeof(__pyx_k_numberreserve), 0, 0, 1, 1},
   {&__pyx_n_s_oDS, __pyx_k_oDS, sizeof(__pyx_k_oDS), 0, 0, 1, 1},
@@ -5363,7 +17981,9 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_oDriver, __pyx_k_oDriver, sizeof(__pyx_k_oDriver), 0, 0, 1, 1},
   {&__pyx_n_s_oFet, __pyx_k_oFet, sizeof(__pyx_k_oFet), 0, 0, 1, 1},
   {&__pyx_n_s_oLayer, __pyx_k_oLayer, sizeof(__pyx_k_oLayer), 0, 0, 1, 1},
+  {&__pyx_n_s_oLayer1, __pyx_k_oLayer1, sizeof(__pyx_k_oLayer1), 0, 0, 1, 1},
   {&__pyx_n_s_oSRCDefn, __pyx_k_oSRCDefn, sizeof(__pyx_k_oSRCDefn), 0, 0, 1, 1},
+  {&__pyx_n_s_oSRCDefnBefor, __pyx_k_oSRCDefnBefor, sizeof(__pyx_k_oSRCDefnBefor), 0, 0, 1, 1},
   {&__pyx_n_s_ogr, __pyx_k_ogr, sizeof(__pyx_k_ogr), 0, 0, 1, 1},
   {&__pyx_n_s_osgeo, __pyx_k_osgeo, sizeof(__pyx_k_osgeo), 0, 0, 1, 1},
   {&__pyx_n_s_osr, __pyx_k_osr, sizeof(__pyx_k_osr), 0, 0, 1, 1},
@@ -5392,6 +18012,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_type, __pyx_k_type, sizeof(__pyx_k_type), 0, 0, 1, 1},
   {&__pyx_n_s_union, __pyx_k_union, sizeof(__pyx_k_union), 0, 0, 1, 1},
   {&__pyx_n_s_vectorclipbyvector, __pyx_k_vectorclipbyvector, sizeof(__pyx_k_vectorclipbyvector), 0, 0, 1, 1},
+  {&__pyx_n_s_wkbMultiLineString, __pyx_k_wkbMultiLineString, sizeof(__pyx_k_wkbMultiLineString), 0, 0, 1, 1},
+  {&__pyx_n_s_wkbMultiPoint, __pyx_k_wkbMultiPoint, sizeof(__pyx_k_wkbMultiPoint), 0, 0, 1, 1},
   {&__pyx_n_s_wkbMultiPolygon, __pyx_k_wkbMultiPolygon, sizeof(__pyx_k_wkbMultiPolygon), 0, 0, 1, 1},
   {&__pyx_n_s_wkt, __pyx_k_wkt, sizeof(__pyx_k_wkt), 0, 0, 1, 1},
   {0, 0, 0, 0, 0, 0, 0}
@@ -5440,6 +18062,30 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
   __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(3, 0, 68, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_VectorClipByVector_py, __pyx_n_s_vectorclipbyvector, 9, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 9, __pyx_L1_error)
+
+  /* "VectorClipByVector.py":166
+ * 
+ * 
+ * def VectorClipByVectorNew(strinputbase, strinputclip, stroutput):             # <<<<<<<<<<<<<<
+ *     # fn1=r"E:\shptest\DWFL_2018.shp"
+ *     # fn2=r"E:\shptest\DWFL_2016.shp"
+ */
+  __pyx_tuple__9 = PyTuple_Pack(73, __pyx_n_s_strinputbase, __pyx_n_s_strinputclip, __pyx_n_s_stroutput, __pyx_n_s_datasource, __pyx_n_s_datasourcebefor, __pyx_n_s_layer_num, __pyx_n_s_layer_numbefor, __pyx_n_s_layer, __pyx_n_s_layer_before, __pyx_n_s_spatial_ref, __pyx_n_s_spatial_refBefore, __pyx_n_s_strDriverName, __pyx_n_s_oDriver, __pyx_n_s_oDS, __pyx_n_s_srs, __pyx_n_s_srsout, __pyx_n_s_papszLCO, __pyx_n_s_oSRCDefn, __pyx_n_s_numFe, __pyx_n_s_listoutType, __pyx_n_s_listOutLayer, __pyx_n_s_firstFeatur, __pyx_n_s_FieldNumber, __pyx_n_s_firstFeGeo, __pyx_n_s_Baselayertype, __pyx_n_s_oLayer1, __pyx_n_s_itr, __pyx_n_s_curFiedDefn, __pyx_n_s_fieldname, __pyx_n_s_fieldtype, __pyx_n_s_creatFieldN, __pyx_n_s_listnow, __pyx_n_s_listbefor, __pyx_n_s_listFieldOut, __pyx_n_s_listout, __pyx_n_s_feature_element, __pyx_n_s_spatial_data, __pyx_n_s_fieldnum, __pyx_n_s_listonefeature, __pyx_n_s_ite, __pyx_n_s_currenfielddefn, __pyx_n_s_fiedlValue, __pyx_n_s_feature_elementbefor, __pyx_n_s_spatial_databefore, __pyx_n_s_geobefore, __pyx_n_s_elementsnumber, __pyx_n_s_elementsnumberberfore, __pyx_n_s_fnm, __pyx_n_s_listReserve, __pyx_n_s_i, __pyx_n_s_listinset, __pyx_n_s_geoi, __pyx_n_s_j, __pyx_n_s_geoj, __pyx_n_s_geoinset, __pyx_n_s_g, __pyx_n_s_tg, __pyx_n_s_numberout, __pyx_n_s_geoi1, __pyx_n_s_mp1, __pyx_n_s_geoi2, __pyx_n_s_mp2, __pyx_n_s_pol, __pyx_n_s_mpol, __pyx_n_s_outNum, __pyx_n_s_numberreserve, __pyx_n_s_oLayer, __pyx_n_s_oDefn, __pyx_n_s_it, __pyx_n_s_oFet, __pyx_n_s_fieldsubNumber, __pyx_n_s_iu, __pyx_n_s_gemetrytt); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 166, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__9);
+  __Pyx_GIVEREF(__pyx_tuple__9);
+  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(3, 0, 73, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_VectorClipByVector_py, __pyx_n_s_VectorClipByVectorNew, 166, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 166, __pyx_L1_error)
+
+  /* "VectorClipByVector.py":441
+ *     print("\n")
+ * #VectorClipByVectorNew("E:\shptest\DWFL_2018.shp","E:\shptest\DWFL_2016.shp","E:\shptest\DWFL_2021.shp")
+ * def VectorInterSect(strinputbase, strinputclip, stroutput):             # <<<<<<<<<<<<<<
+ *     datasource = ogr.Open(strinputbase, False)
+ *     datasourcebefor = ogr.Open(strinputclip, False)
+ */
+  __pyx_tuple__11 = PyTuple_Pack(71, __pyx_n_s_strinputbase, __pyx_n_s_strinputclip, __pyx_n_s_stroutput, __pyx_n_s_datasource, __pyx_n_s_datasourcebefor, __pyx_n_s_layer_num, __pyx_n_s_layer_numbefor, __pyx_n_s_layer, __pyx_n_s_layer_before, __pyx_n_s_spatial_ref, __pyx_n_s_spatial_refBefore, __pyx_n_s_strDriverName, __pyx_n_s_oDriver, __pyx_n_s_oDS, __pyx_n_s_srs, __pyx_n_s_srsout, __pyx_n_s_papszLCO, __pyx_n_s_oSRCDefn, __pyx_n_s_numFe, __pyx_n_s_oSRCDefnBefor, __pyx_n_s_numFeBefor, __pyx_n_s_listoutType, __pyx_n_s_listOutLayer, __pyx_n_s_firstFeatur, __pyx_n_s_FieldNumber, __pyx_n_s_firstFeGeo, __pyx_n_s_Baselayertype, __pyx_n_s_oLayer1, __pyx_n_s_itr, __pyx_n_s_curFiedDefn, __pyx_n_s_fieldname, __pyx_n_s_fieldtype, __pyx_n_s_creatFieldN, __pyx_n_s_listnow, __pyx_n_s_listbefor, __pyx_n_s_listFieldOut, __pyx_n_s_listFieldBefore, __pyx_n_s_listout, __pyx_n_s_feature_element, __pyx_n_s_spatial_data, __pyx_n_s_fieldnum, __pyx_n_s_listonefeature, __pyx_n_s_ite, __pyx_n_s_currenfielddefn, __pyx_n_s_fiedlValue, __pyx_n_s_feature_elementbefor, __pyx_n_s_spatial_databefore, __pyx_n_s_geobefore, __pyx_n_s_elementsnumber, __pyx_n_s_elementsnumberberfore, __pyx_n_s_fnm, __pyx_n_s_listReserve, __pyx_n_s_listReserveBefore, __pyx_n_s_i, __pyx_n_s_listinset, __pyx_n_s_geoi, __pyx_n_s_j, __pyx_n_s_geoj, __pyx_n_s_geoinset, __pyx_n_s_g, __pyx_n_s_tg, __pyx_n_s_outNum, __pyx_n_s_numberreserve, __pyx_n_s_oLayer, __pyx_n_s_oDefn, __pyx_n_s_it, __pyx_n_s_oFet, __pyx_n_s_fieldsubNumber, __pyx_n_s_iu, __pyx_n_s_fieldsubNumberBefore, __pyx_n_s_gemetrytt); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 441, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__11);
+  __Pyx_GIVEREF(__pyx_tuple__11);
+  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(3, 0, 71, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_VectorClipByVector_py, __pyx_n_s_VectorInterSect, 441, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 441, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -5851,6 +18497,30 @@ if (!__Pyx_RefNanny) {
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_18VectorClipByVector_1vectorclipbyvector, 0, __pyx_n_s_vectorclipbyvector, NULL, __pyx_n_s_VectorClipByVector, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_vectorclipbyvector, __pyx_t_2) < 0) __PYX_ERR(0, 9, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "VectorClipByVector.py":166
+ * 
+ * 
+ * def VectorClipByVectorNew(strinputbase, strinputclip, stroutput):             # <<<<<<<<<<<<<<
+ *     # fn1=r"E:\shptest\DWFL_2018.shp"
+ *     # fn2=r"E:\shptest\DWFL_2016.shp"
+ */
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_18VectorClipByVector_3VectorClipByVectorNew, 0, __pyx_n_s_VectorClipByVectorNew, NULL, __pyx_n_s_VectorClipByVector, __pyx_d, ((PyObject *)__pyx_codeobj__10)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 166, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_VectorClipByVectorNew, __pyx_t_2) < 0) __PYX_ERR(0, 166, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "VectorClipByVector.py":441
+ *     print("\n")
+ * #VectorClipByVectorNew("E:\shptest\DWFL_2018.shp","E:\shptest\DWFL_2016.shp","E:\shptest\DWFL_2021.shp")
+ * def VectorInterSect(strinputbase, strinputclip, stroutput):             # <<<<<<<<<<<<<<
+ *     datasource = ogr.Open(strinputbase, False)
+ *     datasourcebefor = ogr.Open(strinputclip, False)
+ */
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_18VectorClipByVector_5VectorInterSect, 0, __pyx_n_s_VectorInterSect, NULL, __pyx_n_s_VectorClipByVector, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 441, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_VectorInterSect, __pyx_t_2) < 0) __PYX_ERR(0, 441, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "VectorClipByVector.py":1
